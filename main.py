@@ -72,7 +72,7 @@ def scan_etfs():
         etf_data_list.append(etf_data)
 
     for etf_item in etf_data_list:
-        print(etf_item.symbol, etf_item.short_name, etf_item.holdings)
+        print(etf_item.symbol, etf_item.short_name, etf_item.holdings)  # simple print
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
