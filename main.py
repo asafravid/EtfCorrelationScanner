@@ -78,7 +78,7 @@ def scan_etfs():
     etf_data_list = []
     for index, etf_name in enumerate(etf_list):
         etf_data = EtfData()
-        print("{}/{}/%{:2.2} Processing {}".format(index+1, len(etf_list)-index-1, (index+1)/len(etf_list)*100 , etf_name))
+        print("{}/{}/%{} Processing {}".format(index+1, len(etf_list)-index-1, (index+1)/len(etf_list)*100 , etf_name))
         symbol = yf.Ticker(etf_name)
         info   = symbol.get_info()
         etf_data.symbol     = etf_name
