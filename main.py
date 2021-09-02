@@ -1,16 +1,32 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#############################################################################
+#
+# Version 0.0.1 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+#
+#    ETF Correlation  Scanner - based on yfinance
+#    Copyright (C) 2021 Asaf Ravid
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+#
+#############################################################################
 
 import shutil
+import time
 import urllib.request as request
-import pandas         as pd
 import yfinance       as yf
 import csv
-import json
 
-from contextlib             import closing
+from contextlib import closing
 
 class EtfData:
     symbol:            str   = 'None'
@@ -57,22 +73,40 @@ def scan_etfs():
                         continue
 
     # Debug Mode:
-    etf_list = ['QQQ', 'SPY', 'FDIS']
+    # etf_list = ['QQQ', 'SPY', 'FDIS']
 
     etf_data_list = []
-    for etf_name in etf_list:
+    for index, etf_name in enumerate(etf_list):
         etf_data = EtfData()
-        print("Processing {}".format(etf_name))
+        print("{}/{}/%{:2.2} Processing {}".format(index+1, len(etf_list)-index-1, (index+1)/len(etf_list)*100 , etf_name))
         symbol = yf.Ticker(etf_name)
         info   = symbol.get_info()
         etf_data.symbol     = etf_name
-        etf_data.sector_weightings = info["sectorWeightings"]
-        etf_data.short_name = info["shortName"]
-        etf_data.holdings   = info['holdings']
+        if 'sectorWeightings' in info: etf_data.sector_weightings = info["sectorWeightings"]
+        if 'shortName'        in info: etf_data.short_name        = info["shortName"]
+        if 'holdings'         in info: etf_data.holdings          = info['holdings']
         etf_data_list.append(etf_data)
 
+    title_row = ['Symbol', 'Name', 'Stock0', 'Weight0', 'Stock1', 'Weight1', 'Stock2', 'Weight2', 'Stock3', 'Weight3', 'Stock4', 'Weight4', 'Stock5', 'Weight5', 'Stock6', 'Weight6', 'Stock7', 'Weight7', 'Stock8', 'Weight8', 'Stock9', 'Weight9']
+    rows = [title_row]
     for etf_item in etf_data_list:
-        print(etf_item.symbol, etf_item.short_name, etf_item.holdings)  # simple print
+        row = []
+        row.append(etf_item.symbol)
+        row.append(etf_item.short_name)
+        for key in etf_item.holdings:
+            if 'symbol' in key and 'holdingPercent' in key:
+                row.append(key['symbol'])
+                row.append(key['holdingPercent'])
+            else:
+                continue
+        rows.append(row)
+
+    filename = 'etfs_db.csv'
+    date_and_time_result_db_filename_and_path = time.strftime("Results/%Y%m%d-%H%M%S_{}".format(filename))
+
+    with open(date_and_time_result_db_filename_and_path, mode='w', newline='') as engine:
+        writer = csv.writer(engine)
+        writer.writerows(rows)
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':

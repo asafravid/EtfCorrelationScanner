@@ -416,7 +416,7 @@ Y|ALLO|Allogene Therapeutics, Inc. - Common Stock|Q|Q|N|100|N|N||ALLO|N
 Y|ALLT|Allot Ltd. - Ordinary Shares|Q|Q|N|100|N|N||ALLT|N
 Y|ALLY|Ally Financial Inc. Common Stock|N| |N|100|N||ALLY|ALLY|N
 Y|ALLY$A|GMAC Capital Trust I Fixed Rate Floating Rate Trust Preferred Securities, Series 2|N| |N|100|N||ALLYpA|ALLY-A|N
-Y|ALNA|Allena Pharmaceuticals, Inc. - Common Stock|Q|Q|N|100|N|N||ALNA|N
+Y|ALNA|Allena Pharmaceuticals, Inc. - Common Stock|Q|Q|N|100|N|D||ALNA|N
 Y|ALNY|Alnylam Pharmaceuticals, Inc. - Common Stock|Q|Q|N|100|N|N||ALNY|N
 Y|ALOT|AstroNova, Inc. - Common Stock|Q|G|N|100|N|N||ALOT|N
 Y|ALP$Q|Alabama Power Company 5.00% Class A Preferred Stock, Cumulative, Par Value $1 Per Share (Stated Capital $25 Per Share)|N| |N|100|N||ALPpQ|ALP-Q|N
@@ -1996,9 +1996,6 @@ Y|CME|CME Group Inc. - Class A Common Stock|Q|Q|N|100|N|N||CME|N
 Y|CMF|iShares California Muni Bond ETF|P| |Y|100|N||CMF|CMF|N
 Y|CMG|Chipotle Mexican Grill, Inc. Common Stock|N| |N|100|N||CMG|CMG|N
 Y|CMI|Cummins Inc. Common Stock|N| |N|100|N||CMI|CMI|N
-Y|CMII|CM Life Sciences II Inc. - Class A Common Stock|Q|S|N|100|N|N||CMII|N
-Y|CMIIU|CM Life Sciences II Inc. - Unit|Q|S|N|100|N|N||CMIIU|N
-Y|CMIIW|CM Life Sciences II Inc. - Warrant|Q|S|N|100|N|N||CMIIW|N
 Y|CMLS|Cumulus Media Inc. - Class A Common Stock|Q|G|N|100|N|N||CMLS|N
 Y|CMLT|CM Life Sciences III Inc. - Class A Common Stock|Q|S|N|100|N|N||CMLT|N
 Y|CMLTU|CM Life Sciences III Inc. - Unit|Q|S|N|100|N|N||CMLTU|N
@@ -2126,7 +2123,6 @@ Y|COOP|Mr. Cooper Group Inc. - Common Stock|Q|S|N|100|N|N||COOP|N
 Y|COP|ConocoPhillips Common Stock|N| |N|100|N||COP|COP|N
 Y|COPX|Global X Copper Miners ETF|P| |Y|100|N||COPX|COPX|N
 Y|COR|CoreSite Realty Corporation Common Stock|N| |N|100|N||COR|COR|N
-Y|CORE|Core-Mark Holding Company, Inc. - Common Stock|Q|Q|N|100|N|N||CORE|N
 Y|CORN|Teucrium Corn Fund ETV|P| |Y|100|N||CORN|CORN|N
 Y|CORP|Pimco Investment Grade Corporate Bond Index Exchange-Traded Fund|P| |Y|100|N||CORP|CORP|N
 Y|CORR|CorEnergy Infrastructure Trust, Inc. Common Stock|N| |N|100|N||CORR|CORR|N
@@ -2812,6 +2808,7 @@ Y|DTOCU|Digital Transformation Opportunities Corp. - Units|Q|S|N|100|N|N||DTOCU|
 Y|DTOCW|Digital Transformation Opportunities Corp. - Warrant|Q|S|N|100|N|N||DTOCW|N
 Y|DTOX|Amplify Cleaner Living ETF|P| |Y|100|N||DTOX|DTOX|N
 Y|DTP|DTE Energy Company 6.25% Corporate Units|N| |N|100|N||DTP|DTP|N
+Y|DTRTU|DTRT Health Acquisition Corp. - Unit|Q|S|N|100|N|N||DTRTU|N
 Y|DTSS|Datasea Inc. - Common Stock|Q|S|N|100|N|N||DTSS|N
 Y|DTST|Data Storage Corporation - Common Stock|Q|S|N|100|N|N||DTST|N
 Y|DTSTW|Data Storage Corporation - Warrant|Q|S|N|100|N|N||DTSTW|N
@@ -5230,6 +5227,7 @@ Y|IMV|IMV Inc. - Common Shares|Q|S|N|100|N|N||IMV|N
 Y|IMVT|Immunovant, Inc.  - Common Stock|Q|Q|N|100|N|N||IMVT|N
 Y|IMXI|International Money Express, Inc. - Common Stock|Q|S|N|100|N|N||IMXI|N
 Y|INAB|IN8bio, Inc. - Common Stock|Q|G|N|100|N|N||INAB|N
+Y|INAQ.U|Insight Acquisition Corp. Units|N| |N|100|N||INAQ.U|INAQ=|N
 Y|INBK|First Internet Bancorp - Common Stock|Q|Q|N|100|N|N||INBK|N
 Y|INBKL|First Internet Bancorp - 6.0% Fixed-to-Floating Rate Subordinated Notes due 2026|Q|Q|N|100|N|N||INBKL|N
 Y|INBKZ|First Internet Bancorp - Fixed-to-Floating Rate Subordinated Notes Due 2029|Q|Q|N|100|N|N||INBKZ|N
@@ -5897,9 +5895,9 @@ Y|KURIU|Alkuri Global Acquisition Corp. - Unit|Q|S|N|100|N|N||KURIU|N
 Y|KURIW|Alkuri Global Acquisition Corp. - Warrant|Q|S|N|100|N|N||KURIW|N
 Y|KVHI|KVH Industries, Inc. - Common Stock|Q|Q|N|100|N|N||KVHI|N
 Y|KVLE|KraneShares Trust KFA Value Line Dynamic Core Equity Index ETF|P| |Y|100|N||KVLE|KVLE|N
-Y|KVSA|Khosla Ventures Acquisition Co. - Class A Common Stock|Q|S|N|100|N|N||KVSA|N
-Y|KVSB|Khosla Ventures Acquisition Co. II - Class A Common Stock|Q|S|N|100|N|N||KVSB|N
-Y|KVSC|Khosla Ventures Acquisition Co. III - Class A Common Stock|Q|S|N|100|N|N||KVSC|N
+Y|KVSA|Khosla Ventures Acquisition Co. - Class A Common Stock|Q|S|N|100|N|E||KVSA|N
+Y|KVSB|Khosla Ventures Acquisition Co. II - Class A Common Stock|Q|S|N|100|N|E||KVSB|N
+Y|KVSC|Khosla Ventures Acquisition Co. III - Class A Common Stock|Q|S|N|100|N|E||KVSC|N
 Y|KW|Kennedy-Wilson Holdings Inc. Common Stock|N| |N|100|N||KW|KW|N
 Y|KWAC|Kingswood Acquisition Corp. Class A Common Stock|N| |N|100|N||KWAC|KWAC|N
 Y|KWAC.U|Kingswood Acquisition Corp. Units, each consisting of one share of Class A Common Stock and three-fourths of one redeemable warrant|N| |N|100|N||KWAC.U|KWAC=|N
@@ -7341,6 +7339,7 @@ Y|OMGA|Omega Therapeutics, Inc. - Common Stock|Q|Q|N|100|N|N||OMGA|N
 Y|OMI|Owens & Minor, Inc. Common Stock|N| |N|100|N||OMI|OMI|N
 Y|OMIC|Singular Genomics Systems, Inc. - Common Stock|Q|Q|N|100|N|N||OMIC|N
 Y|OMP|Oasis Midstream Partners LP - Common Units, Representing Limited Partner Interests|Q|Q|N|100|N|N||OMP|N
+Y|OMQS|OMNIQ Corp. - Common Stock|Q|S|N|100|N|N||OMQS|N
 Y|ON|ON Semiconductor Corporation - Common Stock|Q|Q|N|100|N|N||ON|N
 Y|ONB|Old National Bancorp - Common Stock|Q|Q|N|100|N|N||ONB|N
 Y|ONCR|Oncorus, Inc. - Common Stock|Q|G|N|100|N|N||ONCR|N
@@ -7366,6 +7365,8 @@ Y|OOTO|Direxion Daily Travel & Vacation Bull 2X Shares|P| |Y|100|N||OOTO|OOTO|N
 Y|OPA|Magnum Opus Acquisition Limited Class A Ordinary Shares|N| |N|100|N||OPA|OPA|N
 Y|OPA.U|Magnum Opus Acquisition Limited Units, each consisting of one Class A ordinary share and one-half redeemable warrant|N| |N|100|N||OPA.U|OPA=|N
 Y|OPA.W|Magnum Opus Acquisition Limited Redeemable Warrants, each warrant exercisable for one Class A ordinary share at an exercise price of $11.50|N| |N|100|N||OPA.WS|OPA+|N
+Y|OPAD|Offerpad Solutions Inc. Class A Common Stock|N| |N|100|N||OPAD|OPAD|N
+Y|OPAD.W|Offerpad Solutions Inc. Warrants|N| |N|100|N||OPAD.WS|OPAD+|N
 Y|OPBK|OP Bancorp - Common Stock|Q|G|N|100|N|N||OPBK|N
 Y|OPCH|Option Care Health, Inc. - Common Stock|Q|Q|N|100|N|N||OPCH|N
 Y|OPEN|Opendoor Technologies Inc  - Common Stock|Q|Q|N|100|N|N||OPEN|N
@@ -7381,6 +7382,7 @@ Y|OPNT|Opiant Pharmaceuticals, Inc. - Common Stock|Q|S|N|100|N|N||OPNT|N
 Y|OPOF|Old Point Financial Corporation - Common Stock|Q|S|N|100|N|N||OPOF|N
 Y|OPP|RiverNorth/DoubleLine Strategic Opportunity Fund, Inc. Common Stock|N| |N|100|N||OPP|OPP|N
 Y|OPP$A|RiverNorth/DoubleLine Strategic Opportunity Fund, Inc. 4.375% Series A Cumulative Preferred Stock|N| |N|100|N||OPPpA|OPP-A|N
+Y|OPP.V|RiverNorth/DoubleLine Strategic Opportunity Fund, Inc. Rights (expiring October 1, 2021)|N| |N|100|N||OPPrw|OPP^#|N
 Y|OPPX|Corbett Road Tactical Opportunity ETF|P| |Y|100|N||OPPX|OPPX|N
 Y|OPRA|Opera Limited - American Depositary Shares|Q|Q|N|100|N|N||OPRA|N
 Y|OPRT|Oportun Financial Corporation - common stock|Q|Q|N|100|N|N||OPRT|N
@@ -7392,7 +7394,6 @@ Y|OPY|Oppenheimer Holdings, Inc. Class A Common Stock (DE)|N| |N|100|N||OPY|OPY|
 Y|OR|Osisko Gold Royalties Ltd Common Shares|N| |N|100|N||OR|OR|N
 Y|ORA|Ormat Technologies, Inc. Common Stock|N| |N|100|N||ORA|ORA|N
 Y|ORAN|Orange|N| |N|100|N||ORAN|ORAN|N
-Y|ORBC|ORBCOMM Inc. - Common Stock|Q|Q|N|100|N|N||ORBC|N
 Y|ORC|Orchid Island Capital, Inc. Common Stock|N| |N|100|N||ORC|ORC|N
 Y|ORCC|Owl Rock Capital Corporation Common Stock|N| |N|100|N||ORCC|ORCC|N
 Y|ORCL|Oracle Corporation Common Stock|N| |N|100|N||ORCL|ORCL|N
@@ -8962,7 +8963,6 @@ Y|SHOP|Shopify Inc. Class A Subordinate Voting Shares|N| |N|100|N||SHOP|SHOP|N
 Y|SHQA|Shelter Acquisition Corporation I - Class A Common Stock|Q|S|N|100|N|N||SHQA|N
 Y|SHQAU|Shelter Acquisition Corporation I - Units, each consisting of One Class A Common Stock and one-third of one warrant.|Q|S|N|100|N|N||SHQAU|N
 Y|SHQAW|Shelter Acquisition Corporation I - Warrants|Q|S|N|100|N|N||SHQAW|N
-Y|SHSP|SharpSpring, Inc. - Common Stock|Q|S|N|100|N|N||SHSP|N
 Y|SHUS|Syntax Stratified U.S. Total Market Hedged ETF|P| |Y|100|N||SHUS|SHUS|N
 Y|SHV|iShares Short Treasury Bond ETF|Q|G|Y|100|N|N||SHV|N
 Y|SHW|Sherwin-Williams Company (The) Common Stock|N| |N|100|N||SHW|SHW|N
@@ -9058,6 +9058,8 @@ Y|SLDB|Solid Biosciences Inc. - Common Stock|Q|Q|N|100|N|N||SLDB|N
 Y|SLF|Sun Life Financial Inc. Common Stock|N| |N|100|N||SLF|SLF|N
 Y|SLG|SL Green Realty Corp Common Stock|N| |N|100|N||SLG|SLG|N
 Y|SLG$I|SL Green Realty Corporation Preferred Series I|N| |N|100|N||SLGpI|SLG-I|N
+Y|SLGC|SomaLogic, Inc. - Class A Common Stock|Q|G|N|100|N|N||SLGC|N
+Y|SLGCW|SomaLogic, Inc. - Warrant|Q|G|N|100|N|N||SLGCW|N
 Y|SLGG|Super League Gaming, Inc. - Common Stock|Q|S|N|100|N|N||SLGG|N
 Y|SLGL|Sol-Gel Technologies Ltd. - Common Stock|Q|G|N|100|N|N||SLGL|N
 Y|SLGN|Silgan Holdings Inc. - Common Stock|Q|Q|N|100|N|N||SLGN|N
@@ -9142,7 +9144,7 @@ Y|SNDX|Syndax Pharmaceuticals, Inc. - Common Stock|Q|Q|N|100|N|N||SNDX|N
 Y|SNES|SenesTech, Inc. - Common Stock|Q|S|N|100|N|N||SNES|N
 Y|SNEX|StoneX Group Inc. - Common Stock|Q|Q|N|100|N|N||SNEX|N
 Y|SNFCA|Security National Financial Corporation - Class A Common Stock|Q|G|N|100|N|N||SNFCA|N
-Y|SNGX|Soligenix, Inc. - Common Stock|Q|S|N|100|N|N||SNGX|N
+Y|SNGX|Soligenix, Inc. - Common Stock|Q|S|N|100|N|D||SNGX|N
 Y|SNGXW|Soligenix, Inc. - Warrant|Q|S|N|100|N|N||SNGXW|N
 Y|SNII|Supernova Partners Acquisition Company II, Ltd. Class A Ordinary Shares|N| |N|100|N||SNII|SNII|N
 Y|SNII.U|Supernova Partners Acquisition Company II, Ltd. Units, each consisting of one Class A ordinary share and one-fourth of one redeemable warrant|N| |N|100|N||SNII.U|SNII=|N
@@ -9271,9 +9273,6 @@ Y|SPNE|SeaSpine Holdings Corporation - Common Stock|Q|Q|N|100|N|N||SPNE|N
 Y|SPNS|Sapiens International Corporation N.V. - Common Shares|Q|Q|N|100|N|N||SPNS|N
 Y|SPNT|SiriusPoint Ltd. Common Shares|N| |N|100|N||SPNT|SPNT|N
 Y|SPNT$B|SiriusPoint Ltd. 8.00% Resettable Fixed Rate Preference Shares, Series B, $25.00 liquidation preference per share|N| |N|100|N||SPNTpB|SPNT-B|N
-Y|SPNV|Supernova Partners Acquisition Company, Inc. Class A Common Stock|N| |N|100|N||SPNV|SPNV|N
-Y|SPNV.U|Supernova Partners Acquisition Company, Inc. Units, each consisting of one share of Class A common stock and one-third of one warrant|N| |N|100|N||SPNV.U|SPNV=|N
-Y|SPNV.W|Supernova Partners Acquisition Company, Inc. Warrants, each whole warrant exercisable for one share of Class A Common Stock at an exercise price of $11.50|N| |N|100|N||SPNV.WS|SPNV+|N
 Y|SPOK|Spok Holdings, Inc. - Common Stock|Q|Q|N|100|N|N||SPOK|N
 Y|SPOT|Spotify Technology S.A. Ordinary Shares|N| |N|100|N||SPOT|SPOT|N
 Y|SPPI|Spectrum Pharmaceuticals, Inc. - Common Stock|Q|Q|N|100|N|N||SPPI|N
@@ -9775,9 +9774,9 @@ Y|TIMB|TIM S.A. American Depositary Shares (Each representing 5 Common Shares) |
 Y|TINV|Tiga Acquisition Corp. Class A Ordinary Shares|N| |N|100|N||TINV|TINV|N
 Y|TINV.U|Tiga Acquisition Corp. Units, each consisting of one Class A ordinary share and one half of one warrant|N| |N|100|N||TINV.U|TINV=|N
 Y|TINV.W|Tiga Acquisition Corp. Warrants, each warrant exercisable for one Class A ordinary share at an exercise price of $11.50 per share|N| |N|100|N||TINV.WS|TINV+|N
-Y|TIOA|Tio Tech A - Class A Ordinary Share|Q|S|N|100|N|N||TIOA|N
-Y|TIOAU|Tio Tech A - Units|Q|S|N|100|N|N||TIOAU|N
-Y|TIOAW|Tio Tech A - Warrants|Q|S|N|100|N|N||TIOAW|N
+Y|TIOA|Tio Tech A - Class A Ordinary Share|Q|S|N|100|N|E||TIOA|N
+Y|TIOAU|Tio Tech A - Units|Q|S|N|100|N|E||TIOAU|N
+Y|TIOAW|Tio Tech A - Warrants|Q|S|N|100|N|E||TIOAW|N
 Y|TIP|iShares TIPS Bond ETF|P| |Y|100|N||TIP|TIP|N
 Y|TIPT|Tiptree Inc. - Common Stock|Q|S|N|100|N|N||TIPT|N
 Y|TIPX|SPDR Bloomberg Barclays 1-10 Year TIPS|P| |Y|100|N||TIPX|TIPX|N
@@ -11083,4 +11082,4 @@ Y|ZY|Zymergen Inc. - Common Stock|Q|Q|N|100|N|N||ZY|N
 Y|ZYME|Zymeworks Inc. Common Shares|N| |N|100|N||ZYME|ZYME|N
 Y|ZYNE|Zynerba Pharmaceuticals, Inc. - Common Stock|Q|G|N|100|N|N||ZYNE|N
 Y|ZYXI|Zynex, Inc. - Common Stock|Q|Q|N|100|N|N||ZYXI|N
-File Creation Time: 0901202115:42|||||
+File Creation Time: 0902202110:02|||||
