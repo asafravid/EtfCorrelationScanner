@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.2 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.3 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -74,7 +74,7 @@ def scan_etfs():
 
     # Debug Mode:
     # etf_list = ['IYZ']
-    sorted_etf_list = sorted(etf_list)
+    sorted_etf_list = sorted(list(set(etf_list)))
     print("Scanning {} ETFs: {}".format(len(sorted_etf_list), sorted_etf_list))
 
     elapsed_time_start_sec = time.time()
