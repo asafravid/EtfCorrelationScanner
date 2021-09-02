@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.1 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.2 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -73,12 +73,20 @@ def scan_etfs():
                         continue
 
     # Debug Mode:
-    # etf_list = ['QQQ', 'SPY', 'FDIS']
+    # etf_list = ['IYZ']
+    sorted_etf_list = sorted(etf_list)
+    print("Scanning {} ETFs: {}".format(len(sorted_etf_list), sorted_etf_list))
+
+    elapsed_time_start_sec = time.time()
 
     etf_data_list = []
-    for index, etf_name in enumerate(etf_list):
+    for index, etf_name in enumerate(sorted_etf_list):
         etf_data = EtfData()
-        print("{}/{}/%{} Processing {}".format(index+1, len(etf_list)-index-1, (index+1)/len(etf_list)*100 , etf_name))
+
+        elapsed_time_sample_sec = time.time()
+        elapsed_time_sec        = round(elapsed_time_sample_sec - elapsed_time_start_sec, 0)
+        average_sec_per_symbol  = round(elapsed_time_sec / (index+1),                     2)
+        print("#/left/% : {}/{}/{:3.3f}, elapsed/left/avg : {:5}/{:5}/{:4} [sec], Processing {}".format(index+1, len(sorted_etf_list)-index-1, (index+1)/len(sorted_etf_list)*100, elapsed_time_sec, int(round(average_sec_per_symbol*(len(sorted_etf_list)-index-1),0)), average_sec_per_symbol, etf_name))
         symbol = yf.Ticker(etf_name)
         info   = symbol.get_info()
         etf_data.symbol     = etf_name
