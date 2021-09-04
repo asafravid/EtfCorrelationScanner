@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.3 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.4 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -116,8 +116,38 @@ def scan_etfs():
         writer = csv.writer(engine)
         writer.writerows(rows)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    scan_etfs()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+def post_process_etfs(csv_db_path, csv_db_filename):
+    filtered_db_rows_data = []
+    title_row = None
+    with open(csv_db_path+csv_db_filename, mode='r', newline='') as engine:
+        reader = csv.reader(engine, delimiter=',')
+        row_index = 0
+        for row in reader:
+            if row_index == 0:  # first row is the title
+                title_row = row
+                row_index += 1
+                continue
+            else:
+                if len(row) < len(title_row):
+                    row_index += 1
+                    continue
+                filtered_db_rows_data.append(row)
+                row_index += 1
+
+    filtered_db_rows_data.insert(0, title_row)
+    filtered_csv_db_filename = csv_db_path+'filtered_'+csv_db_filename
+
+
+    with open(filtered_csv_db_filename, mode='w', newline='') as engine:
+        writer = csv.writer(engine)
+        writer.writerows(filtered_db_rows_data)
+
+
+
+if __name__ == '__main__':
+    # scan_etfs()
+    post_process_etfs('Results/', '20210904-113930_etfs_db.csv')
+    
+
+

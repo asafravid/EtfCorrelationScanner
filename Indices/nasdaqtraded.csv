@@ -714,7 +714,9 @@ Y|ASMB|Assembly Biosciences, Inc. - Common Stock|Q|Q|N|100|N|N||ASMB|N
 Y|ASML|ASML Holding N.V. - New York Registry Shares|Q|Q|N|100|N|N||ASML|N
 Y|ASND|Ascendis Pharma A/S - American Depositary Shares|Q|Q|N|100|N|N||ASND|N
 Y|ASO|Academy Sports and Outdoors, Inc. - Common Stock|Q|Q|N|100|N|N||ASO|N
+Y|ASPA|Abri SPAC I, Inc. - Common Stock|Q|S|N|100|N|N||ASPA|N
 Y|ASPAU|Abri SPAC I, Inc. - Unit|Q|S|N|100|N|N||ASPAU|N
+Y|ASPAW|Abri SPAC I, Inc. - Warrant|Q|S|N|100|N|N||ASPAW|N
 Y|ASPC|Alpha Capital Acquisition Company - One Class A Ordinary Share|Q|S|N|100|N|N||ASPC|N
 Y|ASPCU|Alpha Capital Acquisition Company - Unit|Q|S|N|100|N|N||ASPCU|N
 Y|ASPCW|Alpha Capital Acquisition Company - Warrant|Q|S|N|100|N|N||ASPCW|N
@@ -1797,9 +1799,6 @@ Y|CHAA|Catcha Investment Corp. Class A Ordinary Shares|N| |N|100|N||CHAA|CHAA|N
 Y|CHAA.U|Catcha Investment Corp. Units, each consisting of one Class A ordinary share, and one-third of one redeemable warrant|N| |N|100|N||CHAA.U|CHAA=|N
 Y|CHAA.W|Catcha Investment Corp. Redeemable Warrants, each whole warrant exercisable for one Class A ordinary share at an exercise price of $11.50|N| |N|100|N||CHAA.WS|CHAA+|N
 Y|CHAD|Direxion Daily CSI 300 China A Shares Bear 1X Shares|P| |Y|100|N||CHAD|CHAD|N
-Y|CHAQ|Chardan Healthcare Acquisition 2 Corp. Common Stock|A| |N|100|N||CHAQ|CHAQ|N
-Y|CHAQ.U|Chardan Healthcare Acquisition 2 Corp. Units, each consisting of one share of Common Stock, and one Warrant entitling the holder to purchase one-half of a share of Common Stock|A| |N|100|N||CHAQ.U|CHAQ=|N
-Y|CHAQ.W|Chardan Healthcare Acquisition 2 Corp. Warrants, entitling the holder thereof to purchase one-half (1/2) of a share of common stock at a price of $11.50 per whole share|A| |N|100|N||CHAQ.WS|CHAQ+|N
 Y|CHAU|Direxion Daily CSI 300 China A Share Bull 2X Shares|P| |Y|100|N||CHAU|CHAU|N
 Y|CHB|Global X China Biotech Innovation ETF|Q|G|Y|100|N|N||CHB|N
 Y|CHCI|Comstock Holding Companies, Inc. - Class A Common Stock|Q|S|N|100|N|N||CHCI|N
@@ -1868,7 +1867,7 @@ Y|CIA|Citizens, Inc. Class A Common Stock ($1.00 Par)|N| |N|100|N||CIA|CIA|N
 Y|CIB|BanColombia S.A. Common Stock|N| |N|100|N||CIB|CIB|N
 Y|CIBR|First Trust NASDAQ Cybersecurity ETF|Q|G|Y|100|N|N||CIBR|N
 Y|CID|VictoryShares International High Div Volatility Wtd ETF|Q|G|Y|100|N|N||CID|N
-Y|CIDM|Cinedigm Corp - Class A Common Stock|Q|G|N|100|N|N||CIDM|N
+Y|CIDM|Cinedigm Corp - Class A Common Stock|Q|G|N|100|N|E||CIDM|N
 Y|CIEN|Ciena Corporation Common Stock|N| |N|100|N||CIEN|CIEN|N
 Y|CIF|MFS Intermediate High Income Fund Common Stock|N| |N|100|N||CIF|CIF|N
 Y|CIFR|Cipher Mining Inc. - Common Stock|Q|Q|N|100|N|N||CIFR|N
@@ -2840,6 +2839,7 @@ Y|DVOL|First Trust Dorsey Wright Momentum & Low Volatility ETF|Q|G|Y|100|N|N||DV
 Y|DVY|iShares Select Dividend ETF|Q|G|Y|100|N|N||DVY|N
 Y|DVYA|iShares Asia / Pacific Dividend 30 Index Fund Exchange Traded Fund|P| |Y|100|N||DVYA|DVYA|N
 Y|DVYE|iShares Emerging Markets Dividend Index Fund Exchange Traded Fund|P| |Y|100|N||DVYE|DVYE|N
+Y|DWACU|Digital World Acquisition Corp. - Units|Q|G|N|100|N|N||DWACU|N
 Y|DWAS|Invesco DWA SmallCap Momentum ETF|Q|G|Y|100|N|N||DWAS|N
 Y|DWAT|Arrow DWA Tactical: Macro ETF|Q|G|Y|100|N|N||DWAT|N
 Y|DWAW|AdvisorShares Dorsey Wright FSM All Cap World ETF|Q|G|Y|100|N|N||DWAW|N
@@ -4240,6 +4240,7 @@ Y|GILD|Gilead Sciences, Inc. - Common Stock|Q|Q|N|100|N|N||GILD|N
 Y|GILT|Gilat Satellite Networks Ltd. - Ordinary Shares|Q|Q|N|100|N|N||GILT|N
 Y|GIM|Templeton Global Income Fund, Inc. Common Stock|N| |N|100|N||GIM|GIM|N
 Y|GINN|Goldman Sachs Innovate Equity ETF|P| |Y|100|N||GINN|GINN|N
+Y|GIPRU|Generation Income Properties Inc - Unit|Q|S|N|100|N|N||GIPRU|N
 Y|GIS|General Mills, Inc. Common Stock|N| |N|100|N||GIS|GIS|N
 Y|GIW|GigInternational1, Inc. - Common Stock|Q|S|N|100|N|N||GIW|N
 Y|GIWWU|GigInternational1, Inc. - Units|Q|S|N|100|N|N||GIWWU|N
@@ -4354,9 +4355,6 @@ Y|GNLN|Greenlane Holdings, Inc. - Class A Common Stock|Q|G|N|100|N|N||GNLN|N
 Y|GNMA|iShares GNMA Bond ETF|Q|G|Y|100|N|N||GNMA|N
 Y|GNOG|Golden Nugget Online Gaming, Inc. - Class A Common Stock|Q|G|N|100|N|N||GNOG|N
 Y|GNOM|Global X Genomics & Biotechnology ETF|Q|G|Y|100|N|N||GNOM|N
-Y|GNPK|Genesis Park Acquisition Corp. Class A Ordinary Shares|N| |N|100|N||GNPK|GNPK|N
-Y|GNPK.U|Genesis Park Acquisition Corp. Units, each consisting of one Class A ordinary share, and one-half of one redeemable warrant|N| |N|100|N||GNPK.U|GNPK=|N
-Y|GNPK.W|Genesis Park Acquisition Corp. Redeemable Warrants, each whole warrant exercisable for one Class A ordinary share at an exercise price of $11.50 per share|N| |N|100|N||GNPK.WS|GNPK+|N
 Y|GNPX|Genprex, Inc. - Common Stock|Q|S|N|100|N|N||GNPX|N
 Y|GNR|SPDR S&P Global Natural Resources ETF|P| |Y|100|N||GNR|GNR|N
 Y|GNRC|Generac Holdlings Inc. Common Stock|N| |N|100|N||GNRC|GNRC|N
@@ -5191,7 +5189,7 @@ Y|IMAQR|International Media Acquisition Corp. - Rights|Q|S|N|100|N|N||IMAQR|N
 Y|IMAQU|International Media Acquisition Corp. - Unit|Q|S|N|100|N|N||IMAQU|N
 Y|IMAQW|International Media Acquisition Corp. - Warrants|Q|S|N|100|N|N||IMAQW|N
 Y|IMAX|Imax Corporation Common Stock|N| |N|100|N||IMAX|IMAX|N
-Y|IMBI|iMedia Brands, Inc. - Class A Common Stock|Q|S|N|100|N|N||IMBI|N
+Y|IMBI|iMedia Brands, Inc. - Class A Common Stock|Q|G|N|100|N|N||IMBI|N
 Y|IMCB|iShares Morningstar Mid-Cap ETF|P| |Y|100|N||IMCB|IMCB|N
 Y|IMCC|IM Cannabis Corp. - Common Shares|Q|S|N|100|N|N||IMCC|N
 Y|IMCG|iShares Morningstar Mid-Cap Growth ETF|P| |Y|100|N||IMCG|IMCG|N
@@ -5511,7 +5509,9 @@ Y|JAN|JanOne Inc. - Common Stock|Q|S|N|100|N|N||JAN|N
 Y|JANX|Janux Therapeutics, Inc. - Common Stock|Q|G|N|100|N|N||JANX|N
 Y|JANZ|TrueShares Structured Outcome (January) ETF|Z| |Y|100|N||JANZ|JANZ|N
 Y|JAQCU|Jupiter Acquisition Corporation - Units|Q|S|N|100|N|N||JAQCU|N
+Y|JATT|JATT Acquisition Corp Class A Ordinary Shares|N| |N|100|N||JATT|JATT|N
 Y|JATT.U|JATT Acquisition Corp Units, each consisting of one Class A ordinary share, and one-half of one redeemable warrant|N| |N|100|N||JATT.U|JATT=|N
+Y|JATT.W|JATT Acquisition Corp Warrants|N| |N|100|N||JATT.WS|JATT+|N
 Y|JAX|J. Alexander's Holdings, Inc. Common Stock|N| |N|100|N||JAX|JAX|N
 Y|JAZZ|Jazz Pharmaceuticals plc - Ordinary Shares|Q|Q|N|100|N|N||JAZZ|N
 Y|JBGS|JBG SMITH Properties Common Shares |N| |N|100|N||JBGS|JBGS|N
@@ -7487,6 +7487,7 @@ Y|OXSQ|Oxford Square Capital Corp. - Closed End Fund|Q|Q|N|100|N|N||OXSQ|N
 Y|OXSQG|Oxford Square Capital Corp. - 5.50% Notes due 2028|Q|Q|N|100|N|N||OXSQG|N
 Y|OXSQL|Oxford Square Capital Corp. - 6.50% Notes due 2024|Q|Q|N|100|N|N||OXSQL|N
 Y|OXSQZ|Oxford Square Capital Corp. - 6.25% Notes due 2026|Q|Q|N|100|N|N||OXSQZ|N
+Y|OXUSU|Oxus Acquisition Corp. - Unit|Q|S|N|100|N|N||OXUSU|N
 Y|OXY|Occidental Petroleum Corporation Common Stock|N| |N|100|N||OXY|OXY|N
 Y|OXY.W|Occidental Petroleum Corporation Warrants |N| |N|100|N||OXY.WS|OXY+|N
 Y|OYST|Oyster Point Pharma, Inc. - common stock|Q|Q|N|100|N|N||OYST|N
@@ -8343,6 +8344,8 @@ Y|RCLFW|Rosecliff Acquisition Corp I - Warrants|Q|S|N|100|N|N||RCLFW|N
 Y|RCM|R1 RCM Inc. - Common Stock|Q|Q|N|100|N|N||RCM|N
 Y|RCMT|RCM Technologies, Inc. - Common Stock|Q|G|N|100|N|N||RCMT|N
 Y|RCON|Recon Technology, Ltd. - Class A Ordinary Shares|Q|S|N|100|N|N||RCON|N
+Y|RCOR|Renovacor, Inc. Common Stock|A| |N|100|N||RCOR|RCOR|N
+Y|RCOR.W|Renovacor, Inc. Warrants|A| |N|100|N||RCOR.WS|RCOR+|N
 Y|RCRT|Recruiter.com Group, Inc. - Common Stock|Q|S|N|100|N|N||RCRT|N
 Y|RCRTW|Recruiter.com Group, Inc. - Warrant|Q|S|N|100|N|N||RCRTW|N
 Y|RCS|PIMCO Strategic Income Fund, Inc.|N| |N|100|N||RCS|RCS|N
@@ -8362,6 +8365,8 @@ Y|RDS.B|Royal Dutch Shell PLC Royal Dutch Shell PLC American Depositary Shares (
 Y|RDUS|Radius Health, Inc. - Common Stock|Q|G|N|100|N|N||RDUS|N
 Y|RDVT|Red Violet, Inc. - Common Stock |Q|S|N|100|N|N||RDVT|N
 Y|RDVY|First Trust Rising Dividend Achievers ETF|Q|G|Y|100|N|N||RDVY|N
+Y|RDW|Redwire Corporation Common Stock|N| |N|100|N||RDW|RDW|N
+Y|RDW.W|Redwire Corporation Redeemable Warrants|N| |N|100|N||RDW.WS|RDW+|N
 Y|RDWR|Radware Ltd. - Ordinary Shares|Q|Q|N|100|N|N||RDWR|N
 Y|RDY|Dr. Reddy's Laboratories Ltd Common Stock|N| |N|100|N||RDY|RDY|N
 Y|RE|Everest Re Group, Ltd. Common Stock|N| |N|100|N||RE|RE|N
@@ -11082,4 +11087,4 @@ Y|ZY|Zymergen Inc. - Common Stock|Q|Q|N|100|N|N||ZY|N
 Y|ZYME|Zymeworks Inc. Common Shares|N| |N|100|N||ZYME|ZYME|N
 Y|ZYNE|Zynerba Pharmaceuticals, Inc. - Common Stock|Q|G|N|100|N|N||ZYNE|N
 Y|ZYXI|Zynex, Inc. - Common Stock|Q|Q|N|100|N|N||ZYXI|N
-File Creation Time: 0902202114:02|||||
+File Creation Time: 0903202121:32|||||
