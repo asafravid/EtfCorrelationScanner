@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.5 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.7 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -25,6 +25,7 @@ import time
 import urllib.request as request
 import yfinance       as yf
 import csv
+import os
 
 from contextlib import closing
 
@@ -73,7 +74,8 @@ def scan_etfs():
                         continue
 
     # Debug Mode:
-    # etf_list = ['IYZ']
+    etf_list = ['QQQ', 'SPY', 'FDIS']
+
     sorted_etf_list = sorted(list(set(etf_list)))
     print("Scanning {} ETFs: {}".format(len(sorted_etf_list), sorted_etf_list))
 
@@ -110,19 +112,21 @@ def scan_etfs():
         rows.append(row)
 
     filename = 'etfs_db.csv'
-    date_and_time_result_db_filename_and_path = time.strftime("Results/%Y%m%d-%H%M%S_{}".format(filename))
+    results_date_and_time_path  = time.strftime("Results/%Y%m%d-%H%M%S/")
+    result_db_filename_and_path = results_date_and_time_path + ("{}".format(filename))
+    os.makedirs(os.path.dirname(results_date_and_time_path), exist_ok=True)
 
-    with open(date_and_time_result_db_filename_and_path, mode='w', newline='') as engine:
+    with open(result_db_filename_and_path, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(rows)
 
 
-def post_process_etfs(csv_db_path, csv_db_filename):
+def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     filtered_db_rows_data = []
     symbol_appearances = {}
     symbol_appearances_with_weigths = {}
     title_row = None
-    with open(csv_db_path+csv_db_filename, mode='r', newline='') as engine:
+    with open(csv_db_path+date_time_path+csv_db_filename, mode='r', newline='') as engine:
         reader = csv.reader(engine, delimiter=',')
         row_index = 0
         for row in reader:
@@ -156,14 +160,24 @@ def post_process_etfs(csv_db_path, csv_db_filename):
                 filtered_db_rows_data.append(row)
                 row_index += 1
 
+    sorted_filtered_db_rows_data = sorted(filtered_db_rows_data, key=lambda row: row[len(title_row)], reverse=True)  # Sort by Known Weights
+
     title_row.append('SumWeightsKnown')
     title_row.append('SumWeightsUnknown')
-    filtered_db_rows_data.insert(0, title_row)
-    filtered_csv_db_filename = csv_db_path+csv_db_filename.replace('.csv','_filtered_weighted.csv')
+    filtered_db_rows_data.insert(       0, title_row)
+    sorted_filtered_db_rows_data.insert(0, title_row)
 
+    os.makedirs(os.path.dirname(csv_db_path+date_time_path), exist_ok=True)
+
+    filtered_csv_db_filename = csv_db_path+date_time_path+csv_db_filename.replace('.csv','_filtered_weighted.csv')
     with open(filtered_csv_db_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(filtered_db_rows_data)
+
+    sorted_by_known_weights_filtered_csv_db_filename = csv_db_path+date_time_path+csv_db_filename.replace('.csv','_filtered_weighted_sorted_by_known.csv')
+    with open(sorted_by_known_weights_filtered_csv_db_filename, mode='w', newline='') as engine:
+        writer = csv.writer(engine)
+        writer.writerows(sorted_filtered_db_rows_data)
 
     # Appearances_db:
     title_row = ['Symbol', 'NumAppearances']
@@ -172,7 +186,7 @@ def post_process_etfs(csv_db_path, csv_db_filename):
         rows.append([item,symbol_appearances[item]])
     rows.insert(0,title_row)
 
-    appearances_csv_db_filename = csv_db_path +csv_db_filename.replace('.csv','_appearances.csv')
+    appearances_csv_db_filename = csv_db_path+date_time_path+csv_db_filename.replace('.csv','_appearances.csv')
     with open(appearances_csv_db_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(rows)
@@ -184,16 +198,19 @@ def post_process_etfs(csv_db_path, csv_db_filename):
         rows.append([item,symbol_appearances_with_weigths[item]])
     rows.insert(0,title_row)
 
-    appearances_csv_db_filename = csv_db_path +csv_db_filename.replace('.csv','_appearances_with_weights.csv')
+    appearances_csv_db_filename = csv_db_path+date_time_path+csv_db_filename.replace('.csv','_appearances_with_weights.csv')
     with open(appearances_csv_db_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(rows)
 
 
+SCAN_ETFS         = False
+POST_PROCESS_ETFS = True
+POST_PROCESS_PATH = '20210904-233354'
 
 if __name__ == '__main__':
-    # scan_etfs()
-    post_process_etfs('Results/', '20210904-113930_etfs_db.csv')
+    if SCAN_ETFS:         scan_etfs()
+    if POST_PROCESS_ETFS: post_process_etfs('Results/', POST_PROCESS_PATH+'/', 'etfs_db.csv')
     
 
 
