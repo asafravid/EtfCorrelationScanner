@@ -119,6 +119,7 @@ def scan_etfs():
 
 def post_process_etfs(csv_db_path, csv_db_filename):
     filtered_db_rows_data = []
+    symbol_appearances = {}
     title_row = None
     with open(csv_db_path+csv_db_filename, mode='r', newline='') as engine:
         reader = csv.reader(engine, delimiter=',')
@@ -140,6 +141,10 @@ def post_process_etfs(csv_db_path, csv_db_filename):
                         sum_weights_unknown += float(row[weight_index])
                     else:
                         sum_weights_known   += float(row[weight_index])
+                        if row[weight_index-1] in symbol_appearances:
+                            symbol_appearances[row[weight_index-1]] += 1
+                        else:
+                            symbol_appearances[row[weight_index-1]]  = 1
 
                 row.append(sum_weights_known)
                 row.append(sum_weights_unknown)
@@ -149,11 +154,23 @@ def post_process_etfs(csv_db_path, csv_db_filename):
     title_row.append('SumWeightsKnown')
     title_row.append('SumWeightsUnknown')
     filtered_db_rows_data.insert(0, title_row)
-    filtered_csv_db_filename = csv_db_path+'filtered_weighted_'+csv_db_filename
+    filtered_csv_db_filename = csv_db_path+csv_db_filename.replace('.csv','_filtered_weighted.csv')
 
     with open(filtered_csv_db_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(filtered_db_rows_data)
+
+    # Appearances_db:
+    title_row = ['Symbol', 'NumAppearances']
+    rows      = []
+    for item in symbol_appearances:
+        rows.append([item,symbol_appearances[item]])
+    rows.insert(0,title_row)
+
+    appearances_csv_db_filename = csv_db_path +csv_db_filename.replace('.csv','_appearances.csv')
+    with open(appearances_csv_db_filename, mode='w', newline='') as engine:
+        writer = csv.writer(engine)
+        writer.writerows(rows)
 
 
 
