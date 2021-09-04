@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.7 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.8 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -74,7 +74,7 @@ def scan_etfs():
                         continue
 
     # Debug Mode:
-    etf_list = ['QQQ', 'SPY', 'FDIS']
+    if CUSTOM_ETF_LIST != None: etf_list = CUSTOM_ETF_LIST
 
     sorted_etf_list = sorted(list(set(etf_list)))
     print("Scanning {} ETFs: {}".format(len(sorted_etf_list), sorted_etf_list))
@@ -204,9 +204,10 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
         writer.writerows(rows)
 
 
-SCAN_ETFS         = False
-POST_PROCESS_ETFS = True
+SCAN_ETFS         = True
+POST_PROCESS_ETFS = False
 POST_PROCESS_PATH = '20210904-233354'
+CUSTOM_ETF_LIST   = None  # ['QQQ', 'SPY', 'FDIS']
 
 if __name__ == '__main__':
     if SCAN_ETFS:         scan_etfs()
