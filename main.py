@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.4 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.5 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -120,6 +120,7 @@ def scan_etfs():
 def post_process_etfs(csv_db_path, csv_db_filename):
     filtered_db_rows_data = []
     symbol_appearances = {}
+    symbol_appearances_with_weigths = {}
     title_row = None
     with open(csv_db_path+csv_db_filename, mode='r', newline='') as engine:
         reader = csv.reader(engine, delimiter=',')
@@ -145,6 +146,10 @@ def post_process_etfs(csv_db_path, csv_db_filename):
                             symbol_appearances[row[weight_index-1]] += 1
                         else:
                             symbol_appearances[row[weight_index-1]]  = 1
+                        if row[weight_index-1] in symbol_appearances_with_weigths:
+                            symbol_appearances_with_weigths[row[weight_index-1]] += float(row[weight_index])
+                        else:
+                            symbol_appearances_with_weigths[row[weight_index-1]]  = float(row[weight_index])
 
                 row.append(sum_weights_known)
                 row.append(sum_weights_unknown)
@@ -168,6 +173,18 @@ def post_process_etfs(csv_db_path, csv_db_filename):
     rows.insert(0,title_row)
 
     appearances_csv_db_filename = csv_db_path +csv_db_filename.replace('.csv','_appearances.csv')
+    with open(appearances_csv_db_filename, mode='w', newline='') as engine:
+        writer = csv.writer(engine)
+        writer.writerows(rows)
+
+    # Appearances_db with weights:
+    title_row = ['Symbol', 'SumWeights']
+    rows      = []
+    for item in symbol_appearances_with_weigths:
+        rows.append([item,symbol_appearances_with_weigths[item]])
+    rows.insert(0,title_row)
+
+    appearances_csv_db_filename = csv_db_path +csv_db_filename.replace('.csv','_appearances_with_weights.csv')
     with open(appearances_csv_db_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(rows)
