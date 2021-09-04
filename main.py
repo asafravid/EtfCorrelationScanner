@@ -132,11 +132,19 @@ def post_process_etfs(csv_db_path, csv_db_filename):
                 if len(row) < len(title_row):
                     row_index += 1
                     continue
+                if row[2] == '' or
+                sum_weights = float(row[3])+float(row[5])+float(row[7])+float(row[9])+float(row[11])+float(row[13])+float(row[15])+float(row[17])+float(row[19])+float(row[21])
+                # TODO: ASAFR: Sum the known Symbols weights (non '') and the unknown(=='') symbol weights
+                #if sum_weights > 2:
+                #    row_index += 1
+                #    continue
+                row.append(sum_weights)
                 filtered_db_rows_data.append(row)
                 row_index += 1
 
+    title_row.append('SumWeights')
     filtered_db_rows_data.insert(0, title_row)
-    filtered_csv_db_filename = csv_db_path+'filtered_'+csv_db_filename
+    filtered_csv_db_filename = csv_db_path+'filtered_weighted_'+csv_db_filename
 
 
     with open(filtered_csv_db_filename, mode='w', newline='') as engine:
