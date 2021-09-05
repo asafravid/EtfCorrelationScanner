@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.8 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.9 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -184,29 +184,31 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     rows      = []
     for item in symbol_appearances:
         rows.append([item,symbol_appearances[item]])
-    rows.insert(0,title_row)
+    sorted_rows = sorted(rows, key=lambda row: row[1], reverse=True)
+    sorted_rows.insert(0,title_row)
 
     appearances_csv_db_filename = csv_db_path+date_time_path+csv_db_filename.replace('.csv','_appearances.csv')
     with open(appearances_csv_db_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
-        writer.writerows(rows)
+        writer.writerows(sorted_rows)
 
     # Appearances_db with weights:
     title_row = ['Symbol', 'SumWeights']
     rows      = []
     for item in symbol_appearances_with_weigths:
         rows.append([item,symbol_appearances_with_weigths[item]])
-    rows.insert(0,title_row)
+    sorted_rows = sorted(rows, key=lambda row: row[1], reverse=True)
+    sorted_rows.insert(0,title_row)
 
     appearances_csv_db_filename = csv_db_path+date_time_path+csv_db_filename.replace('.csv','_appearances_with_weights.csv')
     with open(appearances_csv_db_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
-        writer.writerows(rows)
+        writer.writerows(sorted_rows)
 
 
-SCAN_ETFS         = True
-POST_PROCESS_ETFS = False
-POST_PROCESS_PATH = '20210904-233354'
+SCAN_ETFS         = False
+POST_PROCESS_ETFS = True
+POST_PROCESS_PATH = '20210905-044929'
 CUSTOM_ETF_LIST   = None  # ['QQQ', 'SPY', 'FDIS']
 
 if __name__ == '__main__':
