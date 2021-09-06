@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.10 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.11 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -30,11 +30,13 @@ import pdf_generator
 
 from contextlib import closing
 
+
 class EtfData:
     symbol:            str   = 'None'
     short_name:        str   = 'None'
     sector_weightings: dict  = {}
     holdings:          dict  = {}
+
 
 g_title_row     = ['Symbol', 'Name', 'Stock0', 'Weight0', 'Stock1', 'Weight1', 'Stock2', 'Weight2', 'Stock3', 'Weight3', 'Stock4', 'Weight4', 'Stock5', 'Weight5', 'Stock6', 'Weight6', 'Stock7', 'Weight7', 'Stock8', 'Weight8', 'Stock9', 'Weight9']
 g_stock0_index  = g_title_row.index('Stock0')
@@ -53,7 +55,6 @@ def pad_row_if_required(row):
             row.append(0)
 
 
-
 # All nasdaq and others: ftp://ftp.nasdaqtrader.com/symboldirectory/ -> Download automatically
 # Legend: http://www.nasdaqtrader.com/trader.aspx?id=symboldirdefs
 # ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt
@@ -69,7 +70,7 @@ def download_ftp_files():
                 shutil.copyfileobj(read_file, file_write)
 
 
-def extract_etf_list():
+def extract_sorted_etf_list():
     etf_list = []
     for index, filename in enumerate(g_nasdaq_filenames_list):
         with open(filename, mode='r', newline='') as engine:
@@ -85,7 +86,7 @@ def extract_etf_list():
                     if 'File Creation Time' in row[0]:
                         continue
                     if etf_column >= 0 and row[etf_column] == 'Y':
-                        etf_list.append(row[ticker_column_list[index]])
+                        etf_list.append(row[g_ticker_column_list[index]])
                         continue
     sorted_etf_list = sorted(list(set(etf_list)))
     return sorted_etf_list
@@ -96,7 +97,7 @@ def scan_etfs():
         sorted_etf_list = CUSTOM_ETF_LIST
     else:
         download_ftp_files()
-        sorted_etf_list = extract_sorted_etf_list(nasdaq_filenames_list)
+        sorted_etf_list = extract_sorted_etf_list()
 
     print("Scanning {} ETFs: {}".format(len(sorted_etf_list), sorted_etf_list))
 
@@ -109,7 +110,7 @@ def scan_etfs():
         elapsed_time_sample_sec = time.time()
         elapsed_time_sec        = round(elapsed_time_sample_sec - elapsed_time_start_sec, 0)
         average_sec_per_symbol  = round(elapsed_time_sec / (index+1),                     2)
-        print("#/left/% : {}/{}/{:3.3f}, elapsed/left/avg : {:5}/{:5}/{:4} [sec], Processing {}".format(index+1, len(sorted_etf_list)-index-1, (index+1)/len(sorted_etf_list)*100, elapsed_time_sec, int(round(average_sec_per_symbol*(len(sorted_etf_list)-index-1),0)), average_sec_per_symbol, etf_name))
+        print("#/left/% : {}/{}/{:3.3f}, elapsed/left/avg : {:5}/{:5}/{:4} [sec], Processing {}".format(index+1, len(sorted_etf_list)-index-1, (index+1)/len(sorted_etf_list)*100, elapsed_time_sec, int(round(average_sec_per_symbol*(len(sorted_etf_list)-index-1), 0)), average_sec_per_symbol, etf_name))
         symbol = yf.Ticker(etf_name)
         info   = symbol.get_info()
         etf_data.symbol     = etf_name
@@ -175,9 +176,9 @@ def is_empty_row(row):
 def save_stats_db(stats_filename, title_row, stats, sort_by_row):
     rows = []
     for item in stats:
-        rows.append([item,stats[item]])
+        rows.append([item, stats[item]])
     sorted_rows = sorted(rows, key=lambda row: row[sort_by_row], reverse=True)
-    sorted_rows.insert(0,title_row)
+    sorted_rows.insert(0, title_row)
 
     with open(stats_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
@@ -221,8 +222,8 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
 
                 row_index += 1
 
-    db_rows_filtered_weighted_sorted               = sorted(db_rows_filtered_weighted,               key=lambda row: row[len(title_row)], reverse=True)  # Sort by Known Weights
-    db_rows_filtered_weighted_non_levereged_sorted = sorted(db_rows_filtered_weighted_non_levereged, key=lambda row: row[len(title_row)], reverse=True)  # Sort by Known Weights
+    db_rows_filtered_weighted_sorted               = sorted(db_rows_filtered_weighted,               key=lambda k: k[len(title_row)], reverse=True)  # Sort by Known Weights
+    db_rows_filtered_weighted_non_levereged_sorted = sorted(db_rows_filtered_weighted_non_levereged, key=lambda k: k[len(title_row)], reverse=True)  # Sort by Known Weights
 
     title_row.append('SumWeightsKnown')
     title_row.append('SumWeightsUnknown')
@@ -231,33 +232,30 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
 
     os.makedirs(os.path.dirname(csv_db_path+date_time_path), exist_ok=True)
 
-    csv_db_filename_filtered_weighted_sorted_by_sum_weights_known = csv_db_path+date_time_path+csv_db_filename.replace('.csv','_filtered_weighted_sorted_by_sum_weights_known.csv')
+    csv_db_filename_filtered_weighted_sorted_by_sum_weights_known = csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_filtered_weighted_sorted_by_sum_weights_known.csv')
     with open(csv_db_filename_filtered_weighted_sorted_by_sum_weights_known, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(db_rows_filtered_weighted_sorted)
 
-    csv_db_filename_filtered_weighted_non_leveraged_sorted_by_sum_weights_known = csv_db_path+date_time_path+csv_db_filename.replace('.csv','_filtered_weighted_non_leveraged_sorted_by_weights_known.csv')
+    csv_db_filename_filtered_weighted_non_leveraged_sorted_by_sum_weights_known = csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_filtered_weighted_non_leveraged_sorted_by_weights_known.csv')
     with open(csv_db_filename_filtered_weighted_non_leveraged_sorted_by_sum_weights_known, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(db_rows_filtered_weighted_non_levereged_sorted)
 
     # Appearances_db:
-    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv','_num_appearances.csv'),               ['Symbol', 'NumAppearances'], symbol_appearances,                            1)
+    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_appearances.csv'),               ['Symbol', 'NumAppearances'], symbol_appearances,                            1)
 
     # Appearances_db with weights:
-    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv','_sum_weights.csv'),                   ['Symbol', 'SumWeights'],     symbol_appearances_with_weigths,               1)
+    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   ['Symbol', 'SumWeights'],     symbol_appearances_with_weigths,               1)
 
     # pdf_generator.csv_to_pdf(sorted_by_known_weights_csv_db_filename, appearances_csv_db_filename, appearances_csv_db_filename_with_weights)
 
 
-SCAN_ETFS         = False
-POST_PROCESS_ETFS = True
+SCAN_ETFS         = True
+POST_PROCESS_ETFS = False
 POST_PROCESS_PATH = '20210906-201422'
 CUSTOM_ETF_LIST   = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 
 if __name__ == '__main__':
     if SCAN_ETFS:         scan_etfs()
     if POST_PROCESS_ETFS: post_process_etfs('Results/', POST_PROCESS_PATH+'/', 'etfs_db.csv')
-
-
-
