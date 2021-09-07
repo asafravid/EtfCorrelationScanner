@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.11 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.12 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -39,13 +39,16 @@ class EtfData:
 
 
 g_title_row     = ['Symbol', 'Name', 'Stock0', 'Weight0', 'Stock1', 'Weight1', 'Stock2', 'Weight2', 'Stock3', 'Weight3', 'Stock4', 'Weight4', 'Stock5', 'Weight5', 'Stock6', 'Weight6', 'Stock7', 'Weight7', 'Stock8', 'Weight8', 'Stock9', 'Weight9']
+g_symbol_index  = g_title_row.index('Symbol')
+g_name_index    = g_title_row.index('Name')
 g_stock0_index  = g_title_row.index('Stock0')
 g_weight0_index = g_title_row.index('Weight0')
 g_weight9_index = g_title_row.index('Weight9')
 
-g_ftp_url               = 'ftp://ftp.nasdaqtrader.com/SymbolDirectory/'
-g_nasdaq_filenames_list = ['Indices/nasdaqlisted.csv', 'Indices/otherlisted.csv', 'Indices/nasdaqtraded.csv']  # Checkout http://www.nasdaqtrader.com/trader.aspx?id=symboldirdefs for all symbol definitions (for instance - `$` in stock names, 5-letter stocks ending with `Y`)
-g_ticker_column_list    = [0,                          0,                         1]  # nasdaqtraded.csv - 1st column is Y/N (traded or not) - so take row[1] instead!!!
+g_ftp_url                                = 'ftp://ftp.nasdaqtrader.com/SymbolDirectory/'
+g_nasdaq_filenames_list                  = ['Indices/nasdaqlisted.csv', 'Indices/otherlisted.csv', 'Indices/nasdaqtraded.csv']  # Checkout http://www.nasdaqtrader.com/trader.aspx?id=symboldirdefs for all symbol definitions (for instance - `$` in stock names, 5-letter stocks ending with `Y`)
+g_nasdaq_filenames_symbol_column_list    = [0,                          0,                         1]  # nasdaqtraded.csv - 1st column is Y/N (traded or not) - so take row[1] instead!!!
+g_nasdaq_filenames_name_column_list      = [1,                          1,                         2]  # nasdaqtraded.csv - 1st column is Y/N (traded or not) - so take row[1] instead!!!
 
 
 def pad_row_if_required(row):
@@ -86,10 +89,27 @@ def extract_sorted_etf_list():
                     if 'File Creation Time' in row[0]:
                         continue
                     if etf_column >= 0 and row[etf_column] == 'Y':
-                        etf_list.append(row[g_ticker_column_list[index]])
+                        etf_list.append(row[g_nasdaq_filenames_name_column_list[index]])
                         continue
     sorted_etf_list = sorted(list(set(etf_list)))
     return sorted_etf_list
+
+
+def extract_symbol_lookup_dict():
+    symbol_lookup_dict = {}
+    for index, filename in enumerate(g_nasdaq_filenames_list):
+        with open(filename, mode='r', newline='') as engine:
+            reader = csv.reader(engine, delimiter='|')
+            row_index = 0
+            for row in reader:
+                if row_index == 0:
+                    row_index += 1
+                else:
+                    row_index += 1
+                    if 'File Creation Time' in row[0]:
+                        continue
+                    symbol_lookup_dict[row[g_nasdaq_filenames_symbol_column_list[index]]] = row[g_nasdaq_filenames_name_column_list[index]]
+    return symbol_lookup_dict
 
 
 def scan_etfs():
@@ -173,10 +193,10 @@ def is_empty_row(row):
     return not (len(row) >= g_weight0_index+1)
 
 
-def save_stats_db(stats_filename, title_row, stats, sort_by_row):
+def save_stats_db(stats_filename, title_row, stats, sort_by_row, symbol_names_lookup_dict):
     rows = []
     for item in stats:
-        rows.append([item, stats[item]])
+        rows.append([item, symbol_names_lookup_dict[item] if item in symbol_names_lookup_dict else 'Unknown', stats[item]])
     sorted_rows = sorted(rows, key=lambda row: row[sort_by_row], reverse=True)
     sorted_rows.insert(0, title_row)
 
@@ -190,6 +210,7 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     db_rows_filtered_weighted_non_levereged       = []  # non-empty rows with weight summary without leverage
     symbol_appearances                            = {}
     symbol_appearances_with_weigths               = {}
+    symbol_names_lookup                           = extract_symbol_lookup_dict()
     title_row                                     = None
 
     with open(csv_db_path+date_time_path+csv_db_filename, mode='r', newline='') as engine:
@@ -205,6 +226,7 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
                 row_index += 1
                 continue
             else:
+                symbol_names_lookup[row[g_symbol_index]] = row[g_name_index]
                 if is_empty_row(row):
                     row_index += 1
                     continue
@@ -243,17 +265,17 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
         writer.writerows(db_rows_filtered_weighted_non_levereged_sorted)
 
     # Appearances_db:
-    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_appearances.csv'),               ['Symbol', 'NumAppearances'], symbol_appearances,                            1)
+    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_appearances.csv'),               ['Symbol', 'Name', 'NumAppearances'], symbol_appearances,                            2, symbol_names_lookup)
 
     # Appearances_db with weights:
-    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   ['Symbol', 'SumWeights'],     symbol_appearances_with_weigths,               1)
+    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   ['Symbol', 'Name', 'SumWeights'],     symbol_appearances_with_weigths,               2, symbol_names_lookup)
 
     # pdf_generator.csv_to_pdf(sorted_by_known_weights_csv_db_filename, appearances_csv_db_filename, appearances_csv_db_filename_with_weights)
 
 
-SCAN_ETFS         = True
-POST_PROCESS_ETFS = False
-POST_PROCESS_PATH = '20210906-201422'
+SCAN_ETFS         = False
+POST_PROCESS_ETFS = True
+POST_PROCESS_PATH = '20210905-044929'
 CUSTOM_ETF_LIST   = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 
 if __name__ == '__main__':
