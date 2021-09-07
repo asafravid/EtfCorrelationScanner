@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.12 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.14 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -38,12 +38,22 @@ class EtfData:
     holdings:          dict  = {}
 
 
-g_title_row     = ['Symbol', 'Name', 'Stock0', 'Weight0', 'Stock1', 'Weight1', 'Stock2', 'Weight2', 'Stock3', 'Weight3', 'Stock4', 'Weight4', 'Stock5', 'Weight5', 'Stock6', 'Weight6', 'Stock7', 'Weight7', 'Stock8', 'Weight8', 'Stock9', 'Weight9']
-g_symbol_index  = g_title_row.index('Symbol')
-g_name_index    = g_title_row.index('Name')
-g_stock0_index  = g_title_row.index('Stock0')
-g_weight0_index = g_title_row.index('Weight0')
-g_weight9_index = g_title_row.index('Weight9')
+g_title_row               = ['EtfSymbol', 'EtfName', 'Holding0Symbol', 'Holding0Name', 'Holding0Weight', 'Holding1Symbol', 'Holding1Name', 'Holding1Weight', 'Holding2Symbol', 'Holding2Name', 'Holding2Weight', 'Holding3Symbol', 'Holding3Name', 'Holding3Weight', 'Holding4Symbol', 'Holding4Name', 'Holding4Weight', 'Holding5Symbol', 'Holding5Name', 'Holding5Weight', 'Holding6Symbol', 'Holding6Name', 'Holding6Weight', 'Holding7Symbol', 'Holding7Name', 'Holding7Weight', 'Holding8Symbol', 'Holding8Name', 'Holding8Weight', 'Holding9Symbol', 'Holding9Name', 'Holding9Weight']
+g_etf_symbol_index        = g_title_row.index('EtfSymbol')
+g_etf_name_index          = g_title_row.index('EtfName')
+
+g_max_holding_index       = 9  # 10 Top holdings supported/provided currently
+g_num_elements_in_holding = 3  # HoldingSymbolX, HoldingNameX, WeightX
+g_holding_symbol_subindex = 0
+g_holding_name_subindex   = 1
+g_holding_weight_subindex = 2
+
+
+def g_holding_get_start_index(index):
+    if index < 0 or g_max_holding_index < index:
+        return -1
+    return g_title_row.index('Holding0Symbol')+index*g_num_elements_in_holding
+
 
 g_ftp_url                                = 'ftp://ftp.nasdaqtrader.com/SymbolDirectory/'
 g_nasdaq_filenames_list                  = ['Indices/nasdaqlisted.csv', 'Indices/otherlisted.csv', 'Indices/nasdaqtraded.csv']  # Checkout http://www.nasdaqtrader.com/trader.aspx?id=symboldirdefs for all symbol definitions (for instance - `$` in stock names, 5-letter stocks ending with `Y`)
@@ -53,9 +63,10 @@ g_nasdaq_filenames_name_column_list      = [1,                          1,      
 
 def pad_row_if_required(row):
     if len(row) < len(g_title_row):
-        for index in range(len(row), len(g_title_row),2):
-            row.append('')
-            row.append(0)
+        for index in range(len(row), len(g_title_row), g_num_elements_in_holding):
+            row.append('')  # HoldingSymbol
+            row.append('')  # HoldingName
+            row.append(0)   # Weight
 
 
 # All nasdaq and others: ftp://ftp.nasdaqtrader.com/symboldirectory/ -> Download automatically
@@ -95,7 +106,8 @@ def extract_sorted_etf_list():
     return sorted_etf_list
 
 
-def extract_symbol_lookup_dict():
+def extract_symbol_lookup_dict(csv_db_path, date_time_path, csv_db_filename):
+    # 1st, take All possible symbols names from the Nasdaq Files:
     symbol_lookup_dict = {}
     for index, filename in enumerate(g_nasdaq_filenames_list):
         with open(filename, mode='r', newline='') as engine:
@@ -109,6 +121,23 @@ def extract_symbol_lookup_dict():
                     if 'File Creation Time' in row[0]:
                         continue
                     symbol_lookup_dict[row[g_nasdaq_filenames_symbol_column_list[index]]] = row[g_nasdaq_filenames_name_column_list[index]]
+
+    # Then, take ETFs and ETFs Holdings Symbols Names:
+    csv_db_filename = csv_db_path+date_time_path+csv_db_filename
+    with open(csv_db_filename, mode='r', newline='') as engine:
+        reader = csv.reader(engine, delimiter=',')
+        row_index = 0
+        for row in reader:
+            if row_index == 0:
+                row_index += 1  # Skip Title
+            else:
+                row_index += 1
+                if row[g_etf_symbol_index] not in symbol_lookup_dict:
+                    symbol_lookup_dict[row[g_etf_symbol_index]] = row[g_etf_name_index]
+                for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
+                    if row[symbol_index] not in symbol_lookup_dict:
+                        symbol_lookup_dict[row[symbol_index]] = row[symbol_index+g_holding_name_subindex]
+
     return symbol_lookup_dict
 
 
@@ -147,6 +176,7 @@ def scan_etfs():
         for key in etf_item.holdings:
             if 'symbol' in key and 'holdingPercent' in key:
                 row.append(key['symbol'])
+                row.append(key['holdingName'])
                 row.append(key['holdingPercent'])
             else:
                 continue
@@ -162,35 +192,35 @@ def scan_etfs():
         writer.writerows(rows)
 
 
-def update_appearances(row, symbol_appearances, symbol_appearances_with_weigths):
-    for weight_index in range(g_weight0_index, min(g_weight9_index + 1, len(row)), 2):
-        if row[weight_index - 1] != '':
-            if row[weight_index - 1] in symbol_appearances:
-                symbol_appearances[row[weight_index - 1]] += 1
+def update_appearances(row, symbol_appearances, symbol_appearances_with_weights):
+    for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
+        if row[symbol_index] != '':
+            if row[symbol_index] in symbol_appearances:
+                symbol_appearances[row[symbol_index]] += 1
             else:
-                symbol_appearances[row[weight_index - 1]]  = 1
+                symbol_appearances[row[symbol_index]]  = 1
 
-            if row[weight_index - 1] in symbol_appearances_with_weigths:
-                symbol_appearances_with_weigths[row[weight_index - 1]] += float(row[weight_index])
+            if row[symbol_index] in symbol_appearances_with_weights:
+                symbol_appearances_with_weights[row[symbol_index]] += float(row[symbol_index+g_holding_weight_subindex])
             else:
-                symbol_appearances_with_weigths[row[weight_index - 1]]  = float(row[weight_index])
+                symbol_appearances_with_weights[row[symbol_index]]  = float(row[symbol_index+g_holding_weight_subindex])
 
 
-def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weigths):
+def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights):
     sum_weights_known   = 0
     sum_weights_unknown = 0
-    for weight_index in range(g_weight0_index, min(g_weight9_index + 1, len(row)), 2):
-        if row[weight_index - 1] == '':
-            sum_weights_unknown += float(row[weight_index])
+    for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
+        if row[symbol_index] == '':
+            sum_weights_unknown += float(row[symbol_index+g_holding_weight_subindex])
         else:
-            sum_weights_known   += float(row[weight_index])
+            sum_weights_known   += float(row[symbol_index+g_holding_weight_subindex])
 
-    update_appearances(row, symbol_appearances, symbol_appearances_with_weigths)
+    update_appearances(row, symbol_appearances, symbol_appearances_with_weights)
     return [sum_weights_known, sum_weights_unknown]
 
 
 def is_empty_row(row):
-    return not (len(row) >= g_weight0_index+1)
+    return len(row) < g_holding_get_start_index(0)
 
 
 def save_stats_db(stats_filename, title_row, stats, sort_by_row, symbol_names_lookup_dict):
@@ -209,8 +239,8 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     db_rows_filtered_weighted                     = []  # non-empty rows with weight summary
     db_rows_filtered_weighted_non_levereged       = []  # non-empty rows with weight summary without leverage
     symbol_appearances                            = {}
-    symbol_appearances_with_weigths               = {}
-    symbol_names_lookup                           = extract_symbol_lookup_dict()
+    symbol_appearances_with_weights               = {}
+    symbol_names_lookup                           = extract_symbol_lookup_dict(csv_db_path, date_time_path, csv_db_filename)
     title_row                                     = None
 
     with open(csv_db_path+date_time_path+csv_db_filename, mode='r', newline='') as engine:
@@ -226,14 +256,14 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
                 row_index += 1
                 continue
             else:
-                symbol_names_lookup[row[g_symbol_index]] = row[g_name_index]
+                symbol_names_lookup[row[g_etf_symbol_index]] = row[g_etf_name_index]
                 if is_empty_row(row):
                     row_index += 1
                     continue
                 else:
                     pad_row_if_required(row)
 
-                [sum_weights_known, sum_weights_unknown] = calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weigths)
+                [sum_weights_known, sum_weights_unknown] = calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights)
 
                 row.append(sum_weights_known)
                 row.append(sum_weights_unknown)
@@ -268,15 +298,15 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_appearances.csv'),               ['Symbol', 'Name', 'NumAppearances'], symbol_appearances,                            2, symbol_names_lookup)
 
     # Appearances_db with weights:
-    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   ['Symbol', 'Name', 'SumWeights'],     symbol_appearances_with_weigths,               2, symbol_names_lookup)
+    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   ['Symbol', 'Name', 'SumWeights'],     symbol_appearances_with_weights,               2, symbol_names_lookup)
 
     # pdf_generator.csv_to_pdf(sorted_by_known_weights_csv_db_filename, appearances_csv_db_filename, appearances_csv_db_filename_with_weights)
 
 
 SCAN_ETFS         = False
 POST_PROCESS_ETFS = True
-POST_PROCESS_PATH = '20210905-044929'
-CUSTOM_ETF_LIST   = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
+POST_PROCESS_PATH = '20210907-154311'
+CUSTOM_ETF_LIST   = ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 
 if __name__ == '__main__':
     if SCAN_ETFS:         scan_etfs()
