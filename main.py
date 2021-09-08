@@ -38,6 +38,7 @@ POST_PROCESS_ETFS     = True
 POST_PROCESS_PATH_NEW = '20210907-215545_work'
 POST_PROCESS_PATH_REF = '20210907-215545_work'
 CUSTOM_ETF_LIST       = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
+NUM_REPORTED_ENTRIES  = 35
 # End   of Run Configuration ###########
 
 
@@ -364,7 +365,7 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     diff_num_appearances_table = add_diff_columns(num_appearances_table, num_appearances_table_ref, 2)
     diff_sum_weights_table     = add_diff_columns(sum_weights_table,     sum_weights_table_ref,     2)
 
-    pdf_generator.csv_to_pdf(diff_num_appearances_table, diff_sum_weights_table, csv_db_path+date_time_path, 14)
+    pdf_generator.csv_to_pdf(diff_num_appearances_table, diff_sum_weights_table, csv_db_path+date_time_path, NUM_REPORTED_ENTRIES)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.15 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.16 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -58,23 +58,22 @@ def csv_to_pdf(num_appearances_table, sum_weights_table, post_process_path_new, 
             names.append(row[1][0:28])
             appearances.append(int(row[2]))
         if row_index == 0:
-            row = ['Symbol', 'Name', '# Appearances', 'Diff Entry', 'Diff Value']
+            row = ['Symbol', 'Name', '#', 'Diff Entry', 'Diff #']
         for col_index, col in enumerate(row):
-            if   col_index == 0: w=16 # Symbol
-            elif col_index == 1: w=42 # Name
-            elif col_index == 2: w=14 # # Appearances
-            elif col_index == 3: w=28 # Diff Entry
-            elif col_index == 4: w=28 # Diff Value
+            if   col_index == 0: w=14 # Symbol
+            elif col_index == 1: w=56 # Name
+            elif col_index == 2: w=7 # # Appearances
+            elif col_index == 3: w=14 # Diff Entry
+            elif col_index == 4: w=14 # Diff Value
 
             pdf.set_text_color(0, 0, 200 if row_index == 0 else 0)  # blue for title and black otherwise
-            pdf.cell(w=w, h=4, txt=str(col), border=1, ln=0, align="C" if row_index == 0 else "L")
 
             if col_index >= 3 and row_index > 0:
                 if 'New' in str(row[col_index]): pdf.set_text_color(  0,   0, 200)  # blue
                 elif '-' in str(row[col_index]): pdf.set_text_color(200,   0,   0)  # red
                 elif '+' in str(row[col_index]): pdf.set_text_color(  0, 200,   0)  # green
                 else:                            pdf.set_text_color(  0,   0,   0)  # black
-                pdf.cell(w=w, h=4, txt=str(row[col_index]), border=1, ln=1, align="L")
+            pdf.cell(w=w, h=3, txt=str(col)[0:41], border=1, ln=0 if col_index < 4 else 1, align="C" if row_index == 0 else "L")
     pdf.cell(200, 4, txt='', ln=1, align="L")
     fig, ax = plt.subplots(figsize=(15, 10))
     y_pos = np.arange(len(names))
