@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.16 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.17 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -35,8 +35,8 @@ from contextlib import closing
 # Start of Run Configuration ###########
 SCAN_ETFS             = False
 POST_PROCESS_ETFS     = True
-POST_PROCESS_PATH_NEW = '20210907-215545_work'
-POST_PROCESS_PATH_REF = '20210907-215545_work'
+POST_PROCESS_PATH_NEW = '20210907-215545'
+POST_PROCESS_PATH_REF = '20210907-215545'
 CUSTOM_ETF_LIST       = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 NUM_REPORTED_ENTRIES  = 35
 # End   of Run Configuration ###########
@@ -204,6 +204,8 @@ def scan_etfs():
 
 
 def update_appearances(row, symbol_appearances, symbol_appearances_with_weights):
+    weight_symbols_to_skip = ['FGXXX', 'C Z1', 'C K1', 'C N1', 'S X1', 'S K1', 'W Z1', 'W K1', 'S N1', 'W N1', 'FGTXX', 'FTIXX', 'DAPXX']
+
     for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
         if row[symbol_index] != '':
             if row[symbol_index] in symbol_appearances:
@@ -211,6 +213,7 @@ def update_appearances(row, symbol_appearances, symbol_appearances_with_weights)
             else:
                 symbol_appearances[row[symbol_index]]  = 1
 
+            if row[symbol_index] in weight_symbols_to_skip: continue
             if row[symbol_index] in symbol_appearances_with_weights:
                 symbol_appearances_with_weights[row[symbol_index]] += float(row[symbol_index+g_holding_weight_subindex])
             else:
@@ -365,7 +368,8 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     diff_num_appearances_table = add_diff_columns(num_appearances_table, num_appearances_table_ref, 2)
     diff_sum_weights_table     = add_diff_columns(sum_weights_table,     sum_weights_table_ref,     2)
 
-    pdf_generator.csv_to_pdf(diff_num_appearances_table, diff_sum_weights_table, csv_db_path+date_time_path, NUM_REPORTED_ENTRIES)
+    pdf_generator.csv_to_pdf(diff_num_appearances_table, csv_db_path + date_time_path, NUM_REPORTED_ENTRIES, 'Appearances', '#')
+    pdf_generator.csv_to_pdf(diff_sum_weights_table,     csv_db_path + date_time_path, NUM_REPORTED_ENTRIES, 'Weight'     , 'Weight')
 
 
 if __name__ == '__main__':

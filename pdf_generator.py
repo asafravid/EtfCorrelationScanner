@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.16 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.17 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -30,14 +30,12 @@ import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 
 
-def csv_to_pdf(num_appearances_table, sum_weights_table, post_process_path_new, limit_num_rows):
-    title_for_figures = post_process_path_new.replace('/','') + ' ' + '# Appearances' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
+def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_name):
+    title_for_figures = post_process_path_new.replace('/','') + ' ' + report_title + ' ' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
 
-    # Read CSV file:
-    csv_rows = num_appearances_table
+    csv_rows = report_table
 
-    class MyFPDF(FPDF, HTMLMixin):
-        pass
+    class MyFPDF(FPDF, HTMLMixin): pass
 
     pdf = MyFPDF(format='letter')
     pdf.add_page()
@@ -58,15 +56,19 @@ def csv_to_pdf(num_appearances_table, sum_weights_table, post_process_path_new, 
             names.append(row[1][0:28])
             appearances.append(int(row[2]))
         if row_index == 0:
-            row = ['Symbol', 'Name', '#', 'Diff Entry', 'Diff #']
+            row = ['Symbol', 'Name', reported_column_name, 'Diff Entry', 'Diff '+reported_column_name]
         for col_index, col in enumerate(row):
             if   col_index == 0: w=14 # Symbol
             elif col_index == 1: w=56 # Name
-            elif col_index == 2: w=7 # # Appearances
+            elif col_index == 2: w=7  if reported_column_name == '#' else 21  # reported_column_name
             elif col_index == 3: w=14 # Diff Entry
-            elif col_index == 4: w=14 # Diff Value
+            elif col_index == 4: w=14 if reported_column_name == '#' else 21  # Diff Value
 
             pdf.set_text_color(0, 0, 200 if row_index == 0 else 0)  # blue for title and black otherwise
+
+            if (col_index == 2 or col_index == 4) and row_index > 0:
+                if reported_column_name == '#': col = int(col)
+                else:                           col = round(float(col), 3)
 
             if col_index >= 3 and row_index > 0:
                 if 'New' in str(row[col_index]): pdf.set_text_color(  0,   0, 200)  # blue
@@ -87,7 +89,7 @@ def csv_to_pdf(num_appearances_table, sum_weights_table, post_process_path_new, 
     ax.set_title(title_for_figures, color='blue')
 
     # plt.show()
-    plt.savefig(post_process_path_new+"num_appearances_fig.png")
+    plt.savefig(post_process_path_new+report_title+"_fig.png")
 
     tase_mode = False
     if tase_mode:
@@ -110,7 +112,7 @@ def csv_to_pdf(num_appearances_table, sum_weights_table, post_process_path_new, 
         pdf.write_html(text=html_open_source_description)
 
         pdf.cell(200, 4, txt='', ln=1, align="R")
-        html_telegram_channel_description     = "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+"num_appearances_fig.png")
+        html_telegram_channel_description     = "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig.png")
         
         pdf.write_html(text=html_telegram_channel_description)
     else:
@@ -118,9 +120,9 @@ def csv_to_pdf(num_appearances_table, sum_weights_table, post_process_path_new, 
              "<p>Updates, Discussions and Technical Support on Telegram: <A HREF=""https://t.me/StockScannerIL"">https://t.me/StockScannerIL</A></p>" \
              "<p>This Scanner is Open Source. fork() here: <A HREF=""http://bit.ly/EtfCorrelationScanner"">http://bit.ly/EtfCorrelationScanner</A></p>" \
              "<p>Disclaimer: Scan Results are not recommendations! They only represent a basis for Research and Analysis.</p>" \
-             "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+"num_appearances_fig.png")
+             "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig.png")
         pdf.write_html(text=html)
 
-    output_filename = post_process_path_new+' Results.pdf'
+    output_filename = post_process_path_new+report_title+'Results.pdf'
     pdf.output(output_filename, 'F')
 

@@ -1,17 +1,4 @@
 Symbol,Name,SumWeights
-FGXXX,First American Government Obligs X,2316.5663499612906
-C Z1,Corn Future Dec21,1238.268
-C K1,Corn Future May21,1220.5485
-C N1,Corn Future Jul21,1048.2614
-S X1,Soybean Future Nov21,605.8354
-S K1,Soybean Future May21,596.0204
-W Z1,Wheat Future(Cbt) Dec21,552.0509
-W K1,Wheat Future(Cbt) May21,542.4031
-S N1,Soybean Future Jul21,512.8191
-W N1,Wheat Future(Cbt) Jul21,469.43192
-FGTXX,Goldman Sachs FS Government Instl,215.7765900415
-FTIXX,Goldman Sachs FS Treasury Intms Instl,13.3227
-DAPXX,Dreyfus Government Secs Cash Mgmt Admin,13.066799939
 MSFT,Microsoft Corporation - Common Stock,11.768999969600003
 AAPL,Apple Inc. - Common Stock,11.75380000950001
 AMZN,"Amazon.com, Inc. - Common Stock",8.913199936999998
