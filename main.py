@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.15 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.16 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -20,6 +20,7 @@
 #
 #############################################################################
 
+
 import shutil
 import time
 import urllib.request as request
@@ -31,13 +32,13 @@ import pdf_generator
 from contextlib import closing
 
 
-######## Start of Run Configuration ###########
+# Start of Run Configuration ###########
 SCAN_ETFS             = False
 POST_PROCESS_ETFS     = True
 POST_PROCESS_PATH_NEW = '20210907-215545_work'
 POST_PROCESS_PATH_REF = '20210907-215545_work'
-CUSTOM_ETF_LIST       = None # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
-######## End of Run Configuration ###########
+CUSTOM_ETF_LIST       = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
+# End   of Run Configuration ###########
 
 
 class EtfData:
@@ -88,7 +89,7 @@ def download_ftp_files():
         filename_to_download = filename
         if '/' in filename_to_download:
             filename_to_download = filename[filename.index('/')+1:]
-        with closing(request.urlopen(g_ftp_url+filename_to_download.replace('.csv','.txt'))) as read_file:
+        with closing(request.urlopen(g_ftp_url+filename_to_download.replace('.csv', '.txt'))) as read_file:
             with open(filename, 'wb') as file_write:
                 shutil.copyfileobj(read_file, file_write)
 
@@ -256,15 +257,13 @@ def load_stats_db(db_filename):
     return read_rows
 
 
-
 def add_diff_columns(table_new, table_ref, value_index_in_row):
     table_with_diff_columns              = []
     symbol_ref_entry_and_pos_lookup_dict = {}
-
+    symbol_index                         = 0
     for row_index, row_data in enumerate(table_ref):
         if row_index == 0:
             symbol_index = row_data.index('Symbol')
-            continue
         else:
             symbol_ref_entry_and_pos_lookup_dict[row_data[symbol_index]] = [row_index, row_data[value_index_in_row]]  # Entry in table, num appearances
 
@@ -279,7 +278,7 @@ def add_diff_columns(table_new, table_ref, value_index_in_row):
             current_symbol = row_data[symbol_index]
             if current_symbol in symbol_ref_entry_and_pos_lookup_dict:
                 diff_entries = symbol_ref_entry_and_pos_lookup_dict[current_symbol][0] - row_index
-                diff_value   = row_data[value_index_in_row]                            - int(symbol_ref_entry_and_pos_lookup_dict[current_symbol][1])
+                diff_value   = row_data[value_index_in_row]                            - float(symbol_ref_entry_and_pos_lookup_dict[current_symbol][1])
             else:
                 diff_entries = 'New'
                 diff_value   = 'New'
