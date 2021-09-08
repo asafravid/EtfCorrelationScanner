@@ -30,15 +30,11 @@ import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 
 
-def csv_to_pdf(csv_filename, csv_db_path, data_time_str, title, limit_num_rows, diff_list, tase_mode, db_filename):
-    title_for_figures = data_time_str + ' ' + (title[::-1] if tase_mode else title) + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
+def csv_to_pdf(num_appearances_table, sum_weights_table, post_process_path_new, post_process_path_ref, limit_num_rows):
+    title_for_figures = post_process_path_new.replace('/','') + ' ' + '# Appearances' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
 
     # Read CSV file:
-    csv_rows = []
-    with open(csv_filename, mode='r', newline='') as engine:
-        reader = csv.reader(engine, delimiter=',')
-        for row in reader:
-            csv_rows.append(row)
+    csv_rows = num_appearances_table
 
     class MyFPDF(FPDF, HTMLMixin):
         pass
@@ -60,19 +56,17 @@ def csv_to_pdf(csv_filename, csv_db_path, data_time_str, title, limit_num_rows, 
         if row_index > limit_num_rows: break
         if row_index > 0:  # row 0 is title
             names.append(row[1][0:28])
-            appearances.append(float(row[5]))
+            appearances.append(float(row[2]))
         if row_index == 0:
-            if tase_mode: # overrwrite to hebrew
+            if False: # overrwrite to hebrew
                 row = ['סימבול'[::-1],'שם החברה'[::-1],'ענף'[::-1],'ערך'[::-1],'סגירה'[::-1],'ציון'[::-1]]
             else:
-                row = ['Symbol', 'Name', 'Sector', 'Value', 'Close', 'Grade']
+                row = ['Symbol', 'Name', '# Appearances']
         for col_index, col in enumerate(row):
             w_diff                =0
             if   col_index == 0: w=16 # Symbol
             elif col_index == 1: w=42 # Name
-            elif col_index == 2: w=33 # Sector
-            elif col_index == 3: w=40 # Value
-            elif col_index == 4: w=15 # Close
+            elif col_index == 2: w=14 # Appearances
             elif col_index == 5:
                 w                = 18 # Grade
                 w_diff           = 5  # Diff

@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.14 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.15 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -32,10 +32,11 @@ from contextlib import closing
 
 
 ######## Start of Run Configuration ###########
-SCAN_ETFS         = False
-POST_PROCESS_ETFS = True
-POST_PROCESS_PATH = '20210907-215545'
-CUSTOM_ETF_LIST   = None # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
+SCAN_ETFS             = False
+POST_PROCESS_ETFS     = True
+POST_PROCESS_PATH_NEW = '20210907-215545_work'
+POST_PROCESS_PATH_REF = '20210907-215545_work'
+CUSTOM_ETF_LIST       = None # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 ######## End of Run Configuration ###########
 
 
@@ -241,6 +242,51 @@ def save_stats_db(stats_filename, title_row, stats, sort_by_row, symbol_names_lo
     with open(stats_filename, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(sorted_rows)
+        
+    return sorted_rows
+
+
+def load_stats_db(db_filename):
+    read_rows = []
+    with open(db_filename, mode='r', newline='') as engine:
+        reader = csv.reader(engine, delimiter=',')
+        for row in reader:
+            read_rows.append(row)
+
+    return read_rows
+
+
+
+def add_diff_columns(table_new, table_ref, value_index_in_row):
+    table_with_diff_columns              = []
+    symbol_ref_entry_and_pos_lookup_dict = {}
+
+    for row_index, row_data in enumerate(table_ref):
+        if row_index == 0:
+            symbol_index = row_data.index('Symbol')
+            continue
+        else:
+            symbol_ref_entry_and_pos_lookup_dict[row_data[symbol_index]] = [row_index, row_data[value_index_in_row]]  # Entry in table, num appearances
+
+    for row_index, row_data in enumerate(table_new):
+        new_row = row_data
+        if row_index == 0:  # title
+            new_row.append('DiffEntries')  # Entries up/down vs ref
+            new_row.append('DiffValue'  )  # Value   up/down vs ref
+
+            symbol_index = new_row.index('Symbol')
+        else:
+            current_symbol = row_data[symbol_index]
+            if current_symbol in symbol_ref_entry_and_pos_lookup_dict:
+                diff_entries = symbol_ref_entry_and_pos_lookup_dict[current_symbol][0] - row_index
+                diff_value   = row_data[value_index_in_row]                            - int(symbol_ref_entry_and_pos_lookup_dict[current_symbol][1])
+            else:
+                diff_entries = 'New'
+                diff_value   = 'New'
+            new_row.append(diff_entries)  # Entries up/down vs ref
+            new_row.append(diff_value  )  # Value   up/down vs ref
+        table_with_diff_columns.append(new_row)
+    return table_with_diff_columns
 
 
 def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
@@ -303,14 +349,25 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
         writer.writerows(db_rows_filtered_weighted_non_levereged_sorted)
 
     # Appearances_db:
-    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_appearances.csv'),               ['Symbol', 'Name', 'NumAppearances'], symbol_appearances,                            2, symbol_names_lookup)
+    num_appearances_table = save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_appearances.csv'),               ['Symbol', 'Name', 'NumAppearances'], symbol_appearances,                            2, symbol_names_lookup)
 
     # Appearances_db with weights:
-    save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   ['Symbol', 'Name', 'SumWeights'],     symbol_appearances_with_weights,               2, symbol_names_lookup)
+    sum_weights_table     = save_stats_db(csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   ['Symbol', 'Name', 'SumWeights'],     symbol_appearances_with_weights,               2, symbol_names_lookup)
 
-    # pdf_generator.csv_to_pdf(sorted_by_known_weights_csv_db_filename, appearances_csv_db_filename, appearances_csv_db_filename_with_weights)
+    # Compare the appearances tables with the reference:
+    if POST_PROCESS_PATH_REF != None:
+        num_appearances_table_ref = load_stats_db(csv_db_path+POST_PROCESS_PATH_NEW+'/'+csv_db_filename.replace('.csv', '_num_appearances.csv'))
+        sum_weights_table_ref     = load_stats_db(csv_db_path+POST_PROCESS_PATH_NEW+'/'+csv_db_filename.replace('.csv', '_sum_weights.csv'    ))
+    else:
+        num_appearances_table_ref = num_appearances_table
+        sum_weights_table_ref     = sum_weights_table
+
+    diff_num_appearances_table = add_diff_columns(num_appearances_table, num_appearances_table_ref, 2)
+    diff_sum_weights_table     = add_diff_columns(sum_weights_table,     sum_weights_table_ref,     2)
+
+    # pdf_generator.csv_to_pdf(num_appearances_table, sum_weights_table, POST_PROCESS_PATH_NEW, POST_PROCESS_PATH_REF, 14)
 
 
 if __name__ == '__main__':
     if SCAN_ETFS:         scan_etfs()
-    if POST_PROCESS_ETFS: post_process_etfs('Results/', POST_PROCESS_PATH+'/', 'etfs_db.csv')
+    if POST_PROCESS_ETFS: post_process_etfs('Results/', POST_PROCESS_PATH_NEW+'/', 'etfs_db.csv')
