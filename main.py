@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.20 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.21 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
