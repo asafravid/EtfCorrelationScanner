@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.17 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.18 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -123,6 +123,6 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
              "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig.png")
         pdf.write_html(text=html)
 
-    output_filename = post_process_path_new+report_title+'Results.pdf'
+    output_filename = post_process_path_new+post_process_path_new.replace('/','_')+report_title+'.pdf'
     pdf.output(output_filename, 'F')
 
