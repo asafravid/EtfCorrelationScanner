@@ -355,8 +355,8 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
 
     # Compare the appearances tables with the reference:
     if POST_PROCESS_PATH_REF != None:
-        num_appearances_table_ref = load_stats_db(csv_db_path+POST_PROCESS_PATH_NEW+'/'+csv_db_filename.replace('.csv', '_num_appearances.csv'))
-        sum_weights_table_ref     = load_stats_db(csv_db_path+POST_PROCESS_PATH_NEW+'/'+csv_db_filename.replace('.csv', '_sum_weights.csv'    ))
+        num_appearances_table_ref = load_stats_db(csv_db_path+POST_PROCESS_PATH_REF+'/'+csv_db_filename.replace('.csv', '_num_appearances.csv'))
+        sum_weights_table_ref     = load_stats_db(csv_db_path+POST_PROCESS_PATH_REF+'/'+csv_db_filename.replace('.csv', '_sum_weights.csv'    ))
     else:
         num_appearances_table_ref = num_appearances_table
         sum_weights_table_ref     = sum_weights_table
@@ -364,7 +364,7 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     diff_num_appearances_table = add_diff_columns(num_appearances_table, num_appearances_table_ref, 2)
     diff_sum_weights_table     = add_diff_columns(sum_weights_table,     sum_weights_table_ref,     2)
 
-    # pdf_generator.csv_to_pdf(num_appearances_table, sum_weights_table, POST_PROCESS_PATH_NEW, POST_PROCESS_PATH_REF, 14)
+    pdf_generator.csv_to_pdf(diff_num_appearances_table, diff_sum_weights_table, csv_db_path+date_time_path, 14)
 
 
 if __name__ == '__main__':
