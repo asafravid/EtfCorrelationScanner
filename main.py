@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.18 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.19 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -20,6 +20,8 @@
 #
 #############################################################################
 
+
+# TODO: ASFAR: Add bi-grams and tri-grams searching - interesting
 
 import shutil
 import time
