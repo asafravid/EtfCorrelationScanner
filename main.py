@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.19 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.20 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -21,7 +21,7 @@
 #############################################################################
 
 
-# TODO: ASFAR: Add bi-grams and tri-grams searching - interesting
+# TODO: ASFAR: 1. Add bi-grams and tri-grams searching - interesting
 
 import shutil
 import time
@@ -207,9 +207,13 @@ def scan_etfs():
 
 def update_appearances(row, symbol_appearances, symbol_appearances_with_weights):
     weight_symbols_to_skip = ['FGXXX', 'C Z1', 'C K1', 'C N1', 'S X1', 'S K1', 'W Z1', 'W K1', 'S N1', 'W N1', 'FGTXX', 'FTIXX', 'DAPXX']
+    unified_stocks_pairs   = ['GOOGL', 'GOOG']
 
     for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
         if row[symbol_index] != '':
+            if row[symbol_index] in unified_stocks_pairs:
+                row[symbol_index] = unified_stocks_pairs[0]
+
             if row[symbol_index] in symbol_appearances:
                 symbol_appearances[row[symbol_index]] += 1
             else:

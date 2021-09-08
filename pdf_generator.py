@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.18 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.20 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -54,7 +54,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
         if row_index > limit_num_rows: break
         if row_index > 0:  # row 0 is title
             names.append(row[1][0:28])
-            appearances.append(int(row[2]))
+            appearances.append(int(row[2]) if reported_column_name == '#' else float(row[2]))
         if row_index == 0:
             row = ['Symbol', 'Name', reported_column_name, 'Diff Entry', 'Diff '+reported_column_name]
         for col_index, col in enumerate(row):
