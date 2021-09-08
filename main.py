@@ -31,6 +31,14 @@ import pdf_generator
 from contextlib import closing
 
 
+######## Start of Run Configuration ###########
+SCAN_ETFS         = False
+POST_PROCESS_ETFS = True
+POST_PROCESS_PATH = '20210907-215545'
+CUSTOM_ETF_LIST   = None # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
+######## End of Run Configuration ###########
+
+
 class EtfData:
     symbol:            str   = 'None'
     short_name:        str   = 'None'
@@ -100,7 +108,7 @@ def extract_sorted_etf_list():
                     if 'File Creation Time' in row[0]:
                         continue
                     if etf_column >= 0 and row[etf_column] == 'Y':
-                        etf_list.append(row[g_nasdaq_filenames_name_column_list[index]])
+                        etf_list.append(row[g_nasdaq_filenames_symbol_column_list[index]])
                         continue
     sorted_etf_list = sorted(list(set(etf_list)))
     return sorted_etf_list
@@ -153,16 +161,16 @@ def scan_etfs():
     elapsed_time_start_sec = time.time()
 
     etf_data_list = []
-    for index, etf_name in enumerate(sorted_etf_list):
+    for index, etf_symbol in enumerate(sorted_etf_list):
         etf_data = EtfData()
 
         elapsed_time_sample_sec = time.time()
         elapsed_time_sec        = round(elapsed_time_sample_sec - elapsed_time_start_sec, 0)
         average_sec_per_symbol  = round(elapsed_time_sec / (index+1),                     2)
-        print("#/left/% : {}/{}/{:3.3f}, elapsed/left/avg : {:5}/{:5}/{:4} [sec], Processing {}".format(index+1, len(sorted_etf_list)-index-1, (index+1)/len(sorted_etf_list)*100, elapsed_time_sec, int(round(average_sec_per_symbol*(len(sorted_etf_list)-index-1), 0)), average_sec_per_symbol, etf_name))
-        symbol = yf.Ticker(etf_name)
+        print("#/left/% : {}/{}/{:3.3f}, elapsed/left/avg : {:5}/{:5}/{:4} [sec], Processing {}".format(index+1, len(sorted_etf_list)-index-1, (index+1)/len(sorted_etf_list)*100, elapsed_time_sec, int(round(average_sec_per_symbol*(len(sorted_etf_list)-index-1), 0)), average_sec_per_symbol, etf_symbol))
+        symbol = yf.Ticker(etf_symbol)
         info   = symbol.get_info()
-        etf_data.symbol     = etf_name
+        etf_data.symbol     = etf_symbol
         if 'sectorWeightings' in info: etf_data.sector_weightings = info["sectorWeightings"]
         if 'shortName'        in info: etf_data.short_name        = info["shortName"]
         if 'holdings'         in info: etf_data.holdings          = info['holdings']
@@ -302,11 +310,6 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
 
     # pdf_generator.csv_to_pdf(sorted_by_known_weights_csv_db_filename, appearances_csv_db_filename, appearances_csv_db_filename_with_weights)
 
-
-SCAN_ETFS         = False
-POST_PROCESS_ETFS = True
-POST_PROCESS_PATH = '20210907-154311'
-CUSTOM_ETF_LIST   = ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 
 if __name__ == '__main__':
     if SCAN_ETFS:         scan_etfs()
