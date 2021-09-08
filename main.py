@@ -374,8 +374,8 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     diff_num_appearances_table = add_diff_columns(num_appearances_table, num_appearances_table_ref, 2)
     diff_sum_weights_table     = add_diff_columns(sum_weights_table,     sum_weights_table_ref,     2)
 
-    pdf_generator.csv_to_pdf(diff_num_appearances_table, csv_db_path + date_time_path, NUM_REPORTED_ENTRIES, 'Appearances', '#')
-    pdf_generator.csv_to_pdf(diff_sum_weights_table,     csv_db_path + date_time_path, NUM_REPORTED_ENTRIES, 'Weight'     , 'Weight')
+    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table, post_process_path_new=csv_db_path + date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES, report_title='Appearances', reported_column_name='#',      append_to_pdf=None,          output=False)
+    pdf_generator.csv_to_pdf(                report_table=diff_sum_weights_table,     post_process_path_new=csv_db_path + date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES, report_title='Weight'     , reported_column_name='Weight', append_to_pdf=pdf_to_append, output=True )
 
 
 if __name__ == '__main__':

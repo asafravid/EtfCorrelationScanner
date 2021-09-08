@@ -30,14 +30,15 @@ import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 
 
-def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_name):
+def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_name, append_to_pdf, output):
     title_for_figures = post_process_path_new.replace('/','') + ' ' + report_title + ' ' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
 
     csv_rows = report_table
 
     class MyFPDF(FPDF, HTMLMixin): pass
 
-    pdf = MyFPDF(format='letter')
+    if append_to_pdf != None: pdf = append_to_pdf
+    else:                     pdf = MyFPDF(format='letter')
     pdf.add_page()
     # Access DejaVuSansCondensed.ttf on the machine. This font supports practically all languages.
     # Install it via https://fonts2u.com/dejavu-sans-condensed.font
@@ -123,6 +124,6 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
              "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig.png")
         pdf.write_html(text=html)
 
-    output_filename = post_process_path_new+post_process_path_new.replace('/','_')+report_title+'.pdf'
-    pdf.output(output_filename, 'F')
-
+    output_filename = post_process_path_new+post_process_path_new.replace('/','_')+'combined'+'.pdf'
+    if output: pdf.output(output_filename, 'F')
+    return pdf
