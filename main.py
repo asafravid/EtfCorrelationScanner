@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.21 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.22 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -120,22 +120,9 @@ def extract_sorted_etf_list():
 
 
 def extract_symbol_lookup_dict(csv_db_path, date_time_path, csv_db_filename):
-    # 1st, take All possible symbols names from the Nasdaq Files:
     symbol_lookup_dict = {}
-    for index, filename in enumerate(g_nasdaq_filenames_list):
-        with open(filename, mode='r', newline='') as engine:
-            reader = csv.reader(engine, delimiter='|')
-            row_index = 0
-            for row in reader:
-                if row_index == 0:
-                    row_index += 1
-                else:
-                    row_index += 1
-                    if 'File Creation Time' in row[0]:
-                        continue
-                    symbol_lookup_dict[row[g_nasdaq_filenames_symbol_column_list[index]]] = row[g_nasdaq_filenames_name_column_list[index]]
 
-    # Then, take ETFs and ETFs Holdings Symbols Names:
+    # 1st, take ETFs and ETFs Holdings Symbols Names:
     csv_db_filename = csv_db_path+date_time_path+csv_db_filename
     with open(csv_db_filename, mode='r', newline='') as engine:
         reader = csv.reader(engine, delimiter=',')
@@ -150,6 +137,21 @@ def extract_symbol_lookup_dict(csv_db_path, date_time_path, csv_db_filename):
                 for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
                     if row[symbol_index] not in symbol_lookup_dict:
                         symbol_lookup_dict[row[symbol_index]] = row[symbol_index+g_holding_name_subindex]
+
+    # Then, take All possible missing symbols names from the Nasdaq Files:
+    for index, filename in enumerate(g_nasdaq_filenames_list):
+        with open(filename, mode='r', newline='') as engine:
+            reader = csv.reader(engine, delimiter='|')
+            row_index = 0
+            for row in reader:
+                if row_index == 0:
+                    row_index += 1
+                else:
+                    row_index += 1
+                    if 'File Creation Time' in row[0]:
+                        continue
+                    if row[g_nasdaq_filenames_symbol_column_list[index]] not in symbol_lookup_dict:
+                        symbol_lookup_dict[row[g_nasdaq_filenames_symbol_column_list[index]]] = row[g_nasdaq_filenames_name_column_list[index]]
 
     return symbol_lookup_dict
 
