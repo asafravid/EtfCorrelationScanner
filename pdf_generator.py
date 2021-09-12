@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.21 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.23 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -30,8 +30,11 @@ import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 
 
-def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_name, append_to_pdf, output):
-    title_for_figures = post_process_path_new.replace('/','') + ' ' + report_title + ' ' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
+VERBOSE_LOGS = 0
+
+
+def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_name, append_to_pdf, output, bigrams):
+    title_for_figures = post_process_path_new.replace('/','') + ' ' + ('Bigrams ' if bigrams else '') + report_title + ' ' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
 
     csv_rows = report_table
 
@@ -43,9 +46,8 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     # Access DejaVuSansCondensed.ttf on the machine. This font supports practically all languages.
     # Install it via https://fonts2u.com/dejavu-sans-condensed.font
     pdf.add_font('DejaVu', '', 'DejaVuSansCondensed.ttf', uni=True)
-    pdf.set_font('DejaVu', '', 7)
+    pdf.set_font('DejaVu', '', 6)
 
-    # pdf.set_font("Arial", size=8, style='B')
     pdf.set_text_color(0, 0, 200)  # blue
     pdf.cell(200, 8, txt=title_for_figures, ln=1, align="C")  # http://fpdf.org/en/doc/cell.htm
 
@@ -54,20 +56,26 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     for row_index, row in enumerate(csv_rows):
         if row_index > limit_num_rows: break
         if row_index > 0:  # row 0 is title
-            names.append(row[1][0:28])
+            if bigrams:
+                names_list = list(row[1])
+                for name_index, name in enumerate(names_list): names_list[name_index] = names_list[name_index][0:10]
+            names.append(' | '.join(names_list) if bigrams else row[1][0:28])
             appearances.append(int(row[2]) if reported_column_name == '#' else float(row[2]))
         if row_index == 0:
-            row = ['Symbol', 'Name', reported_column_name, 'Diff Entry', 'Diff '+reported_column_name]
+            row = ['Bigram' if bigrams else 'Symbol', 'Name', reported_column_name, 'Diff Entry', 'Diff '+reported_column_name]
+
+        if VERBOSE_LOGS: print('[pdf_generator.csv_to_pdf] row({})={}'.format(row_index, row))
+
         for col_index, col in enumerate(row):
-            if   col_index == 0: w=14 # Symbol
-            elif col_index == 1: w=56 # Name
+            if   col_index == 0: w=(28 if bigrams else 14) # Symbol/Bigram
+            elif col_index == 1: w=(77 if bigrams else 56) # Name(s)
             elif col_index == 2: w=7  if reported_column_name == '#' else 21  # reported_column_name
             elif col_index == 3: w=14 # Diff Entry
             elif col_index == 4: w=14 if reported_column_name == '#' else 21  # Diff Value
 
             pdf.set_text_color(0, 0, 200 if row_index == 0 else 0)  # blue for title and black otherwise
 
-            if (col_index == 2 or col_index == 4) and row_index > 0:
+            if (col_index == 2 or col_index == 4) and row_index > 0 and 'New' not in str(col):
                 if reported_column_name == '#': col = int(col)
                 else:                           col = round(float(col), 3)
 
@@ -76,7 +84,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 elif '-' in str(row[col_index]): pdf.set_text_color(200,   0,   0)  # red
                 elif '+' in str(row[col_index]): pdf.set_text_color(  0, 200,   0)  # green
                 else:                            pdf.set_text_color(  0,   0,   0)  # black
-            pdf.cell(w=w, h=3, txt=str(col)[0:41], border=1, ln=0 if col_index < 4 else 1, align="C" if row_index == 0 else "L")
+            pdf.cell(w=w, h=3, txt=str(col)[0:41].replace("', '"," | ").replace("('","").replace("')",""), border=1, ln=0 if col_index < 4 else 1, align="C" if row_index == 0 else "L")
     pdf.cell(200, 4, txt='', ln=1, align="L")
     fig, ax = plt.subplots(figsize=(15, 10))
     y_pos = np.arange(len(names))
@@ -90,7 +98,9 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     ax.set_title(title_for_figures, color='blue')
 
     # plt.show()
-    plt.savefig(post_process_path_new+report_title+"_fig.png")
+    plt.savefig(post_process_path_new+report_title+"_fig{}.png".format('_bigrams' if bigrams else ''))
+
+    if bigrams: pdf.add_page()
 
     tase_mode = False
     if tase_mode:
@@ -121,7 +131,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
              "<p>Updates, Discussions and Technical Support on Telegram: <A HREF=""https://t.me/StockScannerIL"">https://t.me/StockScannerIL</A></p>" \
              "<p>This Scanner is Open Source. fork() here: <A HREF=""http://bit.ly/EtfCorrelationScanner"">http://bit.ly/EtfCorrelationScanner</A></p>" \
              "<p>Disclaimer: Scan Results are not recommendations! They only represent a basis for Research and Analysis.</p>" \
-             "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig.png")
+             "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig{}.png".format('_bigrams' if bigrams else ''))
         pdf.write_html(text=html)
 
     output_filename = post_process_path_new+post_process_path_new.replace('/','_')+'combined'+'.pdf'
