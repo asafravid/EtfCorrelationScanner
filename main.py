@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.24 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.25 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -43,6 +43,7 @@ POST_PROCESS_PATH_REF       = '20210907-215545'
 CUSTOM_ETF_LIST             = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 NUM_REPORTED_ENTRIES        = 35
 NUM_REPORTED_BIGRAM_ENTRIES = 77
+VERBOSE_LOGS                = 0
 # End   of Run Configuration ###########
 
 
@@ -209,10 +210,11 @@ def scan_etfs():
         writer.writerows(rows)
 
 
-def update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances):
+def update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights):
     weight_symbols_to_skip = ['FGXXX', 'C Z1', 'C K1', 'C N1', 'S X1', 'S K1', 'W Z1', 'W K1', 'S N1', 'W N1', 'FGTXX', 'FTIXX', 'DAPXX']
     unified_stocks_pairs   = ['GOOGL', 'GOOG']
 
+    if VERBOSE_LOGS: print('[update_appearances] before processing: row = {}'.format(row))
     for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
         if row[symbol_index] != '':
             if row[symbol_index] in unified_stocks_pairs:
@@ -228,6 +230,7 @@ def update_appearances(row, symbol_appearances, symbol_appearances_with_weights,
                 symbol_appearances_with_weights[row[symbol_index]] += float(row[symbol_index+g_holding_weight_subindex])
             else:
                 symbol_appearances_with_weights[row[symbol_index]]  = float(row[symbol_index+g_holding_weight_subindex])
+    if VERBOSE_LOGS: print('[update_appearances] after processing:  row = {}'.format(row))
 
     symbols_for_combinations = row[g_holding_get_start_index(0):min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)):g_num_elements_in_holding]
     symbols_for_combinations = list(set(symbols_for_combinations))  # Compress the row
@@ -237,8 +240,16 @@ def update_appearances(row, symbol_appearances, symbol_appearances_with_weights,
         if sorted_subset in bigrams_appearances: bigrams_appearances[sorted_subset] += 1
         else:                                    bigrams_appearances[sorted_subset]  = 1
 
+        if (subset[0] in weight_symbols_to_skip) or (subset[1] in weight_symbols_to_skip): continue
+        if VERBOSE_LOGS: print('[update_appearances] row = {}'.format(row))
+        gram0_index = row[g_holding_get_start_index(0)::].index(subset[0])+g_holding_get_start_index(0)  # Start the search from the 1st symbol, since for instance VNM is an ETF name and also a holding name (weird bu thats the case here - VNM is also a stock name in Vietnam or something)
+        gram1_index = row[g_holding_get_start_index(0)::].index(subset[1])+g_holding_get_start_index(0)
+        if VERBOSE_LOGS: print('[update_appearances] subset = {}, gram0_index = {}, gram1_index = {}'.format(subset, gram0_index, gram1_index))
+        if subset in bigrams_appearances_with_weights: bigrams_appearances_with_weights[subset] += (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
+        else:                                          bigrams_appearances_with_weights[subset]  = (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
 
-def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances):
+
+def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights):
     sum_weights_known   = 0
     sum_weights_unknown = 0
     for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
@@ -247,7 +258,7 @@ def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearan
         else:
             sum_weights_known   += float(row[symbol_index+g_holding_weight_subindex])
 
-    update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances)
+    update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights)
     return [sum_weights_known, sum_weights_unknown]
 
 
@@ -255,7 +266,7 @@ def is_empty_row(row):
     return len(row) < g_holding_get_start_index(0)
 
 
-def save_stats_db(stats_filename, title_row, stats, sort_by_row, symbol_names_lookup_dict, bigrams):
+def save_stats_db(stats_filename, title_row, stats, sort_by_col, symbol_names_lookup_dict, bigrams):
     rows = []
     for item in stats:
         if bigrams:
@@ -264,7 +275,7 @@ def save_stats_db(stats_filename, title_row, stats, sort_by_row, symbol_names_lo
             rows.append([item, (gram0,gram1), stats[item]])
         else:
             rows.append([item, symbol_names_lookup_dict[item] if item in symbol_names_lookup_dict else 'Unknown', stats[item]])
-    sorted_rows = sorted(rows, key=lambda row: row[sort_by_row], reverse=True)
+    sorted_rows = sorted(rows, key=lambda row: row[sort_by_col], reverse=True)
     sorted_rows.insert(0, title_row)
 
     with open(stats_filename, mode='w', newline='') as engine:
@@ -302,7 +313,7 @@ def add_diff_columns(table_new, table_ref, value_index_in_row, bigrams):
 
             key_index = new_row.index('Bigram') if bigrams else new_row.index('Symbol')
         else:
-            current_symbol = row_data[key_index]
+            current_symbol = str(row_data[key_index]) if bigrams else row_data[key_index]
             if current_symbol in symbol_ref_entry_and_pos_lookup_dict:
                 diff_entries = symbol_ref_entry_and_pos_lookup_dict[current_symbol][0] - row_index
                 diff_value   = row_data[value_index_in_row]                            - float(symbol_ref_entry_and_pos_lookup_dict[current_symbol][1])
@@ -321,6 +332,7 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     symbol_appearances                            = {}
     symbol_appearances_with_weights               = {}
     bigrams_appearances                           = {}
+    bigrams_appearances_with_weights              = {}
     symbol_names_lookup                           = extract_symbol_lookup_dict(csv_db_path, date_time_path, csv_db_filename)
     title_row                                     = None
 
@@ -344,7 +356,7 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
                 else:
                     pad_row_if_required(row)
 
-                [sum_weights_known, sum_weights_unknown] = calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances)
+                [sum_weights_known, sum_weights_unknown] = calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights)
 
                 row.append(sum_weights_known)
                 row.append(sum_weights_unknown)
@@ -375,32 +387,35 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
         writer = csv.writer(engine)
         writer.writerows(db_rows_filtered_weighted_non_levereged_sorted)
 
-    # Appearances_db:
-    num_appearances_table         = save_stats_db(stats_filename=csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_appearances.csv'),               title_row=['Symbol', 'Name', 'NumAppearances'], stats=symbol_appearances,                            sort_by_row=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=False)
+    # Appearances_db, appearances_db with weights:
+    num_appearances_table         = save_stats_db(stats_filename=csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_appearances.csv'),               title_row=['Symbol', 'Name', 'NumAppearances'], stats=symbol_appearances,              sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=False)
+    sum_weights_table             = save_stats_db(stats_filename=csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   title_row=['Symbol', 'Name', 'SumWeights'],     stats=symbol_appearances_with_weights, sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=False)
 
-    # Appearances_db with weights:
-    sum_weights_table             = save_stats_db(stats_filename=csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_weights.csv'),                   title_row=['Symbol', 'Name', 'SumWeights'],     stats=symbol_appearances_with_weights,               sort_by_row=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=False)
-
-    # bigrams_db:
-    num_bigrams_appearances_table = save_stats_db(stats_filename=csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_bigrams_appearances.csv'),       title_row=['Bigram', 'Name', 'NumAppearances'], stats=bigrams_appearances,                           sort_by_row=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=True)
+    # bigrams_db, bigrams_db with weights:
+    num_bigrams_appearances_table = save_stats_db(stats_filename=csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_num_bigrams_appearances.csv'), title_row=['Bigram', 'Name', 'NumAppearances'], stats=bigrams_appearances,                   sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=True)
+    sum_bigrams_weights_table     = save_stats_db(stats_filename=csv_db_path+date_time_path+csv_db_filename.replace('.csv', '_sum_bigrams_weights.csv'    ), title_row=['Bigram', 'Name', 'SumWeights'    ], stats=bigrams_appearances_with_weights,      sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=True)
 
     # Compare the appearances tables with the reference:
     if POST_PROCESS_PATH_REF != None:
         num_appearances_table_ref         = load_stats_db(csv_db_path+POST_PROCESS_PATH_REF+'/'+csv_db_filename.replace('.csv', '_num_appearances.csv'        ))
         sum_weights_table_ref             = load_stats_db(csv_db_path+POST_PROCESS_PATH_REF+'/'+csv_db_filename.replace('.csv', '_sum_weights.csv'            ))
         num_bigrams_appearances_table_ref = load_stats_db(csv_db_path+POST_PROCESS_PATH_REF+'/'+csv_db_filename.replace('.csv', '_num_bigrams_appearances.csv'))
+        sum_bigrams_weights_table_ref     = load_stats_db(csv_db_path+POST_PROCESS_PATH_REF+'/'+csv_db_filename.replace('.csv', '_sum_bigrams_weights.csv'    ))
     else:
         num_appearances_table_ref         = num_appearances_table
         sum_weights_table_ref             = sum_weights_table
         num_bigrams_appearances_table_ref = num_bigrams_appearances_table
+        sum_bigrams_weights_table_ref     = sum_bigrams_weights_table
 
     diff_num_appearances_table         = add_diff_columns(table_new=num_appearances_table,         table_ref=num_appearances_table_ref,         value_index_in_row=2, bigrams=False)
     diff_sum_weights_table             = add_diff_columns(table_new=sum_weights_table,             table_ref=sum_weights_table_ref,             value_index_in_row=2, bigrams=False)
-    diff_num_bigrams_appearances_table = add_diff_columns(table_new=num_bigrams_appearances_table, table_ref=num_bigrams_appearances_table_ref, value_index_in_row=2, bigrams=True)
+    diff_num_bigrams_appearances_table = add_diff_columns(table_new=num_bigrams_appearances_table, table_ref=num_bigrams_appearances_table_ref, value_index_in_row=2, bigrams=True )
+    diff_sum_bigrams_weights_table     = add_diff_columns(table_new=sum_bigrams_weights_table,     table_ref=sum_bigrams_weights_table_ref,     value_index_in_row=2, bigrams=True )
 
     pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table,         post_process_path_new=csv_db_path + date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Appearances', reported_column_name='#',      append_to_pdf=None,          output=False, bigrams=False)
     pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_sum_weights_table,             post_process_path_new=csv_db_path + date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Weight'     , reported_column_name='Weight', append_to_pdf=pdf_to_append, output=False, bigrams=False)
-    pdf_generator.csv_to_pdf(                report_table=diff_num_bigrams_appearances_table, post_process_path_new=csv_db_path + date_time_path, limit_num_rows=NUM_REPORTED_BIGRAM_ENTRIES, report_title='Appearances', reported_column_name='#',      append_to_pdf=pdf_to_append, output=True , bigrams=True )
+    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_bigrams_appearances_table, post_process_path_new=csv_db_path + date_time_path, limit_num_rows=NUM_REPORTED_BIGRAM_ENTRIES, report_title='Appearances', reported_column_name='#',      append_to_pdf=pdf_to_append, output=False, bigrams=True )
+    pdf_generator.csv_to_pdf(                report_table=diff_sum_bigrams_weights_table,     post_process_path_new=csv_db_path + date_time_path, limit_num_rows=NUM_REPORTED_BIGRAM_ENTRIES, report_title='Weight',      reported_column_name='Weight', append_to_pdf=pdf_to_append, output=True,  bigrams=True )
 
 
 if __name__ == '__main__':

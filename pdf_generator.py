@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.23 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.25 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -94,7 +94,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     ax.tick_params(axis='y', labelsize=8)
     ax.set_yticklabels(names)
     ax.invert_yaxis()  # labels read top-to-bottom
-    ax.set_xlabel('Appearance')
+    ax.set_xlabel(reported_column_name)
     ax.set_title(title_for_figures, color='blue')
 
     # plt.show()
