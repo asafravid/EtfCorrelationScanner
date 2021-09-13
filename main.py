@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.23 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.24 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -233,10 +233,9 @@ def update_appearances(row, symbol_appearances, symbol_appearances_with_weights,
     symbols_for_combinations = list(set(symbols_for_combinations))  # Compress the row
     for subset in itertools.combinations(symbols_for_combinations, 2):
         if '' in subset: continue
-        if subset in bigrams_appearances:
-            bigrams_appearances[subset] += 1
-        else:
-            bigrams_appearances[subset]  = 1
+        sorted_subset = tuple(sorted(subset))  # Must sort since otherwise 2 same tupples will appear "differently" like ('AAPL', 'GOOGL') and ('GOOGL', 'APPL')
+        if sorted_subset in bigrams_appearances: bigrams_appearances[sorted_subset] += 1
+        else:                                    bigrams_appearances[sorted_subset]  = 1
 
 
 def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances):
