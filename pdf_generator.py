@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.25 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.26 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -80,6 +80,9 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 else:                           col = round(float(col), 3)
 
             if col_index >= 3 and row_index > 0:
+                if 'New' not in str(row[col_index]) and row[col_index] > 0:
+                    row[col_index] = '+{}'.format(row[col_index])
+                    col            = '+{}'.format(col)
                 if 'New' in str(row[col_index]): pdf.set_text_color(  0,   0, 200)  # blue
                 elif '-' in str(row[col_index]): pdf.set_text_color(200,   0,   0)  # red
                 elif '+' in str(row[col_index]): pdf.set_text_color(  0, 200,   0)  # green
