@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.27 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.28 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -242,13 +242,13 @@ def update_appearances(row, symbol_appearances, symbol_appearances_with_weights,
         if sorted_subset in bigrams_appearances: bigrams_appearances[sorted_subset] += 1
         else:                                    bigrams_appearances[sorted_subset]  = 1
 
-        if (subset[0] in weight_symbols_to_skip) or (subset[1] in weight_symbols_to_skip): continue
+        if (sorted_subset[0] in weight_symbols_to_skip) or (sorted_subset[1] in weight_symbols_to_skip): continue
         if VERBOSE_LOGS: print('[update_appearances] row = {}'.format(row))
-        gram0_index = row[g_holding_get_start_index(0)::].index(subset[0])+g_holding_get_start_index(0)  # Start the search from the 1st symbol, since for instance VNM is an ETF name and also a holding name (weird bu thats the case here - VNM is also a stock name in Vietnam or something)
-        gram1_index = row[g_holding_get_start_index(0)::].index(subset[1])+g_holding_get_start_index(0)
-        if VERBOSE_LOGS: print('[update_appearances] subset = {}, gram0_index = {}, gram1_index = {}'.format(subset, gram0_index, gram1_index))
-        if subset in bigrams_appearances_with_weights: bigrams_appearances_with_weights[subset] += (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
-        else:                                          bigrams_appearances_with_weights[subset]  = (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
+        gram0_index = row[g_holding_get_start_index(0)::].index(sorted_subset[0])+g_holding_get_start_index(0)  # Start the search from the 1st symbol, since for instance VNM is an ETF name and also a holding name (weird bu thats the case here - VNM is also a stock name in Vietnam or something)
+        gram1_index = row[g_holding_get_start_index(0)::].index(sorted_subset[1])+g_holding_get_start_index(0)
+        if VERBOSE_LOGS: print('[update_appearances] sorted_subset = {}, gram0_index = {}, gram1_index = {}'.format(sorted_subset, gram0_index, gram1_index))
+        if sorted_subset in bigrams_appearances_with_weights: bigrams_appearances_with_weights[sorted_subset] += (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
+        else:                                                 bigrams_appearances_with_weights[sorted_subset]  = (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
 
 
 def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights):
