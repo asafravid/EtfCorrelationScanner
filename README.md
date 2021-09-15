@@ -1,8 +1,11 @@
-# EtfCorrelationScanner
-ETF Correlation Scanner
+# Overview
+- ETF Correlation Scanner - based on yfinance
 
-    ETF Correlation  Scanner - based on yfinance
-    Copyright (C) 2021 Asaf Ravid
+# Prerequesits
+- Please use either https://github.com/asafravid/yfinance or apply https://github.com/ranaroussi/yfinance/pull/830 over https://github.com/ranaroussi/yfinance for ETF support (`yfinance` has yet to merge my pull request)
+
+# License
+- Copyright (C) 2021 Asaf Ravid
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
