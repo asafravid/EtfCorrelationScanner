@@ -2,7 +2,7 @@
 - ETF Correlation Scanner - based on yfinance
 
 # Prerequesits
-- Please use either https://github.com/asafravid/yfinance or apply https://github.com/ranaroussi/yfinance/pull/830 over https://github.com/ranaroussi/yfinance for ETF support (`yfinance` has yet to merge my pull request)
+- Please use either https://github.com/asafravid/yfinance or apply https://github.com/ranaroussi/yfinance/pull/830 over https://github.com/ranaroussi/yfinance for ETF support (`yfinance` has yet to merge my pull request which upgrades it to support ETF holdings information)
 
 # License
 - Copyright (C) 2021 Asaf Ravid
