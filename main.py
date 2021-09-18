@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.28 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.29 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -35,7 +35,8 @@ import itertools
 from contextlib import closing
 
 
-# TODO: ASFAR: Add the highest holder of symbol and bigram in the report table along for nice info
+# TODO: ASFAR: 1. Add the highest holder of symbol and bigram in the report table along for nice info
+#              2. Add a table with a sorted list of the highest entry increase - for weights and for appearances
 
 # Start of Run Configuration ###########
 SCAN_ETFS                   = False
