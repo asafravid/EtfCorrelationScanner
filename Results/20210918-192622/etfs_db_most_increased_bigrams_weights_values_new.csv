@@ -170,8 +170,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('KDP', 'MDLZ')","('Keurig Dr Pepper Inc', 'Mondelez International Inc Class A')",0.098999997,New,New
 "('NBR', 'RIG')","('Nabors Industries Ltd', 'Transocean Ltd')",0.098799998,New,New
 "('IIA', 'VOE')","('Immofinanz AG', 'Vanguard Mid-Cap Value ETF')",0.09870000000000001,New,New
-"('STZ', 'SYY')","('Constellation Brands Inc A', 'Sysco Corp')",0.098499998,New,New
 "('MNST', 'SYY')","('Monster Beverage Corp', 'Sysco Corp')",0.098499998,New,New
+"('STZ', 'SYY')","('Constellation Brands Inc A', 'Sysco Corp')",0.098499998,New,New
 "('MDLZ', 'SYY')","('Mondelez International Inc Class A', 'Sysco Corp')",0.098399998,New,New
 "('GIS', 'KDP')","('General Mills Inc', 'Keurig Dr Pepper Inc')",0.09839999699999999,New,New
 "('GD', 'HON')","('General Dynamics Corp', 'Honeywell International Inc')",0.09820000300000001,New,New
@@ -187,8 +187,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('SAND', 'VOLV B')","('Sandvik AB', 'Volvo AB B')",0.0973,New,New
 "('HON', 'NOC')","('Honeywell International Inc', 'Northrop Grumman Corp')",0.09709999999999999,New,New
 "('INVE B', 'SEB A')","('Investor AB B', 'Skandinaviska Enskilda Banken AB A')",0.097,New,New
-"('KHC', 'STZ')","('The Kraft Heinz Co', 'Constellation Brands Inc A')",0.097,New,New
 "('KHC', 'MNST')","('The Kraft Heinz Co', 'Monster Beverage Corp')",0.097,New,New
+"('KHC', 'STZ')","('The Kraft Heinz Co', 'Constellation Brands Inc A')",0.097,New,New
 "('EVO', 'NDA SE')","('Evolution AB', 'Nordea Bank Abp')",0.096800002,New,New
 "('ALXN', 'CTLT')","('Alexion Pharmaceuticals Inc', 'Catalent Inc')",0.09659999799999999,New,New
 "('AIR', 'TTE.PA')","('Airbus SE', 'TotalEnergies SE')",0.096500002,New,New
@@ -196,8 +196,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('MSFT', 'RBLX')","('Microsoft Corp', 'Roblox Corp Ordinary Shares - Class A')",0.0964,New,New
 "('OII', 'RIG')","('Oceaneering International Inc', 'Transocean Ltd')",0.096399998,New,New
 "('GIS', 'KHC')","('General Mills Inc', 'The Kraft Heinz Co')",0.0963,New,New
-"('ADM', 'STZ')","('Archer-Daniels Midland Co', 'Constellation Brands Inc A')",0.0963,New,New
 "('ADM', 'MNST')","('Archer-Daniels Midland Co', 'Monster Beverage Corp')",0.0963,New,New
+"('ADM', 'STZ')","('Archer-Daniels Midland Co', 'Constellation Brands Inc A')",0.0963,New,New
 "('EA', 'MSFT')","('Electronic Arts Inc', 'Microsoft Corp')",0.0963,New,New
 "('HP', 'SLCA')","('Helmerich & Payne Inc', 'US Silica Holdings Inc')",0.0963,New,New
 "('CERN', 'MSFT')","('Cerner Corp', 'Microsoft Corp')",0.09609999999999999,New,New
@@ -365,8 +365,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('IMP.JO', 'SSW.JO')","('Impala Platinum Holdings Ltd', 'Sibanye Stillwater Ltd Ordinary Shares')",0.085099996,New,New
 "('C6L.SI', 'S68.SI')","('Singapore Airlines Ltd', 'Singapore Exchange Ltd')",0.0849,New,New
 "('HD', 'SUM')","('The Home Depot Inc', 'Summit Materials Inc A')",0.0848,New,New
-"('FND', 'TT')","('Floor & Decor Holdings Inc', 'Trane Technologies PLC')",0.0848,New,New
 "('SUM', 'TT')","('Summit Materials Inc A', 'Trane Technologies PLC')",0.0848,New,New
+"('FND', 'TT')","('Floor & Decor Holdings Inc', 'Trane Technologies PLC')",0.0848,New,New
 "('LOW', 'SUM')","(""Lowe's Companies Inc"", 'Summit Materials Inc A')",0.084700003,New,New
 "('GM', 'PEP')","('General Motors Co', 'PepsiCo Inc')",0.08460000000000001,New,New
 "('MLM', 'MYRG')","('Martin Marietta Materials Inc', 'MYR Group Inc')",0.08449999799999999,New,New
@@ -378,32 +378,32 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('BAND', 'HUBS')","('Bandwidth Inc Class A', 'HubSpot Inc')",0.083999999,New,New
 "('M44U.SI', 'S68.SI')","('Mapletree Logistics Trust', 'Singapore Exchange Ltd')",0.08380000000000001,New,New
 "('MYRG', 'VMC')","('MYR Group Inc', 'Vulcan Materials Co')",0.08359999800000001,New,New
-"('FND', 'MLM')","('Floor & Decor Holdings Inc', 'Martin Marietta Materials Inc')",0.0829,New,New
 "('MLM', 'SUM')","('Martin Marietta Materials Inc', 'Summit Materials Inc A')",0.0829,New,New
+"('FND', 'MLM')","('Floor & Decor Holdings Inc', 'Martin Marietta Materials Inc')",0.0829,New,New
 "('BRK.B', 'CBA.AX')","('Berkshire Hathaway Inc Class B', 'Commonwealth Bank of Australia')",0.082899996,New,New
 "('MTN.JO', 'SSW.JO')","('MTN Group Ltd', 'Sibanye Stillwater Ltd Ordinary Shares')",0.082800002,New,New
-"('FND', 'PHM')","('Floor & Decor Holdings Inc', 'PulteGroup Inc')",0.0826,New,New
 "('PHM', 'SUM')","('PulteGroup Inc', 'Summit Materials Inc A')",0.0826,New,New
+"('FND', 'PHM')","('Floor & Decor Holdings Inc', 'PulteGroup Inc')",0.0826,New,New
 "('FGEN', 'TECH')","('FibroGen Inc', 'Bio-Techne Corp')",0.0823,New,New
 "('F34.SI', 'Z74.SI')","('Wilmar International Ltd', 'Singapore Telecommunications Ltd')",0.0822,New,New
 "('FLGT', 'TECH')","('Fulgent Genetics Inc', 'Bio-Techne Corp')",0.0821,New,New
 "('AXON', 'LHX')","('Axon Enterprise Inc', 'L3Harris Technologies Inc')",0.0821,New,New
-"('FND', 'VMC')","('Floor & Decor Holdings Inc', 'Vulcan Materials Co')",0.082,New,New
 "('SUM', 'VMC')","('Summit Materials Inc A', 'Vulcan Materials Co')",0.082,New,New
+"('FND', 'VMC')","('Floor & Decor Holdings Inc', 'Vulcan Materials Co')",0.082,New,New
 "('A17U.SI', 'C6L.SI')","('Ascendas Real Estate Investment Trust Units Real Estate Investment Trust', 'Singapore Airlines Ltd')",0.081899998,New,New
 "('ATVI', 'NKE')","('Activision Blizzard Inc', 'Nike Inc B')",0.081899998,New,New
 "('HP', 'WHD')","('Helmerich & Payne Inc', 'Cactus Inc Class A')",0.08180000200000001,New,New
 "('BN4.SI', 'C6L.SI')","('Keppel Corp Ltd', 'Singapore Airlines Ltd')",0.0818,New,New
 "('IIA', 'WIE')","('Immofinanz AG', 'Wienerberger AG')",0.0815,New,New
-"('SAFM', 'STZ')","('Sanderson Farms Inc', 'Constellation Brands Inc A')",0.08130000000000001,New,New
 "('MNST', 'SAFM')","('Monster Beverage Corp', 'Sanderson Farms Inc')",0.08130000000000001,New,New
+"('SAFM', 'STZ')","('Sanderson Farms Inc', 'Constellation Brands Inc A')",0.08130000000000001,New,New
 "('MDLZ', 'SAFM')","('Mondelez International Inc Class A', 'Sanderson Farms Inc')",0.0812,New,New
 "('ENB.TO', 'RDSB.L')","('Enbridge Inc', 'Royal Dutch Shell PLC B')",0.0811,New,New
 "('CTLT', 'FGEN')","('Catalent Inc', 'FibroGen Inc')",0.081099998,New,New
 "('FFIV', 'MSI')","('F5 Networks Inc', 'Motorola Solutions Inc')",0.0809,New,New
 "('APPS', 'MSFT')","('Digital Turbine Inc', 'Microsoft Corp')",0.0809,New,New
-"('FGEN', 'GILD')","('FibroGen Inc', 'Gilead Sciences Inc')",0.080899998,New,New
 "('CTLT', 'FLGT')","('Catalent Inc', 'Fulgent Genetics Inc')",0.080899998,New,New
+"('FGEN', 'GILD')","('FibroGen Inc', 'Gilead Sciences Inc')",0.080899998,New,New
 "('A17U.SI', 'M44U.SI')","('Ascendas Real Estate Investment Trust Units Real Estate Investment Trust', 'Mapletree Logistics Trust')",0.08079999800000001,New,New
 "('ANDR', 'IIA')","('Andritz AG', 'Immofinanz AG')",0.080700002,New,New
 "('BN4.SI', 'M44U.SI')","('Keppel Corp Ltd', 'Mapletree Logistics Trust')",0.0807,New,New
@@ -472,14 +472,14 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('FBHS', 'FND')","('Fortune Brands Home & Security Inc', 'Floor & Decor Holdings Inc')",0.0739,New,New
 "('ALLE', 'FND')","('Allegion PLC', 'Floor & Decor Holdings Inc')",0.0738,New,New
 "('EVO', 'SEB A')","('Evolution AB', 'Skandinaviska Enskilda Banken AB A')",0.073700002,New,New
+"('FBHS', 'LEN')","('Fortune Brands Home & Security Inc', 'Lennar Corp')",0.0736,New,New
 "('CARR', 'HD')","('Carrier Global Corp Ordinary Shares', 'The Home Depot Inc')",0.0736,New,New
 "('CARR', 'JCI')","('Carrier Global Corp Ordinary Shares', 'Johnson Controls International PLC')",0.0736,New,New
-"('FBHS', 'LEN')","('Fortune Brands Home & Security Inc', 'Lennar Corp')",0.0736,New,New
 "('LBTYK.L', 'T')","('Liberty Global PLC C', 'AT&T Inc')",0.073500002,New,New
 "('ALLE', 'LEN')","('Allegion PLC', 'Lennar Corp')",0.07350000000000001,New,New
 "('FBHS', 'NVR')","('Fortune Brands Home & Security Inc', 'NVR Inc')",0.07339999999999999,New,New
-"('ALLE', 'NVR')","('Allegion PLC', 'NVR Inc')",0.0733,New,New
 "('CARR', 'LOW')","('Carrier Global Corp Ordinary Shares', ""Lowe's Companies Inc"")",0.0733,New,New
+"('ALLE', 'NVR')","('Allegion PLC', 'NVR Inc')",0.0733,New,New
 "('LBTYK.L', 'TMUS')","('Liberty Global PLC C', 'T-Mobile US Inc')",0.073099995,New,New
 "('CARR', 'FBHS')","('Carrier Global Corp Ordinary Shares', 'Fortune Brands Home & Security Inc')",0.07300000000000001,New,New
 "('ALLE', 'CARR')","('Allegion PLC', 'Carrier Global Corp Ordinary Shares')",0.07289999999999999,New,New
@@ -494,8 +494,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('ALLE', 'HD')","('Allegion PLC', 'The Home Depot Inc')",0.07189999999999999,New,New
 "('ALLE', 'JCI')","('Allegion PLC', 'Johnson Controls International PLC')",0.07189999999999999,New,New
 "('DHI', 'FBHS')","('D.R. Horton Inc', 'Fortune Brands Home & Security Inc')",0.0718,New,New
-"('ALLE', 'DHI')","('Allegion PLC', 'D.R. Horton Inc')",0.0717,New,New
 "('FBHS', 'LOW')","('Fortune Brands Home & Security Inc', ""Lowe's Companies Inc"")",0.0717,New,New
+"('ALLE', 'DHI')","('Allegion PLC', 'D.R. Horton Inc')",0.0717,New,New
 "('ALLE', 'LOW')","('Allegion PLC', ""Lowe's Companies Inc"")",0.0716,New,New
 "('AI.PA', 'DG.PA')","('Air Liquide SA', 'Vinci SA')",0.07150000000000001,New,New
 "('ALLE', 'FBHS')","('Allegion PLC', 'Fortune Brands Home & Security Inc')",0.0713,New,New
@@ -517,8 +517,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('BNP.PA', 'DG.PA')","('BNP Paribas', 'Vinci SA')",0.06520000000000001,New,New
 "('FGEN', 'FLGT')","('FibroGen Inc', 'Fulgent Genetics Inc')",0.065,New,New
 "('000270.KS', '035420.KS')","('Kia Corp', 'NAVER Corp')",0.0649,New,New
-"('FND', 'MYRG')","('Floor & Decor Holdings Inc', 'MYR Group Inc')",0.06459999799999999,New,New
 "('MYRG', 'SUM')","('MYR Group Inc', 'Summit Materials Inc A')",0.06459999799999999,New,New
+"('FND', 'MYRG')","('Floor & Decor Holdings Inc', 'MYR Group Inc')",0.06459999799999999,New,New
 "('ACN', 'BA')","('Accenture PLC Class A', 'Boeing Co')",0.063900002,New,New
 "('RDSB.L', 'TRP.TO')","('Royal Dutch Shell PLC B', 'TC Energy Corp')",0.0637,New,New
 "('FND', 'SUM')","('Floor & Decor Holdings Inc', 'Summit Materials Inc A')",0.063,New,New
@@ -531,8 +531,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('SLM.JO', 'SOL.JO')","('Sanlam Ltd', 'Sasol Ltd')",0.058399999,New,New
 "('01299.HK', 'BAC')","('AIA Group Ltd', 'Bank of America Corp')",0.0581,New,New
 "('BAC', 'RY.TO')","('Bank of America Corp', 'Royal Bank of Canada')",0.057099999,New,New
-"('CPE', 'XOM')","('Callon Petroleum Co', 'Exxon Mobil Corp')",0.055999998999999995,New,New
 "('CPE', 'XEC')","('Callon Petroleum Co', 'Cimarex Energy Co')",0.055999998999999995,New,New
+"('CPE', 'XOM')","('Callon Petroleum Co', 'Exxon Mobil Corp')",0.055999998999999995,New,New
 "('CPE', 'MRO')","('Callon Petroleum Co', 'Marathon Oil Corp')",0.055999998999999995,New,New
 "('AMD', 'FSLR')","('Advanced Micro Devices Inc', 'First Solar Inc')",0.055999998999999995,New,New
 "('GFI.JO', 'SLM.JO')","('Gold Fields Ltd', 'Sanlam Ltd')",0.055899999000000006,New,New
@@ -570,10 +570,10 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('SLAB', 'SYNA')","('Silicon Laboratories Inc', 'Synaptics Inc')",0.053800001,New,New
 "('NEM', 'TRP.TO')","('Newmont Corp', 'TC Energy Corp')",0.053399999000000004,New,New
 "('FANG', 'XEC')","('Diamondback Energy Inc', 'Cimarex Energy Co')",0.053399999000000004,New,New
-"('CLR', 'XOM')","('Continental Resources Inc', 'Exxon Mobil Corp')",0.053299999,New,New
 "('CLR', 'XEC')","('Continental Resources Inc', 'Cimarex Energy Co')",0.053299999,New,New
-"('AR', 'XOM')","('Antero Resources Corp', 'Exxon Mobil Corp')",0.053099998999999995,New,New
+"('CLR', 'XOM')","('Continental Resources Inc', 'Exxon Mobil Corp')",0.053299999,New,New
 "('AR', 'XEC')","('Antero Resources Corp', 'Cimarex Energy Co')",0.053099998999999995,New,New
+"('AR', 'XOM')","('Antero Resources Corp', 'Exxon Mobil Corp')",0.053099998999999995,New,New
 "('AR', 'MRO')","('Antero Resources Corp', 'Marathon Oil Corp')",0.053099998999999995,New,New
 "('CNQ.TO', 'FCX')","('Canadian Natural Resources Ltd', 'Freeport-McMoRan Inc')",0.0523,New,New
 "('COP', 'XEC')","('ConocoPhillips', 'Cimarex Energy Co')",0.051899998,New,New
@@ -669,10 +669,10 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('CELH', 'HZO')","('Celsius Holdings Inc', 'MarineMax Inc')",0.0375,New,New
 "('APO', 'COIN')","('Apollo Global Management Inc Class A', 'Coinbase Global Inc Ordinary Shares - Class A')",0.037399999,New,New
 "('ARES', 'COIN')","('Ares Management Corp Class A', 'Coinbase Global Inc Ordinary Shares - Class A')",0.037399999,New,New
-"('ICE', 'RILY')","('Intercontinental Exchange Inc', 'B. Riley Financial Inc')",0.0373,New,New
-"('MORN', 'MSCI')","('Morningstar Inc', 'MSCI Inc')",0.0373,New,New
 "('APO', 'LPRO')","('Apollo Global Management Inc Class A', 'Open Lending Corp Class A')",0.0373,New,New
 "('ARES', 'LPRO')","('Ares Management Corp Class A', 'Open Lending Corp Class A')",0.0373,New,New
+"('MORN', 'MSCI')","('Morningstar Inc', 'MSCI Inc')",0.0373,New,New
+"('ICE', 'RILY')","('Intercontinental Exchange Inc', 'B. Riley Financial Inc')",0.0373,New,New
 "('BCEI', 'BIG')","('Bonanza Creek Energy Inc Ordinary Shares', 'Big Lots Inc')",0.0373,New,New
 "('BIG', 'HZO')","('Big Lots Inc', 'MarineMax Inc')",0.0373,New,New
 "('COOP', 'HIBB')","('Mr. Cooper Group Inc', 'Hibbett Inc')",0.037299999,New,New
@@ -680,8 +680,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('CEIX', 'ZEUS')","('CONSOL Energy Inc Ordinary Shares', 'Olympic Steel Inc')",0.0372,New,New
 "('CXW', 'VRTV')","('CoreCivic Inc', 'Veritiv Corp')",0.0372,New,New
 "('CVX', 'O')","('Chevron Corp', 'Realty Income Corp')",0.0372,New,New
-"('COIN', 'COWN')","('Coinbase Global Inc Ordinary Shares - Class A', 'Cowen Inc Class A')",0.037199999,New,New
 "('JEF', 'LPRO')","('Jefferies Financial Group Inc', 'Open Lending Corp Class A')",0.037199999,New,New
+"('COIN', 'COWN')","('Coinbase Global Inc Ordinary Shares - Class A', 'Cowen Inc Class A')",0.037199999,New,New
 "('COOP', 'CYH')","('Mr. Cooper Group Inc', 'Community Health Systems Inc')",0.037199999,New,New
 "('COWN', 'LPRO')","('Cowen Inc Class A', 'Open Lending Corp Class A')",0.037099999999999994,New,New
 "('CEIX', 'GNW')","('CONSOL Energy Inc Ordinary Shares', 'Genworth Financial Inc')",0.037099999,New,New
@@ -781,8 +781,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('CNSL', 'CXW')","('Consolidated Communications Holdings Inc', 'CoreCivic Inc')",0.023399999499999997,New,New
 "('IDXX', 'PLTR')","('IDEXX Laboratories Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.023399998999999998,New,New
 "('DOCU', 'PLTR')","('DocuSign Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.023399998999999998,New,New
-"('PLTR', 'ROKU')","('Palantir Technologies Inc Ordinary Shares - Class A', 'Roku Inc Class A')",0.0232999995,New,New
 "('ROKU', 'VEEV')","('Roku Inc Class A', 'Veeva Systems Inc Class A')",0.0232999995,New,New
+"('PLTR', 'ROKU')","('Palantir Technologies Inc Ordinary Shares - Class A', 'Roku Inc Class A')",0.0232999995,New,New
 "('OMV', 'TEL2 B')","('Omv AG', 'Tele2 AB B')",0.023200000000000002,New,New
 "('BBVA.BC', 'MT.SA')","('Banco Bilbao Vizcaya Argentaria SA', 'ArcelorMittal SA ADR')",0.023100001000000002,New,New
 "('IDXX', 'LULU')","('IDEXX Laboratories Inc', 'Lululemon Athletica Inc')",0.023099999,New,New
@@ -811,31 +811,31 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('CMG', 'PINS')","('Chipotle Mexican Grill Inc', 'Pinterest Inc')",0.0211,New,New
 "('GE', 'GS')","('General Electric Co', 'Goldman Sachs Group Inc')",0.0210999995,New,New
 "('00006.HK', 'ACS.BC')","('Power Assets Holdings Ltd', 'ACS Actividades de Construccion y Servicios SA')",0.021099999,New,New
-"('CMG', 'PLTR')","('Chipotle Mexican Grill Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.020999999999999998,New,New
-"('MTCH', 'PLTR')","('Match Group Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.020999999999999998,New,New
 "('MTCH', 'VEEV')","('Match Group Inc', 'Veeva Systems Inc Class A')",0.020999999999999998,New,New
+"('MTCH', 'PLTR')","('Match Group Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.020999999999999998,New,New
+"('CMG', 'PLTR')","('Chipotle Mexican Grill Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.020999999999999998,New,New
 "('00006.HK', 'HLAG.DE')","('Power Assets Holdings Ltd', 'Hapag-Lloyd AG')",0.020999999,New,New
 "('COP', 'GE')","('ConocoPhillips', 'General Electric Co')",0.020900000000000002,New,New
 "('00006.HK', 'MB.MI')","('Power Assets Holdings Ltd', 'Mediobanca SpA')",0.020900000000000002,New,New
-"('PINS', 'PLTR')","('Pinterest Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.020900000000000002,New,New
 "('PINS', 'VEEV')","('Pinterest Inc', 'Veeva Systems Inc Class A')",0.020900000000000002,New,New
+"('PINS', 'PLTR')","('Pinterest Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.020900000000000002,New,New
 "('MTN.JO', 'SPG')","('MTN Group Ltd', 'Simon Property Group Inc')",0.020899999000000002,New,New
 "('PLTR', 'VEEV')","('Palantir Technologies Inc Ordinary Shares - Class A', 'Veeva Systems Inc Class A')",0.0208,New,New
 "('BBVA.BC', 'GLE.PA')","('Banco Bilbao Vizcaya Argentaria SA', 'Societe Generale SA')",0.0207,New,New
 "('BBVA.BC', 'HWM')","('Banco Bilbao Vizcaya Argentaria SA', 'Howmet Aerospace Inc')",0.0207,New,New
-"('CMG', 'LULU')","('Chipotle Mexican Grill Inc', 'Lululemon Athletica Inc')",0.0207,New,New
 "('LULU', 'MTCH')","('Lululemon Athletica Inc', 'Match Group Inc')",0.0207,New,New
-"('CMG', 'DXCM')","('Chipotle Mexican Grill Inc', 'DexCom Inc')",0.0206,New,New
+"('CMG', 'LULU')","('Chipotle Mexican Grill Inc', 'Lululemon Athletica Inc')",0.0207,New,New
 "('DXCM', 'MTCH')","('DexCom Inc', 'Match Group Inc')",0.0206,New,New
 "('LULU', 'PINS')","('Lululemon Athletica Inc', 'Pinterest Inc')",0.0206,New,New
-"('LULU', 'PLTR')","('Lululemon Athletica Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.020499999999999997,New,New
+"('CMG', 'DXCM')","('Chipotle Mexican Grill Inc', 'DexCom Inc')",0.0206,New,New
 "('LULU', 'VEEV')","('Lululemon Athletica Inc', 'Veeva Systems Inc Class A')",0.020499999999999997,New,New
+"('LULU', 'PLTR')","('Lululemon Athletica Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.020499999999999997,New,New
 "('BBVA.BC', 'GS')","('Banco Bilbao Vizcaya Argentaria SA', 'Goldman Sachs Group Inc')",0.020499999499999998,New,New
-"('BBVA.BC', 'WFC')","('Banco Bilbao Vizcaya Argentaria SA', 'Wells Fargo & Co')",0.0204,New,New
 "('GLE.PA', 'MTN.JO')","('Societe Generale SA', 'MTN Group Ltd')",0.0204,New,New
 "('HWM', 'MTN.JO')","('Howmet Aerospace Inc', 'MTN Group Ltd')",0.0204,New,New
-"('DXCM', 'PLTR')","('DexCom Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.0204,New,New
+"('BBVA.BC', 'WFC')","('Banco Bilbao Vizcaya Argentaria SA', 'Wells Fargo & Co')",0.0204,New,New
 "('DXCM', 'VEEV')","('DexCom Inc', 'Veeva Systems Inc Class A')",0.0204,New,New
+"('DXCM', 'PLTR')","('DexCom Inc', 'Palantir Technologies Inc Ordinary Shares - Class A')",0.0204,New,New
 "('BBVA.BC', 'COP')","('Banco Bilbao Vizcaya Argentaria SA', 'ConocoPhillips')",0.0203,New,New
 "('00006.HK', 'TEL2 B')","('Power Assets Holdings Ltd', 'Tele2 AB B')",0.020299999,New,New
 "('GS', 'MTN.JO')","('Goldman Sachs Group Inc', 'MTN Group Ltd')",0.0201999995,New,New
@@ -861,8 +861,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('ADM.L', 'SLA.L')","('Admiral Group PLC', 'Standard Life Aberdeen PLC')",0.0182,New,New
 "('SLA.L', 'US.MI')","('Standard Life Aberdeen PLC', 'UnipolSai SPA Az nom post raggruppamento')",0.018099999999999998,New,New
 "('ACS.BC', 'ADM.L')","('ACS Actividades de Construccion y Servicios SA', 'Admiral Group PLC')",0.018000000000000002,New,New
-"('ACS.BC', 'US.MI')","('ACS Actividades de Construccion y Servicios SA', 'UnipolSai SPA Az nom post raggruppamento')",0.0179,New,New
 "('ADM.L', 'HLAG.DE')","('Admiral Group PLC', 'Hapag-Lloyd AG')",0.0179,New,New
+"('ACS.BC', 'US.MI')","('ACS Actividades de Construccion y Servicios SA', 'UnipolSai SPA Az nom post raggruppamento')",0.0179,New,New
 "('ADM.L', 'MB.MI')","('Admiral Group PLC', 'Mediobanca SpA')",0.017800001000000003,New,New
 "('HLAG.DE', 'US.MI')","('Hapag-Lloyd AG', 'UnipolSai SPA Az nom post raggruppamento')",0.0178,New,New
 "('MB.MI', 'US.MI')","('Mediobanca SpA', 'UnipolSai SPA Az nom post raggruppamento')",0.017700001,New,New
@@ -896,8 +896,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('IFF', 'TWTR')","('International Flavors & Fragrances Inc', 'Twitter Inc')",0.012,New,New
 "('SANM', 'SSTK')","('Sanmina Corp', 'Shutterstock Inc')",0.012,New,New
 "('PLXS', 'VG')","('Plexus Corp', 'Vonage Holdings Corp')",0.0118999998,New,New
-"('AFL', 'TWTR')","('Aflac Inc', 'Twitter Inc')",0.0118999997,New,New
 "('MSI', 'TWTR')","('Motorola Solutions Inc', 'Twitter Inc')",0.0118999997,New,New
+"('AFL', 'TWTR')","('Aflac Inc', 'Twitter Inc')",0.0118999997,New,New
 "('CPK', 'LQDT')","('Chesapeake Utilities Corp', 'Liquidity Services Inc')",0.0118,New,New
 "('AWR', 'LQDT')","('American States Water Co', 'Liquidity Services Inc')",0.011700000299999999,New,New
 "('AFL', 'MRVL')","('Aflac Inc', 'Marvell Technology Inc')",0.0117000001,New,New
@@ -921,8 +921,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('CPK', 'PLXS')","('Chesapeake Utilities Corp', 'Plexus Corp')",0.0110999997,New,New
 "('PRU', 'PSX')","('Prudential Financial Inc', 'Phillips 66')",0.011,New,New
 "('AWR', 'PLXS')","('American States Water Co', 'Plexus Corp')",0.011,New,New
-"('AFL', 'INFO')","('Aflac Inc', 'IHS Markit Ltd')",0.0109999995,New,New
 "('INFO', 'MSI')","('IHS Markit Ltd', 'Motorola Solutions Inc')",0.0109999995,New,New
+"('AFL', 'INFO')","('Aflac Inc', 'IHS Markit Ltd')",0.0109999995,New,New
 "('CPK', 'VG')","('Chesapeake Utilities Corp', 'Vonage Holdings Corp')",0.0109999995,New,New
 "('IFF', 'PRU')","('International Flavors & Fragrances Inc', 'Prudential Financial Inc')",0.0109,New,New
 "('NWN', 'PLXS')","('Northwest Natural Holding Co', 'Plexus Corp')",0.0109,New,New
@@ -930,8 +930,8 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('AWR', 'VG')","('American States Water Co', 'Vonage Holdings Corp')",0.0108999998,New,New
 "('NWN', 'VG')","('Northwest Natural Holding Co', 'Vonage Holdings Corp')",0.0107999998,New,New
 "('AVA', 'VG')","('Avista Corp', 'Vonage Holdings Corp')",0.0107999998,New,New
-"('AFL', 'PRU')","('Aflac Inc', 'Prudential Financial Inc')",0.0107999997,New,New
 "('MSI', 'PRU')","('Motorola Solutions Inc', 'Prudential Financial Inc')",0.0107999997,New,New
+"('AFL', 'PRU')","('Aflac Inc', 'Prudential Financial Inc')",0.0107999997,New,New
 "('AFL', 'ALXN')","('Aflac Inc', 'Alexion Pharmaceuticals Inc')",0.0107999997,New,New
 "('CPK', 'EHTH')","('Chesapeake Utilities Corp', 'eHealth Inc')",0.0107999997,New,New
 "('AWR', 'EHTH')","('American States Water Co', 'eHealth Inc')",0.010700000000000001,New,New
@@ -950,25 +950,25 @@ Bigram,Name,SumWeights,DiffEntries,DiffValue
 "('IQV', 'TWTR')","('IQVIA Holdings Inc', 'Twitter Inc')",0.0088999998,New,New
 "('IQV', 'ROKU')","('IQVIA Holdings Inc', 'Roku Inc Class A')",0.0088,New,New
 "('IDXX', 'TROW')","('IDEXX Laboratories Inc', 'T. Rowe Price Group Inc')",0.0087999998,New,New
-"('TROW', 'TWTR')","('T. Rowe Price Group Inc', 'Twitter Inc')",0.0087999998,New,New
-"('DOCU', 'TROW')","('DocuSign Inc', 'T. Rowe Price Group Inc')",0.0087999998,New,New
 "('A', 'TWTR')","('Agilent Technologies Inc', 'Twitter Inc')",0.0087999998,New,New
 "('A', 'DOCU')","('Agilent Technologies Inc', 'DocuSign Inc')",0.0087999998,New,New
-"('ROKU', 'TROW')","('Roku Inc Class A', 'T. Rowe Price Group Inc')",0.0087,New,New
+"('TROW', 'TWTR')","('T. Rowe Price Group Inc', 'Twitter Inc')",0.0087999998,New,New
+"('DOCU', 'TROW')","('DocuSign Inc', 'T. Rowe Price Group Inc')",0.0087999998,New,New
 "('A', 'ROKU')","('Agilent Technologies Inc', 'Roku Inc Class A')",0.0087,New,New
-"('CMG', 'TWTR')","('Chipotle Mexican Grill Inc', 'Twitter Inc')",0.0086999998,New,New
+"('ROKU', 'TROW')","('Roku Inc Class A', 'T. Rowe Price Group Inc')",0.0087,New,New
 "('IDXX', 'TT')","('IDEXX Laboratories Inc', 'Trane Technologies PLC')",0.0086999998,New,New
+"('CMG', 'TWTR')","('Chipotle Mexican Grill Inc', 'Twitter Inc')",0.0086999998,New,New
 "('TT', 'TWTR')","('Trane Technologies PLC', 'Twitter Inc')",0.0086999998,New,New
 "('DOCU', 'TT')","('DocuSign Inc', 'Trane Technologies PLC')",0.0086999998,New,New
 "('ROKU', 'TT')","('Roku Inc Class A', 'Trane Technologies PLC')",0.0086,New,New
-"('MRVL', 'TROW')","('Marvell Technology Inc', 'T. Rowe Price Group Inc')",0.008199999999999999,New,New
 "('A', 'MRVL')","('Agilent Technologies Inc', 'Marvell Technology Inc')",0.008199999999999999,New,New
-"('IQV', 'TROW')","('IQVIA Holdings Inc', 'T. Rowe Price Group Inc')",0.0081,New,New
-"('A', 'IQV')","('Agilent Technologies Inc', 'IQVIA Holdings Inc')",0.0081,New,New
+"('MRVL', 'TROW')","('Marvell Technology Inc', 'T. Rowe Price Group Inc')",0.008199999999999999,New,New
 "('MRVL', 'TT')","('Marvell Technology Inc', 'Trane Technologies PLC')",0.0081,New,New
+"('A', 'IQV')","('Agilent Technologies Inc', 'IQVIA Holdings Inc')",0.0081,New,New
+"('IQV', 'TROW')","('IQVIA Holdings Inc', 'T. Rowe Price Group Inc')",0.0081,New,New
 "('IQV', 'TT')","('IQVIA Holdings Inc', 'Trane Technologies PLC')",0.008,New,New
-"('CMG', 'TROW')","('Chipotle Mexican Grill Inc', 'T. Rowe Price Group Inc')",0.0079,New,New
 "('A', 'CMG')","('Agilent Technologies Inc', 'Chipotle Mexican Grill Inc')",0.0079,New,New
-"('TROW', 'TT')","('T. Rowe Price Group Inc', 'Trane Technologies PLC')",0.0079,New,New
 "('A', 'TT')","('Agilent Technologies Inc', 'Trane Technologies PLC')",0.0079,New,New
+"('CMG', 'TROW')","('Chipotle Mexican Grill Inc', 'T. Rowe Price Group Inc')",0.0079,New,New
+"('TROW', 'TT')","('T. Rowe Price Group Inc', 'Trane Technologies PLC')",0.0079,New,New
 "('CMG', 'TT')","('Chipotle Mexican Grill Inc', 'Trane Technologies PLC')",0.0078,New,New

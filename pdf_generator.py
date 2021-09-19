@@ -33,7 +33,7 @@ import numpy as np
 VERBOSE_LOGS = 0
 
 
-def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_name, append_to_pdf, output, bigrams):
+def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_index, reported_column_name, append_to_pdf, output, bigrams):
     title_for_figures = post_process_path_new.replace('/','') + ' ' + ('Bigrams ' if bigrams else '') + report_title + ' ' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
 
     csv_rows = report_table
@@ -51,8 +51,8 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     pdf.set_text_color(0, 0, 200)  # blue
     pdf.cell(200, 8, txt=title_for_figures, ln=1, align="C")  # http://fpdf.org/en/doc/cell.htm
 
-    names       = []
-    appearances = []
+    names = []
+    bars  = []
     for row_index, row in enumerate(csv_rows):
         if row_index > limit_num_rows: break
         if row_index > 0:  # row 0 is title
@@ -60,7 +60,10 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 names_list = list(row[1])
                 for name_index, name in enumerate(names_list): names_list[name_index] = names_list[name_index][0:10]
             names.append(' | '.join(names_list) if bigrams else row[1][0:28])
-            appearances.append(int(row[2]) if reported_column_name == '#' else float(row[2]))
+
+            if   reported_column_index == 2: bars.append(int(row[2]) if reported_column_name == '#' else float(row[2]))
+            elif reported_column_index == 3: bars.append(int(str(row[3]).replace('+','').replace('-','')))
+            elif reported_column_index == 4: bars.append(int(float(str(row[4]).replace('+','').replace('-',''))) if reported_column_name == '#' else float(str(row[4]).replace('+','').replace('-','')))
         if row_index == 0:
             row = ['Bigram' if bigrams else 'Symbol', 'Name', reported_column_name, 'Diff Entry', 'Diff '+reported_column_name]
 
@@ -76,28 +79,30 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
             pdf.set_text_color(0, 0, 200 if row_index == 0 else 0)  # blue for title and black otherwise
 
             if (col_index == 2 or col_index == 4) and row_index > 0 and 'New' not in str(col):
-                if reported_column_name == '#': col = int(col)
+                if VERBOSE_LOGS: print('  col={}'.format(col, end=''))
+                if reported_column_name == '#': col = int(float(str(col).replace('+','').replace('-','') if col_index == 4 else int(col)))
                 else:                           col = round(float(col), 3)
 
             if col_index >= 3 and row_index > 0:
-                if 'New' not in str(row[col_index]) and row[col_index] > 0:
+                if 'New' not in str(row[col_index]) and float(row[col_index]) > 0:
                     row[col_index] = '+{}'.format(row[col_index])
-                    col            = '+{}'.format(col)
+                    col            = '+{}'.format(str(col).replace('+','').replace('-',''))  # TODO: ASAFR: -> was col only
                 if 'New' in str(row[col_index]): pdf.set_text_color(  0,   0, 200)  # blue
                 elif '-' in str(row[col_index]): pdf.set_text_color(200,   0,   0)  # red
                 elif '+' in str(row[col_index]): pdf.set_text_color(  0, 200,   0)  # green
                 else:                            pdf.set_text_color(  0,   0,   0)  # black
             pdf.cell(w=w, h=3, txt=str(col)[0:41].replace("', '"," | ").replace("('","").replace("')",""), border=1, ln=0 if col_index < 4 else 1, align="C" if row_index == 0 else "L")
+        if VERBOSE_LOGS: print('\n')
     pdf.cell(200, 4, txt='', ln=1, align="L")
     fig, ax = plt.subplots(figsize=(15, 10))
     y_pos = np.arange(len(names))
 
-    ax.barh(y_pos, appearances, align='center')
+    ax.barh(y_pos, bars, align='center')
     ax.set_yticks(y_pos)
     ax.tick_params(axis='y', labelsize=8)
     ax.set_yticklabels(names)
     ax.invert_yaxis()  # labels read top-to-bottom
-    ax.set_xlabel(reported_column_name)
+    ax.set_xlabel(reported_column_name+' '+report_title)
     ax.set_title(title_for_figures, color='blue')
 
     # plt.show()
