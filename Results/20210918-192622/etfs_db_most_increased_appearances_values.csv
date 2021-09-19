@@ -1,0 +1,3685 @@
+Symbol,Name,NumAppearances,DiffEntries,DiffValue
+GOOGL,Alphabet Inc A,292,0,12.0
+MSFT,Microsoft Corp,230,0,9.0
+AAPL,Apple Inc,218,0,8.0
+NVDA,NVIDIA Corp,169,0,8.0
+TSLA,Tesla Inc,138,0,7.0
+JPM,JPMorgan Chase & Co,120,0,7.0
+AMZN,Amazon.com Inc,180,0,6.0
+FB,Facebook Inc A,178,0,6.0
+BRK.B,Berkshire Hathaway Inc Class B,90,0,5.0
+HD,The Home Depot Inc,59,3,5.0
+PFE,Pfizer Inc,38,4,5.0
+WFC,Wells Fargo & Co,36,5,5.0
+ABBV,AbbVie Inc,28,16,5.0
+GS,Goldman Sachs Group Inc,23,32,5.0
+V,Visa Inc Class A,79,2,4.0
+LLY,Eli Lilly and Co,34,2,4.0
+PM,Philip Morris International Inc,31,9,4.0
+T,AT&T Inc,31,10,4.0
+COP,ConocoPhillips,24,20,4.0
+C,Citigroup Inc,23,22,4.0
+NEM,Newmont Corp,17,44,4.0
+MS,Morgan Stanley,16,60,4.0
+MO,Altria Group Inc,16,65,4.0
+FCX,Freeport-McMoRan Inc,14,87,4.0
+JNJ,Johnson & Johnson,105,0,3.0
+MA,Mastercard Inc A,37,2,3.0
+MRK,Merck & Co Inc,30,2,3.0
+CVX,Chevron Corp,28,6,3.0
+ENB.TO,Enbridge Inc,26,5,3.0
+ROKU,Roku Inc Class A,22,12,3.0
+LOW,Lowe's Companies Inc,21,18,3.0
+KO,Coca-Cola Co,17,31,3.0
+MDLZ,Mondelez International Inc Class A,13,59,3.0
+ABT,Abbott Laboratories,12,80,3.0
+BLK,BlackRock Inc,12,83,3.0
+IFF,International Flavors & Fragrances Inc,10,114,3.0
+ROG,Roche Holding AG,83,0,2.0
+NESN,Nestle SA,78,-1,2.0
+NOVN,Novartis AG,60,1,2.0
+MC.PA,LVMH Moet Hennessy Louis Vuitton SE,53,0,2.0
+CSCO,Cisco Systems Inc,52,1,2.0
+XOM,Exxon Mobil Corp,52,1,2.0
+ULVR.L,Unilever PLC,47,2,2.0
+BAC,Bank of America Corp,47,2,2.0
+SAP.DE,SAP SE,46,2,2.0
+AZN.L,AstraZeneca PLC ADR,41,3,2.0
+NKE,Nike Inc B,31,3,2.0
+PEP,PepsiCo Inc,25,2,2.0
+SIE.DE,Siemens AG,25,4,2.0
+TMO,Thermo Fisher Scientific Inc,25,6,2.0
+UPS,United Parcel Service Inc Class B,25,8,2.0
+RY.TO,Royal Bank of Canada,24,9,2.0
+IBM,International Business Machines Corp,24,12,2.0
+MRVL,Marvell Technology Inc,21,6,2.0
+BIIB,Biogen Inc,21,5,2.0
+DHR,Danaher Corp,21,5,2.0
+IDXX,IDEXX Laboratories Inc,20,11,2.0
+TRP.TO,TC Energy Corp,19,14,2.0
+NEE,NextEra Energy Inc,19,13,2.0
+TTE.PA,TotalEnergies SE,18,15,2.0
+EOG,EOG Resources Inc,18,14,2.0
+GILD,Gilead Sciences Inc,17,17,2.0
+HON,Honeywell International Inc,16,12,2.0
+UNP,Union Pacific Corp,16,12,2.0
+TWTR,Twitter Inc,15,23,2.0
+DUK,Duke Energy Corp,15,27,2.0
+AMGN,Amgen Inc,14,34,2.0
+SRE,Sempra Energy,14,37,2.0
+SHW,Sherwin-Williams Co,13,32,2.0
+EXC,Exelon Corp,13,36,2.0
+XEL,Xcel Energy Inc,12,41,2.0
+MSI,Motorola Solutions Inc,12,43,2.0
+PEG,Public Service Enterprise Group Inc,12,36,2.0
+AEP,American Electric Power Co Inc,11,47,2.0
+DOW,Dow Inc,11,49,2.0
+MDT,Medtronic PLC,11,52,2.0
+BA,Boeing Co,11,55,2.0
+SLB,Schlumberger Ltd,11,56,2.0
+ATVI,Activision Blizzard Inc,11,56,2.0
+BP..L,BP PLC,11,57,2.0
+RDSA.L,Royal Dutch Shell PLC Class A,11,57,2.0
+SO,Southern Co,11,59,2.0
+D,Dominion Energy Inc,10,58,2.0
+CBA.AX,Commonwealth Bank of Australia,10,57,2.0
+RTX,Raytheon Technologies Corp,10,69,2.0
+GE,General Electric Co,10,72,2.0
+CMG,Chipotle Mexican Grill Inc,10,68,2.0
+SCHW,Charles Schwab Corp,9,65,2.0
+ECL,Ecolab Inc,9,65,2.0
+ALXN,Alexion Pharmaceuticals Inc,9,66,2.0
+AI.PA,Air Liquide SA,8,109,2.0
+RDSB.L,Royal Dutch Shell PLC B,8,112,2.0
+JCI,Johnson Controls International PLC,8,151,2.0
+WEC,WEC Energy Group Inc,7,171,2.0
+FLGT,Fulgent Genetics Inc,7,186,2.0
+APD,Air Products & Chemicals Inc,7,200,2.0
+PPG,PPG Industries Inc,6,264,2.0
+DD,DuPont de Nemours Inc,5,304,2.0
+CTLT,Catalent Inc,5,323,2.0
+OMV,Omv AG,4,674,2.0
+TT,Trane Technologies PLC,4,921,2.0
+MTN.JO,MTN Group Ltd,3,1579,2.0
+STZ,Constellation Brands Inc A,3,2337,2.0
+ASML,ASML Holding NV ADR,76,-1,1.0
+2330.TW,Taiwan Semiconductor Manufacturing Co Ltd,62,0,1.0
+VZ,Verizon Communications Inc,61,0,1.0
+ADBE,Adobe Inc,61,0,1.0
+PG,Procter & Gamble Co,55,-1,1.0
+PYPL,PayPal Holdings Inc,55,0,1.0
+7203,Toyota Motor Corp,52,-1,1.0
+005930.KS,Samsung Electronics Co Ltd,45,0,1.0
+TGT,Target Corp,44,0,1.0
+NOVO B,Novo Nordisk A/S B,35,-2,1.0
+WMT,Walmart Inc,32,-1,1.0
+01299.HK,AIA Group Ltd,30,-2,1.0
+RIO.L,Rio Tinto PLC,26,-1,1.0
+COST,Costco Wholesale Corp,25,-2,1.0
+NPN.JO,Naspers Ltd Class N,24,-2,1.0
+AVGO,Broadcom Inc,24,1,1.0
+GSK.L,GlaxoSmithKline PLC,24,1,1.0
+ORCL,Oracle Corp,23,0,1.0
+SHOP.TO,Shopify Inc A,23,1,1.0
+SAN.PA,Sanofi SA,22,2,1.0
+ACN,Accenture PLC Class A,21,-1,1.0
+OR.PA,L'Oreal SA,21,-4,1.0
+ALV.DE,Allianz SE,21,-6,1.0
+BHP.AX,BHP Group Ltd ADR,20,-4,1.0
+AMD,Advanced Micro Devices Inc,20,-2,1.0
+6758,Sony Group Corp,19,6,1.0
+TECH,Bio-Techne Corp,19,5,1.0
+DOCU,DocuSign Inc,19,3,1.0
+6861,Keyence Corp,17,6,1.0
+FANG,Diamondback Energy Inc,17,4,1.0
+ADM,Archer-Daniels Midland Co,17,7,1.0
+BMY,Bristol-Myers Squibb Company,16,4,1.0
+MCD,McDonald's Corp,16,4,1.0
+REGN,Regeneron Pharmaceuticals Inc,15,3,1.0
+LIN.L,Linde PLC,15,4,1.0
+OXY,Occidental Petroleum Corp,15,4,1.0
+DAI.DE,Daimler AG,15,5,1.0
+GM,General Motors Co,14,6,1.0
+SPG,Simon Property Group Inc,14,9,1.0
+MPC,Marathon Petroleum Corp,14,8,1.0
+DPW.DE,Deutsche Post AG,14,9,1.0
+MMM,3M Co,14,10,1.0
+DTE.DE,Deutsche Telekom AG,13,12,1.0
+9984,SoftBank Group Corp,13,15,1.0
+8035,Tokyo Electron Ltd,13,15,1.0
+ILMN,Illumina Inc,13,17,1.0
+NUE,Nucor Corp,13,16,1.0
+HUBS,HubSpot Inc,13,17,1.0
+BATS.L,British American Tobacco PLC,13,16,1.0
+000660.KS,SK Hynix Inc,12,12,1.0
+TD.TO,The Toronto-Dominion Bank,12,12,1.0
+AXP,American Express Co,12,11,1.0
+6501,Hitachi Ltd,12,10,1.0
+SWKS,Skyworks Solutions Inc,12,7,1.0
+A,Agilent Technologies Inc,12,7,1.0
+PINS,Pinterest Inc,11,9,1.0
+8306,Mitsubishi UFJ Financial Group Inc,11,10,1.0
+AXON,Axon Enterprise Inc,11,9,1.0
+PSX,Phillips 66,11,9,1.0
+DGE.L,Diageo PLC,11,12,1.0
+00006.HK,Power Assets Holdings Ltd,11,13,1.0
+GD,General Dynamics Corp,11,12,1.0
+FSLR,First Solar Inc,10,8,1.0
+FDX,FedEx Corp,10,9,1.0
+CL,Colgate-Palmolive Co,10,16,1.0
+CARR,Carrier Global Corp Ordinary Shares,10,16,1.0
+6098,Recruit Holdings Co Ltd,10,15,1.0
+7974,Nintendo Co Ltd,10,15,1.0
+4063,Shin-Etsu Chemical Co Ltd,10,15,1.0
+CAT,Caterpillar Inc,10,14,1.0
+BAS.DE,Basf SE,10,15,1.0
+SU.PA,Schneider Electric SE,10,15,1.0
+SM,SM Energy Co,10,18,1.0
+XLNX,Xilinx Inc,10,17,1.0
+EXPD,Expeditors International of Washington Inc,10,19,1.0
+LMT,Lockheed Martin Corp,9,14,1.0
+WES.AX,Wesfarmers Ltd,9,13,1.0
+ZTS,Zoetis Inc Class A,9,16,1.0
+035720.KS,Kakao Corp,9,20,1.0
+VEEV,Veeva Systems Inc Class A,9,23,1.0
+TROW,T. Rowe Price Group Inc,9,25,1.0
+BAYN.DE,Bayer AG,9,24,1.0
+2317.TW,Hon Hai Precision Industry Co Ltd,9,22,1.0
+PHM,PulteGroup Inc,9,22,1.0
+ORI,Old Republic International Corp,8,26,1.0
+035420.KS,NAVER Corp,8,28,1.0
+DXCM,DexCom Inc,8,29,1.0
+006400.KS,Samsung SDI Co Ltd,8,38,1.0
+O,Realty Income Corp,8,39,1.0
+ABBN,ABB Ltd,8,41,1.0
+CM.TO,Canadian Imperial Bank of Commerce,8,39,1.0
+LEN,Lennar Corp,8,38,1.0
+DHI,D.R. Horton Inc,8,40,1.0
+2603.TW,Evergreen Marine Corp (Taiwan) Ltd,8,42,1.0
+HSBA.L,HSBC Holdings PLC,8,43,1.0
+TMUS,T-Mobile US Inc,8,43,1.0
+MSCI,MSCI Inc,8,48,1.0
+VSTO,Vista Outdoor Inc,7,52,1.0
+COIN,Coinbase Global Inc Ordinary Shares - Class A,7,52,1.0
+LHX,L3Harris Technologies Inc,7,49,1.0
+CSL.AX,CSL Ltd,7,49,1.0
+BNS.TO,Bank of Nova Scotia,7,49,1.0
+ADS.DE,adidas AG,7,47,1.0
+SBUX,Starbucks Corp,7,56,1.0
+NOC,Northrop Grumman Corp,7,61,1.0
+GRMN,Garmin Ltd,7,64,1.0
+INVE B,Investor AB B,7,76,1.0
+SLAB,Silicon Laboratories Inc,7,68,1.0
+MRO,Marathon Oil Corp,7,69,1.0
+STLD,Steel Dynamics Inc,7,77,1.0
+AR,Antero Resources Corp,7,78,1.0
+APPS,Digital Turbine Inc,7,79,1.0
+KSU,Kansas City Southern,7,82,1.0
+D05.SI,DBS Group Holdings Ltd,6,98,1.0
+NVR,NVR Inc,6,98,1.0
+BKNG,Booking Holdings Inc,6,98,1.0
+CNR.TO,Canadian National Railway Co,6,100,1.0
+BAM.A.TO,Brookfield Asset Management Inc Class A,6,100,1.0
+RBLX,Roblox Corp Ordinary Shares - Class A,6,101,1.0
+CELH,Celsius Holdings Inc,6,101,1.0
+NSC,Norfolk Southern Corp,6,97,1.0
+ANET,Arista Networks Inc,6,105,1.0
+IFX.DE,Infineon Technologies AG,6,106,1.0
+PRU,Prudential Financial Inc,6,106,1.0
+ICE,Intercontinental Exchange Inc,6,105,1.0
+2454.TW,MediaTek Inc,6,106,1.0
+JEF,Jefferies Financial Group Inc,6,108,1.0
+EL,The Estee Lauder Companies Inc Class A,6,107,1.0
+GIS,General Mills Inc,6,105,1.0
+CPK,Chesapeake Utilities Corp,6,99,1.0
+XEC,Cimarex Energy Co,5,96,1.0
+BMO.TO,Bank of Montreal,5,97,1.0
+CP.TO,Canadian Pacific Railway Ltd,5,97,1.0
+CLF,Cleveland-Cliffs Inc,5,96,1.0
+BIG,Big Lots Inc,5,101,1.0
+TJX,TJX Companies Inc,5,97,1.0
+AWR,American States Water Co,5,101,1.0
+BG,Bunge Ltd,5,109,1.0
+TDG,TransDigm Group Inc,5,108,1.0
+RIO.AX,Rio Tinto Ltd,5,150,1.0
+VER,Verbund AG,5,212,1.0
+CNQ.TO,Canadian Natural Resources Ltd,5,137,1.0
+MTCH,Match Group Inc,5,140,1.0
+APO,Apollo Global Management Inc Class A,5,141,1.0
+LUMN,Lumen Technologies Inc Ordinary Shares,5,146,1.0
+SYNA,Synaptics Inc,5,148,1.0
+RGLD,Royal Gold Inc,5,148,1.0
+CPE,Callon Petroleum Co,5,155,1.0
+EA,Electronic Arts Inc,5,158,1.0
+UFS,Domtar Corp,5,178,1.0
+HIBB,Hibbett Inc,4,193,1.0
+MYRG,MYR Group Inc,4,194,1.0
+VMC,Vulcan Materials Co,4,202,1.0
+AA,Alcoa Corp,4,206,1.0
+051910.KS,LG Chem Ltd,4,205,1.0
+WBC.AX,Westpac Banking Corp,4,206,1.0
+FGEN,FibroGen Inc,4,218,1.0
+PLTR,Palantir Technologies Inc Ordinary Shares - Class A,4,221,1.0
+000270.KS,Kia Corp,4,218,1.0
+2303.TW,United Microelectronics Corp,4,252,1.0
+005490.KS,POSCO,4,252,1.0
+BNP.PA,BNP Paribas,4,255,1.0
+ZURN,Zurich Insurance Group AG,4,254,1.0
+CFR,Compagnie Financiere Richemont SA,4,286,1.0
+VOE,Vanguard Mid-Cap Value ETF,4,402,1.0
+DG.PA,Vinci SA,4,281,1.0
+IMP.JO,Impala Platinum Holdings Ltd,4,248,1.0
+GFI.JO,Gold Fields Ltd,4,273,1.0
+IQV,IQVIA Holdings Inc,4,251,1.0
+TXT,Textron Inc,4,264,1.0
+JBHT,JB Hunt Transport Services Inc,4,262,1.0
+CLR,Continental Resources Inc,4,258,1.0
+MNST,Monster Beverage Corp,4,274,1.0
+PTEN,Patterson-UTI Energy Inc,4,286,1.0
+CYH,Community Health Systems Inc,4,289,1.0
+VRTV,Veritiv Corp,4,289,1.0
+MP,MP Materials Corp Ordinary Shares - Class A,4,307,1.0
+O39.SI,Oversea-Chinese Banking Corp Ltd,3,331,1.0
+U11.SI,United Overseas Bank Ltd,3,331,1.0
+NAB.AX,National Australia Bank Ltd,3,330,1.0
+ANZ.AX,Australia and New Zealand Banking Group Ltd,3,330,1.0
+MQG.AX,Macquarie Group Ltd,3,330,1.0
+LULU,Lululemon Athletica Inc,3,333,1.0
+EVO,Evolution AB,3,336,1.0
+ARES,Ares Management Corp Class A,3,345,1.0
+ELAN,Elanco Animal Health Inc,3,347,1.0
+00992,Lenovo Group Ltd,3,359,1.0
+SPWR,SunPower Corp,3,375,1.0
+AFL,Aflac Inc,3,383,1.0
+MT.SA,ArcelorMittal SA ADR,3,727,1.0
+ACS.BC,ACS Actividades de Construccion y Servicios SA,3,667,1.0
+FRT,Federal Realty Investment Trust,3,388,1.0
+2881.TW,Fubon Financial Holdings Co Ltd,3,406,1.0
+CERN,Cerner Corp,3,413,1.0
+GIVN,Givaudan SA,3,418,1.0
+2882.TW,Cathay Financial Holding Co Ltd,3,450,1.0
+UBSG,UBS Group AG,3,445,1.0
+ATCO A,Atlas Copco AB A,3,584,1.0
+NDA SE,Nordea Bank Abp,3,582,1.0
+LONN,Lonza Group Ltd,3,514,1.0
+SIKA,Sika AG,3,514,1.0
+KER.PA,Kering SA,3,489,1.0
+2308.TW,Delta Electronics Inc,3,511,1.0
+2002.TW,China Steel Corp,3,511,1.0
+005380.KS,Hyundai Motor Co,3,496,1.0
+068270.KS,Celltrion Inc,3,496,1.0
+RILY,B. Riley Financial Inc,3,501,1.0
+HP,Helmerich & Payne Inc,3,660,1.0
+LSTR,Landstar System Inc,3,711,1.0
+LPRO,Open Lending Corp Class A,3,706,1.0
+JAZZ,Jazz Pharmaceuticals PLC,3,576,1.0
+KHC,The Kraft Heinz Co,3,689,1.0
+PRGO,Perrigo Co PLC,3,628,1.0
+SSTK,Shutterstock Inc,3,628,1.0
+Z74.SI,Singapore Telecommunications Ltd,2,694,1.0
+BBVA.BC,Banco Bilbao Vizcaya Argentaria SA,2,1047,1.0
+HWM,Howmet Aerospace Inc,2,2162,1.0
+GLE.PA,Societe Generale SA,2,1593,1.0
+ADM.L,Admiral Group PLC,2,1871,1.0
+US.MI,UnipolSai SPA Az nom post raggruppamento,2,1380,1.0
+MB.MI,Mediobanca SpA,2,1005,1.0
+WOW.AX,Woolworths Group Ltd,2,1065,1.0
+ERIC B,Telefonaktiebolaget L M Ericsson Class B,2,1225,1.0
+VOLV B,Volvo AB B,2,1225,1.0
+SAFM,Sanderson Farms Inc,2,942,1.0
+EBS,Erste Group Bank AG.,2,1387,1.0
+WIE,Wienerberger AG,2,1205,1.0
+AIR,Airbus SE,2,1051,1.0
+S68.SI,Singapore Exchange Ltd,2,1739,1.0
+F34.SI,Wilmar International Ltd,2,1107,1.0
+1303.TW,Nan Ya Plastics Corp,2,1065,1.0
+FSR.JO,Firstrand Ltd,2,1053,1.0
+SBK.JO,Standard Bank Group Ltd,2,1054,1.0
+CPI.JO,Capitec Bank Holdings Ltd,2,1054,1.0
+SOL.JO,Sasol Ltd,2,1054,1.0
+OII,Oceaneering International Inc,2,1011,1.0
+FBHS,Fortune Brands Home & Security Inc,2,1027,1.0
+CHRW,C.H. Robinson Worldwide Inc,2,1031,1.0
+EHTH,eHealth Inc,2,1093,1.0
+HAL,Halliburton Co,2,1534,1.0
+CHX,ChampionX Corp,2,1534,1.0
+RIG,Transocean Ltd,2,1536,1.0
+INFO,IHS Markit Ltd,2,1565,1.0
+CAR,Avis Budget Group Inc,2,1452,1.0
+MORN,Morningstar Inc,2,1200,1.0
+GPRE,Green Plains Inc,2,1271,1.0
+NNN,National Retail Properties Inc,2,1286,1.0
+KDP,Keurig Dr Pepper Inc,2,1425,1.0
+SYY,Sysco Corp,2,1685,1.0
+SAVA,Cassava Sciences Inc,2,1348,1.0
+MLM,Martin Marietta Materials Inc,2,1528,1.0
+AAN,The Aarons Co Inc Ordinary Shares,2,1347,1.0
+BAND,Bandwidth Inc Class A,2,1845,1.0
+NBR,Nabors Industries Ltd,2,1379,1.0
+BCEI,Bonanza Creek Energy Inc Ordinary Shares,2,1714,1.0
+CONN,Conn's Inc,2,1541,1.0
+GNW,Genworth Financial Inc,2,1596,1.0
+CNSL,Consolidated Communications Holdings Inc,2,1540,1.0
+ALLE,Allegion PLC,2,1582,1.0
+00700,Tencent Holdings Ltd,70,0,0.0
+FTIXX,Goldman Sachs FS Treasury Intms Instl,59,-2,0.0
+UNH,UnitedHealth Group Inc,56,-1,0.0
+DAPXX,Dreyfus Government Secs Cash Mgmt Admin,50,-1,0.0
+03690,Meituan,48,0,0.0
+INFY.BO,Infosys Ltd,46,-2,0.0
+INTC,Intel Corp,45,-4,0.0
+09988,Alibaba Group Holding Ltd Ordinary Shares,40,-1,0.0
+00939,China Construction Bank Corp Class H,39,-1,0.0
+BABA,Alibaba Group Holding Ltd ADR,39,-1,0.0
+JD,JD.com Inc ADR,35,-3,0.0
+AGPXX,Invesco Shrt-Trm Inv Gov&Agcy Instl,35,-4,0.0
+FGTXX,Goldman Sachs FS Government Instl,32,-3,0.0
+TXN,Texas Instruments Inc,30,-5,0.0
+NIO,NIO Inc ADR,29,-3,0.0
+FGXXX,First American Government Obligs X,28,-3,0.0
+QCOM,Qualcomm Inc,27,-4,0.0
+CRM,Salesforce.com Inc,27,-4,0.0
+VALE3.SA,Vale SA,27,-2,0.0
+ENPH,Enphase Energy Inc,25,-4,0.0
+RELIANCE.B,Reliance Industries Ltd Shs Dematerialised,24,-7,0.0
+BIDU,Baidu Inc ADR,23,-9,0.0
+PSA,Public Storage,23,-9,0.0
+FTNT,Fortinet Inc,23,-9,0.0
+02318,Ping An Insurance (Group) Co. of China Ltd Class H,22,-4,0.0
+AMC,AMC Entertainment Holdings Inc Class A,22,-4,0.0
+AMT,American Tower Corp,22,-4,0.0
+NTES,NetEase Inc ADR,21,-4,0.0
+PLD,Prologis Inc,21,-7,0.0
+NET,Cloudflare Inc,21,-7,0.0
+EBAY,eBay Inc,21,-7,0.0
+EQIX,Equinix Inc,19,-8,0.0
+SEDG,SolarEdge Technologies Inc,19,-10,0.0
+QQQ,"Invesco QQQ Trust, Series 1",18,-6,0.0
+GNRC,Generac Holdings Inc,18,-5,0.0
+DLR,Digital Realty Trust Inc,18,-5,0.0
+WMB,Williams Companies Inc,18,-2,0.0
+KMI,Kinder Morgan Inc Class P,18,-2,0.0
+WELL,Welltower Inc,17,-4,0.0
+CROX,Crocs Inc,17,-4,0.0
+CVS,CVS Health Corp,16,-7,0.0
+AMAT,Applied Materials Inc,16,-7,0.0
+TSM.TW,Taiwan Semiconductor Manufacturing Co Ltd ADR,16,-7,0.0
+XLK,SPDR Select Sector Fund - Techn,16,-7,0.0
+SE.SI,Sea Ltd ADR,16,-9,0.0
+KR,The Kroger Co,16,-10,0.0
+BILI,Bilibili Inc ADR,16,-11,0.0
+RUN,Sunrun Inc,15,-7,0.0
+INTU,Intuit Inc,15,-6,0.0
+AVB,AvalonBay Communities Inc,15,-6,0.0
+02269,WuXi Biologics (Cayman) Inc Registered Shs Unitary 144A/Reg S,15,-5,0.0
+CCI,Crown Castle International Corp,15,-7,0.0
+TCS.BO,Tata Consultancy Services Ltd,15,-8,0.0
+MOH,Molina Healthcare Inc,14,-10,0.0
+OVV,Ovintiv Inc,14,-11,0.0
+PXD,Pioneer Natural Resources Co,14,-12,0.0
+FMG.AX,Fortescue Metals Group Ltd,14,-11,0.0
+OKE,ONEOK Inc,14,-10,0.0
+ADI,Analog Devices Inc,14,-10,0.0
+LRCX,Lam Research Corp,13,-10,0.0
+WM,Waste Management Inc,13,-9,0.0
+BISXX,BlackRock Cash Funds Instl SL Agency,13,-9,0.0
+FXFXX,First American Treasury Obligs X,13,-10,0.0
+LSCC,Lattice Semiconductor Corp,13,-9,0.0
+DE,Deere & Co,13,-12,0.0
+NOW,ServiceNow Inc,13,-13,0.0
+HPQ,HP Inc,13,-13,0.0
+9434,SoftBank Corp,13,-13,0.0
+LNG,Cheniere Energy Inc,13,-11,0.0
+CTVA,Corteva Inc,12,-11,0.0
+MU,Micron Technology Inc,12,-11,0.0
+JNK,SPDR Bloomberg Barclays High Yi,12,-10,0.0
+HYG,iShares iBoxx $ High Yield Corp,12,-10,0.0
+XLY,SPDR Select Sector Fund - Consu,12,-10,0.0
+600519,Kweichow Moutai Co Ltd,12,-10,0.0
+IVV,iShares Core S&P 500 ETF,12,-10,0.0
+300750,Contemporary Amperex Technology Co Ltd Class A,12,-10,0.0
+CRL,Charles River Laboratories International Inc,12,-10,0.0
+TLT,iShares 20+ Year Treasury Bond ,12,-7,0.0
+ZS,Zscaler Inc,12,-7,0.0
+IP,International Paper Co,12,-7,0.0
+COF,Capital One Financial Corp,12,-9,0.0
+GGG,Graco Inc,12,-9,0.0
+ALL,Allstate Corp,12,-14,0.0
+ENEL.MI,Enel SpA,12,-14,0.0
+ZNU21,10 Year Treasury Note Future Sept 21,12,-14,0.0
+PLUG,Plug Power Inc,11,-14,0.0
+PDD,Pinduoduo Inc ADR,11,-14,0.0
+XLF,SPDR Select Sector Fund - Finan,11,-14,0.0
+CZR,Caesars Entertainment Inc,11,-16,0.0
+EQR,Equity Residential,11,-16,0.0
+EXR,Extra Space Storage Inc,11,-18,0.0
+RMD,ResMed Inc,11,-19,0.0
+CGNX,Cognex Corp,11,-21,0.0
+HDFC.BO,Housing Development Finance Corp Ltd,11,-17,0.0
+NTR.TO,Nutrien Ltd,11,-21,0.0
+ENSG,Ensign Group Inc,11,-21,0.0
+00388.HK,Hong Kong Exchanges and Clearing Ltd,10,-21,0.0
+SPY,SPDR S&P 500,10,-24,0.0
+EPD,Enterprise Products Partners LP,10,-24,0.0
+AWK,American Water Works Co Inc,10,-24,0.0
+VRTX,Vertex Pharmaceuticals Inc,10,-23,0.0
+RSG,Republic Services Inc,10,-24,0.0
+NVAX,Novavax Inc,10,-26,0.0
+PTON,Peloton Interactive Inc,10,-26,0.0
+TTD,The Trade Desk Inc A,10,-26,0.0
+ETSY,Etsy Inc,10,-26,0.0
+SPLK,Splunk Inc,10,-24,0.0
+MCO,Moody's Corporation,10,-22,0.0
+WSM,Williams-Sonoma Inc,10,-27,0.0
+500696.BO,Hindustan Unilever Ltd,10,-26,0.0
+GVMXX,State Street Instl US Govt MMkt Premier,10,-27,0.0
+AD,Koninklijke Ahold Delhaize NV,10,-27,0.0
+IBE.BC,Iberdrola SA,10,-27,0.0
+SBAC,SBA Communications Corp,10,-27,0.0
+HSY,The Hershey Co,9,-29,0.0
+ANTM,Anthem Inc,9,-28,0.0
+00823.HK,Link Real Estate Investment Trust,9,-28,0.0
+VALE.SA,Vale SA ADR,9,-28,0.0
+PWR,Quanta Services Inc,9,-28,0.0
+UGI,UGI Corp,9,-28,0.0
+000858,Wuliangye Yibin Co Ltd,9,-28,0.0
+601012,LONGi Green Energy Technology Co Ltd Class A,9,-28,0.0
+MELI.SA,MercadoLibre Inc,9,-28,0.0
+ET,Energy Transfer LP,9,-27,0.0
+MXIM,Maxim Integrated Products Inc,9,-29,0.0
+WBA,Walgreens Boots Alliance Inc,9,-28,0.0
+CDNS,Cadence Design Systems Inc,9,-27,0.0
+F,Ford Motor Co,9,-28,0.0
+TLRY.TO,Aphria Inc,9,-29,0.0
+ANAT,American National Group Inc,9,-29,0.0
+DFS,Discover Financial Services,9,-28,0.0
+SGRO.L,Segro PLC,9,-26,0.0
+CHTR,Charter Communications Inc A,9,-26,0.0
+CINF,Cincinnati Financial Corp,9,-27,0.0
+FICO,Fair Isaac Corp,9,-26,0.0
+LH,Laboratory Corp of America Holdings,9,-25,0.0
+ADYEN,Adyen NV,9,-23,0.0
+STAA,Staar Surgical Co,9,-20,0.0
+IIPR,Innovative Industrial Properties Inc Registered Shs,9,-18,0.0
+SPGI,S&P Global Inc,8,-17,0.0
+LQD,iShares iBoxx $ Investment Grad,8,-17,0.0
+XLI,SPDR Select Sector Fund - Indus,8,-17,0.0
+XLC,The Communication Services Sele,8,-17,0.0
+LPX,Louisiana-Pacific Corp,8,-17,0.0
+MMC,Marsh & McLennan Companies Inc,8,-20,0.0
+SPOT,Spotify Technology SA,8,-20,0.0
+6594,Nidec Corp,8,-18,0.0
+ARE,Alexandria Real Estate Equities Inc,8,-19,0.0
+ENTG,Entegris Inc,8,-19,0.0
+IIVI,II-VI Inc,8,-18,0.0
+6702,Fujitsu Ltd,8,-18,0.0
+CUBE,CubeSmart,8,-18,0.0
+DASH,DoorDash Inc Ordinary Shares - Class A,8,-18,0.0
+PKI,PerkinElmer Inc,8,-19,0.0
+MISXX,Morgan Stanley Instl Lqudty Trs Instl,8,-18,0.0
+OKTA,Okta Inc A,8,-18,0.0
+LNT,Alliant Energy Corp,8,-18,0.0
+KMB,Kimberly-Clark Corp,8,-18,0.0
+WEED.TO,Canopy Growth Corp,8,-18,0.0
+DGCXX,Dreyfus Government Cash Mgmt Instl,8,-18,0.0
+GRWG,GrowGeneration Corp,8,-18,0.0
+VWS,Vestas Wind Systems A/S,8,-19,0.0
+NTAP,NetApp Inc,8,-18,0.0
+HYLB,Xtrackers USD High Yield Corpor,8,-17,0.0
+XPO,XPO Logistics Inc,8,-17,0.0
+CPT,Camden Property Trust,8,-17,0.0
+00016.HK,Sun Hung Kai Properties Ltd,8,-16,0.0
+PPL.TO,Pembina Pipeline Corp,8,-16,0.0
+SNPS,Synopsys Inc,8,-16,0.0
+ZBRA,Zebra Technologies Corp,8,-19,0.0
+STX.SI,Seagate Technology Holdings PLC,7,-19,0.0
+XLV,SPDR Select Sector Fund - Healt,7,-19,0.0
+AGG,iShares Core U.S. Aggregate Bon,7,-19,0.0
+ARW,Arrow Electronics Inc,7,-18,0.0
+601318,Ping An Insurance (Group) Co. of China Ltd,7,-19,0.0
+MDB,MongoDB Inc Class A,7,-18,0.0
+IJR,iShares Core S&P Small-Cap ETF,7,-17,0.0
+AOS,A.O. Smith Corp,7,-16,0.0
+PACB,Pacific Biosciences of California Inc,7,-16,0.0
+CRSP,CRISPR Therapeutics AG,7,-16,0.0
+TRMB,Trimble Inc,7,-16,0.0
+AJG,Arthur J. Gallagher & Co,7,-17,0.0
+TRGP,Targa Resources Corp,7,-17,0.0
+ABNB,Airbnb Inc Ordinary Shares - Class A,7,-17,0.0
+GLEN,Glencore PLC,7,-17,0.0
+DDOG,Datadog Inc Class A,7,-18,0.0
+ZLAB,Zai Lab Ltd ADR Repr 1 Shs,7,-18,0.0
+FRPT,Freshpet Inc,7,-17,0.0
+SGMS,Scientific Games Corp Ordinary Shares,7,-17,0.0
+LSI,Life Storage Inc,7,-17,0.0
+MRW.L,Morrison (Wm) Supermarkets PLC,7,-17,0.0
+ISRG,Intuitive Surgical Inc,7,-16,0.0
+IEF,iShares 7-10 Year Treasury Bond,7,-16,0.0
+FVRR,Fiverr International Ltd,7,-15,0.0
+VIAC,ViacomCBS Inc Class B,7,-15,0.0
+ZFU21,5 Year Treasury Note Future Sept 21,7,-16,0.0
+EMA.TO,Emera Inc,7,-15,0.0
+SCMN,Swisscom AG,7,-15,0.0
+PBH,Prestige Consumer Healthcare Inc,7,-14,0.0
+WFCPL,Wells Fargo & Co 7 1/2 % Non Cum Perp Conv Pfd Shs -A- Series -L-,7,-14,0.0
+AVGOP,Broadcom Inc Broadcom Inc 8 % Mandatory Convertible Preferred Stock Ser A,7,-14,0.0
+CLTL,Invesco Treasury Collateral ETF,7,-13,0.0
+SBER,Sberbank of Russia PJSC ADR,7,-13,0.0
+BKE,Buckle Inc,7,-15,0.0
+DWNI.DE,Deutsche Wohnen SE,7,-14,0.0
+GMG.AX,Goodman Group,7,-14,0.0
+9433,KDDI Corp,7,-14,0.0
+TTC,The Toro Co,7,-15,0.0
+LB,L Brands Inc,7,-16,0.0
+DISH,DISH Network Corp Class A,7,-15,0.0
+XLE,SPDR Select Sector Fund - Energ,7,-15,0.0
+XPEV,XPeng Inc ADR,7,-15,0.0
+PETR4.SA,Petroleo Brasileiro SA Petrobras Participating Preferred,7,-15,0.0
+BK,Bank of New York Mellon Corp,7,-15,0.0
+DVN,Devon Energy Corp,7,-15,0.0
+LIGHT,Signify NV,7,-16,0.0
+ROP,Roper Technologies Inc,7,-16,0.0
+UPWK,Upwork Inc,7,-16,0.0
+WPM.TO,Wheaton Precious Metals Corp,7,-16,0.0
+TDC,Teradata Corp,7,-16,0.0
+COR,CoreSite Realty Corp,7,-18,0.0
+KL.TO,Kirkland Lake Gold Ltd,7,-18,0.0
+TNU21,Ultra 10 Year US Treasury Note Future Sept 21,7,-19,0.0
+CIM,Chimera Investment Corp,7,-19,0.0
+ODFL,Old Dominion Freight Line Inc Ordinary Shares,7,-20,0.0
+VCSH,Vanguard Short-Term Corporate B,6,-20,0.0
+SWBI,Smith & Wesson Brands Inc,6,-20,0.0
+600036,China Merchants Bank Co Ltd,6,-19,0.0
+601888,China Tourism Group Duty Free Corp Ltd Class A,6,-19,0.0
+AZO,AutoZone Inc,6,-19,0.0
+DCP,DCP Midstream LP,6,-19,0.0
+300760,Shenzhen Mindray Bio-Medical Electronics Co Ltd,6,-18,0.0
+NLOK,NortonLifeLock Inc,6,-18,0.0
+FITB,Fifth Third Bancorp,6,-18,0.0
+01211,BYD Co Ltd Class H,6,-20,0.0
+POOL,Pool Corp,6,-20,0.0
+VICI,VICI Properties Inc Ordinary Shares,6,-20,0.0
+TXG,10x Genomics Inc Ordinary Shares - Class A,6,-19,0.0
+MGM,MGM Resorts International,6,-19,0.0
+EMDU21,E-mini S&P MidCap 400 Future Sept 21,6,-19,0.0
+MAC,Macerich Co,6,-19,0.0
+BND,Vanguard Total Bond Market ETF,6,-20,0.0
+PANW,Palo Alto Networks Inc,6,-22,0.0
+QRVO,Qorvo Inc,6,-22,0.0
+SIG,Signet Jewelers Ltd,6,-22,0.0
+ANF,Abercrombie & Fitch Co Class A,6,-22,0.0
+VOW3.DE,Volkswagen AG Participating Preferred,6,-22,0.0
+00968,Xinyi Solar Holdings Ltd,6,-21,0.0
+01398,Industrial And Commercial Bank Of China Ltd Class H,6,-21,0.0
+VRNS,Varonis Systems Inc,6,-21,0.0
+BCE.TO,BCE Inc,6,-21,0.0
+NDAQ,Nasdaq Inc,6,-22,0.0
+RIGD.BO,Reliance Industries Ltd ADR,6,-22,0.0
+COKE,Coca-Cola Consolidated Inc,6,-22,0.0
+DDS,Dillard's Inc Class A,6,-22,0.0
+WY,Weyerhaeuser Co,6,-22,0.0
+PFF,iShares Preferred and Income Se,6,-22,0.0
+KINV B,Kinnevik AB B,6,-23,0.0
+IPG,The Interpublic Group of Companies Inc,6,-22,0.0
+DAR,Darling Ingredients Inc,6,-21,0.0
+RS,Reliance Steel & Aluminum Co,6,-21,0.0
+ANGL,VanEck Fallen Angel High Yield ,6,-20,0.0
+MED,Medifast Inc,6,-27,0.0
+2615.TW,Wan Hai Lines Ltd,6,-21,0.0
+IRM,Iron Mountain Inc,6,-21,0.0
+INDA,Ishares MSCI India ETF,6,-21,0.0
+01113.HK,CK Asset Holdings Ltd,6,-21,0.0
+VNA.DE,Vonovia SE,6,-22,0.0
+8801,Mitsui Fudosan Co Ltd,6,-22,0.0
+VALMT,Valmet Corp,6,-21,0.0
+ENG.BC,Enagas SA,6,-21,0.0
+MAERSK B,A. P. Moller Maersk A/S B,6,-21,0.0
+NUAN,Nuance Communications Inc,6,-21,0.0
+SOF,Sofina SA,6,-22,0.0
+500034.BO,Bajaj Finance Ltd,6,-22,0.0
+XLP,SPDR Select Sector Fund - Consu,6,-22,0.0
+HES,Hess Corp,6,-22,0.0
+SEE,Sealed Air Corp,6,-22,0.0
+EIX,Edison International,6,-22,0.0
+BBY,Best Buy Co Inc,6,-22,0.0
+VTR,Ventas Inc,6,-21,0.0
+ITUB4.SA,Itau Unibanco Holding SA Participating Preferred,6,-21,0.0
+ALLY,Ally Financial Inc,6,-21,0.0
+CNC,Centene Corp,6,-21,0.0
+EQT,EQT Corp,6,-20,0.0
+IEFA,iShares Core MSCI EAFE ETF,6,-19,0.0
+PAYX,Paychex Inc,6,-19,0.0
+LKOH,PJSC Lukoil,6,-19,0.0
+GAZP,Gazprom PJSC,6,-19,0.0
+MTD,Mettler-Toledo International Inc,6,-19,0.0
+THC,Tenet Healthcare Corp,6,-21,0.0
+OLN,Olin Corp,6,-21,0.0
+TSN,Tyson Foods Inc Class A,6,-22,0.0
+ZBU21,US Treasury Bond Future Sept 21,6,-22,0.0
+DG,Dollar General Corp,6,-22,0.0
+TER,Teradyne Inc,6,-23,0.0
+CLX,Clorox Co,6,-23,0.0
+MTDR,Matador Resources Co,6,-22,0.0
+HL,Hecla Mining Co,6,-21,0.0
+RVLV,Revolve Group Inc Class A,6,-21,0.0
+DGX,Quest Diagnostics Inc,6,-21,0.0
+ARWR,Arrowhead Pharmaceuticals Inc,6,-20,0.0
+ZTU21,2 Year Treasury Note Future Sept 21,6,-19,0.0
+9432,Nippon Telegraph & Telephone Corp,6,-19,0.0
+GETI B,Getinge AB Class B,6,-19,0.0
+PFPT,Proofpoint Inc,6,-18,0.0
+NVCR,NovoCure Ltd,6,-18,0.0
+FDS,FactSet Research Systems Inc,6,-18,0.0
+BRO,Brown & Brown Inc,6,-18,0.0
+PGR,Progressive Corp,6,-18,0.0
+BKLN,Invesco Senior Loan ETF,6,-19,0.0
+BNTX.DE,BioNTech SE ADR,5,-19,0.0
+ABX.TO,Barrick Gold Corp,5,-20,0.0
+KKR,KKR & Co Inc Ordinary Shares,5,-20,0.0
+02313,Shenzhou International Group Holdings Ltd,5,-20,0.0
+03968,China Merchants Bank Co Ltd Class H,5,-20,0.0
+OSK,Oshkosh Corp,5,-20,0.0
+002594,BYD Co Ltd Class A,5,-20,0.0
+MPLX,MPLX LP Partnership Units,5,-20,0.0
+MMP,Magellan Midstream Partners LP,5,-20,0.0
+IEMG,iShares Core MSCI Emerging Mark,5,-20,0.0
+XYL,Xylem Inc,5,-20,0.0
+WTRG,Essential Utilities Inc,5,-20,0.0
+PNR,Pentair PLC,5,-20,0.0
+WORK,Slack Technologies Inc Class A,5,-20,0.0
+TDOC,Teladoc Health Inc,5,-20,0.0
+FATE,Fate Therapeutics Inc,5,-20,0.0
+U,Unity Software Inc Ordinary Shares,5,-20,0.0
+BBCA,JPMorgan BetaBuilders Canada ET,5,-19,0.0
+OTIS,Otis Worldwide Corp Ordinary Shares,5,-19,0.0
+AGNC,AGNC Investment Corp,5,-19,0.0
+TCOM,Trip.com Group Ltd ADR,5,-18,0.0
+EXPE,Expedia Group Inc,5,-18,0.0
+02020,ANTA Sports Products Ltd,5,-19,0.0
+TPIXX,State Street Instl Trs Pls MMkt Premier,5,-19,0.0
+EPAM,EPAM Systems Inc,5,-19,0.0
+FSK,FS KKR Capital Corp,5,-19,0.0
+MARA,Marathon Digital Holdings Inc,5,-19,0.0
+SGEN,Seagen Inc Ordinary Shares,5,-19,0.0
+IEI,iShares 3-7 Year Treasury Bond ,5,-19,0.0
+ALB,Albemarle Corp,5,-19,0.0
+ESTC,Elastic NV,5,-19,0.0
+FNV.TO,Franco-Nevada Corp,5,-17,0.0
+CMS,CMS Energy Corp,5,-16,0.0
+K,Kellogg Co,5,-16,0.0
+USFR,WisdomTree Floating Rate Treasu,5,-17,0.0
+2412.TW,Chunghwa Telecom Co Ltd,5,-17,0.0
+GEBN,Geberit AG,5,-18,0.0
+01171,Yanzhou Coal Mining Co Ltd Class H,5,-18,0.0
+YUMC,Yum China Holdings Inc Ordinary Shares,5,-18,0.0
+00916,China Longyuan Power Group Corp Ltd Class H,5,-18,0.0
+00002.HK,CLP Holdings Ltd,5,-18,0.0
+L.TO,Loblaw Companies Ltd,5,-18,0.0
+WST,West Pharmaceutical Services Inc,5,-18,0.0
+VFF.TO,Village Farms International Inc,5,-17,0.0
+GMEXICOB.M,Grupo Mexico SAB de CV,5,-17,0.0
+ULTR,IQ Ultra Short Duration ETF,5,-18,0.0
+VLO,Valero Energy Corp,5,-18,0.0
+UPM,UPM-Kymmene Oyj,5,-18,0.0
+CWB,SPDR Bloomberg Barclays Convert,5,-18,0.0
+ORLY,O'Reilly Automotive Inc,5,-15,0.0
+DELL,Dell Technologies Inc Class C,5,-14,0.0
+TDY,Teledyne Technologies Inc,5,-15,0.0
+USB,U.S. Bancorp,5,-16,0.0
+PFG,Principal Financial Group Inc,5,-15,0.0
+BPOP,Popular Inc,5,-15,0.0
+MIN.AX,Mineral Resources Ltd,5,-15,0.0
+XLB,Materials Select Sector SPDR,5,-14,0.0
+011200.KS,HMM,5,-14,0.0
+MOCORP,Metso Outotec Corp,5,-14,0.0
+SJR.B.TO,Shaw Communications Inc Class B,5,-14,0.0
+9101,Nippon Yusen Kabushiki Kaisha,5,-14,0.0
+IEX,IDEX Corp,5,-14,0.0
+ORSTED,Orsted A/S,5,-14,0.0
+PDCE,PDC Energy Inc,5,-13,0.0
+005935.KS,Samsung Electronics Co Ltd Participating Preferred,5,-13,0.0
+ICICIBANK.,ICICI Bank Ltd,5,-13,0.0
+LI,Li Auto Inc ADR,5,-13,0.0
+TEF.BC,Telefonica SA,5,-13,0.0
+SYKE,Sykes Enterprises Inc,5,-15,0.0
+FAF,First American Financial Corp,5,-15,0.0
+EMLC,VanEck J. P. Morgan EM Local Cu,5,-15,0.0
+CI,Cigna Corp,5,-15,0.0
+BILL,Bill.com Holdings Inc Ordinary Shares,5,-15,0.0
+TOU.TO,Tourmaline Oil Corp,5,-15,0.0
+KNIN,Kuehne + Nagel International AG,5,-15,0.0
+2914,Japan Tobacco Inc,5,-15,0.0
+NG..L,National Grid PLC,5,-15,0.0
+NXPI,NXP Semiconductors NV,5,-16,0.0
+532215.BO,Axis Bank Ltd,5,-16,0.0
+500820.BO,Asian Paints Ltd,5,-16,0.0
+CTAS,Cintas Corp,5,-17,0.0
+DKS,Dick's Sporting Goods Inc,5,-16,0.0
+APTV,Aptiv PLC,5,-16,0.0
+HCA,HCA Healthcare Inc,5,-15,0.0
+TSCO,Tractor Supply Co,5,-15,0.0
+AGO,Assured Guaranty Ltd,5,-15,0.0
+RRC,Range Resources Corp,5,-16,0.0
+SSRM.TO,SSR Mining Inc,5,-16,0.0
+EXPO,Exponent Inc,5,-18,0.0
+SRLN,SPDR Blackstone Senior Loan ETF,5,-18,0.0
+OMI,Owens & Minor Inc,5,-18,0.0
+FIVN,Five9 Inc,5,-18,0.0
+WAT,Waters Corp,5,-17,0.0
+SPCE,Virgin Galactic Holdings Inc Shs A,5,-17,0.0
+ESU21,E-mini S&P 500 Future Sept 21,5,-17,0.0
+ADC,Agree Realty Corp,5,-17,0.0
+OMC,Omnicom Group Inc,5,-18,0.0
+IWM,iShares Russell 2000 ETF,5,-18,0.0
+PHB,Invesco Fundamental High Yield ,4,-18,0.0
+XPEL,XPEL Inc,4,-19,0.0
+600276,Jiangsu Hengrui Pharmaceuticals Co Ltd,4,-19,0.0
+EW,Edwards Lifesciences Corp,4,-19,0.0
+CVNA,Carvana Co Class A,4,-19,0.0
+APPN,Appian Corp A,4,-19,0.0
+EME,EMCOR Group Inc,4,-20,0.0
+PSXP,Phillips 66 Partners LP,4,-20,0.0
+IJH,iShares Core S&P Mid-Cap ETF,4,-20,0.0
+KTOS,Kratos Defense & Security Solutions Inc,4,-20,0.0
+IRDM,Iridium Communications Inc,4,-20,0.0
+BIO,Bio-Rad Laboratories Inc,4,-20,0.0
+RMG.L,Royal Mail PLC,4,-21,0.0
+LYFT,Lyft Inc Class A,4,-20,0.0
+GLPI,Gaming and Leisure Properties Inc,4,-19,0.0
+HLT,Hilton Worldwide Holdings Inc,4,-19,0.0
+MAR,Marriott International Inc Class A,4,-19,0.0
+ENT.L,Entain PLC,4,-19,0.0
+02331,Li Ning Co Ltd,4,-19,0.0
+REXR,Rexford Industrial Realty Inc,4,-19,0.0
+OSTK,Overstock.com Inc,4,-19,0.0
+FRGXX,FidelityÂ® Inv MM Fds Government Instl,4,-19,0.0
+AVTR,Avantor Inc,4,-19,0.0
+TAEE11.SA,Transmissora Alianca de Energia Eletrica SA Unit,4,-19,0.0
+ALNY,Alnylam Pharmaceuticals Inc,4,-20,0.0
+KLAC,KLA Corp,4,-20,0.0
+MDP,Meredith Corp,4,-21,0.0
+AMCX,AMC Networks Inc A,4,-21,0.0
+SEM,Select Medical Holdings Corp,4,-21,0.0
+7267,Honda Motor Co Ltd,4,-20,0.0
+CHK,Chesapeake Energy Corp Ordinary Shares - New,4,-21,0.0
+VIE.PA,Veolia Environnement SA,4,-21,0.0
+BGNE,BeiGene Ltd ADR,4,-21,0.0
+01919,COSCO SHIPPING Holdings Co Ltd Class H,4,-21,0.0
+02382,Sunny Optical Technology (Group) Co Ltd,4,-21,0.0
+GDS,GDS Holdings Ltd ADR,4,-21,0.0
+BEKE,KE Holdings Inc ADR,4,-21,0.0
+603288,Foshan Haitian Flavouring and Food Co Ltd Class A,4,-21,0.0
+002475,Luxshare Precision Industry Co Ltd,4,-21,0.0
+300015,Aier Eye Hospital Group Co Ltd,4,-21,0.0
+SHV,iShares Short Treasury Bond ETF,4,-20,0.0
+DAL,Delta Air Lines Inc,4,-20,0.0
+LUV,Southwest Airlines Co,4,-20,0.0
+RCL,Royal Caribbean Group,4,-20,0.0
+AMEH,Apollo Medical Holdings Inc,4,-20,0.0
+MGEE,MGE Energy Inc,4,-20,0.0
+AVA,Avista Corp,4,-19,0.0
+UVV,Universal Corp,4,-19,0.0
+CNXC,Concentrix Corp Ordinary Shares,4,-19,0.0
+BACPL,Bank of America Corp 7 1/4 % Non-Cum Perp Conv Pfd Shs Series -L-,4,-20,0.0
+ROK,Rockwell Automation Inc,4,-20,0.0
+CPRT,Copart Inc,4,-20,0.0
+FXR,First Trust Industrials AlphaDE,4,-20,0.0
+KESKOB,Kesko Oyj Class B,4,-20,0.0
+ROSN,Rosneft Oil Co GDR,4,-20,0.0
+AEO,American Eagle Outfitters Inc,4,-19,0.0
+ATH,Athene Holding Ltd Class A,4,-19,0.0
+USHY,iShares Broad USD High Yield Co,4,-17,0.0
+SHYG,iShares 0-5 Year High Yield Cor,4,-17,0.0
+ETRN,Equitrans Midstream Corp,4,-19,0.0
+VWO,Vanguard FTSE Emerging Markets ,4,-19,0.0
+1925,Daiwa House Industry Co Ltd,4,-20,0.0
+SC,Santander Consumer USA Holdings Inc,4,-20,0.0
+DXC,DXC Technology Co,4,-20,0.0
+AIG,American International Group Inc,4,-20,0.0
+NXST,Nexstar Media Group Inc Class A,4,-20,0.0
+PPL,PPL Corp,4,-20,0.0
+RH,RH,4,-20,0.0
+BURL,Burlington Stores Inc,4,-20,0.0
+TPX,Tempur Sealy International Inc,4,-20,0.0
+CALX,Calix Inc,4,-20,0.0
+SGRY,Surgery Partners Inc,4,-20,0.0
+BF.B,Brown-Forman Corp Class B,4,-20,0.0
+AKAM,Akamai Technologies Inc,4,-20,0.0
+BMW.DE,Bayerische Motoren Werke AG,4,-20,0.0
+ESGU,iShares ESG Aware MSCI USA ETF,4,-20,0.0
+ESGD,iShares ESG Aware MSCI EAFE ETF,4,-20,0.0
+EAGG,iShares ESG Aware U.S. Aggregat,4,-20,0.0
+ESGE,iShares ESG Aware MSCI EM ETF,4,-20,0.0
+ESML,iShares ESG Aware MSCI USA Smal,4,-20,0.0
+LKOD,PJSC Lukoil ADR,4,-19,0.0
+UNFI,United Natural Foods Inc,4,-19,0.0
+CRDA.L,Croda International PLC,4,-19,0.0
+WIX,Wix.com Ltd,4,-19,0.0
+NICE,NICE Ltd,4,-19,0.0
+HCLTECH.BO,HCL Technologies Ltd Shs Dematerialised,4,-21,0.0
+LBRDK,Liberty Broadband Corp C,4,-20,0.0
+IT,Gartner Inc,4,-20,0.0
+HUYA,HUYA Inc ADR,4,-20,0.0
+HII,Huntington Ingalls Industries Inc,4,-20,0.0
+DECK,Deckers Outdoor Corp,4,-20,0.0
+CHPT,ChargePoint Holdings Inc Ordinary Shares - Class A,4,-20,0.0
+VGK,Vanguard FTSEEuropean ETF,4,-20,0.0
+SAN.BC,Banco Santander SA,4,-21,0.0
+INGA,ING Groep NV,4,-22,0.0
+PRX,Prosus NV Ordinary Shares - Class N,4,-23,0.0
+CLNX.BC,Cellnex Telecom SA,4,-24,0.0
+MAA,Mid-America Apartment Communities Inc,4,-25,0.0
+TRUP,Trupanion Inc,4,-25,0.0
+ICP.L,Intermediate Capital Group PLC,4,-25,0.0
+SMDS.L,Smith (DS) PLC,4,-25,0.0
+RMV.L,Rightmove PLC,4,-25,0.0
+AMXL.MX,America Movil SAB de CV Class L,4,-25,0.0
+2609.TW,Yang Ming Marine Transport Corp,4,-25,0.0
+PETR3.SA,Petroleo Brasileiro SA Petrobras,4,-25,0.0
+SSE.L,SSE PLC,4,-27,0.0
+AVTRPA,Avantor Inc Ser A,4,-28,0.0
+SAM,Boston Beer Co Inc Class A,4,-28,0.0
+BAH,Booz Allen Hamilton Holding Corp Class A,4,-28,0.0
+IYR,iShares U.S. Real Estate ETF,4,-28,0.0
+VCIT,Vanguard Intermediate-Term Corp,4,-28,0.0
+MAXR,Maxar Technologies Inc,4,-27,0.0
+KEYS,Keysight Technologies Inc,4,-26,0.0
+BHARTIARTL,Bharti Airtel Ltd,4,-26,0.0
+CNHI.L,CNH Industrial NV,4,-26,0.0
+ACM,AECOM,4,-26,0.0
+EMR,Emerson Electric Co,4,-25,0.0
+QRTEA,Qurate Retail Inc Class A,4,-24,0.0
+GHC,Graham Holdings Co,4,-23,0.0
+AAP,Advance Auto Parts Inc,4,-24,0.0
+FNF,Fidelity National Financial Inc,4,-24,0.0
+VACN,VAT Group AG,4,-25,0.0
+SIGN,SIG Combibloc Group AG Ordinary Shares,4,-25,0.0
+6326,Kubota Corp,4,-25,0.0
+SJM,JM Smucker Co,4,-25,0.0
+UTHR,United Therapeutics Corp,4,-25,0.0
+CSX,CSX Corp,4,-24,0.0
+JBL,Jabil Inc,4,-24,0.0
+ETR,Entergy Corp,4,-25,0.0
+BOOT,Boot Barn Holdings Inc,4,-24,0.0
+PDBC,Invesco Optimum Yield Diversifi,4,-24,0.0
+HPE,Hewlett Packard Enterprise Co,4,-24,0.0
+K.TO,Kinross Gold Corp,4,-24,0.0
+PAAS.TO,Pan American Silver Corp,4,-24,0.0
+FR.TO,First Majestic Silver Corp,4,-24,0.0
+VEA,Vanguard FTSE Developed Markets,4,-24,0.0
+CDE,Coeur Mining Inc,4,-24,0.0
+ETN,Eaton Corp PLC,4,-24,0.0
+AMBA.TW,Ambarella Inc,4,-23,0.0
+8802,Mitsubishi Estate Co Ltd,4,-23,0.0
+8830,Sumitomo Realty & Development Co Ltd,4,-23,0.0
+TOL,Toll Brothers Inc,4,-22,0.0
+LII,Lennox International Inc,4,-22,0.0
+VRSN,VeriSign Inc,4,-22,0.0
+ABR,Arbor Realty Trust Inc,4,-22,0.0
+MCSXX,BlackRock Liquidity MuniCash Instl,4,-22,0.0
+VMW,VMware Inc,4,-24,0.0
+STAG,Stag Industrial Inc,4,-24,0.0
+ILPT,Industrial Logistics Properties Trust,4,-24,0.0
+ADSK,Autodesk Inc,4,-24,0.0
+FFIN,First Financial Bankshares Inc,4,-24,0.0
+WFG.TO,West Fraser Timber Co.Ltd,4,-24,0.0
+MASI,Masimo Corp,4,-24,0.0
+FHN,First Horizon Corp,4,-24,0.0
+DNLI,Denali Therapeutics Inc,4,-24,0.0
+AMP,Ameriprise Financial Inc,4,-24,0.0
+ALRM,Alarm.com Holdings Inc,4,-24,0.0
+NLY,Annaly Capital Management Inc,4,-24,0.0
+PBCT,People's United Financial Inc,4,-24,0.0
+BMI,Badger Meter Inc,4,-24,0.0
+VVV,Valvoline Inc,4,-24,0.0
+RHI,Robert Half International Inc,4,-24,0.0
+NEA,Nuveen AMT-Free Quality Muni Inc,4,-24,0.0
+FLOT,iShares Floating Rate Bond ETF,4,-24,0.0
+ACB.TO,Aurora Cannabis Inc,4,-24,0.0
+CPN,Citigroup Capital XIII Floating Rate Trust Pfd Secs Registered 2010-30.10.4,4,-25,0.0
+MTH,Meritage Homes Corp,4,-25,0.0
+RPG,Invesco S&P 500 Pure Growth ETF,4,-24,0.0
+IUS,Invesco RAFI Strategic US ETF,4,-24,0.0
+PLW,Invesco 1-30 Laddered Treasury ,4,-24,0.0
+MET,MetLife Inc,4,-24,0.0
+POLY,Polymetal International PLC,4,-25,0.0
+LVMUY.PA,LVMH Moet Hennessy Louis Vuitton SE ADR,3,-25,0.0
+ERJ.SA,Embraer SA ADR,3,-25,0.0
+NEP,NextEra Energy Partners LP,3,-24,0.0
+OLED,Universal Display Corp,3,-24,0.0
+NPI.TO,Northland Power Inc,3,-24,0.0
+AYI,Acuity Brands Inc,3,-24,0.0
+MBB,iShares MBS ETF,3,-24,0.0
+SPIB,SPDR Portfolio Intermediate Ter,3,-24,0.0
+LMBS,First Trust Low Duration Opport,3,-24,0.0
+HDB.BO,HDFC Bank Ltd ADR,3,-24,0.0
+JLL,Jones Lang LaSalle Inc,3,-24,0.0
+AFG,American Financial Group Inc,3,-24,0.0
+JYNT,The Joint Corp,3,-23,0.0
+601166,Industrial Bank Co Ltd,3,-23,0.0
+CCU,United Breweries Co Inc,3,-23,0.0
+CENCOSUD,Cencosud SA,3,-23,0.0
+09618,JD.com Inc Ordinary Shares - Class A,3,-23,0.0
+RNG,RingCentral Inc Class A,3,-23,0.0
+BXMX,Nuveen S&P 500 Buy-Write Income,3,-22,0.0
+WES,Western Midstream Partners LP,3,-22,0.0
+PAA,Plains All American Pipeline LP,3,-22,0.0
+WMS,Advanced Drainage Systems Inc,3,-22,0.0
+EXAS,Exact Sciences Corp,3,-22,0.0
+VNQ,Vanguard Real Estate ETF,3,-21,0.0
+BBRI,Bank Rakyat Indonesia (Persero) Tbk Class B,3,-23,0.0
+COG,Cabot Oil & Gas Corp,3,-23,0.0
+DOX,Amdocs Ltd,3,-23,0.0
+NVS,Novartis AG ADR,3,-23,0.0
+SONY,Sony Group Corp ADR,3,-23,0.0
+TOT.PA,Total SE ADR,3,-23,0.0
+FOXA,Fox Corp Class A,3,-23,0.0
+CBRE,CBRE Group Inc Class A,3,-22,0.0
+MNG.L,M&G PLC Ordinary Shares,3,-22,0.0
+ASRNL,ASR Nederland NV,3,-22,0.0
+SMSN.KS,Samsung Electronics Co Ltd GDR,3,-22,0.0
+AN,AutoNation Inc,3,-22,0.0
+MNOD,Mining and Metallurgical Company NORILSK NICKEL PJSC ADR,3,-21,0.0
+VNDA,Vanda Pharmaceuticals Inc,3,-22,0.0
+BRKS,Brooks Automation Inc,3,-22,0.0
+BLD,TopBuild Corp,3,-22,0.0
+DKNG,DraftKings Inc Ordinary Shares - Class A,3,-22,0.0
+PENN,Penn National Gaming Inc,3,-22,0.0
+EFX,Equifax Inc,3,-23,0.0
+LMAT,LeMaitre Vascular Inc,3,-23,0.0
+WIT.BO,Wipro Ltd ADR,3,-23,0.0
+ARCC,Ares Capital Corp,3,-23,0.0
+PSEC,Prospect Capital Corp,3,-23,0.0
+TSLX,Sixth Street Specialty Lending Inc,3,-23,0.0
+GBDC,Golub Capital BDC Inc Class B,3,-23,0.0
+NTNX,Nutanix Inc A,3,-24,0.0
+BRX,Brixmor Property Group Inc,3,-24,0.0
+INVP.L,Investec PLC,3,-24,0.0
+GMAB,Genmab A/S,3,-24,0.0
+AMED,Amedisys Inc,3,-24,0.0
+BNDX,Vanguard Total International Bo,3,-24,0.0
+TECK.B.TO,Teck Resources Ltd Class B,3,-25,0.0
+SNV,Synovus Financial Corp,3,-25,0.0
+GOAU4.SA,Metalurgica Gerdau SA Participating Preferred,3,-25,0.0
+BMRN,Biomarin Pharmaceutical Inc,3,-25,0.0
+GH,Guardant Health Inc,3,-25,0.0
+CHKP,Check Point Software Technologies Ltd,3,-25,0.0
+FEYE,FireEye Inc,3,-25,0.0
+CYBR,CyberArk Software Ltd,3,-25,0.0
+GPI,Group 1 Automotive Inc,3,-24,0.0
+CRTO.PA,Criteo SA ADR,3,-23,0.0
+JW.A,John Wiley & Sons Inc Class A,3,-23,0.0
+BGB,Blackstone Strategic Credit Fund,3,-23,0.0
+GHY,"PGIM Global High Yield Fund, Inc.",3,-23,0.0
+CEZ,CEZ a.s,3,-23,0.0
+01177.HK,Sino Biopharmaceutical Ltd,3,-23,0.0
+01548,Genscript Biotech Corp Shs Unitary 144A/Reg S,3,-23,0.0
+01024,Kuaishou Technology Ordinary Shares - Class B,3,-23,0.0
+00386,China Petroleum & Chemical Corp Class H,3,-23,0.0
+01093,CSPC Pharmaceutical Group Ltd,3,-23,0.0
+01833,Ping An Healthcare And Technology Co Ltd Ordinary Shares,3,-23,0.0
+06098,Country Garden Services Holdings Co Ltd,3,-23,0.0
+02899,Zijin Mining Group Co Ltd Class H,3,-24,0.0
+00754,Hopson Development Holdings Ltd,3,-24,0.0
+01044,Hengan International Group Co Ltd,3,-24,0.0
+02688,ENN Energy Holdings Ltd,3,-24,0.0
+JNPR,Juniper Networks Inc,3,-24,0.0
+FTS.TO,Fortis Inc,3,-24,0.0
+POW.TO,Power Corporation of Canada,3,-24,0.0
+00003.HK,Hong Kong and China Gas Co Ltd,3,-24,0.0
+DBX,Dropbox Inc Class A,3,-24,0.0
+PCTY,Paylocity Holding Corp,3,-24,0.0
+RIV.TO,RIV Capital Inc Ordinary Shares (Sub Voting),3,-24,0.0
+JKS,JinkoSolar Holding Co Ltd ADR,3,-24,0.0
+NOVA,Sunnova Energy International Inc,3,-24,0.0
+SHLS,Shoals Technologies Group Inc Ordinary Shares - Class A,3,-24,0.0
+MAXN.SI,Maxeon Solar Technologies Ltd Ordinary Shares,3,-25,0.0
+FM.TO,First Quantum Minerals Ltd,3,-25,0.0
+096770.KS,SK Innovation Co Ltd,3,-24,0.0
+5020,ENEOS Holdings Inc,3,-24,0.0
+CCL,Carnival Corp,3,-24,0.0
+UAL,United Airlines Holdings Inc,3,-24,0.0
+TWNK,Hostess Brands Inc Class A,3,-24,0.0
+CRVL,CorVel Corp,3,-24,0.0
+IDT,IDT Corp Class B,3,-24,0.0
+AVY,Avery Dennison Corp,3,-24,0.0
+WRK,WestRock Co A,3,-24,0.0
+EVV,EV Limited Duration Income,3,-24,0.0
+JPMPK,JPMorgan Chase & Co PRF PERPETUAL USD 25 - Ser JJ 1/400 int,3,-24,0.0
+DSL,DoubleLine Income Solutions,3,-24,0.0
+TREX,Trex Co Inc,3,-25,0.0
+SLGN,Silgan Holdings Inc,3,-25,0.0
+FXD,First Trust Cons. Discret. Alph,3,-25,0.0
+FTXR,First Trust Nasdaq Transportati,3,-25,0.0
+QTEC,First Trust NASDAQ-100-Technolo,3,-25,0.0
+FXL,First Trust Technology AlphaDEX,3,-25,0.0
+RIOT,Riot Blockchain Inc,3,-25,0.0
+UBM21,Ultra US Treasury Bond Future June 21,3,-25,0.0
+CFG,Citizens Financial Group Inc,3,-25,0.0
+STWD,Starwood Property Trust Inc,3,-25,0.0
+UNM,Unum Group,3,-25,0.0
+LEG,Leggett & Platt Inc,3,-25,0.0
+YMU21,E-mini Dow $5 Future Sept 21,3,-25,0.0
+JTSXX,JPMorgan 100% US Tr Sec MM Inst,3,-25,0.0
+CTC.A.TO,Canadian Tire Corp Ltd Class A,3,-25,0.0
+ZAL.DE,Zalando SE,3,-25,0.0
+MEI,Methode Electronics Inc,3,-25,0.0
+1301.TW,Formosa Plastics Corp,3,-25,0.0
+532898.BO,Power Grid Corp Of India Ltd,3,-25,0.0
+SJNK,SPDR Bloomberg Barclays Short T,3,-25,0.0
+FIGXX,FidelityÂ® Inv MM Fds Government I,3,-25,0.0
+CB,Chubb Ltd,3,-25,0.0
+NUS,Nu Skin Enterprises Inc Class A,3,-26,0.0
+01368,Xtep International Holdings Ltd,3,-26,0.0
+FERG,Ferguson PLC,3,-28,0.0
+CCOI,Cogent Communications Holdings Inc,3,-28,0.0
+5101,Yokohama Rubber Co Ltd,3,-29,0.0
+1878,Daito Trust Construction Co Ltd,3,-29,0.0
+APT.AX,Afterpay Ltd,3,-29,0.0
+ITW,Illinois Tool Works Inc,3,-29,0.0
+GLTR,Aberdeen Standard Physical Prec,3,-28,0.0
+CHMF,Severstal PAO,3,-28,0.0
+HSKA,Heska Corp,3,-28,0.0
+FORTUM,Fortum Oyj,3,-28,0.0
+KRNT,Kornit Digital Ltd,3,-28,0.0
+DPZ,Domino's Pizza Inc,3,-29,0.0
+00354,Chinasoft International Ltd,3,-30,0.0
+03800,GCL-Poly Energy Holdings Ltd,3,-30,0.0
+DSV,DSV Panalpina A/S,3,-30,0.0
+CHGG,Chegg Inc,3,-31,0.0
+TFG.JO,Foschini Group Ltd,3,-31,0.0
+540222.BO,Laurus Labs Ltd,3,-31,0.0
+AAWW,Atlas Air Worldwide Holdings Inc,3,-31,0.0
+SPX.L,Spirax-Sarco Engineering PLC,3,-31,0.0
+8953,Japan Metropolitan Fund Investment Corp,3,-31,0.0
+00012.HK,Henderson Land Development Co Ltd,3,-31,0.0
+KNEBV,KONE Oyj Class B,3,-32,0.0
+HPG,Hoa Phat Group JSC,3,-32,0.0
+VIC,Vingroup JSC,3,-32,0.0
+NBK,National Bank of Kuwait SAK,3,-32,0.0
+UI,Ubiquiti Inc,3,-29,0.0
+XLRE,Real Estate Select Sector SPDR ,3,-29,0.0
+CAG,Conagra Brands Inc,3,-30,0.0
+CMA,Comerica Inc,3,-30,0.0
+AMN,AMN Healthcare Services Inc,3,-30,0.0
+XME,SPDR S&P Metals & Mining ETF,3,-30,0.0
+AHT.L,Ashtead Group PLC,3,-30,0.0
+PGHN,Partners Group Holding AG,3,-30,0.0
+DSY.PA,Dassault Systemes SE,3,-30,0.0
+REL.L,RELX PLC,3,-30,0.0
+ERII,Energy Recovery Inc,3,-29,0.0
+QDEL,Quidel Corp,3,-33,0.0
+AKZA,Akzo Nobel NV,3,-33,0.0
+WALMEX.MX,Wal - Mart de Mexico SAB de CV,3,-36,0.0
+GFNORTEO.M,Grupo Financiero Banorte SAB de CV Class O,3,-36,0.0
+CEMEXCPO.M,Cemex SAB de CV,3,-36,0.0
+BBDC4.SA,Bank Bradesco SA Participating Preferred,3,-38,0.0
+B3SA3.SA,B3 SA - Brasil Bolsa Balcao,3,-38,0.0
+SLM,SLM Corp,3,-37,0.0
+BERY,Berry Global Group Inc,3,-37,0.0
+HBI,Hanesbrands Inc,3,-37,0.0
+TIP,iShares TIPS Bond ETF,3,-37,0.0
+ALKS,Alkermes PLC,3,-37,0.0
+CSNA3.SA,Companhia Siderurgica Nacional,3,-36,0.0
+ELET3.SA,Centrais Eletricas Brasileiras SA,3,-36,0.0
+SRG.MI,Snam SpA,3,-36,0.0
+HYLS,First Trust Tactical High Yield,3,-36,0.0
+ONEX.TO,Onex Corp,3,-36,0.0
+LDOS,Leidos Holdings Inc,3,-36,0.0
+LEG.DE,LEG Immobilien SE,3,-36,0.0
+VTI,Vanguard Total Stock Market ETF,3,-36,0.0
+GDX,VanEck Vectors Gold Miners ETF,3,-36,0.0
+LIF.TO,Labrador Iron Ore Royalty Corp,3,-36,0.0
+SRU.UN.TO,SmartCentres Real Estate Investment Trust Trust Units Variable Voting,3,-36,0.0
+FIS,Fidelity National Information Services Inc,3,-36,0.0
+SPLB,SPDR Portfolio Long Term Corpor,3,-36,0.0
+SPTL,SPDR Portfolio Long Term Treasu,3,-36,0.0
+INFXX,Franklin IFT Money Market,3,-36,0.0
+00001.HK,CK Hutchison Holdings Ltd,3,-36,0.0
+APH,Amphenol Corp Class A,3,-36,0.0
+KFH,Kuwait Finance House KSC,3,-33,0.0
+YETI,YETI Holdings Inc,3,-33,0.0
+017670.KS,SK Telecom Co Ltd,3,-33,0.0
+DRE,Duke Realty Corp,3,-33,0.0
+UDR,UDR Inc,3,-33,0.0
+RGEN,Repligen Corp,3,-33,0.0
+AMKR,Amkor Technology Inc,3,-31,0.0
+UHS,Universal Health Services Inc Class B,3,-29,0.0
+EYLD,Cambria ETF Trust Cambria Emerg,3,-29,0.0
+SYLD,Cambria Shareholder Yield ETF,3,-29,0.0
+VAMO,Cambria ETF Trust Cambria Value,3,-29,0.0
+VALT,ETFMG Sit Ultra Short ETF,3,-29,0.0
+PERI,Perion Network Ltd,3,-29,0.0
+URW.PA,Unibail-Rodamco-Westfield,3,-29,0.0
+HUM,Humana Inc,3,-29,0.0
+YRI.TO,Yamana Gold Inc,3,-29,0.0
+EDV.L,Endeavour Mining PLC,3,-29,0.0
+BTO.TO,B2Gold Corp,3,-29,0.0
+MDKA,PT Merdeka Copper Gold Tbk,3,-29,0.0
+067160.KS,AfreecaTV Co,3,-29,0.0
+DIVISLAB.B,Divi's Laboratories Ltd,3,-29,0.0
+TTGT,TechTarget Inc,3,-29,0.0
+EXPI,eXp World Holdings Inc,3,-29,0.0
+UBU21,Ultra US Treasury Bond Future Sept 21,3,-29,0.0
+6532,BayCurrent Consulting Inc,3,-29,0.0
+FUTR.L,Future PLC,3,-29,0.0
+BOTZ,Global X Robotics & Artificial ,3,-29,0.0
+PCG,PG&E Corp,3,-29,0.0
+MKTX,MarketAxess Holdings Inc,3,-29,0.0
+ITM.L,ITM Power PLC,3,-29,0.0
+BE,Bloom Energy Corp Class A,3,-29,0.0
+ZNGA,Zynga Inc Class A,3,-29,0.0
+NCLH,Norwegian Cruise Line Holdings Ltd,3,-29,0.0
+VTA,Invesco Dynamic Credit Opps,3,-29,0.0
+ISD,"PGIM High Yield Bond Fund, Inc.",3,-29,0.0
+PFFD,Global X U.S. Preferred ETF,3,-29,0.0
+IMCD,IMCD NV,3,-29,0.0
+ENX.PA,Euronext NV,3,-29,0.0
+SCI,Service Corp International,3,-29,0.0
+WTS,Watts Water Technologies Inc A,3,-29,0.0
+KREF,KKR Real Estate Finance Trust Inc,3,-29,0.0
+ARI,Apollo Commercial Real Estate Finance Inc,3,-29,0.0
+BESI,BE Semiconductor Industries NV,3,-29,0.0
+KOTAKBANK.,Kotak Mahindra Bank Ltd,3,-29,0.0
+FR,First Industrial Realty Trust Inc,3,-29,0.0
+TPL,Texas Pacific Land Corp,3,-29,0.0
+BHP.L,BHP Group PLC,3,-29,0.0
+EVR,Evercore Inc A,3,-29,0.0
+CIEN,Ciena Corp,3,-29,0.0
+MPWR,Monolithic Power Systems Inc,3,-29,0.0
+OTEX.TO,Open Text Corp,3,-29,0.0
+SSB,South State Corp,3,-29,0.0
+VLY,Valley National Bancorp,3,-29,0.0
+LYB,LyondellBasell Industries NV,3,-31,0.0
+CHE,Chemed Corp,3,-30,0.0
+CBSH,Commerce Bancshares Inc,3,-30,0.0
+WAL,Western Alliance Bancorp,3,-30,0.0
+FHB,First Hawaiian Inc,3,-30,0.0
+SBRA,Sabra Health Care REIT Inc,3,-30,0.0
+NHI,National Health Investors Inc,3,-30,0.0
+MCY,Mercury General Corp,3,-31,0.0
+BRKR,Bruker Corp,3,-31,0.0
+EWY,iShares Inc iShares MSCI South ,3,-31,0.0
+SHY,iShares 1-3 Year Treasury Bond ,3,-30,0.0
+BWX,SPDR Bloomberg Barclays Intl Tr,3,-30,0.0
+VOO,Vanguard S&P 500 ETF,3,-30,0.0
+NVG,Nuveen AMT-Free Muni Credit Inc,3,-30,0.0
+NAD,Nuveen Quality Muni Income Fund,3,-30,0.0
+MYI,BlackRock MuniYield Qty III,3,-30,0.0
+CRON.TO,Cronos Group Inc,3,-30,0.0
+OGI.TO,OrganiGram Holdings Inc,3,-30,0.0
+SNDL.TO,Sundial Growers Inc Ordinary Shares,3,-30,0.0
+ASAN,Asana Inc Ordinary Shares - Class A,3,-30,0.0
+TWO,Two Harbors Investment Corp,3,-30,0.0
+AMH,American Homes 4 Rent Class A,3,-31,0.0
+VUG,Vanguard Growth ETF,3,-31,0.0
+NEEPP,NextEra Energy Inc Unit,3,-31,0.0
+DHRPB,Danaher Corp 5% PRF PERPETUAL USD 1000 - Ser B,3,-31,0.0
+SOLN,Southern Co Unit - Series A (2019),3,-31,0.0
+ALLYPA,GMAC Capital Trust I Pfd Secs 2011-15.2.40 Gtd Series 2,3,-31,0.0
+JPMPC,JPMorgan Chase & Co 6% PRF PERPETUAL USD 25 - Dep rep 1/400 Ser EE,3,-31,0.0
+WFCPZ,Wells Fargo & Co 4.75% PRF PERPETUAL USD 25 Series Z Class A,3,-31,0.0
+WFCPQ,Wells Fargo & Co Deposit Shs Repr 1/1000th 5.85 % Non-Cum Perp Pfd Shs -A-,3,-31,0.0
+USBPM,U.S. Bancorp Shs Repr 1/1000th Non Cum Perp Pfd Shs Series-F,3,-31,0.0
+COFPI,Capital One Financial Corp Series I,3,-31,0.0
+ITRI,Itron Inc,3,-32,0.0
+DEA,Easterly Government Properties Inc,3,-32,0.0
+DOV,Dover Corp,3,-32,0.0
+BBBY,Bed Bath & Beyond Inc,3,-32,0.0
+JBT,John Bean Technologies Corp,3,-32,0.0
+ARNC,Arconic Corp Ordinary Shares,3,-32,0.0
+BAB,Invesco Taxable Municipal Bond ,3,-32,0.0
+OMFL,Invesco Exchange-Traded Self-In,3,-32,0.0
+ISDX,Invesco RAFI Strategic Develope,3,-32,0.0
+CONE,CyrusOne Inc,3,-32,0.0
+NRG,NRG Energy Inc,3,-32,0.0
+IWO,iShares Russell 2000 Growth ETF,3,-32,0.0
+HRL,Hormel Foods Corp,3,-32,0.0
+KMX,CarMax Inc,3,-32,0.0
+NSA,National Storage Affiliates Trust,3,-32,0.0
+TCS,TCS Group Holding PLC GDR Repr Class -A- Reg-S,3,-31,0.0
+VRT,Vertiv Holdings Co Class A,3,-32,0.0
+ORBC,ORBCOMM Inc,3,-33,0.0
+KSS,Kohl's Corp,3,-33,0.0
+SSIXX,State Street Instl Liquid Reserves Prem,3,-33,0.0
+DAC.AX,Danaos Corp,2,-32,0.0
+LOGN,Logitech International SA,2,-32,0.0
+PKX.KS,POSCO ADR,2,-32,0.0
+INGR,Ingredion Inc,2,-32,0.0
+BEP.UN,Brookfield Renewable Partners LP,2,-32,0.0
+PZZA,Papa John's International Inc,2,-32,0.0
+MMSI,Merit Medical Systems Inc,2,-32,0.0
+IRWD,Ironwood Pharmaceuticals Inc Class A,2,-32,0.0
+GOVT,iShares U.S. Treasury Bond ETF,2,-32,0.0
+033780.KS,KT&G Corp,2,-32,0.0
+ATW,Attijariwafa Bank SA Registered Shares,2,-32,0.0
+IAM,Maroc Telecom SA,2,-32,0.0
+AAL.L,Anglo American PLC,2,-32,0.0
+GTCO,Guaranty Trust Holding Co PLC,2,-32,0.0
+CBKD,Commercial International Bank (Egypt) SAE GDR,2,-32,0.0
+MTNN,MTN Nigeria Communications PLC Ordinary Shares,2,-32,0.0
+IVN.TO,Ivanhoe Mines Ltd A,2,-32,0.0
+AGCO,AGCO Corp,2,-32,0.0
+ARCB,ArcBest Corp,2,-32,0.0
+MODV,ModivCare Inc,2,-32,0.0
+SYK,Stryker Corp,2,-32,0.0
+XHB,SPDR Series Trust SPDR Homebuil,2,-32,0.0
+EFA,iShares MSCI EAFE ETF,2,-32,0.0
+GLOB,Globant SA,2,-32,0.0
+GGAL,Grupo Financiero Galicia SA ADR,2,-32,0.0
+YPF,YPF SA ADR,2,-32,0.0
+AGRO.SA,Adecoagro SA,2,-32,0.0
+ANDINA-B,Embotelladora Andina SA Participating Preferred,2,-32,0.0
+ARCO.SA,Arcos Dorados Holdings Inc,2,-32,0.0
+DESP.SA,Despegar.com Corp,2,-32,0.0
+CSGP,CoStar Group Inc,2,-32,0.0
+CLH,Clean Harbors Inc,2,-32,0.0
+IGD,Voya Global Equity Dividend&Premium Opp,2,-32,0.0
+SHLX,Shell Midstream Partners LP,2,-32,0.0
+CQP,Cheniere Energy Partners LP,2,-32,0.0
+BPMP,BP Midstream Partners LP,2,-32,0.0
+IUSB,iShares Core Total USD Bond Mar,2,-32,0.0
+SEV.PA,Suez SA,2,-32,0.0
+SVT.L,Severn Trent PLC,2,-32,0.0
+UU..L,United Utilities Group PLC,2,-32,0.0
+CDNA,CareDx Inc,2,-32,0.0
+IONS,Ionis Pharmaceuticals Inc,2,-32,0.0
+VDE,Vanguard Energy ETF,2,-33,0.0
+PTT-R,Ptt PCL DR,2,-31,0.0
+1295,Public Bank Bhd,2,-31,0.0
+1155,Malayan Banking Bhd,2,-32,0.0
+SCC-R,Siam Cement PCL Units Non-Voting Depository Receipt,2,-32,0.0
+000333,Midea Group Co Ltd Class A,2,-32,0.0
+603259,Wuxi AppTec Co Ltd Class A,2,-32,0.0
+600900,China Yangtze Power Co Ltd,2,-32,0.0
+MESU21,Micro E-mini S&P 500 Index Future Sept 21,2,-32,0.0
+NVO,Novo Nordisk A/S ADR,2,-32,0.0
+SF,Stifel Financial Corp,2,-32,0.0
+FL,Foot Locker Inc,2,-32,0.0
+MMYT.BO,MakeMyTrip Ltd,2,-32,0.0
+300014,EVE Energy Co Ltd,2,-32,0.0
+IMAB,I-MAB ADR,2,-30,0.0
+TYL,Tyler Technologies Inc,2,-29,0.0
+HALO,Halozyme Therapeutics Inc,2,-29,0.0
+BLDR,Builders FirstSource Inc,2,-29,0.0
+RDFN,Redfin Corp,2,-29,0.0
+FLL,Full House Resorts Inc,2,-29,0.0
+WH,Wyndham Hotels & Resorts Inc Ordinary Shares,2,-29,0.0
+FLTR.L,Flutter Entertainment PLC,2,-29,0.0
+AVLR,Avalara Inc,2,-28,0.0
+VRM,Vroom Inc Ordinary Shares,2,-28,0.0
+AMRS,Amyris Inc,2,-28,0.0
+LSPD.TO,Lightspeed POS Inc Ordinary Shares (Sub Voting),2,-28,0.0
+AZRE.BO,Azure Power Global Ltd,2,-28,0.0
+TTM.BO,Tata Motors Ltd ADR,2,-28,0.0
+MAIN,Main Street Capital Corp,2,-28,0.0
+HTGC,Hercules Capital Inc,2,-28,0.0
+GSBD,Goldman Sachs BDC Inc,2,-28,0.0
+NMFC,New Mountain Finance Corp,2,-28,0.0
+00027.HK,Galaxy Entertainment Group Ltd,2,-27,0.0
+AFIN,American Finance Trust Inc Class A,2,-27,0.0
+TATASTEEL.,Tata Steel Ltd,2,-27,0.0
+FMBK,mBank SA,2,-27,0.0
+NED.JO,Nedbank Group Ltd,2,-27,0.0
+DEMANT,Demant AS,2,-27,0.0
+VYGR,Voyager Digital Ltd,2,-27,0.0
+GLXY,Galaxy Digital Holdings Ltd,2,-27,0.0
+STMN,Straumann Holding AG,2,-27,0.0
+02359,Wuxi AppTec Co Ltd,2,-27,0.0
+EZL.AX,Euroz Ltd,2,-27,0.0
+4004,Showa Denko KK,2,-27,0.0
+SWK,Stanley Black & Decker Inc,2,-27,0.0
+AMS.JO,Anglo American Platinum Ltd,2,-27,0.0
+IWN,iShares Russell 2000 Value ETF,2,-27,0.0
+6954,Fanuc Corp,2,-26,0.0
+TECN,Tecan Group Ltd,2,-26,0.0
+LCAM3.SA,Companhia de Locacao Americas SA,2,-26,0.0
+BPAN4.SA,Banco Pan SA Participating Preferred,2,-26,0.0
+EWZ,iShares Inc iShares MSCI Brazil,2,-26,0.0
+CCS,Century Communities Inc,2,-25,0.0
+00175,Geely Automobile Holdings Ltd,2,-25,0.0
+TMDX,TransMedics Group Inc,2,-25,0.0
+SMED,Sharps Compliance Corp,2,-25,0.0
+STRL,Sterling Construction Co Inc,2,-25,0.0
+LXFR.L,Luxfer Holdings PLC,2,-25,0.0
+SMLR,Semler Scientific Inc,2,-25,0.0
+BV,BrightView Holdings Inc,2,-25,0.0
+PGNY,Progyny Inc,2,-25,0.0
+BBD.B.TO,Bombardier Inc,2,-25,0.0
+MIME,Mimecast Ltd,2,-25,0.0
+MD,Mednax Inc,2,-25,0.0
+TWOU,2U Inc,2,-25,0.0
+4502,Takeda Pharmaceutical Co Ltd,2,-25,0.0
+7741,Hoya Corp,2,-25,0.0
+VVR,Invesco Senior Income Trust,2,-25,0.0
+4904.TW,Far EasTone Telecommunications Co Ltd,2,-25,0.0
+1102.TW,Asia Cement Corp,2,-25,0.0
+TSTXX,BlackRock Liquidity T-Fund Instl,2,-25,0.0
+HLMA.L,Halma PLC,2,-25,0.0
+00788,China Tower Corp Ltd Ordinary Shares - Class H,2,-25,0.0
+IQ,iQIYI Inc ADR,2,-25,0.0
+00857,PetroChina Co Ltd Class H,2,-25,0.0
+01088,China Shenhua Energy Co Ltd Class H,2,-25,0.0
+01801,Innovent Biologics Inc,2,-25,0.0
+00267,CITIC Ltd,2,-25,0.0
+02338,Weichai Power Co Ltd Class H,2,-25,0.0
+03898,Zhuzhou CRRC Times Electric Co Ltd Class H,2,-25,0.0
+01810,Xiaomi Corp Ordinary Shares - Class B,2,-25,0.0
+00268,Kingdee International Software Group Co Ltd,2,-25,0.0
+02018,AAC Technologies Holdings Inc,2,-24,0.0
+600309,Wanhua Chemical Group Co Ltd,2,-24,0.0
+01772,Ganfeng Lithium Co Ltd,2,-24,0.0
+00358,Jiangxi Copper Co Ltd Class H,2,-24,0.0
+01109,China Resources Land Ltd,2,-24,0.0
+00688,China Overseas Land & Investment Ltd,2,-24,0.0
+02007,Country Garden Holdings Co Ltd,2,-24,0.0
+00813,Shimao Group Holdings Ltd,2,-24,0.0
+06186,China Feihe Ltd Ordinary Shares,2,-24,0.0
+06969.HK,Smoore International Holdings Ltd Ordinary Shares,2,-24,0.0
+01193,China Resources Gas Group Ltd,2,-24,0.0
+00270,Guangdong Investment Ltd,2,-24,0.0
+00384,China Gas Holdings Ltd,2,-24,0.0
+00836,China Resources Power Holdings Co Ltd,2,-24,0.0
+00392,Beijing Enterprises Holdings Ltd,2,-24,0.0
+03988,Bank Of China Ltd Class H,2,-24,0.0
+02628,China Life Insurance Co Ltd Class H,2,-24,0.0
+03328,Bank of Communications Co Ltd Class H,2,-24,0.0
+00867,China Medical System Holdings Ltd,2,-24,0.0
+00460,Sihuan Pharmaceutical Holdings Group Ltd,2,-24,0.0
+T.TO,TELUS Corp,2,-24,0.0
+WN.TO,George Weston Ltd,2,-24,0.0
+MFSU1.TO,mini MSCI EAFE Index Futures Sept21,2,-24,0.0
+FTS.HK,Fortis Inc,2,-24,0.0
+NEGG,Newegg Commerce Inc Ordinary Shares,2,-24,0.0
+DIBS,1stdibs.com Inc Ordinary Shares,2,-24,0.0
+FSLY,Fastly Inc,2,-24,0.0
+PAYC,Paycom Software Inc,2,-24,0.0
+HYFM,Hydrofarm Holdings Group Inc Ordinary Shares,2,-24,0.0
+IOVA,Iovance Biotherapeutics Inc,2,-24,0.0
+002714,Muyuan Foods Co Ltd Class A,2,-23,0.0
+300122,Chongqing Zhifei Biological Products Co Ltd,2,-23,0.0
+VEDL.BO,Vedanta Ltd ADR,2,-23,0.0
+BOL,Boliden AB,2,-23,0.0
+BIL,SPDR Bloomberg Barclays 1-3 Mon,2,-24,0.0
+TME,Tencent Music Entertainment Group ADR,2,-24,0.0
+NESTE,Neste Corp,2,-24,0.0
+AAL,American Airlines Group Inc,2,-24,0.0
+UTL,Unitil Corp,2,-24,0.0
+CSGS,CSG Systems International Inc,2,-24,0.0
+VMEO,Vimeo Inc,2,-24,0.0
+AIRC,Apartment Income REIT Corp,2,-24,0.0
+TELL,Tellurian Inc,2,-24,0.0
+GNK,Genco Shipping & Trading Ltd,2,-24,0.0
+SGRE.BC,Siemens Gamesa Renewable Energy SA,2,-24,0.0
+JMAT.L,Johnson Matthey PLC,2,-24,0.0
+009830.KS,Hanwha Solutions Corp,2,-24,0.0
+SK3.IR,Smurfit Kappa Group PLC,2,-24,0.0
+MNDI.L,Mondi PLC,2,-24,0.0
+PKG,Packaging Corp of America,2,-24,0.0
+STERV,Stora Enso Oyj Class R,2,-24,0.0
+SKT,Tanger Factory Outlet Centers Inc,2,-24,0.0
+WCN.TO,Waste Connections Inc,2,-23,0.0
+FFC,Flah&Crum Pref Securities Income,2,-23,0.0
+SX1,Soybean Nov21,2,-23,0.0
+LCQ21,Live Cattle Future Aug 21,2,-23,0.0
+HEQ21,Lean Hog Future Aug 21,2,-23,0.0
+ZTM21,2 Year Treasury Note Future June 21,2,-23,0.0
+GCG22,Gold Future Feb 22,2,-23,0.0
+SIF22,Silver Future Jan 22,2,-23,0.0
+SLG,SL Green Realty Corp,2,-23,0.0
+STOR,STORE Capital Corp,2,-23,0.0
+APOG,Apogee Enterprises Inc,2,-13,0.0
+KFRC,Kforce Inc,2,-13,0.0
+MOV,Movado Group Inc,2,-13,0.0
+CTSH,Cognizant Technology Solutions Corp A,2,-10,0.0
+LAD,Lithia Motors Inc Class A,2,-10,0.0
+MTZ,MasTec Inc,2,-10,0.0
+IVZ,Invesco Ltd,2,-10,0.0
+066570.KS,LG Electronics Inc,2,-10,0.0
+500228.BO,JSW Steel Ltd,2,-10,0.0
+ARI.JO,African Rainbow Minerals Ltd,2,-10,0.0
+HEP,Holly Energy Partners LP,2,-17,0.0
+HE,Hawaiian Electric Industries Inc,2,-17,0.0
+AGR,Avangrid Inc,2,-16,0.0
+2768,Sojitz Corp,2,-16,0.0
+A2A.MI,A2A SpA,2,-15,0.0
+LUNE,Lundin Energy AB,2,-15,0.0
+IBDN,iShares iBonds Dec 2022 Term Co,2,-15,0.0
+IBDM,iShares iBonds Dec 2021 Term Co,2,-15,0.0
+RHHBY,Roche Holding AG ADR,2,-15,0.0
+ITX.BC,Industria De Diseno Textil SA,2,-15,0.0
+IXN,iShares Global Tech ETF,2,-15,0.0
+LNC,Lincoln National Corp,2,-15,0.0
+FE,FirstEnergy Corp,2,-15,0.0
+00303.HK,VTech Holdings Ltd,2,-15,0.0
+TRPL4.SA,Cia de Transmissao de Energia Eletrica Paulista Participating Preferred,2,-16,0.0
+KIO.JO,Kumba Iron Ore Ltd,2,-16,0.0
+TRNFP,Transneft PJSC Participating Preferred,2,-16,0.0
+BGFV,Big 5 Sporting Goods Corp,2,-16,0.0
+BNGO,Bionano Genomics Inc,2,-16,0.0
+VBR,Vanguard Small-Cap Value ETF,2,-16,0.0
+IJT,iShares S&P Small-Cap 600 Growt,2,-16,0.0
+SAMPO,Sampo Oyj Class A,2,-16,0.0
+EDU,New Oriental Education & Technology Group Inc ADR,2,-16,0.0
+AVID,Avid Technology Inc,2,-16,0.0
+HOLD,AdvisorShares Sage Core Reserve,2,-16,0.0
+VST,Vistra Corp,2,-16,0.0
+BLUE,bluebird bio Inc,2,-16,0.0
+REE.BC,Red Electrica Corporacion SA,2,-16,0.0
+5110,Sumitomo Rubber Industries Ltd,2,-15,0.0
+CHUY,Chuy's Holdings Inc,2,-15,0.0
+TXRH,Texas Roadhouse Inc,2,-15,0.0
+RICK,RCI Hospitality Holdings Inc,2,-15,0.0
+4755,Rakuten Group Inc,2,-15,0.0
+CHILE,Banco De Chile,2,-15,0.0
+COPEC,Empresas COPEC SA,2,-15,0.0
+JBSS3.SA,JBS SA,2,-15,0.0
+EEM,iShares MSCI Emerging Index Fun,2,-15,0.0
+COLO B,Coloplast A/S Class B,2,-15,0.0
+PNDORA,Pandora A/S,2,-15,0.0
+00868.HK,Xinyi Glass Holdings Ltd,2,-15,0.0
+BRDT3.SA,Petrobras Distribuidora SA,2,-14,0.0
+ELEKTRA.MX,Grupo Elektra SAB de CV,2,-14,0.0
+3045.TW,Taiwan Mobile Co Ltd,2,-14,0.0
+5880.TW,Taiwan Cooperative Financial Holding Co Ltd,2,-14,0.0
+CROMPTON.B,Crompton Greaves Consumer Electricals Ltd,2,-14,0.0
+3529.TW,eMemory Technology Inc,2,-14,0.0
+500271.BO,Max Financial Services Ltd,2,-14,0.0
+NAVI,Navient Corp,2,-14,0.0
+ODP,The ODP Corp,2,-14,0.0
+6370,Kurita Water Industries Ltd,2,-14,0.0
+DIA.MI,Diasorin SpA,2,-14,0.0
+06823.HK,HKT Trust and HKT Ltd,2,-14,0.0
+RMS.PA,Hermes International SA,2,-13,0.0
+NOKIA,Nokia Oyj,2,-13,0.0
+TLKM,PT Telkom Indonesia (Persero) Tbk Class B,2,-13,0.0
+BMRI,PT Bank Mandiri (Persero) Tbk,2,-13,0.0
+ASII,PT Astra International Tbk,2,-13,0.0
+CPIN,PT Charoen Pokphand Indonesia Tbk,2,-13,0.0
+BBNI,Bank Negara Indonesia (Persero) Tbk Registered Shs Series -B-,2,-13,0.0
+ICT,International Container Terminal Services Inc,2,-13,0.0
+PIDILITIND,Pidilite Industries Ltd Shs Dematerialised,2,-13,0.0
+531642.BO,Marico Ltd,2,-13,0.0
+ETISALAT,Emirates Telecommunications Group Co PJSC,2,-13,0.0
+FAB,First Trust Multi Cap Value Alp,2,-13,0.0
+AOT-R,Airports Of Thailand PLC DR,2,-13,0.0
+PAGP,Plains GP Holdings LP Class A,2,-13,0.0
+LT.BO,Larsen & Toubro Ltd Shs Dematerialised,2,-4,0.0
+SBIN.BO,State Bank of India,2,-4,0.0
+ATUS,Altice USA Inc Class A,2,3,0.0
+COMM,CommScope Holding Co Inc,2,3,0.0
+VSAT,Viasat Inc,2,3,0.0
+RJF,Raymond James Financial Inc,2,3,0.0
+9022,Central Japan Railway Co,2,3,0.0
+KRX.L,Kingspan Group PLC,2,3,0.0
+8015,Toyota Tsusho Corp,2,4,0.0
+KRC,Kilroy Realty Corp,2,4,0.0
+LI.PA,Klepierre,2,4,0.0
+CS.PA,AXA SA,2,5,0.0
+ASM,ASM International NV,2,5,0.0
+PROX,Proximus SA,2,5,0.0
+PCT,PureCycle Technologies Inc Ordinary Shares,2,5,0.0
+DCI,Donaldson Co Inc,2,5,0.0
+DLG.L,Dialog Semiconductor PLC,2,2,0.0
+TKA.DE,thyssenkrupp AG,2,2,0.0
+4523,Eisai Co Ltd,2,2,0.0
+3382,Seven & i Holdings Co Ltd,2,2,0.0
+4506,Sumitomo Dainippon Pharma Co Ltd,2,2,0.0
+UMI,USCF Midstream Energy Income Fu,2,2,0.0
+AGS,Ageas SA/ NV,2,2,0.0
+6033,Petronas Gas Bhd,2,2,0.0
+HAE,Haemonetics Corp,2,1,0.0
+PHIA,Koninklijke Philips NV,2,1,0.0
+LDL,Lydall Inc,2,-4,0.0
+LPI,Laredo Petroleum Inc,2,-4,0.0
+BME.L,B&M European Value Retail SA,2,-5,0.0
+DPH.L,Dechra Pharmaceuticals PLC,2,-5,0.0
+IMI.L,IMI PLC,2,-5,0.0
+FEMSAUBD.M,"Fomento Economico Mexicano SAB de CV Units (1 Series B, 4 Series D)",2,-5,0.0
+TLEVISACPO,Grupo Televisa SAB,2,-5,0.0
+BIMBOA.MX,Grupo Bimbo SAB de CV Shs A,2,-5,0.0
+DQ,Daqo New Energy Corp ADR,2,-5,0.0
+3023.TW,Sinbon Electronics Co Ltd,2,-5,0.0
+ABEV3.SA,Ambev SA,2,-5,0.0
+MGLU3.SA,Magazine Luiza SA,2,-5,0.0
+WEGE3.SA,Weg SA,2,-5,0.0
+EMBR3.SA,Embraer SA,2,-5,0.0
+042700.KS,HANMI Semiconductor Co Ltd,2,-5,0.0
+ACAD,ACADIA Pharmaceuticals Inc,2,-9,0.0
+HQH,Tekla Healthcare Investors,2,-9,0.0
+ARDC,Ares Dynamic Credit Allocation Fund,2,-9,0.0
+CC,The Chemours Co,2,-9,0.0
+EXP,Eagle Materials Inc,2,-9,0.0
+NN,NN Group NV,2,-9,0.0
+3269,Advance Residence Investment Corp,2,-9,0.0
+FEMB,First Trust Emerging Markets Lo,2,-9,0.0
+FPE,First Trust Preferred Securitie,2,-9,0.0
+001230.KS,Dongkuk Steel Mill Co Ltd,2,-9,0.0
+298020.KS,Hyosung TNC Co Ltd Ordinary Shares,2,-9,0.0
+KBR,KBR Inc,2,-9,0.0
+BRKM5.SA,Braskem SA Participating Preferred,2,-9,0.0
+8454.TW,momo.com Inc,2,-9,0.0
+03818,China Dongxiang (Group) Co Ltd,2,-9,0.0
+TTTXX,BlackRock Liquidity Treasury Instl,2,-9,0.0
+DGL,Invesco DB Gold Fund,2,-9,0.0
+ATKR,Atkore Inc,2,-9,0.0
+008560.KS,Meritz Securities Co Ltd,2,-9,0.0
+PAH3.DE,Porsche Automobil Holding SE Participating Preferred,2,-9,0.0
+SOON,Sonova Holding AG,2,-9,0.0
+KEY.TO,Keyera Corp,2,-8,0.0
+01038.L,CK Infrastructure Holdings Ltd,2,-8,0.0
+FISV,Fiserv Inc,2,-8,0.0
+RPD,Rapid7 Inc,2,-8,0.0
+RADA,Rada Electronics Industries Ltd,2,-8,0.0
+ERIC,Telefonaktiebolaget L M Ericsson ADR Class B,2,-8,0.0
+3563,Food & Life Companies Ltd,2,-8,0.0
+3288,Open House Co Ltd,2,-8,0.0
+EVR.L,EVRAZ PLC,2,-8,0.0
+ITSA4.SA,Itausa Investimentos ITAU SA Participating Preferred,2,-8,0.0
+ISP.MI,Intesa Sanpaolo,2,-8,0.0
+STLA,Stellantis NV,2,-8,0.0
+J,Jacobs Engineering Group Inc,2,-6,0.0
+JCOM,J2 Global Inc,2,-6,0.0
+LHCG,LHC Group Inc,2,-6,0.0
+NVTK,NOVATEK PJSC,2,-6,0.0
+GMKN,Mining and Metallurgical Company NORILSK NICKEL PJSC,2,-6,0.0
+TESXU1,EURO STOXX 50 Index Total Return Sept21,2,-6,0.0
+ANG.JO,Anglogold Ashanti Ltd,2,-2,0.0
+VHM,Vinhomes JSC,2,-2,0.0
+CHS,Chico's FAS Inc,2,-2,0.0
+EXPR,"Express, Inc.",2,-2,0.0
+IBN.BO,ICICI Bank Ltd ADR,2,-3,0.0
+SWAV,ShockWave Medical Inc,2,-3,0.0
+SIL.TO,SilverCrest Metals Inc,2,-3,0.0
+MNRL,Brigham Minerals Inc,2,-3,0.0
+CTT,CatchMark Timber Trust Inc Class A,2,-3,0.0
+SHL.DE,Siemens Healthineers AG Registered Shares,2,-3,0.0
+NEXI.MI,Nexi SpA,2,-3,0.0
+CPNG.KS,Coupang Inc Ordinary Shares - Class A,2,-3,0.0
+BSY,Bentley Systems Inc Ordinary Shares - Class B,2,-3,0.0
+XRAY,Dentsply Sirona Inc,2,-3,0.0
+TPR,Tapestry Inc,2,-4,0.0
+MCHP,Microchip Technology Inc,2,-4,0.0
+PBR.SA,Petroleo Brasileiro SA Petrobras ADR,2,-4,0.0
+CDEV,Centennial Resource Development Inc A,2,-4,0.0
+CF,CF Industries Holdings Inc,2,-7,0.0
+GLW,Corning Inc,2,-7,0.0
+BWA,BorgWarner Inc,2,-7,0.0
+09999,NetEase Inc Ordinary Shares,2,-7,0.0
+BC,Brunswick Corp,2,-7,0.0
+PNW,Pinnacle West Capital Corp,2,-7,0.0
+ATO,Atmos Energy Corp,2,-7,0.0
+MOS,The Mosaic Co,2,-7,0.0
+TKR,The Timken Co,2,-7,0.0
+GVAL,Cambria Global Value ETF,2,-6,0.0
+FYLD,Cambria Foreign Shareholder Yie,2,-6,0.0
+QMOM,Alpha Architect U.S. Quantitati,2,-6,0.0
+SPEM,SPDR Index Shares Fund SPDR Por,2,-6,0.0
+CRSR,Corsair Gaming Inc Ordinary Shares,2,-6,0.0
+SWCH,Switch Inc Class A,2,-6,0.0
+8951,Nippon Building Fund Inc,2,-6,0.0
+ABC,AmerisourceBergen Corp,2,-6,0.0
+KRE,SPDR S&P Regional Banking ETF,2,-6,0.0
+VTV,Vanguard Value ETF,2,-6,0.0
+SCHC,Schwab International Small-Cap ,2,-6,0.0
+NCM.AX,Newcrest Mining Ltd,2,-6,0.0
+AEM.TO,Agnico Eagle Mines Ltd,2,-6,0.0
+GDX.AX,VanEck Vectors Gold Miners ETF,2,-6,0.0
+GDXJ.IR,VanEck Vectorsâ¢ Junior Gold Miners ETF,2,-6,0.0
+EVN.AX,Evolution Mining Ltd,2,-6,0.0
+AGI.TO,Alamos Gold Inc Class A,2,-6,0.0
+VIV.PA,Vivendi SA,2,-6,0.0
+TCL.AX,Transurban Group,2,-6,0.0
+AENA.BC,Aena SME SA,2,-6,0.0
+ATL.MI,Atlantia SpA,2,-6,0.0
+000568,Luzhou Laojiao Co Ltd,2,-6,0.0
+600031,Sany Heavy Industry Co Ltd,2,-6,0.0
+507685.BO,Wipro Ltd,2,-6,0.0
+500124.BO,Dr Reddy's Laboratories Ltd,2,-6,0.0
+532977.BO,Bajaj Auto Ltd,2,-6,0.0
+500087.BO,Cipla Ltd,2,-6,0.0
+SRPT,Sarepta Therapeutics Inc,2,-6,0.0
+OR.TO,Osisko Gold Royalties Ltd,2,-6,0.0
+PPC,Public Power Corp SA,2,-6,0.0
+NVTA,Invitae Corp,2,-6,0.0
+PEGA,Pegasystems Inc,2,-6,0.0
+ALRS,Alrosa PJSC,2,-6,0.0
+8088,Iwatani Corp,2,-6,0.0
+PETS.L,Pets at Home Group PLC,2,-6,0.0
+ISA,Interconexion Electrica SA ESP,2,-4,0.0
+BCOLOMBIA,BanColombia SA,2,-4,0.0
+GEB,Grupo Energia Bogota SA ESP,2,-4,0.0
+NUTRESA,Grupo Nutresa SA,2,-4,0.0
+PFDAVVNDA,Banco Davivienda SA Participating Preferred,2,-4,0.0
+CLOU,Global X Cloud Computing ETF,2,-4,0.0
+HYRE,HyreCar Inc,2,-4,0.0
+INVZ,Innoviz Technologies Ltd,2,-4,0.0
+GRUB,Just Eat Takeaway.com NV ADR,2,-4,0.0
+TFC,Truist Financial Corp,2,-5,0.0
+BLDP.TO,Ballard Power Systems Inc,2,-5,0.0
+NEL,NEL ASA,2,-5,0.0
+CWR.L,Ceres Power Holdings PLC,2,-5,0.0
+NTRA,Natera Inc,2,-5,0.0
+BDJ,BlackRock Enhanced Equity Div,2,-5,0.0
+MSM,MSC Industrial Direct Co Inc Class A,2,-5,0.0
+RYN,Rayonier Inc,2,-5,0.0
+SEIC,SEI Investments Co,2,-5,0.0
+GKOS,Glaukos Corp,2,-5,0.0
+VCRA,Vocera Communications Inc,2,-5,0.0
+HYT,BlackRock Corp High Yield,2,-5,0.0
+IAU,iShares Gold Trust Shares of th,2,-5,0.0
+MEDP,Medpace Holdings Inc,2,-5,0.0
+VIR,Vir Biotechnology Inc,2,-5,0.0
+TDUP,ThredUp Inc Ordinary Shares - Class A,2,-5,0.0
+TKWY,Just Eat Takeaway.com NV,2,-5,0.0
+BIGC,BigCommerce Holdings Inc Ordinary Shares Series 1,2,-5,0.0
+PRTS,CarParts.com Inc,2,-5,0.0
+TGLS,Tecnoglass Inc,2,-5,0.0
+TELIA,Telia Company AB,2,-5,0.0
+SDAZ5,S&P 500 Annual Dividend Index Dec25,2,-5,0.0
+SDAZ4,S&P 500 Annual Dividend Index Dec24,2,-5,0.0
+SDAZ3,S&P 500 Annual Dividend Index Dec23,2,-5,0.0
+SDAZ2,S&P 500 Annual Dividend Index Dec22,2,-5,0.0
+MRK.DE,Merck KGaA,2,-5,0.0
+TLS.AX,Telstra Corp Ltd,2,-5,0.0
+1928,Sekisui House Ltd,2,-5,0.0
+NOV,NOV Inc,2,133,0.0
+TMST,TimkenSteel Corp,2,-8,0.0
+01308.HK,SITC International Holdings Co Ltd,2,-8,0.0
+HDFCBANK.B,HDFC Bank Ltd,2,-8,0.0
+532978.BO,Bajaj Finserv Ltd,2,-8,0.0
+9020,East Japan Railway Co,2,-8,0.0
+GII,SPDR S&P Global Infrastructure ,2,-8,0.0
+GPN,Global Payments Inc,2,-8,0.0
+MG.TO,Magna International Inc Class A,2,-8,0.0
+SNOW,Snowflake Inc Ordinary Shares - Class A,2,-8,0.0
+DOMO,Domo Inc,2,-8,0.0
+FUBO,FuboTV Inc,2,-8,0.0
+HQY,HealthEquity Inc,2,-8,0.0
+PLTK,Playtika Holding Corp Ordinary Shares,2,-8,0.0
+6701,NEC Corp,2,-8,0.0
+6361,Ebara Corp,2,-8,0.0
+LPLA,LPL Financial Holdings Inc,2,-8,0.0
+KC,Kingsoft Cloud Holdings Ltd ADR,2,-8,0.0
+OC,Owens-Corning Inc,2,-8,0.0
+LEA,Lear Corp,2,-8,0.0
+Y,Alleghany Corp,2,-8,0.0
+ED,Consolidated Edison Inc,2,-8,0.0
+FMC,FMC Corp,2,-8,0.0
+ECP,Electra Consumer Products Ltd,2,-10,0.0
+KNT.TO,K92 Mining Inc,2,-10,0.0
+WDO.TO,Wesdome Gold Mines Ltd,2,-10,0.0
+ITT,ITT Inc,2,-10,0.0
+WLTW.L,Willis Towers Watson PLC,2,-10,0.0
+YNDX,Yandex NV Shs Class-A-,2,-10,0.0
+4901,FUJIFILM Holdings Corp,2,-10,0.0
+SHL.AX,Sonic Healthcare Ltd,2,-10,0.0
+SMG,The Scotts Miracle Gro Co A,2,-10,0.0
+TTEC,TTEC Holdings Inc,2,-10,0.0
+GWW,W.W. Grainger Inc,2,-10,0.0
+000651,Gree Electric Appliances Inc of Zhuhai,2,-10,0.0
+600887,Inner Mongolia Yili Industrial Group Co Ltd,2,-10,0.0
+CGBD,TCG BDC Inc,2,-10,0.0
+RLI,RLI Corp,2,-10,0.0
+THG,The Hanover Insurance Group Inc,2,-10,0.0
+OZK,Bank OZK,2,-10,0.0
+UMPQ,Umpqua Holdings Corp,2,-10,0.0
+GNL,Global Net Lease Inc,2,-10,0.0
+OPI,Office Properties Income Trust,2,-10,0.0
+BPYU,Brookfield Property REIT Inc,2,-10,0.0
+CHD,Church & Dwight Co Inc,2,-11,0.0
+SCHO,Schwab Short-Term U.S. Treasury,2,-11,0.0
+BCPC,Balchem Corp,2,-11,0.0
+JJSF,J&J Snack Foods Corp,2,-11,0.0
+NDSN,Nordson Corp,2,-10,0.0
+AMS.TW,ams AG,2,-10,0.0
+HYD,VanEck ETF Trust VanEck High Yi,2,-10,0.0
+TLND,Talend SA ADR,2,-10,0.0
+MQY,BlackRock MuniYield Quality,2,-10,0.0
+MHD,BlackRock MuniHoldings Fund,2,-10,0.0
+NZF,Nuveen Municipal Credit Income,2,-10,0.0
+VOD.L,Vodafone Group PLC,2,-10,0.0
+HEXO.TO,HEXO Corp,2,-10,0.0
+AM,Antero Midstream Corp,2,-10,0.0
+FSIXX,FidelityÂ® Inv MM Fds Treasury Only I,2,-10,0.0
+HASI,Hannon Armstrong Sustainable Infrastructure Capital Inc,2,-10,0.0
+NRZ,New Residential Investment Corp,2,-10,0.0
+BXMT,Blackstone Mortgage Trust Inc A,2,-10,0.0
+PMT,PennyMac Mortgage Investment Trust,2,-10,0.0
+ON,ON Semiconductor Corp,2,-10,0.0
+SKLZ,Skillz Inc Ordinary Shares - Class A,2,-10,0.0
+BNL,Broadstone Net Lease Inc Ordinary Shares,2,-11,0.0
+EPR,EPR Properties,2,-11,0.0
+EPRT,Essential Properties Realty Trust Inc,2,-11,0.0
+RGA,Reinsurance Group of America Inc,2,-10,0.0
+BEN,Franklin Resources Inc,2,-10,0.0
+ALGN,Align Technology Inc,2,-11,0.0
+ANSS,Ansys Inc,2,-11,0.0
+INVH,Invitation Homes Inc,2,-11,0.0
+ELS,Equity Lifestyle Properties Inc,2,-11,0.0
+SUI,Sun Communities Inc,2,-11,0.0
+NCR,NCR Corp,2,-11,0.0
+DHER.DE,Delivery Hero SE,2,-11,0.0
+PEAK,Healthpeak Properties Inc,2,-11,0.0
+SYF,Synchrony Financial,2,-11,0.0
+PBI,Pitney Bowes Inc,2,-11,0.0
+LKFN,Lakeland Financial Corp,2,-11,0.0
+USPH,US Physical Therapy Inc,2,-11,0.0
+SNA,Snap-on Inc,2,-11,0.0
+DLB,Dolby Laboratories Inc,2,-11,0.0
+NFJ,"Virtus Divid, Interest & Prem",2,-12,0.0
+III.L,3i Ord,2,-12,0.0
+AES,The AES Corp,2,-12,0.0
+DHRPA,Danaher Corp PRF CONVERT 15/04/2022 USD - Ser A,2,-12,0.0
+CNPPB,CenterPoint Energy Inc 7% PRF CONVERT 01/09/2021 USD 1000 - Ser B (1/20th i,2,-12,0.0
+GSPD,Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Perp Fltg Rate Non Cum Pf,2,-12,0.0
+CPJ,Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J,2,-12,0.0
+ATHPA,Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep,2,-12,0.0
+USBPH,U.S. Bancorp Shs Repr 1/1000th Non-Cum Perpetual Pfd Shs Series -B-,2,-12,0.0
+DT,Dynatrace Inc,2,-12,0.0
+TPC,AT&T Inc 4.75% PRF PERPETUAL USD 25 - 1/1000th Int Ser C,2,-12,0.0
+BDXB,"Becton, Dickinson and Co PRF PERPETUAL USD 50 - 1/20TH INT Ser B",2,-12,0.0
+EDPR.BC,EDP Renovaveis SA,2,-12,0.0
+NOS,Nos Sgps SA,2,-12,0.0
+JPMPL,JPMorgan Chase & Co PRF PERPETUAL USD - Ser LL 1/400th Int,2,-12,0.0
+JPMPD,JPMorgan Chase & Co Pfd,2,-12,0.0
+BACPM,Bank of America Corp Pfd,2,-12,0.0
+MCK,McKesson Corp,2,-15,0.0
+UFPI,UFP Industries Inc,2,-15,0.0
+NSIT,Insight Enterprises Inc,2,-15,0.0
+FUL,H.B. Fuller Co,2,-15,0.0
+SNY.PA,Sanofi SA ADR,2,-15,0.0
+TRNO,Terreno Realty Corp,2,-15,0.0
+HRI,Herc Holdings Inc,2,-15,0.0
+SNBR,Sleep Number Corp,2,-15,0.0
+TBI,TrueBlue Inc,2,-16,0.0
+ADS,Alliance Data Systems Corp,2,-16,0.0
+WDFC,WD-40 Co,2,-16,0.0
+LGIH,LGI Homes Inc,2,-16,0.0
+SWN,Southwestern Energy Co,2,-16,0.0
+CBU,Community Bank System Inc,2,-15,0.0
+PPBI,Pacific Premier Bancorp Inc,2,-15,0.0
+BKU,BankUnited Inc,2,-15,0.0
+ABCB,Ameris Bancorp,2,-15,0.0
+LXP,Lexington Realty Trust,2,-15,0.0
+CNMD,Conmed Corp,2,-15,0.0
+REZI,Resideo Technologies Inc,2,-15,0.0
+AJRD,Aerojet Rocketdyne Holdings Inc,2,-15,0.0
+LTHM,Livent Corp,2,-15,0.0
+VIAV,Viavi Solutions Inc,2,-15,0.0
+KLIC,Kulicke & Soffa Industries Inc,2,-15,0.0
+SJI,South Jersey Industries Inc,2,-433,0.0
+COTY,Coty Inc Class A,2,-17,0.0
+IUSS,Invesco RAFI Strategic US Small,2,-17,0.0
+XMLV,Invesco S&P MidCap Low Volatili,2,-17,0.0
+SPLV,Invesco S&P 500 Low Volatility ,2,-17,0.0
+XSLV,Invesco S&P SmallCap Low Volati,2,-17,0.0
+VRIG,Invesco Variable Rate Investmen,2,-17,0.0
+PBTP,Invesco PureBeta 0-5 Yr US TIPS,2,-17,0.0
+QTS,QTS Realty Trust Inc Class A,2,-17,0.0
+HZNP,Horizon Therapeutics PLC,2,-17,0.0
+ASXC,Asensus Surgical Inc Ordinary Shares,2,-17,0.0
+NWL,Newell Brands Inc,2,-17,0.0
+SPSB,SPDR Portfolio Short Term Corpo,2,-17,0.0
+ICVT,iShares Convertible Bond ETF,2,-17,0.0
+CREE,Cree Inc,2,-17,0.0
+CA.PA,Carrefour,2,-17,0.0
+VGIT,Vanguard Intermediate-Term Trea,2,-17,0.0
+DVA,DaVita Inc,2,-17,0.0
+MOO,VanEck Agribusiness ETF,2,-17,0.0
+JAR.L,Jardine Matheson Holdings Ltd,2,-17,0.0
+LANC,Lancaster Colony Corp,2,-17,0.0
+URI,United Rentals Inc,2,-17,0.0
+2324.TW,Compal Electronics Inc,2,-17,0.0
+HCSG,Healthcare Services Group Inc,2,-16,0.0
+02333,Great Wall Motor Co Ltd Class H,2,-15,0.0
+HXL,Hexcel Corp,2,-15,0.0
+EIM,EV Municipal Bond,2,-15,0.0
+CORE,Core-Mark Holding Co Inc,2,-15,0.0
+SPTN,SpartanNash Co,2,-15,0.0
+SNX,Synnex Corp,2,-15,0.0
+INT,World Fuel Services Corp,2,-15,0.0
+IWD,iShares Russell 1000 Value ETF,2,-15,0.0
+WSP.TO,WSP Global Inc,2,-19,0.0
+AQN.TO,Algonquin Power & Utilities Corp,2,-19,0.0
+CAE.TO,CAE Inc,2,-19,0.0
+WBSN21,WTI Crude Future June 21,2,-19,0.0
+HRB,H&R Block Inc,2,-19,0.0
+ALDAR,Aldar Properties PJSC,2,-19,0.0
+CSL,Carlisle Companies Inc,2,-19,0.0
+SSPY,Syntax Stratified LargeCap ETF,2,-19,0.0
+SMDY,Syntax Stratified MidCap ETF,2,-19,0.0
+SSLY,Syntax Stratified SmallCap ETF,2,-19,0.0
+MAG.TO,MAG Silver Corp,2,-19,0.0
+HCI,HCI Group Inc,2,-19,0.0
+CUBI,Customers Bancorp Inc,2,-19,0.0
+LITE,Lumentum Holdings Inc,2,-19,0.0
+YELP,Yelp Inc Class A,2,-19,0.0
+EQC,Equity Commonwealth,2,-19,0.0
+IDA,Idacorp Inc,2,-19,0.0
+ATR,AptarGroup Inc,2,-19,0.0
+SPYG,SPDR Series Trust SPDR Portfoli,2,-18,0.0
+CCIV,Churchill Capital Corp IV Ordinary Shares - Class A,2,-18,0.0
+REG,Regency Centers Corp,2,-17,0.0
+IWS,iShares Russell Mid-cap Value E,2,-17,0.0
+SDIV,Global X SuperDividend ETF,2,-17,0.0
+HSTM,HealthStream Inc,2,-17,0.0
+OSIS,OSI Systems Inc,2,-17,0.0
+2357.TW,Asustek Computer Inc,2,-17,0.0
+CCO.TO,Cameco Corp,2,-17,0.0
+KAP,National Atomic Co Kazatomprom JSC ADR,2,-17,0.0
+NXE.TO,NexGen Energy Ltd,2,-17,0.0
+DML.TO,Denison Mines Corp,2,-17,0.0
+EFR,Energy Fuels Inc,2,-17,0.0
+PDN.AX,Paladin Energy Ltd,2,-17,0.0
+U.TO,Uranium Participation Corp,2,-17,0.0
+UEC,Uranium Energy Corp,2,-17,0.0
+RTYU21,E-mini Russell 2000 Index Future Sept 21,2,-17,0.0
+AON,Aon PLC,2,-17,0.0
+OMF,OneMain Holdings Inc,2,-17,0.0
+CCEP.L,Coca-Cola Europacific Partners PLC,2,-17,0.0
+PII,Polaris Inc,2,-17,0.0
+BOX,Box Inc A,2,-17,0.0
+BDN,Brandywine Realty Trust,2,-17,0.0
+HIMX,Himax Technologies Inc ADR,1,-17,0.0
+SBSW.JO,Sibanye Stillwater Ltd ADR,1,-17,0.0
+CX.MX,Cemex SAB de CV ADR,1,-17,0.0
+L,Loews Corp,1,-17,0.0
+JWN,Nordstrom Inc,1,-17,0.0
+EVH,Evolent Health Inc A,1,-17,0.0
+JHG,Janus Henderson Group PLC,1,-17,0.0
+QSR.TO,Restaurant Brands International Inc,1,-17,0.0
+INVA,Innoviva Inc,1,-17,0.0
+XRX,Xerox Holdings Corp,1,-17,0.0
+CEMB,iShares J.P. Morgan EM Corporat,1,-17,0.0
+003690.KS,Korean Reinsurance Co,1,-17,0.0
+MTS.AX,Metcash Ltd,1,-17,0.0
+2383.TW,Elite Material Co Ltd,1,-17,0.0
+JMIA.DE,Jumia Technologies AG ADR,1,-17,0.0
+BCC,Boise Cascade Co,1,-17,0.0
+ESGR,Enstar Group Ltd,1,-17,0.0
+600030,CITIC Securities Co Ltd,1,-17,0.0
+RO,Roche Holding AG,1,-17,0.0
+BSX,Boston Scientific Corp,1,-17,0.0
+DBC,Invesco DB Commodity Index Trac,1,-17,0.0
+SMH,VanEck Semiconductor ETF,1,-17,0.0
+SKYY,First Trust Cloud Computing ETF,1,-17,0.0
+DBA,Invesco DB Agriculture Fund,1,-17,0.0
+KCE,SPDR S&P Capital Markets ETF,1,-17,0.0
+RYT,Invesco S&P 500 Equal Weight Te,1,-17,0.0
+CVA,Covanta Holding Corp,1,-17,0.0
+WIRE,Encore Wire Corp,1,-17,0.0
+SPXC,SPX Corp,1,-17,0.0
+FSS,Federal Signal Corp,1,-17,0.0
+MWA,"Mueller Water Products, Inc. Class A",1,-17,0.0
+ROLL,RBC Bearings Inc,1,-17,0.0
+HDG,ProShares Hedge Replication ETF,1,-17,0.0
+RINF,ProShares Inflation Expectation,1,-17,0.0
+RALS,ProShares RAFI Long Short ETF,1,-17,0.0
+TOLZ,ProShares DJ Brookfield Global ,1,-17,0.0
+PEX,ProShares Global Listed Private,1,-17,0.0
+MRGR,ProShares Merger ETF,1,-17,0.0
+FUT,ProShares Managed Futures Strat,1,-17,0.0
+SRET,Global X SuperDividend REIT ETF,1,-17,0.0
+RA,Brookfield Real Assets Income Fund Inc.,1,-17,0.0
+EDF,Stone Harbor Emerging Mkts Income,1,-17,0.0
+ETB,EV Tax-Managed Buy-Write Inc,1,-17,0.0
+DIAX,Nuveen Dow 30 Dynamic Overwrite,1,-17,0.0
+DMO,Western Asset Mortgage Opp Fund Inc,1,-17,0.0
+ETJ,EV Risk-Mgd Divers Equity Inc,1,-17,0.0
+TEI,Templeton Emerging Markets Income,1,-17,0.0
+NS,NuStar Energy LP,1,-17,0.0
+IDEV,iShares Core MSCI International,1,-17,0.0
+IAGG,iShares International Aggregate,1,-17,0.0
+WBT,Welbilt Inc,1,-17,0.0
+Z,Zillow Group Inc C,1,-17,0.0
+PATH,UiPath Inc Class A,1,-17,0.0
+GBTC,Grayscale Bitcoin Trust (BTC),1,-17,0.0
+PRNT,3D Printing (The) ETF,1,-17,0.0
+6301,Komatsu Ltd,1,-17,0.0
+HO.PA,Thales,1,-17,0.0
+VGT,Vanguard Information Tech ETF,1,-17,0.0
+VHT,Vanguard Health Care ETF,1,-17,0.0
+VCR,Vanguard Consumer Discretion ET,1,-17,0.0
+VOX,Vanguard Communication Services,1,-17,0.0
+VIS,Vanguard Industrials ETF,1,-17,0.0
+VDC,Vanguard Consumer Staples ETF,1,-17,0.0
+NFRA,FlexShares STOXX Global Broad I,1,-16,0.0
+GUNR,FlexShares Global Upstream Natu,1,-16,0.0
+GQRE,FlexShares Global Quality Real ,1,-16,0.0
+002709,GUANGZHOU TINCI MATERIALS TECHNOLOGY CO LTD Class A,1,-16,0.0
+000799,Jiugui Liquor Co Ltd,1,-16,0.0
+603486,Ecovacs Robotics Co Ltd Class A,1,-16,0.0
+600089,TBEA Co Ltd,1,-16,0.0
+000009,China Baoan Group Co Ltd,1,-16,0.0
+002340,GEM Co Ltd,1,-16,0.0
+002074,Gotion High-tech Co Ltd,1,-16,0.0
+600460,Hangzhou Silan Microelectronics Co Ltd,1,-16,0.0
+300285,Shandong Sinocera Functional Material Co Ltd,1,-16,0.0
+601233,Tongkun Group Co Ltd,1,-16,0.0
+AER,AerCap Holdings NV,1,-16,0.0
+SBRY.L,Sainsbury (J) PLC,1,-16,0.0
+BWY.L,Bellway PLC,1,-16,0.0
+STJ.L,St James's Place PLC,1,-16,0.0
+TATE.L,Tate & Lyle PLC,1,-16,0.0
+MKS.L,Marks & Spencer Group PLC,1,-16,0.0
+BEKB,NV Bekaert SA,1,-16,0.0
+R,Ryder System Inc,1,-16,0.0
+AL,Air Lease Corp Class A,1,-16,0.0
+TRN.L,Trainline PLC,1,-16,0.0
+00696,TravelSky Technology Ltd Class H,1,-16,0.0
+TRIP,TripAdvisor Inc,1,-16,0.0
+CERE,Cerevel Therapeutics Holdings Inc Ordinary Shares,1,-16,0.0
+CLDX,Celldex Therapeutics Inc,1,-16,0.0
+NKTX,Nkarta Inc Ordinary Shares,1,-16,0.0
+LGND,Ligand Pharmaceuticals Inc,1,-17,0.0
+TW,Tradeweb Markets Inc,1,-17,0.0
+RRR,Red Rock Resorts Inc A,1,-17,0.0
+BYD,Boyd Gaming Corp,1,-17,0.0
+CNTY,Century Casinos Inc,1,-17,0.0
+HGV,Hilton Grand Vacations Inc,1,-17,0.0
+PBH.AX,Pointsbet Holdings Ltd Ordinary Shares,1,-17,0.0
+KIND SDB,Kindred Group PLC Shs Swedish Depository Receipts,1,-17,0.0
+RSI,Rush Street Interactive Inc Ordinary Shares - Class A,1,-17,0.0
+KAMBI,Kambi Group PLC B,1,-17,0.0
+2267,Yakult Honsha Co Ltd,1,-17,0.0
+PUM.DE,Puma SE,1,-17,0.0
+06110,Topsports International Holdings Ltd,1,-17,0.0
+JD..L,JD Sports Fashion PLC,1,-17,0.0
+CPRX,Catalyst Pharmaceuticals Inc,1,-17,0.0
+PHR,Phreesia Inc,1,-17,0.0
+SIFY.BO,Sify Technologies Ltd ADR,1,-17,0.0
+WNS,WNS (Holdings) Ltd ADR,1,-17,0.0
+YTRA.BO,Yatra Online Inc,1,-17,0.0
+RDY.BO,Dr Reddy's Laboratories Ltd ADR,1,-17,0.0
+AXB.BO,Axis Bank Ltd GDR,1,-17,0.0
+ORCC,Owl Rock Capital Corp Ordinary Shares,1,-17,0.0
+LVS,Las Vegas Sands Corp,1,-17,0.0
+ALL.AX,Aristocrat Leisure Ltd,1,-17,0.0
+AIV,Apartment Investment & Management Co Ordinary Shares - Class A,1,-17,0.0
+RVI,Retail Value Inc,1,-17,0.0
+K2LU.SI,ARA LOGOS Logistics Trust,1,-17,0.0
+CXP,Columbia Property Trust Inc,1,-17,0.0
+DANHOS 13.,Fibra Danhos,1,-17,0.0
+PSB,PS Business Parks Inc,1,-17,0.0
+OGVXX,JPMorgan US Government MMkt Capital,1,-17,0.0
+4819,Digital Garage Inc,1,-17,0.0
+HIVE.TO,HIVE Blockchain Technologies Ltd,1,-17,0.0
+TFX,Teleflex Inc,1,-17,0.0
+ALC,Alcon Inc,1,-17,0.0
+SKOR,FlexShares Credit-Scored US Cor,1,-17,0.0
+MBSD,FlexShares Trust FlexShares Dis,1,-17,0.0
+IGSB,iShares 1-5 Year Investment Gra,1,-17,0.0
+IGIB,iShares 5-10 Year Investment Gr,1,-17,0.0
+IGLB,iShares 10  Year Investment Gra,1,-17,0.0
+LKOR,FlexShares Trust FlexShares Cre,1,-17,0.0
+VOW.DE,Volkswagen AG,1,-17,0.0
+086520.KS,Ecopro Co Ltd,1,-17,0.0
+SQM,Sociedad Quimica Y Minera De Chile SA ADR,1,-17,0.0
+357780.KS,Soulbrain Co Ltd Ordinary Shares,1,-17,0.0
+066970.KS,L & F Co Ltd,1,-17,0.0
+BRNM0.L,Brent Crude Future Apr 20,1,-17,0.0
+MDY,SPDR MidCap Trust Series I,1,-17,0.0
+GM1,Fin Fut Uk Gilt Ice 09/28/21,1,-17,0.0
+6506,YASKAWA Electric Corp,1,-17,0.0
+RSW.L,Renishaw PLC,1,-17,0.0
+6645,OMRON Corp,1,-17,0.0
+AZUL.SA,Azul SA ADR,1,-17,0.0
+OIBR.C.SA,Oi SA ADR,1,-17,0.0
+COGN3.SA,CognaEducacao SA,1,-17,0.0
+GOL.SA,Gol Intelligent Airlines Inc ADR,1,-17,0.0
+BRML3.SA,BR Malls Participacoes SA,1,-17,0.0
+PODD,Insulet Corp,1,-17,0.0
+6415.TW,Silergy Corp,1,-17,0.0
+FOUR,Shift4 Payments Inc Class A,1,-17,0.0
+DJUN,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DAPR,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DMAR,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DMAY,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DFEB,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DJAN,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DOCT,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DDEC,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DAUG,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+DNOV,FT Cboe Vest U.S. Equity Deep B,1,-17,0.0
+PAPR,Innovator U.S. Equity Power Buf,1,-17,0.0
+PMAY,Innovator U.S. Equity Power Buf,1,-17,0.0
+PMAR,Innovator U.S. Equity Power Buf,1,-17,0.0
+PJAN,Innovator U.S. Equity Power Buf,1,-17,0.0
+PFEB,Innovator U.S. Equity Power Buf,1,-17,0.0
+PSEP,Innovator U.S. Equity Power Buf,1,-17,0.0
+PDEC,Innovator U.S. Equity Power Buf,1,-17,0.0
+PJUN,Innovator U.S. Equity Power Buf,1,-17,0.0
+POCT,Innovator U.S. Equity Power Buf,1,-17,0.0
+PNOV,Innovator U.S. Equity Power Buf,1,-17,0.0
+FFEB,FT Cboe Vest U.S. Equity Buffer,1,-17,0.0
+FNOV,FT Cboe Vest U.S. Equity Buffer,1,-17,0.0
+FAUG,FT Cboe Vest U.S. Equity Buffer,1,-17,0.0
+FMAY,FT Cboe Vest U.S. Equity Buffer,1,-17,0.0
+AVST.L,Avast PLC,1,-17,0.0
+ADYEY,Adyen NV ADR,1,-17,0.0
+RKT,Rocket Companies Inc Ordinary Shares Class A,1,-17,0.0
+ABG,Asbury Automotive Group Inc,1,-17,0.0
+SBH,Sally Beauty Holdings Inc,1,-17,0.0
+SKY,Skyline Champion Corp,1,-17,0.0
+SNE,Sony Group Corp ADR,1,-17,0.0
+AKTS,Akoustis Technologies Inc,1,-17,0.0
+RYCEY.L,Rolls-Royce Holdings PLC ADR,1,-17,0.0
+KURA,Kura Oncology Inc,1,-17,0.0
+VYNE,VYNE Therapeutics Inc,1,-17,0.0
+PUBM,PubMatic Inc Ordinary Shares - Class A,1,-17,0.0
+INSG,Inseego Corp,1,-17,0.0
+LRN,Stride Inc,1,-17,0.0
+CPZ,Calamos L/S Equity & Dynamic Inc Trust,1,-17,0.0
+IVH,Ivy High Income Opportunities,1,-17,0.0
+MSD,MS Emerging Markets Debt,1,-17,0.0
+NCZ,Virtus AllianzGI Convert & Inc Fund II,1,-17,0.0
+SPE,Special Opportunities Fund,1,-17,0.0
+2883.TW,China Development Financial Holding Corp,1,-17,0.0
+MTSS,Mobile TeleSystems PJSC,1,-17,0.0
+1101.TW,Taiwan Cement Corp,1,-17,0.0
+2890.TW,SinoPac Financial Holdings Co Ltd,1,-17,0.0
+2633.TW,Taiwan High Speed Rail Corp,1,-17,0.0
+INTUCH,Intouch Holdings PCL,1,-17,0.0
+ASHR,Xtrackers Harvest CSI 300 China,1,-17,0.0
+300142,Walvax Biotechnology Co Ltd,1,-17,0.0
+300601,Shenzhen Kangtai Biological Products Co Ltd A,1,-17,0.0
+000661,Changchun High and New Technology Industry Group Inc,1,-17,0.0
+300676,BGI Genomics Co Ltd Class A,1,-17,0.0
+300357,Zhejiang Wolwo Bio-Pharmaceutical Co Ltd Class A,1,-17,0.0
+WB,Weibo Corp ADR Class A,1,-17,0.0
+002624,Perfect World Co Ltd,1,-17,0.0
+300413,Mango Excellent Media Co Ltd,1,-17,0.0
+02883,China Oilfield Services Ltd Class H,1,-17,0.0
+000983,Shanxi Coking Coal Energy Group Co Ltd,1,-17,0.0
+601699,Shanxi Lu'an Environmental Energy Development Co Ltd,1,-17,0.0
+002353,Yantai Jereh Oilfield Services Group Co Ltd,1,-17,0.0
+600256,Guanghui Energy Co Ltd,1,-17,0.0
+900948,Inner Mongolia Yitai Coal Co Ltd,1,-17,0.0
+00241,Alibaba Health Information Technology Ltd,1,-17,0.0
+00853,MicroPort Scientific Corp,1,-17,0.0
+ZTO,ZTO Express (Cayman) Inc ADR,1,-17,0.0
+00586,China Conch Venture Holdings Ltd,1,-17,0.0
+00656.HK,Fosun International Ltd,1,-17,0.0
+03319,A-Living Smart City Services Co Ltd Class H,1,-17,0.0
+03888,Kingsoft Corp Ltd,1,-17,0.0
+00285,BYD Electronic (International) Co Ltd,1,-17,0.0
+00914,Anhui Conch Cement Co Ltd Class H,1,-17,0.0
+03323,China National Building Material Co Ltd Class H,1,-17,0.0
+01378,China Hongqiao Group Ltd,1,-17,0.0
+02600,Aluminum Corporation of China Ltd Class H,1,-17,0.0
+01313,China Resources Cement Holdings Ltd,1,-17,0.0
+02689,Nine Dragons Paper (Holdings) Ltd,1,-17,0.0
+00960,Longfor Group Holdings Ltd,1,-17,0.0
+01918,Sunac China Holdings Ltd,1,-17,0.0
+00004.HK,The Wharf (Holdings) Ltd,1,-17,0.0
+02202,China Vanke Co Ltd Class H,1,-17,0.0
+02319,China Mengniu Dairy Co Ltd,1,-17,0.0
+00291,China Resources Beer (Holdings) Co Ltd,1,-17,0.0
+00168,Tsingtao Brewery Co Ltd Class H,1,-17,0.0
+00322,Tingyi (Cayman Islands) Holding Corp,1,-17,0.0
+00371,Beijing Enterprises Water Group Ltd,1,-17,0.0
+02380,China Power International Development Ltd,1,-17,0.0
+01288,Agricultural Bank of China Ltd Class H,1,-17,0.0
+02601,China Pacific Insurance (Group) Co Ltd Class H,1,-17,0.0
+02328,PICC Property and Casualty Co Ltd Class H,1,-17,0.0
+09939,Kintor Pharmaceutical Ltd Ordinary Shares,1,-17,0.0
+02196,Shanghai Fosun Pharmaceutical (Group) Co Ltd Class H,1,-17,0.0
+03759,Pharmaron Beijing Co Ltd Ordinary Shares - Class H,1,-17,0.0
+06185,CanSino Biologics Inc Class H,1,-17,0.0
+H.TO,Hydro One Ltd,1,-17,0.0
+CM,Canadian Imperial Bank of Commerce,1,-17,0.0
+NESN.TO,Nestle SA,1,-17,0.0
+00006.TO,Power Assets Holdings Ltd,1,-17,0.0
+EMA,Emera Inc,1,-17,0.0
+COUP,Coupa Software Inc,1,-17,0.0
+DRSM21,Bloomberg Roll Select Commodity Index Future June 21,1,-17,0.0
+MUCXX,BlackRock Liquidity CA Money Instl,1,-17,0.0
+ASHX,Xtrackers MSCI China A Inclusio,1,-17,0.0
+ASHS,Xtrackers Harvest CSI 500 China,1,-17,0.0
+SSPK,Silver Spike Acquisition Corp Ordinary Shares Class A,1,-17,0.0
+GWPH,GW Pharmaceuticals PLC ADR,1,-17,0.0
+AFCG,AFC Gamma Inc Ordinary Shares,1,-17,0.0
+REPL,Replimune Group Inc,1,-17,0.0
+TIL,Instil Bio Inc,1,-17,0.0
+RCUS,Arcus Biosciences Inc,1,-17,0.0
+ATRA,Atara Biotherapeutics Inc,1,-17,0.0
+CSIQ,Canadian Solar Inc,1,-17,0.0
+300059,East Money Information Co Ltd,1,-17,0.0
+002142,Bank Of Ningbo Co Ltd,1,-17,0.0
+300124,Shenzhen Inovance Technology Co Ltd Class A,1,-17,0.0
+000001,Ping An Bank Co Ltd,1,-17,0.0
+C Z1,Corn Future Dec21,1,-17,0.0
+C K1,Corn Future May21,1,-17,0.0
+C N1,Corn Future Jul21,1,-17,0.0
+HGK0,Copper Future May 20,1,-17,0.0
+FXY,Invesco CurrencyShares Japanese,1,-17,0.0
+GBIL,Goldman Sachs Access Treasury 0,1,-17,0.0
+5019,Idemitsu Kosan Co Ltd,1,-17,0.0
+6505.TW,Formosa Petrochemical Corp,1,-17,0.0
+HFC,HollyFrontier Corp,1,-17,0.0
+RYAAY.IR,Ryanair Holdings PLC ADR,1,-17,0.0
+IHG.L,InterContinental Hotels Group PLC ADR,1,-17,0.0
+PRFT,Perficient Inc,1,-17,0.0
+OTTR,Otter Tail Corp,1,-17,0.0
+IDCC,InterDigital Inc,1,-17,0.0
+EBF,Ennis Inc,1,-17,0.0
+OGN,Organon & Co Ordinary Shares,1,-17,0.0
+IAA,IAA Inc Ordinary Shares,1,-17,0.0
+VSTM,Verastem Inc,1,-17,0.0
+CYBE,CyberOptics Corp,1,-17,0.0
+NEXT,NextDecade Corp,1,-17,0.0
+AMCR,Amcor PLC Ordinary Shares,1,-17,0.0
+COFPL,Capital One Financial Corp 4.375% PRF PERPETUAL USD 25 - Ser L 1/40th Int,1,-17,0.0
+WFCPC,Wells Fargo & Co 4.375% PRF PERPETUAL USD - Class A Ser CC,1,-17,0.0
+KWEB,KraneShares Trust KraneShares C,1,-17,0.0
+MIDD,The Middleby Corp,1,-17,0.0
+FYC,First Trust Small Cap Growth Al,1,-17,0.0
+FTC,First Trust Large Cap Growth Al,1,-17,0.0
+VNLA,Janus Henderson Short Duration ,1,-17,0.0
+ETV,EV Tax-Managed Buy-Write Opps,1,-17,0.0
+PALL,Aberdeen Standard Physical Pall,1,-17,0.0
+WCLD,WisdomTree Cloud Computing Fund,1,-17,0.0
+CU1,Corn Sept21,1,-17,0.0
+SBV1,Sugar No. 11 Futures Sept21,1,-17,0.0
+KCU21,Coffee C Future Sept 21,1,-17,0.0
+MFS/ZU21.P,MSCI EAFE Index TAS Future Sept 21,1,-17,0.0
+MC,LVMH Moet Hennessy Louis Vuitton SE,1,-17,0.0
+CLF2.SA,Crude Oil Dec21,1,-17,0.0
+WINZ21.L,Mini Ibovespa Future Dec 21,1,-17,0.0
+HON22,NY Harbor ULSD Future June 22,1,-17,0.0
+BRNH22,Brent Crude Future Jan 22,1,-17,0.0
+NGK2,Henry Hub Natural Gas Apr22,1,-17,0.0
+USM1,Us Long Bond(Cbt) Jun21,1,-17,0.0
+MMEU21.SA,MSCI Emerging Markets Index Future Sept 21,1,-17,0.0
+VALE3.BO,Vale SA,1,-17,0.0
+RIGD,Reliance Industries Ltd ADR,1,-17,0.0
+GVIXX,Wells Fargo Government MMkt Inst,1,-17,0.0
+ZBM21,US Treasury Bond Future June 21,1,-17,0.0
+MFSM21,MSCI EAFE Index Future June 21,1,-17,0.0
+ESM21,E-mini S&P 500 Future June 21,1,-17,0.0
+CLF2,Crude Oil Dec21,1,-17,0.0
+ELUX B,Electrolux AB B,1,-27,0.0
+MFSU21.DE,MSCI EAFE Index Future Sept 21,1,-27,0.0
+PAH3.PA,Porsche Automobil Holding SE Participating Preferred,1,-27,0.0
+PUB,Publicis Groupe SA,1,-27,0.0
+BXC,BlueLinx Holdings Inc,1,-27,0.0
+ZUMZ,Zumiez Inc,1,-27,0.0
+CTRN,Citi Trends Inc,1,-27,0.0
+DFIN,Donnelley Financial Solutions Inc,1,-27,0.0
+GHL,Greenhill & Co Inc,1,-27,0.0
+GCM1,Gold 100 oz June21,1,-27,0.0
+MTB,M&T Bank Corp,1,-27,0.0
+MKL,Markel Corp,1,-24,0.0
+00881,Zhongsheng Group Holdings Ltd,1,-24,0.0
+CATY,Cathay General Bancorp,1,-25,0.0
+TRN,Trinity Industries Inc,1,-25,0.0
+138930.KS,BNK Financial Group Inc,1,-25,0.0
+AVI.JO,AVI Ltd,1,-25,0.0
+TISCO-R,TISCO Financial Group PCL DR,1,-25,0.0
+2347.TW,Synnex Technology International Corp,1,-25,0.0
+006360.KS,GS Engineering & Construction Corp,1,-25,0.0
+BAER,Julius Baer Gruppe AG,1,-28,0.0
+NTB,Bank of N.T Butterfield & Son Ltd,1,-28,0.0
+KNOP.L,KNOT Offshore Partners LP,1,-28,0.0
+VPL,Vanguard FTSE Pacific ETF,1,-28,0.0
+EWT,iShares Inc iShares MSCI Taiwan,1,-28,0.0
+EWJ,iShares MSCI Japan Index Fund,1,-28,0.0
+EWA,iShares MSCI Australia Index Fu,1,-28,0.0
+REI.UN.TO,Riocan Real Estate Investment Trust,1,-28,0.0
+GWO.TO,Great-West Lifeco Inc,1,-28,0.0
+8002,Marubeni Corp,1,-28,0.0
+IBDO,iShares iBonds Dec 2023 Term Co,1,-28,0.0
+IBDP,iShares iBonds Dec 2024 Term Co,1,-28,0.0
+IBDQ,iShares iBonds Dec 2025 Term Co,1,-28,0.0
+BSCL,Invesco BulletShares 2021 Corpo,1,-28,0.0
+SSYS,Stratasys Ltd,1,-28,0.0
+RCD,Invesco S&P 500 Equal Weight Co,1,-28,0.0
+FNCL,Fidelity MSCI Financials Index ,1,-28,0.0
+FXO,First Trust Financials AlphaDEX,1,-28,0.0
+ARKW,ARK Next Generation Internet ET,1,-28,0.0
+IPO,Renaissance IPO ETF,1,-28,0.0
+00008.HK,PCCW Ltd,1,-28,0.0
+JBH.AX,JB Hi Fi Ltd,1,-28,0.0
+MFG.AX,Magellan Financial Group Ltd,1,-28,0.0
+00683.HK,Kerry Properties Ltd,1,-28,0.0
+AST.AX,AusNet Services Ltd,1,-28,0.0
+CESP6.SA,CESP - Cia Energetica de Sao Paulo Participating Preferred,1,-28,0.0
+ADRO,PT Adaro Energy Tbk,1,-28,0.0
+PTBA,PT Bukit Asam Tbk Class B,1,-28,0.0
+FEES,Federal Grid Co of Unified Energy System PJSC,1,-28,0.0
+KIRK,Kirkland's Inc,1,-28,0.0
+DBO,Invesco DB Oil Fund,1,-28,0.0
+FYX,First Trust Small Cap Core Alph,1,-28,0.0
+YPS,Arrow Reverse Cap 500 ETF,1,-28,0.0
+FNX,First Trust Mid Cap Core AlphaD,1,-28,0.0
+VOT,Vanguard Mid-Cap Growth ETF,1,-28,0.0
+IMCG,iShares Morningstar Mid-Cap Gro,1,-28,0.0
+ISCG,iShares Morningstar Small-Cap G,1,-28,0.0
+1907.TW,YFY Inc,1,-28,0.0
+TOWR,PT Sarana Menara Nusantara Tbk,1,-28,0.0
+DANSKE,Danske Bank A/S,1,-28,0.0
+OPRX,OptimizeRx Corp,1,-28,0.0
+CAMT,Camtek Ltd,1,-28,0.0
+CDMO,Avid Bioservices Inc,1,-28,0.0
+SVC,Service Properties Trust,1,-28,0.0
+HLF,Herbalife Nutrition Ltd,1,-28,0.0
+MTUM,iShares MSCI USA Momentum Facto,1,-28,0.0
+ELE.BC,Endesa SA,1,-28,0.0
+YMH21,E-mini Dow $5 Future Mar 21,1,-28,0.0
+EOAN.DE,E.ON SE,1,-28,0.0
+8410,Seven Bank Ltd,1,-28,0.0
+6473,JTEKT Corp,1,-28,0.0
+9513,Electric Power Development Co Ltd,1,-28,0.0
+7167,Mebuki Financial Group Inc,1,-28,0.0
+4202,Daicel Corp,1,-28,0.0
+5214,Nippon Electric Glass Co Ltd,1,-28,0.0
+RUTH,Ruth's Hospitality Group Inc,1,-28,0.0
+BLMN,Bloomin Brands Inc,1,-28,0.0
+DIN,Dine Brands Global Inc,1,-28,0.0
+FRGI,Fiesta Restaurant Group Inc,1,-28,0.0
+JACK,Jack In The Box Inc,1,-28,0.0
+W,Wayfair Inc Class A,1,-28,0.0
+SQM-B,Sociedad Quimica Y Minera De Chile SA Pfd Registered Shs Series -B-,1,-28,0.0
+ENELAM,Enel Americas SA,1,-28,0.0
+BSANTANDER,Banco Santander Chile,1,-28,0.0
+BCI,Aberdeen Standard Bloomberg All,1,-28,0.0
+CMPC,Empresas CMPC SA,1,-28,0.0
+IBDRY.BC,Iberdrola SA ADR,1,-28,0.0
+ENLAY.MI,Enel SpA ADR,1,-28,0.0
+01302,LifeTech Scientific Corp,1,-28,0.0
+00336,Huabao International Holdings Ltd,1,-28,0.0
+02400,XD Inc Ordinary Shares,1,-28,0.0
+09966,Alphamab Oncology Ordinary Shares,1,-28,0.0
+LX,LexinFintech Holdings Ltd DR,1,-28,0.0
+MARUTI.BO,Maruti Suzuki India Ltd,1,-28,0.0
+1216.TW,Uni-President Enterprises Corp,1,-28,0.0
+PBR.A.SA,Petroleo Brasileiro SA Petrobras ADR,1,-28,0.0
+01958,BAIC Motor Corp Ltd H,1,-28,0.0
+AMX.MX,America Movil SAB de CV ADR,1,-28,0.0
+03808,Sinotruk (Hong Kong) Ltd,1,-28,0.0
+CARL B,Carlsberg A/S B,1,-28,0.0
+NZYM B,Novozymes A/S B,1,-28,0.0
+FMX.MX,Fomento Economico Mexicano SAB de CV ADR,1,-28,0.0
+1513.TW,Chung-Hsin Electric & Machinery Mfg Corp,1,-28,0.0
+2382.TW,Quanta Computer Inc,1,-28,0.0
+ITC.BO,ITC Ltd,1,-28,0.0
+2413,M3 Inc,1,-28,0.0
+TNDM,Tandem Diabetes Care Inc,1,-28,0.0
+ENIA,Enel Americas SA ADR,1,-28,0.0
+KOF.MX,Coca-Cola Femsa SAB de CV ADR,1,-28,0.0
+EXX.JO,Exxaro Resources Ltd,1,-28,0.0
+AEV,Aboitiz Equity Ventures Inc,1,-28,0.0
+01071,Huadian Power International Corp Ltd Class H,1,-28,0.0
+OSP,Osotspa PCL,1,-28,0.0
+BFAM,Bright Horizons Family Solutions Inc,1,-28,0.0
+PSON.L,Pearson PLC,1,-28,0.0
+IEL.AX,IDP Education Ltd,1,-28,0.0
+TAL,TAL Education Group ADR,1,-28,0.0
+00667,China East Education Holdings Ltd,1,-28,0.0
+2812.TW,Taichung Commercial Bank Co Ltd,1,-28,0.0
+2884.TW,E. Sun Financial Holding Co Ltd,1,-28,0.0
+2880.TW,Hua Nan Financial Holdings Co Ltd,1,-28,0.0
+500295.BO,Vedanta Ltd,1,-28,0.0
+047050.KS,Posco International Corp,1,-28,0.0
+9904.TW,Pou Chen Corp,1,-28,0.0
+TU-R,Thai Union Group PCL DR,1,-28,0.0
+GRT.JO,Growthpoint Properties Ltd,1,-28,0.0
+500312.BO,Oil & Natural Gas Corp Ltd,1,-28,0.0
+1402.TW,Far Eastern New Century Corp,1,-28,0.0
+4966,Parade Technologies Ltd,1,-28,0.0
+5483.TW,Sino-American Silicon Products Inc,1,-28,0.0
+2337.TW,Macronix International Co Ltd,1,-28,0.0
+2892.TW,First Financial Holding Co Ltd,1,-28,0.0
+FBC,Flagstar Bancorp Inc,1,-28,0.0
+EZM,WisdomTree U.S. MidCap Fund,1,-28,0.0
+DLX,Deluxe Corp,1,-28,0.0
+AVV.L,AVEVA Group PLC,1,-28,0.0
+SOL.AX,Washington H Soul Pattinson & Co Ltd,1,-28,0.0
+GN,GN Store Nord A/S,1,-28,0.0
+RAND,Randstad NV,1,-28,0.0
+ELISA,Elisa Oyj Class A,1,-28,0.0
+EAST.CA,Eastern Co SAE,1,-28,0.0
+EKHO.CA,Egyptian Kuwaiti Holding,1,-28,0.0
+TMGH.CA,Talaat Moustafa Group Holding,1,-28,0.0
+CLHO.CA,Cleopatra Hospital Co,1,-28,0.0
+ETEL.CA,Telecom Egypt SAE,1,-28,0.0
+SWDY.CA,El Sewedy Electric Co,1,-28,0.0
+OCDI.CA,Sixth of October Development & Investment/ SodicSA,1,-28,0.0
+CIRA.CA,Cairo Investment and Real Estate Development,1,-28,0.0
+UNVR,PT Unilever Indonesia Tbk,1,-28,0.0
+KLBF,PT Kalbe Farma Tbk,1,-28,0.0
+SMGR,PT Semen Indonesia (Persero) Tbk,1,-28,0.0
+LUMI,Bank Leumi Le-Israel BM,1,-28,0.0
+TEVA,Teva Pharmaceutical Industries Ltd ADR,1,-28,0.0
+POLI,Bank Hapoalim BM,1,-28,0.0
+DSCT,Israel Discount Bank Ltd Class A,1,-28,0.0
+RENT3.SA,Localiza Rent A Car SA,1,-28,0.0
+MAREL,Marel hf,1,-28,0.0
+UGP.SA,Ultrapar Participacoes SA ADR,1,-28,0.0
+PAC.MX,Grupo Aeroportuario del Pacifico SAB de CV ADR,1,-28,0.0
+ASR.MX,Grupo Aeroportuario del Sureste SAB de CV ADR,1,-28,0.0
+KEP.KS,Korea Electric Power Corp ADR,1,-28,0.0
+CCRO3.SA,CCR SA,1,-28,0.0
+IPL.TO,Inter Pipeline Ltd,1,-28,0.0
+SMPH,SM Prime Holdings Inc,1,-21,0.0
+ALI,Ayala Land Inc,1,-21,0.0
+AC,Ayala Corporation,1,-21,0.0
+JGS,JG Summit Holdings Inc,1,-21,0.0
+BPI,Bank of The Philippine Islands,1,-21,0.0
+BDO,BDO Unibank Inc,1,-21,0.0
+URC,Universal Robina Corporation,1,-21,0.0
+532555.BO,NTPC Ltd,1,-21,0.0
+CABO,Cable One Inc,1,-5,0.0
+STT,State Street Corporation,1,-5,0.0
+FUTU.HK,Futu Holdings Ltd ADR,1,-5,0.0
+SEK.AX,Seek Ltd,1,-5,0.0
+FLT.AX,Flight Centre Travel Group Ltd,1,-5,0.0
+CPU.AX,Computershare Ltd,1,-5,0.0
+6448,Brother Industries Ltd,1,-5,0.0
+2651,Lawson Inc,1,-5,0.0
+8795,T&D Holdings Inc,1,-5,0.0
+8001,ITOCHU Corp,1,-5,0.0
+AGL.AX,AGL Energy Ltd,1,-5,0.0
+ZION,Zions Bancorp NA,1,-5,0.0
+LAND,Gladstone Land Corp,1,-5,0.0
+AMRC,Ameresco Inc Class A,1,-5,0.0
+IBUY,Amplify ETF Trust Amplify Onlin,1,-5,0.0
+PRU.L,Prudential PLC,1,-5,0.0
+LLOY.L,Lloyds Banking Group PLC,1,-5,0.0
+COV.PA,Covivio SA,1,-4,0.0
+IG.MI,Italgas SpA,1,-4,0.0
+B4B.DE,METRO AG,1,-4,0.0
+AQUA,Evoqua Water Technologies Corp,1,-4,0.0
+STE,Steris PLC,1,-4,0.0
+LYV,Live Nation Entertainment Inc,1,-4,0.0
+EVT.DE,Evotec SE,1,-8,0.0
+TEG.DE,TAG Immobilien AG,1,-8,0.0
+RHM.DE,Rheinmetall AG,1,-8,0.0
+EVD.DE,CTS Eventim AG & Co. KGaA,1,-8,0.0
+GXI.DE,Gerresheimer AG,1,-8,0.0
+BOSS.DE,Hugo Boss AG,1,-8,0.0
+PSM.DE,ProSiebenSat 1 Media SE,1,-8,0.0
+BFSA.BC,Befesa SA Bearer Shares,1,-8,0.0
+6920,Lasertec Corp,1,-8,0.0
+3436,SUMCO Corp,1,-8,0.0
+8316,Sumitomo Mitsui Financial Group Inc,1,-8,0.0
+ABI,Anheuser-Busch InBev SA/NV,1,-8,0.0
+KBC,KBC Group SA/NV,1,-8,0.0
+ARGX,argenx SE,1,-8,0.0
+UCB,UCB SA,1,-8,0.0
+GBLB,Groupe Bruxelles Lambert SA,1,-8,0.0
+SOLB,Solvay SA,1,-8,0.0
+WDP,Warehouses De Pauw,1,-8,0.0
+1023,CIMB Group Holdings Bhd,1,-8,0.0
+5347,Tenaga Nasional Bhd,1,-8,0.0
+7113,Top Glove Corp Bhd,1,-8,0.0
+5183,Petronas Chemicals Group Bhd,1,-8,0.0
+8869,Press Metal Aluminium Holdings Bhd,1,-8,0.0
+6947,Digi.com Bhd,1,-8,0.0
+5168,Hartalega Holdings Bhd,1,-8,0.0
+RAMP,LiveRamp Holdings Inc,1,-8,0.0
+DSM,Koninklijke DSM NV,1,-7,0.0
+WKL,Wolters Kluwer NV,1,-7,0.0
+HEIA,Heineken NV,1,-7,0.0
+FER.BC,Ferrovial SA,1,-10,0.0
+AMS.BC,Amadeus IT Group SA A,1,-10,0.0
+REP.BC,Repsol SA,1,-10,0.0
+CABK.BC,CaixaBank SA,1,-10,0.0
+RAVN,Raven Industries Inc,1,-14,0.0
+HWDN.L,Howden Joinery Group PLC,1,-14,0.0
+ECM.L,Electrocomponents PLC,1,-14,0.0
+WEIR.L,Weir Group PLC,1,-14,0.0
+PNN.L,Pennon Group PLC,1,-14,0.0
+GAPB.MX,Grupo Aeroportuario del Pacifico SAB de CV Class B,1,-14,0.0
+ASURB.MX,Grupo Aeroportuario del Sureste SAB de CV Class B,1,-14,0.0
+WHL.JO,Woolworths Holdings Ltd,1,-14,0.0
+MRP.JO,Mr Price Group Ltd,1,-14,0.0
+PERSISTENT,Persistent Systems Ltd,1,-14,0.0
+NTCO3.SA,Natura &Co Holding SA Ordinary Shares,1,-14,0.0
+ASAI3.SA,Sendas Distribuidora SA Ordinary Shares,1,-14,0.0
+AZUL4.SA,Azul SA Participating Preferred,1,-14,0.0
+PRIO3.SA,Petro Rio SA,1,-14,0.0
+ENEV3.SA,Eneva SA,1,-14,0.0
+LWSA3.SA,Locaweb Servicos de Internet SA Ordinary Shares,1,-14,0.0
+SULA11.SA,Sul America SA Ctf de Deposito de Acoes Cons of 1 Sh ' 2 Pfd Shs,1,-14,0.0
+YDUQ3.SA,YDUQS Participacoes SA,1,-14,0.0
+5609.TW,Dimerco Express Corp,1,-14,0.0
+2108.TW,Nantex Industry Co Ltd,1,-14,0.0
+ISMEN,IS Yatirim Menkul Degerler AS,1,-14,0.0
+TRU.JO,Truworths International Ltd,1,-14,0.0
+3014.TW,Ite Tech Inc,1,-14,0.0
+BLX.TO,Boralex Inc Class A,1,-16,0.0
+BIDI4.SA,Banco Inter SA Participating Preferred,1,-16,0.0
+USIM5.SA,"Usinas Siderurgicas de Minas Gerais,S.A. Participating Preferred",1,-16,0.0
+SUZB3.SA,Suzano SA,1,-16,0.0
+NEOE3.SA,Neoenergia SA,1,-16,0.0
+PCAR3.SA,Companhia Brasileira De Distribuicao,1,-16,0.0
+01585,Yadea Group Holdings Ltd Shs Unitary 144A/RegS,1,-16,0.0
+01114,Brilliance China Automotive Holdings Ltd,1,-16,0.0
+200625,Chongqing Changan Automobile Co Ltd,1,-16,0.0
+ETG,EV Tax Adv Global Dividend Inc,1,-16,0.0
+BST,BlackRock Science and Technology Trust,1,-16,0.0
+RNP,Cohen & Steers REIT & Preferred Income,1,-16,0.0
+EVT,EV Tax Advantaged Dividend Inc,1,-16,0.0
+ETO,EV Tax Adv Global Div Opps,1,-16,0.0
+BSTZ,BlackRock Science & Technology Trust II,1,-16,0.0
+THQ,Tekla Healthcare Opportunities,1,-16,0.0
+GDV,Gabelli Dividend & Income,1,-16,0.0
+APA,APA Corp,1,-16,0.0
+LGEN.L,Legal & General Group PLC,1,-16,0.0
+IGG.L,IG Group Holdings PLC,1,-16,0.0
+ORA.PA,Orange SA,1,-16,0.0
+AOX.DE,alstria office REIT-AG,1,-16,0.0
+TITR.MI,Telecom Italia SpA Rsp,1,-16,0.0
+MER,Manila Electric Co,1,-16,0.0
+CPLE6.SA,Cia Paranaense De Energia Copel Participating Preferred,1,-16,0.0
+9532,Osaka Gas Co Ltd,1,-16,0.0
+EMB,iShares J.P. Morgan USD Emergin,1,-16,0.0
+FPEI,First Trust Institutional Prefe,1,-16,0.0
+LGOV,First Trust Long Duration Oppor,1,-16,0.0
+ACQ.TO,AutoCanada Inc,1,-16,0.0
+108320.KS,Silicon Works Co Ltd,1,-16,0.0
+005850.KS,SL Corp,1,-16,0.0
+002380.KS,KCC Corp,1,-16,0.0
+048260.KS,OSSTEM IMPLANT Co Ltd,1,-16,0.0
+SBB B,Samhallsbyggnadsbolaget i Norden AB B,1,-16,0.0
+T7O.L,Total Produce PLC,1,-16,0.0
+CACI,CACI International Inc Class A,1,-16,0.0
+01898,China Coal Energy Co Ltd Class H,1,-16,0.0
+GGRM,Perusahaan Rokok Tjap Gudang Garam Tbk,1,-17,0.0
+2014.TW,Chung Hung Steel Co Ltd,1,-18,0.0
+UNIP6.SA,Unipar Carbocloro SA Participating Preferred,1,-18,0.0
+3006.TW,Elite Semiconductor Microelectronics Tech Inc,1,-18,0.0
+IPN.PA,Ipsen SA,1,-18,0.0
+KGF.L,Kingfisher PLC,1,-18,0.0
+BAMI.MI,Banco BPM SpA,1,-18,0.0
+OCI,OCI NV,1,-18,0.0
+TKA,Telekom Austria AG,1,-18,0.0
+SSO,ProShares Ultra S&P500,1,-18,0.0
+MVV,ProShares Ultra MidCap400,1,-18,0.0
+UWM,ProShares Ultra Russell2000,1,-18,0.0
+SGOL,Aberdeen Standard Physical Gold,1,-18,0.0
+IXUS,iShares Core MSCI Total Interna,1,-18,0.0
+UPST,Upstart Holdings Inc Ordinary Shares,1,-18,0.0
+INMD,InMode Ltd,1,-18,0.0
+QFIN,360 DigiTech Inc ADR,1,-18,0.0
+LOVE,The Lovesac Co,1,-18,0.0
+CRCT,Cricut Inc Ordinary Shares - Class A,1,-18,0.0
+024110.KS,Industrial Bank of Korea,1,-18,0.0
+MAP.BC,Mapfre SA,1,-18,0.0
+316140.KS,Woori Financial Group Inc Ordinary Shares,1,-18,0.0
+HFG.DE,HelloFresh SE Bearer Shares,1,-18,0.0
+1U1.DE,1&1 Drillisch AG,1,-18,0.0
+HEI.DE,HeidelbergCement AG,1,-18,0.0
+JUN3.DE,Jungheinrich AG Participating Preferred,1,-18,0.0
+WCH.DE,Wacker Chemie AG,1,-18,0.0
+H78.SI,Hongkong Land Holdings Ltd,1,-18,0.0
+STNE.SA,StoneCo Ltd,1,-18,0.0
+XRO.NZ,Xero Ltd,1,-18,0.0
+SPMB,SPDR Portfolio Mortgage Backed ,1,-18,0.0
+SPTI,SPDR Portfolio Intermediate Ter,1,-18,0.0
+ATEN,A10 Networks Inc,1,-18,0.0
+AV..L,Aviva PLC,1,-18,0.0
+3923,Rakus Co Ltd,1,-18,0.0
+4062,Ibiden Co Ltd,1,-18,0.0
+4042,Tosoh Corp,1,-18,0.0
+1803,Shimizu Corp,1,-18,0.0
+6723,Renesas Electronics Corp,1,-18,0.0
+3291,Iida Group Holdings Co Ltd,1,-18,0.0
+BT.A.L,BT Group PLC,1,-18,0.0
+SXS.L,Spectris PLC,1,-18,0.0
+FP.PA,Total SE,1,-17,0.0
+00669.HK,Techtronic Industries Co Ltd,1,-16,0.0
+ENI.MI,Eni SpA,1,-16,0.0
+G.MI,Assicurazioni Generali,1,-16,0.0
+UCG.MI,UniCredit SpA,1,-16,0.0
+RACE.MI,Ferrari NV,1,-16,0.0
+MONC.MI,Moncler SpA,1,-16,0.0
+MN2M1,Mini Nikkei 225 Index Future June21,1,-16,0.0
+EN.PA,Bouygues,1,-16,0.0
+SKA B,Skanska AB Class B,1,-16,0.0
+FGR.PA,Eiffage SA,1,-16,0.0
+FUNO 11.MX,Fibra Uno Administracion SA de CV Certificados Bursatiles Fiduciarios Inmob,1,-16,0.0
+GGBR4.SA,Gerdau SA Participating Preferred,1,-16,0.0
+TIMS3.SA,TIM SA Ordinary Shares,1,-16,0.0
+HELE,Helen Of Troy Ltd,1,-16,0.0
+PLZL,Polyus PJSC,1,-16,0.0
+NLMK,Novolipetsk Steel PJSC,1,-16,0.0
+TATN,Tatneft PJSC,1,-16,0.0
+ZU1,FTSE 100 Index Future Sept21,1,-16,0.0
+UL.L,Unilever PLC ADR,1,-15,0.0
+EVRI,Everi Holdings Inc,1,-9,0.0
+034020,Doosan Heavy Industries & Construction Co Ltd,1,-9,0.0
+9107.DE,Kawasaki Kisen Kaisha Ltd,1,-9,0.0
+011210.KS,Hyundai Wia Corp,1,-9,0.0
+LEO.KS,Leoni AG,1,-9,0.0
+001230.DE,Dongkuk Steel Mill Co Ltd,1,-9,0.0
+7936.L,ASICS Corp,1,-9,0.0
+KCO.TO,Kloeckner & Co SE,1,-9,0.0
+TOU,Tourmaline Oil Corp,1,-9,0.0
+IMI,IMI PLC,1,-9,0.0
+KIM,Kimco Realty Corp,1,-9,0.0
+DEO.L,Diageo PLC ADR,1,-9,0.0
+LGF.B,Lions Gate Entertainment Corp B,1,-9,0.0
+LGF.A,Lions Gate Entertainment Corp,1,-9,0.0
+KEY,KeyCorp,1,-9,0.0
+032640.KS,LG Uplus Corp,1,-9,0.0
+030200.KS,KT Corp,1,-9,0.0
+004020.KS,Hyundai Steel Co,1,-9,0.0
+003550.KS,LG Corp,1,-9,0.0
+GMZB,Ally Financial Inc FXDFR PRF PERPETUAL USD 1000 - Ser B,1,-9,0.0
+SCHWPJ,Charles Schwab Corp 4.45% PRF PERPETUAL USD 25 - Ser J 1/40th int,1,-9,0.0
+BACPO,Bank of America Corp PRF PERPETUAL USD 25 - Ser NN,1,-9,0.0
+NWG.L,NatWest Group PLC,1,-9,0.0
+CVE.TO,Cenovus Energy Inc,1,-9,0.0
+USFD,US Foods Holding Corp,1,-11,0.0
+WHR,Whirlpool Corp,1,-11,0.0
+MHK,Mohawk Industries Inc,1,-10,0.0
+SPSN,Swiss Prime Site AG,1,-10,0.0
+SFSN,SFS Group AG,1,-10,0.0
+DUFN,Dufry AG,1,-10,0.0
+EVK.DE,Evonik Industries AG,1,-9,0.0
+BBL.L,BHP Group PLC ADR,1,-9,0.0
+NYCB,New York Community Bancorp Inc,1,-9,0.0
+BLNK,Blink Charging Co,1,-9,0.0
+PCAR,PACCAR Inc,1,-9,0.0
+CCU21,Cocoa Future Sept 21,1,-8,0.0
+CTF1,Cotton No 2 Future Dec 21,1,-8,0.0
+FTIU21,AEX Index Future Sept 21,1,-8,0.0
+HGU21,Copper Future Sept 21,1,-8,0.0
+HLI,Houlihan Lokey Inc Class A,1,-8,0.0
+HUBB,Hubbell Inc,1,-8,0.0
+AGZ,iShares  Agency Bond ETF,1,-8,0.0
+STIP,iShares 0-5 Year TIPS Bond ETF,1,-8,0.0
+SFM,Sprouts Farmers Market Inc,1,-8,0.0
+REYN,Reynolds Consumer Products Inc Ordinary Shares,1,-8,0.0
+COHR,Coherent Inc,1,-8,0.0
+EVRG,Evergy Inc,1,-8,0.0
+CE,Celanese Corp Class A,1,-8,0.0
+NEU,NewMarket Corp,1,-8,0.0
+WLK,Westlake Chemical Corp,1,-8,0.0
+CNR,Cornerstone Building Brands Inc,1,-8,0.0
+ARX.TO,ARC Resources Ltd,1,-8,0.0
+00639,Shougang Fushan Resources Group Ltd,1,-8,0.0
+CPG.TO,Crescent Point Energy Corp,1,-8,0.0
+MUV2.DE,Munchener Ruckversicherungs-Gesellschaft AG,1,-8,0.0
+BETS B,Betsson AB Class B,1,-8,0.0
+GTN,Gray Television Inc,1,-8,0.0
+SUPN,Supernus Pharmaceuticals Inc,1,-8,0.0
+FDP,Fresh Del Monte Produce Inc,1,-8,0.0
+BLDG,Cambria Global Real Estate ETF,1,-8,0.0
+SPDW,SPDR Portfolio Developed World ,1,-8,0.0
+SPIP,SPDR Portfolio TIPS ETF,1,-8,0.0
+SPSM,SPDR Portfolio S&P 600 Small Ca,1,-8,0.0
+SPEU,SPDR Portfolio Europe ETF,1,-8,0.0
+263750.KS,PearlAbyss Corp,1,-8,0.0
+181710.KS,NHN Entertainment Corp,1,-9,0.0
+TM17.L,Team17 Group PLC,1,-9,0.0
+09990,Archosaur Games Inc Ordinary Shares,1,-9,0.0
+3632,GREE Inc,1,-9,0.0
+PDX,Paradox Interactive AB,1,-9,0.0
+DADA,Dada Nexus Ltd ADR,1,-9,0.0
+BXP,Boston Properties Inc,1,-9,0.0
+8952,Japan Real Estate Investment Corp,1,-9,0.0
+BKG.L,Berkeley Group Holdings (The) PLC,1,-9,0.0
+VNO,Vornado Realty Trust,1,-9,0.0
+C38U.SI,CapitaLand Integrated Commercial Trust,1,-9,0.0
+GPT.AX,GPT Group,1,-9,0.0
+PLF1,Platinum Future Jan 21,1,-9,0.0
+HGZ0,Copper Future Dec 20,1,-9,0.0
+BP.L,BP PLC ADR,1,-9,0.0
+TBF,ProShares Short 20+ Year Treasu,1,-9,0.0
+FNDE,Schwab Fundamental Emerging Mar,1,-9,0.0
+IPAC,iShares Core MSCI Pacific ETF,1,-9,0.0
+SLV,iShares Silver Trust,1,-9,0.0
+FNDF,Schwab Fundamental Internationa,1,-9,0.0
+NST.AX,Northern Star Resources Ltd,1,-9,0.0
+MOMO,Momo Inc ADR,1,-9,0.0
+CVAC.DE,CureVac NV Ordinary Shares,1,-9,0.0
+ABCL.TO,AbCellera Biologics Inc Ordinary Shares,1,-9,0.0
+ULTRACEMCO,UltraTech Cement Ltd,1,-9,0.0
+VICR,Vicor Corp,1,-9,0.0
+EYE,National Vision Holdings Inc,1,-9,0.0
+MXI,iShares Global Materials ETF,1,-9,0.0
+VB,Vanguard Small-Cap ETF,1,-9,0.0
+DBE,Invesco DB Energy Fund,1,-9,0.0
+DBB,Invesco DB Base Metals Fund,1,-9,0.0
+RXI,iShares Global Consumer Discret,1,-9,0.0
+EKTA B,Elekta AB Class B,1,-9,0.0
+CG.TO,Centerra Gold Inc,1,-9,0.0
+SSL.TO,Sandstorm Gold Ltd,1,-9,0.0
+MTA.TO,Metalla Royalty & Streaming Ltd,1,-9,0.0
+TXG.TO,Torex Gold Resources Inc,1,-9,0.0
+KRR.TO,Karora Resources Inc,1,-9,0.0
+CGG,China Gold International Resources Corp Ltd,1,-9,0.0
+NG,Novagold Resources Inc,1,-9,0.0
+EQX.TO,Equinox Gold Corp,1,-9,0.0
+ESS,Essex Property Trust Inc,1,-9,0.0
+HTO,Hellenic Telecommunication Organization SA,1,-9,0.0
+EUROB,Eurobank Ergasias Services And Holdings SA,1,-9,0.0
+OPAP,Greek Organisation of Football Prognostics SA,1,-9,0.0
+ALPHA,Alpha Services and Holdings SA,1,-9,0.0
+ETE,National Bank of Greece SA,1,-9,0.0
+TPEIR,Piraeus Financial Holdings SA,1,-9,0.0
+MYTIL,Mytilineos SA,1,-9,0.0
+TITC,Titan Cement International SA Ordinary Shares,1,-9,0.0
+DSVXX,Dreyfus Instl Preferred Govt MMkt Instl,1,-9,0.0
+PRY.MI,Prysmian SpA,1,-9,0.0
+TRN.MI,Terna SpA,1,-9,0.0
+EWM,iShares MSCI Malaysia Index Fun,1,-9,0.0
+CORT,Corcept Therapeutics Inc,1,-9,0.0
+ICOL,iShares Inc iShares MSCI Colomb,1,-9,0.0
+CAP,CAP SA,1,-9,0.0
+JSW,Jastrzebska Spolka Weglowa SA,1,-9,0.0
+SIBN,Gazprom Neft PJSC,1,-8,0.0
+NVMI.TW,Nova Measuring Instruments Ltd,1,-8,0.0
+NOD,Nordic Semiconductor ASA,1,-8,0.0
+8956,NTT UD Reit Investment Corp,1,-8,0.0
+014680.KS,Hansol Chemical Co Ltd,1,-8,0.0
+EC,Ecopetrol SA ADR,1,-6,0.0
+CIB,BanColombia SA ADR,1,-6,0.0
+CEMARGOS,Cementos Argos S.A.,1,-6,0.0
+CORFICOLCF,Corporacion Financiera Colombiana SA,1,-6,0.0
+GRUPOSURA,Grupo de Inversiones Suramericana SA,1,-6,0.0
+FINX,Global X FinTech ETF,1,-6,0.0
+GNOM,Global X Genomics & Biotechnolo,1,-6,0.0
+LIT,Global X Lithium & Battery Tech,1,-6,0.0
+SOCL,Global X Social Media ETF,1,-6,0.0
+POTX,Global X Cannabis ETF,1,-6,0.0
+ENLC,EnLink Midstream LLC,1,-6,0.0
+ENBL,Enable Midstream Partners LP,1,-6,0.0
+KNBE,KnowBe4 Inc Ordinary Shares - Class A,1,-6,0.0
+SAIL,SailPoint Technologies Holdings Inc,1,-6,0.0
+DARK.L,Darktrace PLC,1,-6,0.0
+SUMO,Sumo Logic Inc Ordinary Shares,1,-6,0.0
+TFDXX,BlackRock Liquidity FedFund Instl,1,-6,0.0
+FCGXX,FidelityÂ® Inv MM Fds Government III,1,-6,0.0
+APPF,AppFolio Inc A,1,-6,0.0
+2702,McDonald's Holdings Co (Japan) Ltd,1,-5,0.0
+2269,Meiji Holdings Co Ltd,1,-5,0.0
+AFC.L,AFC Energy PLC,1,-5,0.0
+336260.KS,Doosan Fuel Cell Ordinary Shares,1,-5,0.0
+CALF,Pacer US Small Cap Cash Cows 10,1,-5,0.0
+BUL,Pacer US Cash Cows Growth ETF,1,-5,0.0
+COWZ,Pacer US Cash Cows 100 ETF,1,-5,0.0
+ICOW,Pacer Developed Markets Interna,1,-5,0.0
+GCOW,Pacer Global Cash Cows Dividend,1,-5,0.0
+EMBRAC B,Embracer Group AB,1,-5,0.0
+9697,Capcom Co Ltd,1,-5,0.0
+TTWO,Take-Two Interactive Software Inc,1,-5,0.0
+DSU,BlackRock Debt Strategies Fund,1,-5,0.0
+AOD,Aberdeen Total Dynamic Dividend,1,-5,0.0
+BIT,BlackRock Multi-Sector Income,1,-5,0.0
+BOE,BlackRock Enhanced Glbl Div Trust,1,-5,0.0
+FCEL,FuelCell Energy Inc,1,-5,0.0
+E.MI,Eni SpA ADR,1,-5,0.0
+SCHZ,Schwab US Aggregate Bond ETF,1,-5,0.0
+HTRB,Hartford Total Return Bond ETF,1,-5,0.0
+QYLD,Global X NASDAQ-100 Covered Cal,1,-5,0.0
+MLPA,Global X MLP ETF,1,-5,0.0
+KBH,KB Home,1,-5,0.0
+TPH,Tri Pointe Homes Inc,1,-5,0.0
+IRT,Independence Realty Trust Inc,1,-5,0.0
+SWX,Southwest Gas Holdings Inc,1,-5,0.0
+VCYT,Veracyte Inc,1,-5,0.0
+AXGN,Axogen Inc,1,-5,0.0
+TRHC,Tabula Rasa HealthCare Inc,1,-5,0.0
+UVXY,ProShares Trust Ultra VIX Short,1,-5,0.0
+RWT,Redwood Trust Inc,1,-5,0.0
+MFA,MFA Financial Inc,1,-5,0.0
+PTY,PIMCO Corporate & Income Opps,1,-5,0.0
+IJGXX,JPMorgan US Government MMkt Instl,1,-5,0.0
+GCQ21,Gold Future Aug 21,1,-5,0.0
+BBIO,BridgeBio Pharma Inc,1,-5,0.0
+IBCE,iShares iBonds Mar 2023 Term Co,1,-5,0.0
+LE,Lands' End Inc,1,-5,0.0
+SFIX,Stitch Fix Inc Class A,1,-5,0.0
+REAL,The RealReal Inc,1,-5,0.0
+WISH,ContextLogic Inc Ordinary Shares - Class A,1,-5,0.0
+ECOPETROL,Ecopetrol SA,1,-5,0.0
+PFBCOLOM,BanColombia SA Participating Preferred,1,-5,0.0
+CNE.TO,Canacol Energy Ltd,1,-5,0.0
+PXT.TO,Parex Resources Inc,1,-5,0.0
+BTI.L,British American Tobacco PLC ADR,1,-5,0.0
+02388,BOC Hong Kong Holdings Ltd,1,-4,0.0
+01083,Towngas China Co Ltd,1,-4,0.0
+051600.KS,KEPCO Plant Service & Engineering Co Ltd,1,-4,0.0
+4751,CyberAgent Inc,1,-4,0.0
+LATO B,Investment AB Latour Class B,1,-4,0.0
+02638.HK,HK Electric Investments and HK Electric Investments Ltd,1,-4,0.0
+MRU.TO,Metro Inc,1,-4,0.0
+06160,BeiGene Ltd Ordinary Shares,1,-4,0.0
+COL.AX,Coles Group Ltd,1,-4,0.0
+NTGY.BC,Naturgy Energy Group SA,1,-4,0.0
+00011.HK,Hang Seng Bank Ltd,1,-4,0.0
+TLK,PT Telkom Indonesia (Persero) Tbk ADR,1,-4,0.0
+BANPU-R,Banpu PCL DR,1,-4,0.0
+UNTR,United Tractors Tbk,1,-4,0.0
+BKR,Baker Hughes Co Class A,1,407,0.0
+FTI,TechnipFMC PLC,1,402,0.0
+CNP,CenterPoint Energy Inc,1,-7,0.0
+MSEX,Middlesex Water Co,1,-7,0.0
+YORW,The York Water Co,1,-7,0.0
+NFTY,First Trust India Nifty 50 Equa,1,-7,0.0
+BICK,First Trust BICK Index Fund,1,-7,0.0
+FNI,First Trust Chindia ETF,1,-7,0.0
+FSZ,First Trust Switzerland AlphaDE,1,-7,0.0
+FGM,First Trust Germany AlphaDEX Fu,1,-7,0.0
+ZFU1,Us 5yr Note (Cbt) Sep21 Xcbt 20210930,1,-7,0.0
+ZNU1,Us 10yr Note (Cbt)sep21 Xcbt 20210921,1,-7,0.0
+ZNU21.DE,10 Year Treasury Note Future Sept 21,1,-7,0.0
+ZBU21.TO,US Treasury Bond Future Sept 21,1,-7,0.0
+ZBH,Zimmer Biomet Holdings Inc,1,-7,0.0
+9519,RENOVA Inc,1,-7,0.0
+TITAN.BO,Titan Co Ltd,1,-7,0.0
+500825.BO,Britannia Industries Ltd,1,-7,0.0
+500096.BO,Dabur India Ltd Shs Dematerialised,1,-7,0.0
+532424.BO,Godrej Consumer Products Ltd Shs Dematerialised,1,-7,0.0
+NESTLEIND.,Nestle India Ltd Shs Dematerialised,1,-7,0.0
+MOTHERSUMI,Motherson Sumi Systems Ltd Shs Dematerialised,1,-7,0.0
+500830.BO,Colgate-Palmolive (India) Ltd,1,-7,0.0
+540719.BO,SBI Life Insurance Company Limited,1,-7,0.0
+540777.BO,HDFC Life Insurance Company Limited,1,-7,0.0
+COLD,Americold Realty Trust,1,-7,0.0
+EGP,EastGroup Properties Inc,1,-7,0.0
+PSK.TO,PrairieSky Royalty Ltd,1,-7,0.0
+DB1.DE,Deutsche Boerse AG,1,-7,0.0
+ASX.AX,ASX Ltd,1,-7,0.0
+SPYD,SPDR Series Trust SPDR Portfoli,1,-7,0.0
+EBND,SPDR Bloomberg Barclays Emergin,1,-7,0.0
+DWX,SPDR S&P International Dividend,1,-7,0.0
+PSK,SPDR ICE Preferred Securities E,1,-7,0.0
+8058,Mitsubishi Corp,1,-7,0.0
+01821.AX,ESR Cayman Ltd,1,-7,0.0
+01876.HK,Budweiser Brewing Co APAC Ltd,1,-8,0.0
+THG.L,THG PLC Ordinary Share,1,-8,0.0
+FDJ.PA,La Francaise Des Jeux SA Ordinary Shares,1,-8,0.0
+TMV.DE,TeamViewer AG Bearer Shares,1,-8,0.0
+MP1.AX,Megaport Ltd,1,-8,0.0
+SOFI,SoFi Technologies Inc Ordinary Shares,1,-8,0.0
+PB,Prosperity Bancshares Inc,1,-8,0.0
+UCBI,United Community Banks Inc,1,-8,0.0
+HOMB,Home BancShares Inc,1,-8,0.0
+ONB,Old National Bancorp,1,-8,0.0
+FFBC,First Financial Bancorp,1,-8,0.0
+MTX,Minerals Technologies Inc,1,-8,0.0
+SBSI,Southside Bancshares Inc,1,-8,0.0
+CAR.UN.TO,Canadian Apartment Properties Real Estate Investment Trust,1,-8,0.0
+IAG.TO,iA Financial Corp,1,-8,0.0
+ALA.TO,AltaGas Ltd,1,-8,0.0
+3349,COSMOS Pharmaceutical Corp,1,-8,0.0
+4732,USS Co Ltd,1,-8,0.0
+6869,Sysmex Corp,1,-8,0.0
+FBK.MI,FinecoBank SpA,1,-8,0.0
+3391,Tsuruha Holdings Inc,1,-8,0.0
+S63.SI,Singapore Technologies Engineering Ltd,1,-8,0.0
+MAS,Masco Corp,1,-8,0.0
+2432,DeNA Co Ltd,1,-8,0.0
+7259,Aisin Corp,1,-8,0.0
+SINCH,Sinch AB,1,-8,0.0
+SCHP,Schwab U.S. TIPs ETF,1,-8,0.0
+ITRN,Ituran Location and Control Ltd,1,-10,0.0
+CEL,Cellcom Israel Ltd,1,-10,0.0
+DANE,Danel (Adir Yeoshua) Ltd,1,-10,0.0
+MLTM,Malam-Team Ltd,1,-10,0.0
+ONE,One Software Technologies Ltd,1,-10,0.0
+DRIO,DarioHealth Corp,1,-10,0.0
+ALLT,Allot Ltd,1,-10,0.0
+ALK,Alaska Air Group Inc,1,-10,0.0
+SNCY,Sun Country Airlines Holdings Inc,1,-10,0.0
+ALGT,Allegiant Travel Co,1,-10,0.0
+JBLU,JetBlue Airways Corp,1,-10,0.0
+SKYW,SkyWest Inc,1,-10,0.0
+AC.TO,Air Canada Class B,1,-10,0.0
+KOZAL,Koza Altin Izletmeleri AS,1,-10,0.0
+PRU.AX,Perseus Mining Ltd,1,-10,0.0
+MUX,McEwen Mining Inc,1,-10,0.0
+AR.MX,Argonaut Gold Inc,1,-10,0.0
+ML.PA,Cie Generale des Etablissements Michelin SA,1,-10,0.0
+CMI,Cummins Inc,1,-10,0.0
+PH,Parker Hannifin Corp,1,-10,0.0
+JOAXX,JPMorgan Instl Tx Fr Mny Mkt Agcy,1,-10,0.0
+JOIXX,JPMorgan Instl Tx Fr Mny Mkt IM,1,-10,0.0
+GDXJ,VanEck Junior Gold Miners ETF,1,-10,0.0
+AUTO.L,Auto Trader Group PLC,1,-10,0.0
+PVAC,Penn Virginia Corp,1,-10,0.0
+JIMXX,JPMorgan Prime Money Market IM,1,-10,0.0
+PPD,PPD Inc Ordinary Shares,1,-10,0.0
+MKSI,MKS Instruments Inc,1,-10,0.0
+MRVI,Maravai LifeSciences Holdings Inc Ordinary Shares - Class A,1,-10,0.0
+NARI,Inari Medical Inc Ordinary Shares,1,-10,0.0
+SWI,SolarWinds Corp Ordinary Shares,1,-10,0.0
+SAGE,Sage Therapeutics Inc,1,-9,0.0
+PFSI,PennyMac Financial Services Inc Class A,1,-9,0.0
+002304,Jiangsu Yanghe Brewery JSC Ltd,1,-9,0.0
+ORC,Orchid Island Capital Inc,1,-9,0.0
+ARR,ARMOUR Residential REIT Inc,1,-9,0.0
+CMO,Capstead Mortgage Corp,1,-9,0.0
+TRV,The Travelers Companies Inc,1,-9,0.0
+SIGI,Selective Insurance Group Inc,1,-9,0.0
+KMPR,Kemper Corp,1,-9,0.0
+ACGL,Arch Capital Group Ltd,1,-9,0.0
+APTS,Preferred Apartment Communities Inc,1,-9,0.0
+BRG,Bluerock Residential Growth REIT Inc Class A,1,-9,0.0
+GOOD,Gladstone Commercial Corp,1,-9,0.0
+GMRE,Global Medical REIT Inc,1,-9,0.0
+300454,Sangfor Technologies Inc Class A,1,-10,0.0
+002008,Han's Laser Technology Industry Group Co Ltd,1,-10,0.0
+09888,Baidu Inc,1,-10,0.0
+603501,Will Semiconductor Co Ltd Shanghai,1,-10,0.0
+601138,Foxconn Industrial Internet Co Ltd Class A,1,-10,0.0
+000725,BOE Technology Group Co Ltd,1,-10,0.0
+00763,ZTE Corp Class H,1,-10,0.0
+600703,Sanan Optoelectronics Co Ltd,1,-10,0.0
+002241,Goertek Inc,1,-10,0.0
+600837,Haitong Securities Co Ltd,1,-10,0.0
+601668,China State Construction Engineering Corp Ltd,1,-10,0.0
+002027,Focus Media Information Technology Co Ltd,1,-10,0.0
+600690,Haier Smart Home Co Ltd,1,-10,0.0
+000100,TCL Technology Group Corp,1,-10,0.0
+000338,Weichai Power Co Ltd,1,-10,0.0
+600660,Fuyao Glass Industry Group Co Ltd,1,-10,0.0
+BLD.AX,Boral Ltd,1,-9,0.0
+2875,Toyo Suisan Kaisha Ltd,1,-9,0.0
+207940.KS,Samsung BioLogics Co Ltd,1,-9,0.0
+RDOR3.SA,Rede d or Sao Luiz SA Ordinary Shares,1,-9,0.0
+SUNPHARMA.,Sun Pharmaceuticals Industries Ltd,1,-9,0.0
+091990.KS,Celltrion Healthcare Co Ltd,1,-9,0.0
+CGBU21.TO,10 Year Government of Canada Bond Future Sept 21,1,-9,0.0
+FGBLU21.DE,Euro Bund Future Sept 21,1,-9,0.0
+JGBLU21,10 Year Japanese Government Bond Future Sept 21,1,-9,0.0
+ADP,Automatic Data Processing Inc,1,-9,0.0
+TCEHY,Tencent Holdings Ltd ADR,1,-9,0.0
+HHC,The Howard Hughes Corp,1,-9,0.0
+NNDM,Nano Dimension Ltd ADR,1,-9,0.0
+VUZI,Vuzix Corporation,1,-9,0.0
+ESLT,Elbit Systems Ltd,1,-9,0.0
+2010,Saudi Basic Industries Corp,1,-9,0.0
+FELE,Franklin Electric Co Inc,1,-9,0.0
+PNM,PNM Resources Inc,1,-9,0.0
+LNN,Lindsay Corp,1,-9,0.0
+688111,Beijing Kingsoft Office Software Inc Class A,1,-9,0.0
+688036,Shenzhen Transsion Holdings Co Ltd Class A,1,-9,0.0
+688012,Advanced Micro-fabrication Equipment Inc Class A,1,-9,0.0
+688169,Beijing Roborock Technology Co Ltd Class A,1,-9,0.0
+688005,Ningbo Ronbay New Energy Technology Co Ltd Class A,1,-9,0.0
+688008,Montage Technology Co Ltd Class A,1,-9,0.0
+688396,China Resources Microelectronics Ltd Class A,1,-9,0.0
+688099,Amlogic (Shanghai) Co Ltd Class A,1,-9,0.0
+688002,Raytron Technology Co Ltd Class A,1,-9,0.0
+AGLTY,Agility Public Warehousing Co,1,-9,0.0
+ZAIN,Mobile Telecommunications Co KSC,1,-9,0.0
+MABANEE,Mabanee Co KPSC,1,-9,0.0
+GBK,Gulf Bank KSC,1,-9,0.0
+HUMANSOFT,HumanSoft Holding Co KSCC,1,-9,0.0
+NIND,National Industries Group Holding SAK,1,-9,0.0
+NRE,National Real Estate Co KSC,1,-9,0.0
+AGNCP,AGNC Investment Corp FXDFR PRF PERPETUAL USD 25 Series F,1,-11,0.0
+VTRS,Viatris Inc,1,-11,0.0
+ILF,iShares Latin America 40 ETF,1,-11,0.0
+HEI.A,Heico Corp Class A,1,-11,0.0
+IHF,iShares U.S. Health Care Provid,1,-11,0.0
+SPDN,Direxion Daily S&P 500 Bear 1X ,1,-11,0.0
+IAI,iShares U.S. Broker-Dealers & S,1,-11,0.0
+FTSL,First Trust Senior Loan Fund ET,1,-11,0.0
+FTSM,First Trust Enhanced Short Matu,1,-11,0.0
+UCON,First Trust TCW Unconstrained P,1,-11,0.0
+SLQD,iShares 0-5 Year Investment Gra,1,-11,0.0
+CMBS,iShares CMBS Bond ETF,1,-11,0.0
+00998,China Citic Bank Corp Ltd Class H,1,-11,0.0
+SPXL,Direxion Daily S&P 500 Bull 3X ,1,-11,0.0
+UPRO,ProShares UltraPro S&P 500,1,-11,0.0
+002812,Yunnan Energy New Material Co Ltd A,1,-11,0.0
+002371,NAURA Technology Group Co Ltd,1,-11,0.0
+002460,Ganfeng Lithium Co Ltd,1,-11,0.0
+300450,Wuxi Lead Intelligent Equipment Co Ltd A,1,-11,0.0
+MSUXX,Morgan Stanley InstlLqdty TrsSecs Instl,1,-11,0.0
+AFRM,Affirm Holdings Inc Ordinary Shares - Class A,1,-11,0.0
+AVAV,AeroVironment Inc,1,-11,0.0
+DAL.MI,Datalogic SPA Az nom Post Frazionamento,1,-11,0.0
+CME,CME Group Inc Class A,1,-11,0.0
+GNTX,Gentex Corp,1,-11,0.0
+MLN,VanEck ETF Trust VanEck Long Mu,1,-11,0.0
+ITM,VanEck ETF Trust VanEck Interme,1,-11,0.0
+SHYD,VanEck ETF Trust VanEck Short H,1,-11,0.0
+KNL,Knoll Inc,1,-11,0.0
+WTRE,Watford Holdings Ltd,1,-11,0.0
+IQI,Invesco Quality Muni Income Trust,1,-11,0.0
+MUI,BlackRock Muni Inter Duration,1,-11,0.0
+NMCO,Nuveen Municipal Credit Opps Fund,1,-11,0.0
+MCHI,iShares MSCI China ETF,1,-11,0.0
+USAC,USA Compression Partners LP,1,-11,0.0
+IEP,Icahn Enterprises LP,1,-11,0.0
+EWW,iShares Inc iShares MSCI Mexico,1,-11,0.0
+WSO,Watsco Inc,1,-10,0.0
+PEN,Penumbra Inc,1,-10,0.0
+EVBG,Everbridge Inc,1,-10,0.0
+GSHD,Goosehead Insurance Inc Class A,1,-10,0.0
+FOXF,Fox Factory Holding Corp,1,-10,0.0
+NTIC,Northern Technologies International Corp,1,-10,0.0
+UFPT,UFP Technologies Inc,1,-10,0.0
+COLL,Collegium Pharmaceutical Inc,1,-10,0.0
+GDP,Goodrich Petroleum Corp,1,-10,0.0
+EGLE,Eagle Bulk Shipping Inc,1,-10,0.0
+CBNK,Capital Bancorp Inc,1,-10,0.0
+XXII,22nd Century Group Inc,1,-9,0.0
+GEL,Genesis Energy LP,1,-9,0.0
+PNM.DE,PNM Resources Inc,1,-9,0.0
+DWNI,Deutsche Wohnen SE,1,-9,0.0
+GWRE,Guidewire Software Inc,1,-9,0.0
+LC,LendingClub Corp,1,-9,0.0
+3105.TW,Win Semiconductors Corp,1,-9,0.0
+SWED A,Swedbank AB Class A,1,-9,0.0
+IMB.L,Imperial Brands PLC,1,-9,0.0
+SFOR.L,S4 Capital PLC,1,-9,0.0
+INFO.TO,IHS Markit Ltd,1,-9,0.0
+IPL,Inter Pipeline Ltd,1,-9,0.0
+SJR.B,Shaw Communications Inc Class B,1,-9,0.0
+FWONK,Liberty Formula One Group C,1,-9,0.0
+MSGS,Madison Square Garden Sports Corp Class A,1,-9,0.0
+MANU.L,Manchester United PLC Class A,1,-9,0.0
+JUVE.MI,Juventus Football Club SpA,1,-9,0.0
+BVB.DE,Borussia Dortmund GmbH & Co KGaA,1,-9,0.0
+BATRK,Liberty Braves Group C,1,-9,0.0
+WWE,World Wrestling Entertainment Inc Class A,1,-9,0.0
+EDR,Endeavor Group Holdings Inc Class A,1,-9,0.0
+BJKAS,Besiktas Futbol Yatirimlari Sanayi Ve Ticaret AS,1,-9,0.0
+MTG B,Modern Times Group MTG AB B,1,-9,0.0
+DOYU,DouYu International Holdings Ltd ADR,1,-9,0.0
+WPC,W.P. Carey Inc,1,-8,0.0
+UPL.BO,UPL Ltd,1,-8,0.0
+500800.BO,Tata Consumer Products Ltd,1,-8,0.0
+NSTL,Nestle Nigeria PLC,1,-8,0.0
+ZENITH,Zenith Bank PLC,1,-8,0.0
+FBNH,First Bank Of Nigeria PLC,1,-8,0.0
+STANBIC,Stanbic IBTC Holdings PLC,1,-8,0.0
+NIBR,Nigerian Breweries PLC,1,-8,0.0
+FMNL,Flour Mills Nigeria PLC,1,-8,0.0
+DSRP,Dangote Sugar Refinery PLC,1,-8,0.0
+PAGS.SA,PagSeguro Digital Ltd Class A,1,-8,0.0
+GIL.TO,Gildan Activewear Inc,1,-8,0.0
+9503,Kansai Electric Power Co Inc,1,-8,0.0
+6367,Daikin Industries Ltd,1,-15,0.0
+EQH,Equitable Holdings Inc,1,-15,0.0
+WEX,WEX Inc,1,-15,0.0
+SITE,SiteOne Landscape Supply Inc,1,-15,0.0
+PTT,Ptt PCL,1,-15,0.0
+VEU,Vanguard FTSE All World Ex US E,1,-15,0.0
+SPTM,SPDR Portfolio S&P 1500 Composi,1,-15,0.0
+SCHD,Schwab US Dividend Equity ETF,1,-15,0.0
+USMV,iShares MSCI USA Min Vol Factor,1,-15,0.0
+CLN1,Light Sweet Crude Oil Future July 21,1,-15,0.0
+OHI,Omega Healthcare Investors Inc,1,-15,0.0
+ORP.PA,Orpea SA,1,-15,0.0
+AED,Aedifica SA,1,-15,0.0
+TUP,Tupperware Brands Corp,1,-15,0.0
+TGH,Textainer Group Holdings Ltd,1,-15,0.0
+CTXS,Citrix Systems Inc,1,-15,0.0
+DLTH,Duluth Holdings Inc B,1,-15,0.0
+BWMX.MX,Betterware de Mexico SAB de CV Ordinary Shares,1,-15,0.0
+FIGS,FIGS Inc Class A,1,-15,0.0
+AY.L,Atlantica Sustainable Infrastructure PLC,1,-15,0.0
+HIFS,Hingham Institution for Savings,1,-15,0.0
+FWRD,Forward Air Corp,1,-15,0.0
+KAI,Kadant Inc,1,-15,0.0
+FLIR,FLIR Systems Inc,1,-15,0.0
+EFAV,iShares MSCI EAFE Min Vol Facto,1,-15,0.0
+EEMV,iShares MSCI Emerging Markets M,1,-15,0.0
+MUB,iShares National Muni Bond ETF,1,-15,0.0
+LUCK,Lucky Cement Ltd,1,-15,0.0
+ENGRO,Engro Corp Ltd,1,-15,0.0
+HUBC,Hub Power Co Ltd,1,-15,0.0
+HBL,Habib Bank Ltd,1,-15,0.0
+MCB,MCB Bank Ltd,1,-15,0.0
+TRG,TRG Pakistan Ltd,1,-15,0.0
+OGDC,Oil & Gas Development Co Ltd,1,-15,0.0
+BAHL,Bank AL Habib Ltd,1,-15,0.0
+UBL,United Bank Ltd,1,-15,0.0
+CHDN,Churchill Downs Inc,1,-15,0.0
+FAST,Fastenal Co,1,-15,0.0
+CHWY,Chewy Inc,1,-15,0.0
+CVET,Covetrus Inc,1,-15,0.0
+SPK.BC,Solarpack Corp Tecnologica SA,1,-15,0.0
+06865,Flat Glass Group Co Ltd Shs -H- Reg S,1,-15,0.0
+PIN,Invesco India ETF,1,-16,0.0
+EXG,EV Tax-Mgd Gbl Div Equity Income,1,-16,0.0
+PCI,PIMCO Dynamic Credit and Mortgage Inc,1,-16,0.0
+PDO,PIMCO Dynamic Income Opportunities Fund,1,-16,0.0
+ETY,EV Tax-Managed Div Equity Income,1,-16,0.0
+JPS,Nuveen Pref & Income Securities Fund,1,-16,0.0
+028050.KS,Samsung Engineering Co Ltd,1,-16,0.0
+000150.KS,Doosan Corp Ordinary Shares,1,-16,0.0
+120110.KS,Kolon Industries Inc,1,-16,0.0
+RF.PA,Eurazeo SE,1,-16,0.0
+MF.PA,Wendel SE,1,-16,0.0
+HBMN,HBM Healthcare Investments AG Ord,1,-16,0.0
+NWBI,Northwest Bancshares Inc,1,-16,0.0
+RLJPA,RLJ Lodging Trust USD 1.95 Cum Conv Pfd Registered Shs Series -A-,1,-16,0.0
+DCPPB,DCP Midstream LP Pfd,1,-16,0.0
+SCEPH,SCE Trust III Trust Preference Security 2014-Without fixed maturity Gtd on,1,-16,0.0
+SJIV,South Jersey Industries Inc Units (Corporate Unit -01/04/2024),1,-16,0.0
+EPRPE,EPR Properties 9.00% Series E cumulative convertible preferred shares liqui,1,-16,0.0
+NSPA,NuStar Energy LP A,1,-16,0.0
+MNRPC,Monmouth Real Estate Investment Corp C,1,-16,0.0
+NLYPF,Annaly Capital Management Inc Cum Conv Red Pfd Registered Shs Series -F-,1,-16,0.0
+CLNYPI,Colony Capital Inc Cum Conv Red Perp Pfd Registered Shs Series -I-,1,-16,0.0
+PSBPZ,PS Business Parks Inc PRF PERPETUAL USD 25 Dp ShRp 1/1000 Ser Z,1,-16,0.0
+CLNYPJ,Colony Capital Inc Cum Conv Red Perp Pfd Shs Series -J-,1,-16,0.0
+VNOPM,Vornado Realty Trust 5.25 % Cum Perp Red Pfd Registered Shs Series -M-,1,-16,0.0
+VNOPL,Vornado Realty Trust Cum Red Pfd Shs Series -L-,1,-16,0.0
+CLNYPH,Colony Capital Inc 7.125 % Cum Red Perp Registered Pfd Shs Series -H-,1,-16,0.0
+GSPJ,Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser,1,-16,0.0
+MSPK,Morgan Stanley 1/1000th Non-Cum Pfd -K-,1,-16,0.0
+MSPI,Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-,1,-16,0.0
+WFCPX,Wells Fargo & Co Non-Cum Perp Pfd Shs -A- Series -X-,1,-16,0.0
+MSPA,Morgan Stanley Deposit Shs Repr 1/1000th Flt Rate Non Cum Pfd Shs Series -,1,-16,0.0
+ETPE,Energy Transfer LP FXDFR PRF PERPETUAL USD 25 - Ser E,1,-16,0.0
+NEEPQ,NextEra Energy Inc Unit (Corporate Unit 09/01/2023),1,-16,0.0
+EDP,EDP - Energias de Portugal SA,1,-16,0.0
+GALP,Galp Energia SGPS SA,1,-16,0.0
+SON,Sonae SGPS SA,1,-16,0.0
+RENE,REN-Redes Energeticas Nacionais Sgps SA,1,-16,0.0
+JMT,Jeronimo Martins SGPS SA,1,-16,0.0
+ELP.SA,Cia Paranaense De Energia Copel ADR,1,-16,0.0
+NGG.L,National Grid PLC ADR,1,-16,0.0
+MFC.TO,Manulife Financial Corp,1,-16,0.0
+01268,China MeiDong Auto Holdings Ltd,1,-16,0.0
+6531.TW,AP Memory Technology Corp,1,-16,0.0
+8046.TW,Nan Ya Printed Circuit Board Corp,1,-16,0.0
+OPER,ETF Series Solutions ETF ClearS,1,-16,0.0
+CSU.TO,Constellation Software Inc,1,-15,0.0
+BYD.TO,Boyd Group Services Inc Ordinary Shares,1,-15,0.0
+HI,Hillenbrand Inc,1,-16,0.0
+CWEB,Direxion Daily CSI China Intern,1,-16,0.0
+CRBP,Corbus Pharmaceuticals Holdings Inc,1,-16,0.0
+PAND,Pandion Therapeutics Inc Ordinary Shares,1,-16,0.0
+MORF,Morphic Holding Inc,1,-16,0.0
+OVID,Ovid Therapeutics Inc,1,-16,0.0
+PLRX,Pliant Therapeutics Inc Ordinary Shares,1,-16,0.0
+FCBP,First Choice Bancorp,1,-15,0.0
+HVT,Haverty Furniture Companies Inc,1,-15,0.0
+IIIN,Insteel Industries Inc,1,-15,0.0
+EBSB,Meridian Bancorp Inc,1,-15,0.0
+HT,Hersha Hospitality Trust,1,-15,0.0
+BKD,Brookdale Senior Living Inc,1,-15,0.0
+AME,AMETEK Inc,1,-15,0.0
+AM3D.DE,SLM Solutions Group AG,1,-14,0.0
+XONE,The ExOne Co,1,-14,0.0
+ALTR,Altair Engineering Inc Class A,1,-14,0.0
+ALMDG.PA,MGI Digital Graphic Technology SA,1,-14,0.0
+SONO,Sonos Inc,1,-14,0.0
+SMPL,The Simply Good Foods Co,1,-14,0.0
+EPC,Edgewell Personal Care Co,1,-14,0.0
+PSMT,Pricesmart Inc,1,-14,0.0
+CENTA,Central Garden & Pet Co Class A,1,-14,0.0
+SHAK,Shake Shack Inc A,1,-14,0.0
+STMP,Stamps.com Inc,1,-14,0.0
+SHOO,Steven Madden Ltd,1,-14,0.0
+LCII,LCI Industries Inc,1,-14,0.0
+REGI,Renewable Energy Group Inc,1,-14,0.0
+CLB,Core Laboratories NV,1,-14,0.0
+ITGR,Integer Holdings Corp,1,-14,0.0
+KFY,Korn Ferry,1,-14,0.0
+UNF,UniFirst Corp,1,-14,0.0
+KWR,Quaker Chemical Corp,1,-14,0.0
+ATI,Allegheny Technologies Inc,1,-14,0.0
+OI,O-I Glass Inc,1,-14,0.0
+SCL,Stepan Co,1,-14,0.0
+TSE,Trinseo SA,1,-14,0.0
+AEIS,Advanced Energy Industries Inc,1,-14,0.0
+LPSN,LivePerson Inc,1,-14,0.0
+CWT,California Water Service Group,1,-14,0.0
+SHEN,Shenandoah Telecommunications Co,1,-14,0.0
+PSMD,Pacer Swan SOS Moderate (Decemb,1,-14,0.0
+PSMR,Pacer Swan SOS Moderate (April),1,-14,0.0
+PSFD,Pacer Funds ETF,1,-14,0.0
+PSFM,Pacer Swan SOS Flex (April) ETF,1,-14,0.0
+PSCX,Pacer Swan SOS Conservative (De,1,-14,0.0
+PSCW,Pacer Swan SOS Conservative (Ap,1,-14,0.0
+MTSI,MACOM Technology Solutions Holdings Inc,1,-14,0.0
+ALLPH,Allstate Corp 5.10% PRF PERPETUAL USD 25 - Ser H 1/1000th Int,1,-14,0.0
+COFPJ,Capital One Financial Corp 4.80% PRF PERPETUAL USD 25 - 1/40TH INT Series J,1,-14,0.0
+DUKPA,Duke Energy Corp 5.75% PRF PERPETUAL USD 25 - Ser A 1/1000th Int,1,-14,0.0
+METPF,MetLife Inc Series F,1,-14,0.0
+MKC,McCormick & Co Inc Non-Voting,1,-14,0.0
+IIGD,Invesco Investment Grade Defens,1,-13,0.0
+PGX,Invesco Preferred ETF,1,-13,0.0
+IDLV,Invesco S&P International Devel,1,-13,0.0
+MRO.L,Melrose Industries PLC,1,-13,0.0
+CG,The Carlyle Group Inc,1,-13,0.0
+NQU21,E-mini Nasdaq 100 Future Sept 21,1,-13,0.0
+SIEGY.DE,Siemens AG ADR,1,-13,0.0
+MVIS,Microvision Inc,1,-13,0.0
+BCRX,BioCryst Pharmaceuticals Inc,1,-13,0.0
+NSRGY,Nestle SA ADR,1,-13,0.0
+TM,Toyota Motor Corp ADR,1,-13,0.0
+RDS.B.L,Royal Dutch Shell PLC ADR Class B,1,-13,0.0
+CAH,Cardinal Health Inc,1,-6,0.0
+X,United States Steel Corp,1,-6,0.0
+BOKF,BOK Financial Corp,1,-6,0.0
+TFSL,TFS Financial Corp,1,-6,0.0
+GBCI,Glacier Bancorp Inc,1,-6,0.0
+VBK,Vanguard Small-Cap Growth ETF,1,-6,0.0
+NQH21,E-mini Nasdaq 100 Future Mar 21,1,-6,0.0
+VSS,Vanguard FTSE All-Wld ex-US SmC,1,-6,0.0
+EFG,iShares MSCI EAFE Growth ETF,1,-6,0.0
+00316,Orient Overseas (International) Ltd,1,-6,0.0
+CPRI.L,Capri Holdings Ltd,1,-6,0.0
+CMC6,JPMorgan Chase & Co DR,1,-6,0.0
+SREPB,Sempra Energy 6.75% PRF CONVERT 15/07/2021 USD 100 - PRF B,1,-6,0.0
+MSPE,Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -E-,1,-6,0.0
+MSPF,Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -F-,1,-6,0.0
+PNQI,Invesco Nasdaq Internet ETF,1,-6,0.0
+GLD,SPDR Gold Trust,1,-6,0.0
+FDN,First Trust DJ Internet Index F,1,-6,0.0
+TQQQ,ProShares UltraPro QQQ,1,-6,0.0
+QLD,ProShares Ultra QQQ,1,-6,0.0
+ROST,Ross Stores Inc,1,-6,0.0
+CACC,Credit Acceptance Corp,1,-6,0.0
+EINC,VanEck Energy Income ETF,1,-6,0.0
+PAVE,Global X Funds Global X U.S. In,1,-6,0.0
+IGF,iShares Global Infrastructure E,1,-6,0.0
+FRAK,VanEck Vectors Unconventional O,1,-6,0.0
+601919,COSCO SHIPPING Holdings Co Ltd,1,-6,0.0
+002254,Yantai Tayho Advanced Materials Co Ltd,1,-6,0.0
+600809,Shanxi Xinghuacun Fen Wine Factory Co Ltd,1,-6,0.0
+002032,Zhejiang Supor Co Ltd,1,-6,0.0
+603882,Guangzhou Kingmed Diagnostics Group Co Ltd Class A,1,-6,0.0
+600426,Shandong Hualu-hengsheng Chemical Co Ltd,1,-6,0.0
+2802,Ajinomoto Co Inc,1,-6,0.0
+7309,Shimano Inc,1,-6,0.0
+EMD,Western Asset Emerg Mkts Debt,1,-5,0.0
+EDD,MS Emerging Markets Domestic,1,-5,0.0
+JFR,Nuveen Floating Rate Income,1,-5,0.0
+NSL,Nuveen Senior Income,1,-5,0.0
+CSR,Centerspace,1,-5,0.0
+PLYM,Plymouth Industrial REIT Inc,1,-5,0.0
+LECO,Lincoln Electric Holdings Inc,1,-5,0.0
+TR,Tootsie Roll Industries Inc,1,-5,0.0
+603799,Zhejiang Huayou Cobalt Co Ltd,1,-5,0.0
+600111,China Northern Rare Earth (Group) High-Tech Co Ltd,1,-5,0.0
+600392,Shenghe Resources Holding Co Ltd,1,-5,0.0
+LYC.AX,Lynas Rare Earths Ltd,1,-5,0.0
+600549,Xiamen Tungsten Co Ltd,1,-5,0.0
+ILU.AX,Iluka Resources Ltd,1,-5,0.0
+TROX,Tronox Holdings PLC,1,-5,0.0
+601958,Jinduicheng Molybdenum Co Ltd,1,-5,0.0
+IEUR,iShares Core MSCI Europe ETF,1,-5,0.0
+ROL,Rollins Inc,1,-4,0.0
+VGLT,Vanguard Long-Treasury ETF,1,-4,0.0
+PHYS.TO,Sprott Physical Gold Trust,1,-4,0.0
+GNR,SPDR S&P Global Natural Resourc,1,-4,0.0
+TIPX,SPDR Bloomberg Barclays 1-10 Ye,1,-4,0.0
+RWR,SPDR DJ Wilshire REIT ETF,1,-4,0.0
+WIP,SPDR FTSE International Governm,1,-4,0.0
+RWX,SPDR DJ Wilshire Intl Real Esta,1,-4,0.0
+4739,ITOCHU Techno-Solutions Corp,1,-4,0.0
+8725,MS&AD Insurance Group Holdings Inc,1,-3,0.0
+HEN3.DE,Henkel AG & Co KGaA Participating Preferred,1,-3,0.0
+G24.DE,Scout24 AG,1,-3,0.0
+GPC,Genuine Parts Co,1,-3,0.0
+3702.TW,WPG Holding Co Ltd,1,-3,0.0
+2356.TW,Inventec Corp,1,-3,0.0
+00151,Want Want China Holdings Ltd,1,-3,0.0
+HRC,Hill-Rom Holdings Inc,1,-3,0.0
+PINC,Premier Inc Class A,1,-3,0.0
+EHC,Encompass Health Corp,1,-3,0.0
+EA-R,Energy Absolute PCL ADR,1,-4,0.0
+ATRI,Atrion Corp,1,-5,0.0
+PDCO,Patterson Companies Inc,1,-5,0.0
+6324,Harmonic Drive Systems Inc,1,-5,0.0
+KARN,Kardex Holding AG Registered Shares,1,-5,0.0
+1590.TW,Airtac International Group,1,-5,0.0
+BB.TO,BlackBerry Ltd,1,-5,0.0
+DOC,Physicians Realty Trust,1,-5,0.0
+APLE,Apple Hospitality REIT Inc,1,-5,0.0
+SITC,SITE Centers Corp,1,-5,0.0
+SCHQ,Schwab Long-Term U.S. Treasury ,1,-5,0.0
+DHT,DHT Holdings Inc,1,-5,0.0
+VIVO,Meridian Bioscience Inc,1,-5,0.0
+ZNM21,10 Year Treasury Note Future June 21,1,-5,0.0
+GLDM,SPDR Gold MiniShares Trust,1,-5,0.0
+BAR,GraniteShares Gold Trust,1,-5,0.0
+OGZD,Gazprom PJSC ADR,1,-5,0.0
+ATAD,Tatneft PJSC ADR,1,-5,0.0
+DSKY,Detskymir PJSC,1,-5,0.0
+SSA,Sistema PJSFC GDR,1,-5,0.0
+AFLT,Aeroflot Russian Airlines PJSC,1,-5,0.0
+CBOM,Credit Bank of Moscow PJSC,1,-5,0.0
+POG.L,Petropavlovsk PLC,1,-5,0.0
+HHR,HeadHunter Group PLC ADR,1,-5,0.0
+LSRG,LSR Group PJSC,1,-5,0.0
+IIM,Invesco Value Muni Income Trust,1,-5,0.0
+MVF,BlackRock MuniVest,1,-5,0.0
+MMU,Western Asset Managed Muni,1,-5,0.0
+MAV,Pioneer Muni High Inc Adv,1,-5,0.0
+NXJ,Nuveen NJ Quality Muni Inc,1,-5,0.0
+BLL,Ball Corp,1,-4,0.0
+RSX,VanEck Russia ETF,1,-4,0.0
+IWF,iShares Russell 1000 Growth ETF,1,-4,0.0
+PBF,PBF Energy Inc Class A,1,-4,0.0
+SAH,Sonic Automotive Inc Class A,1,-4,0.0
+MAN,ManpowerGroup Inc,1,-4,0.0
+AVT,Avnet Inc,1,-4,0.0
+SCG.AX,Scentre Group,1,-4,0.0
+01997.HK,Wharf Real Estate Investment Co Ltd Ordinary Shares,1,-4,0.0
+IYH,iShares U.S. Healthcare ETF,1,-4,0.0
+CBOE,Cboe Global Markets Inc,1,-4,0.0
+COO,The Cooper Companies Inc,1,-4,0.0
+LASR,nLight Inc,1,-4,0.0
+FTCI,FTC Solar Inc,1,-4,0.0
+ZIP,ZipRecruiter Inc Class A,1,-4,0.0
+VTWO,Vanguard Russell 2000 ETF,1,-4,0.0
+ES,Eversource Energy,1,-4,0.0
+LEGN,Legend Biotech Corp ADR,1,-9,0.0
+TGTX,TG Therapeutics Inc,1,-9,0.0
+APLS,Apellis Pharmaceuticals Inc,1,-9,0.0
+KOD,Kodiak Sciences Inc,1,-9,0.0
+ARNA,Arena Pharmaceuticals Inc,1,-9,0.0
+SWTX,SpringWorks Therapeutics Inc Ordinary Shares,1,-9,0.0
+CCL.A,CCL Industries Inc Class A,1,-9,0.0
+WDC,Western Digital Corp,1,-9,0.0
+6976,Taiyo Yuden Co Ltd,1,-9,0.0
+9104,Mitsui O.S.K. Lines Ltd,1,-9,0.0
+7735,Screen Holdings Co Ltd,1,-9,0.0
+7936,ASICS Corp,1,-9,0.0
+3289,Tokyu Fudosan Holdings Corp,1,-9,0.0
+MVRXX,Morgan Stanley Instl Lqudty Govt Instl,1,-9,0.0
+AWF,AllianceBernstein Glb High Inc,1,-9,0.0
+PFLT,PennantPark Floating Rate Capital Ltd,1,-9,0.0
+HYEM,VanEck Emerging Markets High Yi,1,-9,0.0
+EMHY,iShares J.P. Morgan EM High Yie,1,-9,0.0
+WHF,WhiteHorse Finance Inc,1,-9,0.0
+PCY,Invesco Emerging Markets Sovere,1,-9,0.0
+GEF.B,Greif Inc Class B,1,-9,0.0
+ELET6.SA,Centrais Eletricas Brasileiras SA Participating Preferred,1,-9,0.0
+3231.TW,Wistron Corp,1,-9,0.0
+PHOR,PhosAgro PJSC GDR,1,-9,0.0
+500425.BO,Ambuja Cements Ltd,1,-9,0.0
+BRAP4.SA,Bradespar SA Participating Preferred,1,-9,0.0
+00288,WH Group Ltd,1,-9,0.0
+ALO.PA,Alstom SA,1,-9,0.0
+BWLPG.SI,BW LPG Ltd,1,-9,0.0
+02386,SINOPEC Engineering (Group) Co Ltd H,1,-9,0.0
+HSBK,Halyk Savings Bank of Kazakhstan JSC GDR,1,-9,0.0
+GOLF,Acushnet Holdings Corp,1,-9,0.0
+VLUE,iShares MSCI USA Value Factor E,1,-9,0.0
+PSCT,Invesco S&P SmallCap Informatio,1,-9,0.0
+SCHV,Schwab U.S. Large-Cap Value ETF,1,-9,0.0
+URBN,Urban Outfitters Inc,1,-9,0.0
+EAT,Brinker International Inc,1,-9,0.0
+PTC,PTC Inc,1,-9,0.0
+NBIX,Neurocrine Biosciences Inc,1,-9,0.0
+AMG,Affiliated Managers Group Inc,1,-9,0.0
+GBR.TO,Great Bear Resources Ltd,1,-9,0.0
+BGL.AX,Bellevue Gold Ltd,1,-9,0.0
+SKE.TO,Skeena Resources Ltd,1,-9,0.0
+CEY,VictoryShares Emerging Market H,1,-9,0.0
+PAF.JO,Pan African Resources PLC,1,-9,0.0
+RSG.AX,Resolute Mining Ltd,1,-9,0.0
+DPM.TO,Dundee Precious Metals Inc,1,-9,0.0
+OLA.TO,Orla Mining Ltd,1,-9,0.0
+SAIC,Science Applications International Corp,1,-9,0.0
+IYJ,iShares U.S. Industrials ETF,1,-9,0.0
+010130.KS,Korea Zinc Co Ltd,1,-9,0.0
+FRES.MX,Fresnillo PLC,1,-10,0.0
+TRQ.TO,Turquoise Hill Resources Ltd,1,-10,0.0
+GATO,Gatos Silver Inc Ordinary Shares,1,-10,0.0
+EXK.TO,Endeavour Silver Corp,1,-10,0.0
+BEEM,Beam Global,1,-10,0.0
+HSII,Heidrick & Struggles International Inc,1,-10,0.0
+ECPG,Encore Capital Group Inc,1,-8,0.0
+RXT,Rackspace Technology Inc Ordinary Shares,1,-8,0.0
+PE&OLES.MX,Industrias Penoles SAB de CV,1,-8,0.0
+ELD.TO,Eldorado Gold Corp,1,-8,0.0
+5857,Asahi Holdings Inc,1,-8,0.0
+TX.MX,Ternium SA ADR,1,-8,0.0
+SID.SA,Companhia Siderurgica Nacional ADR,1,-8,0.0
+GGB.SA,Gerdau SA ADR,1,-8,0.0
+EEMS,Ishares MSCI Emerging Markets S,1,-8,0.0
+SCZ,iShares MSCI EAFE Small-Cap ETF,1,-8,0.0
+CNS,Cohen & Steers Inc,1,-8,0.0
+GFF,Griffon Corp,1,-8,0.0
+NATI,National Instruments Corp,1,-8,0.0
+VOLTAS.BO,Voltas Ltd Shs Dematerialised,1,-8,0.0
+SRF.BO,SRF Ltd,1,-8,0.0
+ZEEL.BO,Zee Entertainment Enterprises Ltd,1,-8,0.0
+500477.BO,Ashok Leyland Ltd,1,-8,0.0
+ASTRAL.BO,Astral Ltd,1,-8,0.0
+526299.BO,Mphasis Ltd,1,-8,0.0
+BKH,Black Hills Corp,1,-8,0.0
+POR,Portland General Electric Co,1,-8,0.0
+WTM,White Mountains Insurance Group Ltd,1,-8,0.0
+CDK,CDK Global Inc,1,-8,0.0
+MMS,Maximus Inc,1,-8,0.0
+DTRXX,Dreyfus Treasury Obligations Csh Mgt Ins,1,-8,0.0
+STM.SI,STMicroelectronics NV,1,-8,0.0
+2395.TW,Advantech Co Ltd,1,-8,0.0
+ST,Sensata Technologies Holding PLC,1,-8,0.0
+ADT,ADT Inc,1,-8,0.0
+S X1,Soybean Future Nov21,1,-8,0.0
+S K1,Soybean Future May21,1,-8,0.0
+S N1,Soybean Future Jul21,1,-8,0.0
+OPEN,Opendoor Technologies Inc Ordinary Shares - Class A,1,-8,0.0
+PSTH,Pershing Square Tontine Holdings Ltd Ordinary Shares - Class A,1,-8,0.0
+CLVT.L,Clarivate PLC Ordinary Shares,1,-8,0.0
+AAQC.U,Accelerate Acquisition Corp Units (1 Ord Share Class A & 1/3 War),1,-8,0.0
+SVAC,Starboard Value Acquisition Corp Ordinary Shares - Class A,1,-8,0.0
+PRPB,CC Neuberger Principal Holdings II Ordinary Shares - Class A,1,-8,0.0
+APSG,Apollo Strategic Growth Capital Ordinary Shares - Class A,1,-8,0.0
+CRHC,Cohn Robbins Holdings Corp Ordinary Shares - Class A,1,-8,0.0
+ETAC,E.Merge Technology Acquisition Corp Ordinary Shares - Class A,1,-8,0.0
+CCAC,CITIC Capital Acquisition Corp Ordinary Shares - Class A,1,-8,0.0
+AVAN,Avanti Acquisition Corp Ordinary Shares - Class A,1,-8,0.0
+KSMT,Kismet Acquisition One Corp Ordinary Shares,1,-8,0.0
+SPKBU,Silver Spike Acquisition Corp II Units (1 Ord Share Class A & 1/4 War),1,-8,0.0
+QRTEP,Qurate Retail Inc 8% PRF REDEEM 15/03/2031 USD - Ser A,1,-8,0.0
+BACPB,Bank of America Corp Pfd,1,-8,0.0
+WFCPR,Wells Fargo & Co Deposit Shs Repr 1/1000th 6 5/8 % Non-Cum Perp Pfd Shs -A-,1,-8,0.0
+RE,Everest Re Group Ltd,1,-8,0.0
+STEM,Stem Inc Class A,1,-8,0.0
+QS,QuantumScape Corp Ordinary Shares - Class A,1,-8,0.0
+SLYV,SPDR S&P 600 Small Cap Value ET,1,-8,0.0
+SLYG,SPDR S&P 600 Small Cap Growth E,1,-8,0.0
+SCHE,Schwab Emerging Markets Equity ,1,-8,0.0
+AEL,American Equity Investment Life Holding Co,1,-7,0.0
+CWH,Camping World Holdings Inc Class A,1,-7,0.0
+FHI,Federated Hermes Inc Class B,1,-7,0.0
+HR.UN.TO,H&R Real Estate Investment Trust,1,-7,0.0
+DXS.AX,Dexus,1,-7,0.0
+LAMR,Lamar Advertising Co Class A,1,-7,0.0
+ACI,Albertsons Companies Inc Class A,1,-11,0.0
+ULTA,Ulta Beauty Inc,1,-10,0.0
+4308,J-Stream Inc,1,-10,0.0
+CLNE,Clean Energy Fuels Corp,1,-10,0.0
+DCOM,Dime Community Bancshares Inc,1,-10,0.0
+FNKO,Funko Inc Class A,1,-10,0.0
+MOD,Modine Manufacturing Co,1,-10,0.0
+TLYS,Tilly's Inc A,1,-10,0.0
+CASH,Meta Financial Group Inc,1,-10,0.0
+MUR,Murphy Oil Corp,1,-10,0.0
+IYK,iShares U.S. Consumer Goods ETF,1,-10,0.0
+TAP,Molson Coors Beverage Co Shs -B- Non-Voting,1,-10,0.0
+BYND,Beyond Meat Inc,1,-10,0.0
+JPHY,JPMorgan Research Enhanced High,1,-10,0.0
+CORN,Teucrium Corn Fund ETV,1,-10,0.0
+SOYB,Teucrium Soybean Fund ETV,1,-10,0.0
+CANE,Teucrium Sugar Fund ETV,1,-10,0.0
+WEAT,Teucrium Wheat Fund ETV,1,-10,0.0
+ZBZ0,US Treasury Bond Future Dec 20,1,-10,0.0
+UUP,Invesco DB USD Index Bullish Fu,1,-10,0.0
+HDV,iShares Core High Dividend ETF,1,-10,0.0
+SDY,SPDR S&P Dividend ETF,1,-10,0.0
+XLU,SPDR Select Sector Fund - Utili,1,-10,0.0
+PGF,Invesco Financial Preferred ETF,1,-10,0.0
+CTS,CTS Corp,1,-10,0.0
+NOVT,Novanta Inc,1,-10,0.0
+RCKT,Rocket Pharmaceuticals Inc,1,-10,0.0
+DIV,Global X Super Dividend ETF,1,-10,0.0
+MLPX,Global X MLP & Energy Infrastru,1,-10,0.0
+FAF.TO,Fire & Flower Holdings Corp Ordinary Shares,1,-10,0.0
+CPALL-R,CP All PCL DR,1,-10,0.0
+BDMS-R,Bangkok Dusit Medical Services PCL DR,1,-10,0.0
+ADVANC-R,Advanced Info Service PCL DR,1,-10,0.0
+DELTA-R,Delta Electronics (Thailand) PCL DR,1,-10,0.0
+PTTEP-R,PTT Exploration & Production PCL DR,1,-10,0.0
+PTTGC-R,PTT Global Chemical PCL DR,1,-10,0.0
+INTUCH-R,Intouch Holdings PCL DR,1,-10,0.0
+TEAM,Atlassian Corporation PLC A,1,-10,0.0
+AYX,Alteryx Inc Class A,1,-10,0.0
+HYS,PIMCO 0-5 Year High Yield Corpo,1,-10,0.0
+TAN,Invesco Solar ETF,1,-10,0.0
+KOMP,SPDR S&P Kensho New Economies C,1,-10,0.0
+ARKF,ARK Fintech Innovation ETF,1,-10,0.0
+ARKG,ARK Genomic Revolution ETF,1,-10,0.0
+PAWZ,ProShares Pet Care ETF,1,-10,0.0
+ONLN,ProShares Online Retail ETF,1,-10,0.0
+ESPO,VanEck Video Gaming and eSports,1,-10,0.0
+KSTR,KraneShares SSE STAR Market 50 ,1,-10,0.0
+GNLN,Greenlane Holdings Inc,1,-9,0.0
+WLN.PA,Worldline SA,1,-9,0.0
+AEE,Ameren Corp,1,-9,0.0
+00003.TO,Hong Kong and China Gas Co Ltd,1,-9,0.0
+H,Hydro One Ltd,1,-9,0.0
+EXLS,ExlService Holdings Inc,1,-9,0.0
+CLAR,Clarus Corp,1,-9,0.0
+PTLC,Pacer Fund Trust Pacer Trendpil,1,-9,0.0
+PTNQ,Pacer Trendpilot 100 ETF,1,-9,0.0
+PTIN,Pacer Trendpilot International ,1,-9,0.0
+PTMC,Pacer Trendpilot US Mid Cap ETF,1,-9,0.0
+PTBD,Pacer Trendpilot US Bond ETF,1,-9,0.0
+WTMF,WisdomTree Managed Futures Stra,1,-9,0.0
+IAG.BC,International Consolidated Airlines Group SA,1,-9,0.0
+HTHT,Huazhu Group Ltd ADR,1,-9,0.0
+BIMAS,Bim Birlesik Magazalar AS,1,-9,0.0
+EREGL,Eregli Demir Ve Celik Fabrikalari TAS,1,-9,0.0
+GARAN,Turkiye Garanti Bankasi AS,1,-9,0.0
+AKBNK,Akbank TAS,1,-9,0.0
+TCELL,Turkcell Iletisim Hizmetleri AS,1,-9,0.0
+KCHOL,Koc Holding AS,1,-9,0.0
+FROTO,Ford Otomotiv Sanayi AS,1,-9,0.0
+TUPRS,Tupras-Turkiye Petrol Rafineleri AS,1,-9,0.0
+ASELS,Aselsan Elektronik Sanayi Ve Ticaret AS,1,-9,0.0
+SISE,Turkiye Sise ve Cam Fabrikalari AS,1,-9,0.0
+CSSEP,Chicken Soup for the Soul Entertainment Inc PRF PERPETUAL USD - Ser A,1,-9,0.0
+INNPE,Summit Hotel Properties Inc 6.25% PRF PERPETUAL USD 25 - Ser E,1,-9,0.0
+IVRPB,Invesco Mortgage Capital Inc Cum Red Pfd Shs Series -B-,1,-9,0.0
+RTYH21,E-mini Russell 2000 Index Future Mar 21,1,-9,0.0
+EMIRATESNB,Emirates NBD PJSC,1,-9,0.0
+ADCB,Abu Dhabi Commercial Bank,1,-9,0.0
+EMAAR,Emaar Properties PJSC,1,-9,0.0
+ADIB,Abu Dhabi Islamic Bank,1,-9,0.0
+DIB,Dubai Islamic Bank PJSC,1,-9,0.0
+ADNOCDIST,Abu Dhabi National Oil Co For Distribution PJSC,1,-9,0.0
+DIC,Dubai Investments PJSC,1,-9,0.0
+CIBR,First Trust NASDAQ Cybersecurit,1,-9,0.0
+2885.TW,Yuanta Financial Holdings Co Ltd,1,-9,0.0
+ETL.PA,Eutelsat Communications,1,-9,0.0
+SESG,SES SA DR,1,-9,0.0
+SIRI,Sirius XM Holdings Inc,1,-9,0.0
+SATS,EchoStar Corp,1,-9,0.0
+4825,Weathernews Inc,1,-9,0.0
+RBK0,RBOB Gasoline Future Apr 20,1,-9,0.0
+SAHXX,State Street Instl US Govt MMkt Instl,1,-9,0.0
+034020.KS,Doosan Heavy Industries & Construction Co Ltd,1,-9,0.0
+047040.KS,Daewoo Engineering & Construction Co Ltd,1,-9,0.0
+YCA.L,Yellow Cake PLC Ordinary Shares,1,-9,0.0
+01164,CGN Mining Co Ltd,1,-9,0.0
+CCU0,Cocoa Future Sept 20,1,-9,0.0
+WK0,Wheat Future(CBT) May20,1,-9,0.0
+BR,Broadridge Financial Solutions Inc,1,-9,0.0
+SSNC,SS&C Technologies Holdings Inc,1,-9,0.0
+NFG,National Fuel Gas Co,1,-9,0.0
+WMK,Weis Markets Inc,1,-9,0.0
+NI,NiSource Inc,1,-9,0.0
+LIN,Linde PLC,1,-9,0.0
+UCTT,Ultra Clean Holdings Inc,1,-9,0.0
+QQQJ,Invesco NASDAQ Next Gen 100 ETF,1,-7,0.0
+IWP,iShares Russell Midcap Growth E,1,-7,0.0
+LW,Lamb Weston Holdings Inc,1,-7,0.0
+LMND,Lemonade Inc Ordinary Shares,1,-7,0.0
+PYPL.TO,PayPal Holdings Inc,1,-7,0.0
+SHOP.SA,Shopify Inc A,1,-7,0.0
+MELI,MercadoLibre Inc,1,-7,0.0
+HEAR,Turtle Beach Corp,1,-7,0.0
+RGR,Sturm Ruger & Co Inc,1,-7,0.0
+IGT,International Game Technology PLC,1,-7,0.0
+6116.TW,Hannstar Display Corp,1,-7,0.0
+3481.TW,Innolux Corp,1,-7,0.0
+TKG.JO,Telkom SA SOC Ltd,1,-7,0.0
+042670.KS,Doosan Infracore Co Ltd,1,-7,0.0
+BS6,Yangzijiang Shipbuilding (Holdings) Ltd,1,-7,0.0
+BAW.JO,Barloworld Ltd,1,-7,0.0
+IMOM,Alpha Architect International Q,1,-7,0.0
+IVAL,Alpha Architect International Q,1,-7,0.0
+QVAL,Alpha Architect U.S. Quantitati,1,-7,0.0
+VNM,VanEck Vietnam ETF,1,-7,0.0
+NVL,No Va Land Investment Group Corp,1,-7,0.0
+MSN,Ma San Group Corp,1,-7,0.0
+VCB,Joint Stock Commercial Bank for Foreign Trade of Vietnam,1,-7,0.0
+1476.TW,Eclat Textile Co Ltd,1,-7,0.0
+9910.TW,Feng Tay Enterprises Co Ltd,1,-7,0.0
+7730,Mani Inc,1,-7,0.0
+NVT.L,nVent Electric PLC,1,-7,0.0
+SKX,Skechers USA Inc,1,-7,0.0
+CR,Crane Co,1,-7,0.0
+CSTM,Constellium SE A,1,-7,0.0
+OXLC,Oxford Lane Capital Corp,1,-7,0.0
+JQC,Nuveen Credit Strategies Income,1,-7,0.0
+ECC,Eagle Point Credit Co LLC,1,-7,0.0
+BKCC,BlackRock Capital Investment Corp,1,-7,0.0
+AINV,Apollo Investment Corp,1,-7,0.0
+PNNT,Pennant Park Investment Corp,1,-7,0.0
+BGX,Blackstone Long-Short Credit Income,1,-7,0.0
+NXT.AX,Nextdc Ltd,1,-7,0.0
+NOA.TO,North American Construction Group Ltd,1,-7,0.0
+IMO.TO,Imperial Oil Ltd,1,-7,0.0
+BDX,"Becton, Dickinson and Co",1,-7,0.0
+CCL.B.TO,CCL Industries Inc B- Non-Voting,1,-7,0.0
+TFII.TO,TFI International Inc,1,-7,0.0
+VCLT,Vanguard Long-Term Corporate Bo,1,-7,0.0
+CDW,CDW Corp,1,-7,0.0
+CRH,CRH PLC ADR,1,-7,0.0
+4704,Trend Micro Inc,1,-7,0.0
+SPT,Sprout Social Inc Class A,1,-7,0.0
+AGEN,Agenus Inc,1,-7,0.0
+4974,Takara Bio Inc,1,-7,0.0
+W Z1,Wheat Future(Cbt) Dec21,1,-7,0.0
+W K1,Wheat Future(Cbt) May21,1,-7,0.0
+W N1,Wheat Future(Cbt) Jul21,1,-7,0.0
+SCHG,Schwab U.S. Large-Cap Growth ET,1,-7,0.0
+MGK,Vanguard Mega Cap Growth ETF,1,-7,0.0
+VIOV,Vanguard S&P Small-Cap 600 Valu,1,-7,0.0
+SCA B,Svenska Cellulosa AB B,1,-7,0.0
+PCH,PotlatchDeltic Corp,1,-7,0.0
+CBD.SA,Companhia Brasileira De Distribuicao ADR (Ordinary Shares),1,-7,0.0
+SDF.DE,K+S AG,1,-7,0.0
+ECOL,US Ecology Inc,1,-7,0.0
+CWST,Casella Waste Systems Inc Class A,1,-7,0.0
+GFL.TO,GFL Environmental Inc,1,-7,0.0
+MRCY,Mercury Systems Inc,1,-7,0.0
+UXIN,Uxin Ltd ADR,1,-7,0.0
+BTOW3.SA,B2W - Companhia Digital,1,-7,0.0
+MYTE,MYT Netherlands Parent BV ADR,1,-7,0.0
+3092,Zozo Inc,1,-7,0.0
+H24.DE,Home24 SE Bearer Shares,1,-7,0.0
+BOOZT,Boozt AB,1,-7,0.0
+ZO1.DE,zooplus AG,1,-7,0.0
+OZON,Ozon Holdings PLC ADR,1,-7,0.0
+SDAZ21,S&P 500 Annual Dividend Index Future Dec 21,1,-7,0.0
+LBRT,Liberty Oilfield Services Inc,1,-436,0.0
+BLFS,BioLife Solutions Inc,1,-9,0.0
+LNTH,Lantheus Holdings Inc,1,-9,0.0
+OPCH,Option Care Health Inc,1,-9,0.0
+SGFY,Signify Health Inc Ordinary Shares - Class A,1,-9,0.0
+QUOT,Quotient Technology Inc,1,-9,0.0
+HCAT,Health Catalyst Inc,1,-9,0.0
+ANGI,Angi Inc A,1,-9,0.0
+CMC,Commercial Metals Co,1,-1445,0.0
+MANH,Manhattan Associates Inc,1,-11,0.0
+FLO,Flowers Foods Inc,1,-11,0.0
+BTT,BlackRock Municipal 2030 Target Term,1,-11,0.0
+NUV,Nuveen Municipal Value,1,-11,0.0
+CNO,CNO Financial Group Inc,1,-11,0.0
+TMHC,Taylor Morrison Home Corp Class A,1,-11,0.0
+BFS,Saul Centers Inc,1,-12,0.0
+FSP,Franklin Street Properties Corp,1,-13,0.0
+MDRX,Allscripts Healthcare Solutions Inc,1,-13,0.0
+HTLD,Heartland Express Inc,1,-13,0.0
+CALM,Cal-Maine Foods Inc,1,-13,0.0
+ANDE,Andersons Inc,1,-13,0.0
+RYAM,Rayonier Advanced Materials Inc,1,-13,0.0
+RLGY,Realogy Holdings Corp,1,-13,0.0
+SNEX,StoneX Group Inc,1,-13,0.0
+GSAT,Globalstar Inc,1,-13,0.0
+UHAL,Amerco Inc,1,-12,0.0
+HUBG,Hub Group Inc Class A,1,-12,0.0
+BMBL,Bumble Inc Ordinary Shares Class A,1,-12,0.0
+ZI,ZoomInfo Technologies Inc Ordinary Shares - Class A,1,-12,0.0
+FXI,iShares China Large-Cap ETF,1,-12,0.0
+GPS,Gap Inc,1,-12,0.0
+RL,Ralph Lauren Corp Class A,1,-12,0.0
+AIZ,Assurant Inc,1,-12,0.0
+USA,Liberty All-Star Equity,1,-12,0.0
+BCX,BlackRock Resources & Commdty,1,-12,0.0
+NHF,NexPoint Strategic Opportunities Fund,1,-12,0.0
+VIRT,Virtu Financial Inc A,1,-12,0.0
+XTSLA,BlackRock Cash Funds Treasury SL Agency,72,0,-1.0
+MRNA,Moderna Inc,26,-6,-1.0
+DIS,The Walt Disney Co,23,-18,-1.0
+SQ,Square Inc A,21,-13,-1.0
+GME,GameStop Corp Class A,20,-15,-1.0
+MSTR,MicroStrategy Inc Class A,19,-18,-1.0
+NTLA,Intellia Therapeutics Inc,18,-18,-1.0
+NFLX,Netflix Inc,18,-14,-1.0
+TWLO,Twilio Inc A,16,-19,-1.0
+OMCL,Omnicell Inc,15,-21,-1.0
+SAIA,Saia Inc,15,-22,-1.0
+DDD,3D Systems Corp,14,-19,-1.0
+CRWD,CrowdStrike Holdings Inc Class A,13,-29,-1.0
+SBNY,Signature Bank,13,-33,-1.0
+PNC,PNC Financial Services Group Inc,12,-38,-1.0
+M,Macy's Inc,12,-38,-1.0
+GTLS,Chart Industries Inc,12,-38,-1.0
+NEO,NeoGenomics Inc,10,-56,-1.0
+POWI,Power Integrations Inc,10,-56,-1.0
+SIVB,SVB Financial Group,9,-68,-1.0
+SI,Silvergate Capital Corp Class A,6,-85,-1.0
+EWBC,East West Bancorp Inc,6,-101,-1.0
+BX,Blackstone Group Inc,5,-139,-1.0
+TEL,TE Connectivity Ltd,5,-141,-1.0
+EDIT,Editas Medicine Inc,4,-136,-1.0
+BEAM,Beam Therapeutics Inc,4,-142,-1.0
+BGS,B&G Foods Inc,4,-146,-1.0
+PNFP,Pinnacle Financial Partners Inc,4,-146,-1.0
+HBAN,Huntington Bancshares Inc,4,-186,-1.0
+UBER,Uber Technologies Inc,3,-248,-1.0
+TBIO,Translate Bio Inc,3,-251,-1.0
+RCII,Rent-A-Center Inc,3,-300,-1.0
+FALABELLA,Falabella SA,3,-292,-1.0
+CIT,CIT Group Inc,3,-328,-1.0
+PNCPP,PNC Financial Services Group Inc Perpetual Preferred Share class-P,3,-446,-1.0
+TWST,Twist Bioscience Corp,2,-385,-1.0
+MGNX,Macrogenics Inc,2,-382,-1.0
+KGH,KGHM Polska Miedz SA,2,-425,-1.0
+DNBH,DNB ASA,2,-433,-1.0
+SPK.NZ,Spark New Zealand Ltd,2,-441,-1.0
+FRC,First Republic Bank,2,-528,-1.0
+FCNCA,First Citizens BancShares Inc Class A,2,-528,-1.0
+AVXL,Anavex Life Sciences Corp,2,-606,-1.0
+NHY,Norsk Hydro ASA,2,-749,-1.0
+MCRB,Seres Therapeutics Inc,1,-755,-1.0
+FXPO.L,Ferrexpo PLC,1,-846,-1.0
+EURN,Euronav NV,1,-846,-1.0
+NELES,Neles Corp,1,-846,-1.0
+NXI.PA,Nexity SA,1,-846,-1.0
+POST,Oesterreichische Post AG,1,-846,-1.0
+BB.PA,Bic,1,-846,-1.0
+STG,Scandinavian Tobacco Group A/S,1,-846,-1.0
+CIE.BC,CIE Automotive SA,1,-846,-1.0
+ENAV.MI,ENAV SpA,1,-846,-1.0
+PTM.AX,Platinum Asset Management Ltd,1,-846,-1.0
+GEF,Greif Inc Class A,1,-854,-1.0
+PKN,Polski Koncern Naftowy ORLEN SA,1,-1056,-1.0
+PGN,Polish Oil and Gas Company (PGNiG) SA,1,-1055,-1.0
+PEO,Bank Polska Kasa Opieki SA,1,-1143,-1.0
+DNP,Dino Polska SA,1,-1143,-1.0
+CDR,CD Projekt SA,1,-1183,-1.0
+ALE,Allegro.EU SA Ordinary Shares,1,-1368,-1.0
+MNKD,MannKind Corp,1,-1251,-1.0
+OCGN,Ocugen Inc,1,-1251,-1.0
+EQNR,Equinor ASA,1,-1593,-1.0
+MOWI,Mowi ASA,1,-1593,-1.0
+YAR,Yara International ASA,1,-1593,-1.0
+ORK,Orkla ASA,1,-1593,-1.0
+TOM,Tomra Systems ASA,1,-1593,-1.0
+ADE,Adevinta ASA Class B,1,-1593,-1.0
+GJF,Gjensidige Forsikring ASA,1,-1593,-1.0
+MEL.NZ,Meridian Energy Ltd,1,-1820,-1.0
+MCY.NZ,Mercury NZ Ltd,1,-1821,-1.0
+BVN,Buenaventura Mining Co Inc ADR,1,-1915,-1.0
+VGR,Vector Group Ltd,1,-2283,-1.0
+CMCSA,Comcast Corp Class A,27,-8,-2.0
+SNAP,Snap Inc Class A,13,-39,-2.0
+ZM,Zoom Video Communications Inc,11,-62,-2.0
