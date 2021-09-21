@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.35 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.36 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -240,7 +240,7 @@ def update_appearances(row, symbols_appearances, symbols_appearances_with_weight
             else:
                 symbols_appearances[row[symbol_index]]  = 1
 
-            symbol_weight = float(row[symbol_index + g_holding_weight_subindex])
+            symbol_weight = round(float(row[symbol_index + g_holding_weight_subindex]),3)
 
             if row[symbol_index] in symbols_holders:
                 symbols_holders[row[symbol_index]].append(             (row[g_etf_symbol_index], symbol_weight))
@@ -269,7 +269,7 @@ def update_appearances(row, symbols_appearances, symbols_appearances_with_weight
 
         gram0_index   = row[g_holding_get_start_index(0)::].index(sorted_subset[0])+g_holding_get_start_index(0)  # Start the search from the 1st symbol, since for instance VNM is an ETF name and also a holding name (weird bu thats the case here - VNM is also a stock name in Vietnam or something)
         gram1_index   = row[g_holding_get_start_index(0)::].index(sorted_subset[1])+g_holding_get_start_index(0)
-        bigram_weight = (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
+        bigram_weight = round((float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex])),3)
 
         if sorted_subset in bigrams_holders:
             bigrams_holders[sorted_subset].append(              (row[g_etf_symbol_index], bigram_weight))

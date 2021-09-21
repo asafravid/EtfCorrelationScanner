@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.35 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.36 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -47,7 +47,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     # Access DejaVuSansCondensed.ttf on the machine. This font supports practically all languages.
     # Install it via https://fonts2u.com/dejavu-sans-condensed.font
     pdf.add_font('DejaVu', '', 'DejaVuSansCondensed.ttf', uni=True)
-    pdf.set_font('DejaVu', '', 6)
+    pdf.set_font('DejaVu', '', 5)
 
     pdf.set_text_color(0, 0, 200)  # blue
     pdf.cell(200, 8, txt=title_for_figures, ln=1, align="C")  # http://fpdf.org/en/doc/cell.htm
@@ -72,11 +72,11 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
 
         for col_index, col in enumerate(row):
             if   col_index == ReportTableColumns.SYMBOL.value:       w=(28 if bigrams else 14) # Symbol/Bigram
-            elif col_index == ReportTableColumns.NAME.value:         w=(77 if bigrams else 56) # Name(s)
+            elif col_index == ReportTableColumns.NAME.value:         w=(70 if bigrams else 56) # Name(s)
             elif col_index == ReportTableColumns.VALUE.value:        w=7  if reported_column_name == '#' else 21  # reported_column_name
-            elif col_index == ReportTableColumns.HOLDERS.value:      w=35
+            elif col_index == ReportTableColumns.HOLDERS.value:      w=55
             elif col_index == ReportTableColumns.DIFF_ENTRIES.value: w=14                                         # Diff Entry
-            elif col_index == ReportTableColumns.DIFF_VALUE.value:   w=14 if reported_column_name == '#' else 21  # Diff Value
+            elif col_index == ReportTableColumns.DIFF_VALUE.value:   w=14
 
             pdf.set_text_color(0, 0, 200 if row_index == 0 else 0)  # blue for title and black otherwise
 
@@ -93,7 +93,12 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 elif '-' in str(row[col_index]): pdf.set_text_color(200,   0,   0)  # red
                 elif '+' in str(row[col_index]): pdf.set_text_color(  0, 200,   0)  # green
                 else:                            pdf.set_text_color(  0,   0,   0)  # black
-            pdf.cell(w=w, h=3, txt=str(col)[0:41].replace("', '"," | ").replace("('","").replace("')",""), border=1, ln=0 if col_index < ReportTableColumns.LAST_COLUMN_INDEX.value else 1, align="C" if row_index == 0 else "L")
+
+            if   col_index == ReportTableColumns.SYMBOL.value  and row_index and bigrams: col = str(col).replace("('","").replace("', '"," | ").replace("')", "")[:56]
+            elif col_index == ReportTableColumns.NAME.value    and row_index and bigrams: col = str(col).replace("('","").replace("', '"," | ").replace("')", "")[:56]
+            elif col_index == ReportTableColumns.HOLDERS.value and row_index:             col = str(col).replace("[",'').replace("('",'').replace("', ",':').replace('),',',').replace(")]",'')
+
+            pdf.cell(w=w, h=3, txt=str(col), border=1, ln=0 if col_index < ReportTableColumns.LAST_COLUMN_INDEX.value else 1, align="C" if row_index == 0 else "L")
         if VERBOSE_LOGS: print('\n')
     pdf.cell(200, 4, txt='', ln=1, align="L")
     fig, ax = plt.subplots(figsize=(15, 10))
