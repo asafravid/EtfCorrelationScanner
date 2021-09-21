@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.28 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.35 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -28,6 +28,7 @@ from fpdf import FPDF, HTMLMixin
 import csv
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
+from   main import ReportTableColumns
 
 
 VERBOSE_LOGS = 0
@@ -57,33 +58,34 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
         if row_index > limit_num_rows: break
         if row_index > 0:  # row 0 is title
             if bigrams:
-                names_list = list(row[1])
+                names_list = list(row[ReportTableColumns.NAME.value])
                 for name_index, name in enumerate(names_list): names_list[name_index] = names_list[name_index][0:10]
-            names.append(' | '.join(names_list) if bigrams else row[1][0:28])
+            names.append(' | '.join(names_list) if bigrams else row[ReportTableColumns.NAME.value][0:28])
 
-            if   reported_column_index == 2: bars.append(int(row[2]) if reported_column_name == '#' else float(row[2]))
-            elif reported_column_index == 3: bars.append(int(str(row[3]).replace('+','').replace('-','')))
-            elif reported_column_index == 4: bars.append(int(float(str(row[4]).replace('+','').replace('-',''))) if reported_column_name == '#' else float(str(row[4]).replace('+','').replace('-','')))
+            if   reported_column_index == ReportTableColumns.VALUE.value:        bars.append(int(          row[ReportTableColumns.VALUE.value]       ) if reported_column_name == '#' else float(row[ReportTableColumns.VALUE.value]))
+            elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(str(      row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
+            elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-',''))) if reported_column_name == '#' else float(str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
         if row_index == 0:
-            row = ['Bigram' if bigrams else 'Symbol', 'Name', reported_column_name, 'Diff Entry', 'Diff '+reported_column_name]
+            row = ['Bigram' if bigrams else 'Symbol', 'Name', reported_column_name, 'Holders', 'Diff Entry', 'Diff '+reported_column_name]
 
         if VERBOSE_LOGS: print('[pdf_generator.csv_to_pdf] row({})={}'.format(row_index, row))
 
         for col_index, col in enumerate(row):
-            if   col_index == 0: w=(28 if bigrams else 14) # Symbol/Bigram
-            elif col_index == 1: w=(77 if bigrams else 56) # Name(s)
-            elif col_index == 2: w=7  if reported_column_name == '#' else 21  # reported_column_name
-            elif col_index == 3: w=14 # Diff Entry
-            elif col_index == 4: w=14 if reported_column_name == '#' else 21  # Diff Value
+            if   col_index == ReportTableColumns.SYMBOL.value:       w=(28 if bigrams else 14) # Symbol/Bigram
+            elif col_index == ReportTableColumns.NAME.value:         w=(77 if bigrams else 56) # Name(s)
+            elif col_index == ReportTableColumns.VALUE.value:        w=7  if reported_column_name == '#' else 21  # reported_column_name
+            elif col_index == ReportTableColumns.HOLDERS.value:      w=35
+            elif col_index == ReportTableColumns.DIFF_ENTRIES.value: w=14                                         # Diff Entry
+            elif col_index == ReportTableColumns.DIFF_VALUE.value:   w=14 if reported_column_name == '#' else 21  # Diff Value
 
             pdf.set_text_color(0, 0, 200 if row_index == 0 else 0)  # blue for title and black otherwise
 
-            if (col_index == 2 or col_index == 4) and row_index > 0 and 'New' not in str(col):
+            if (col_index == ReportTableColumns.VALUE.value or col_index == ReportTableColumns.DIFF_VALUE.value) and row_index > 0 and 'New' not in str(col):
                 if VERBOSE_LOGS: print('  col={}'.format(col, end=''))
-                if reported_column_name == '#': col = int(float(str(col).replace('+','').replace('-','') if col_index == 4 else int(col)))
+                if reported_column_name == '#': col = int(float(str(col).replace('+','').replace('-','') if col_index == ReportTableColumns.DIFF_VALUE.value else int(col)))
                 else:                           col = round(float(col), 3)
 
-            if col_index >= 3 and row_index > 0:
+            if col_index >= ReportTableColumns.DIFF_ENTRIES.value and row_index > 0:
                 if 'New' not in str(row[col_index]) and float(row[col_index]) > 0:
                     row[col_index] = '+{}'.format(row[col_index])
                     col            = '+{}'.format(str(col).replace('+','').replace('-',''))  # TODO: ASAFR: -> was col only
@@ -91,7 +93,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 elif '-' in str(row[col_index]): pdf.set_text_color(200,   0,   0)  # red
                 elif '+' in str(row[col_index]): pdf.set_text_color(  0, 200,   0)  # green
                 else:                            pdf.set_text_color(  0,   0,   0)  # black
-            pdf.cell(w=w, h=3, txt=str(col)[0:41].replace("', '"," | ").replace("('","").replace("')",""), border=1, ln=0 if col_index < 4 else 1, align="C" if row_index == 0 else "L")
+            pdf.cell(w=w, h=3, txt=str(col)[0:41].replace("', '"," | ").replace("('","").replace("')",""), border=1, ln=0 if col_index < ReportTableColumns.LAST_COLUMN_INDEX.value else 1, align="C" if row_index == 0 else "L")
         if VERBOSE_LOGS: print('\n')
     pdf.cell(200, 4, txt='', ln=1, align="L")
     fig, ax = plt.subplots(figsize=(15, 10))

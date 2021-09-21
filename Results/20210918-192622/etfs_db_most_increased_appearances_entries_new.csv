@@ -1,38 +1,38 @@
-Symbol,Name,NumAppearances,DiffEntries,DiffValue
-FND,Floor & Decor Holdings Inc,2,New,New
-SLA.L,Standard Life Aberdeen PLC,1,New,New
-HLAG.DE,Hapag-Lloyd AG,1,New,New
-TEL2 B,Tele2 AB B,1,New,New
-ASSA B,Assa Abloy AB B,1,New,New
-HEXA B,Hexagon AB Class B,1,New,New
-SAND,Sandvik AB,1,New,New
-SEB A,Skandinaviska Enskilda Banken AB A,1,New,New
-ANDR,Andritz AG,1,New,New
-RBI,Raiffeisen Bank International AG,1,New,New
-CAI,CA Immobilien Anlagen AG,1,New,New
-IIA,Immofinanz AG,1,New,New
-A17U.SI,Ascendas Real Estate Investment Trust Units Real Estate Investment Trust,1,New,New
-BN4.SI,Keppel Corp Ltd,1,New,New
-C6L.SI,Singapore Airlines Ltd,1,New,New
-M44U.SI,Mapletree Logistics Trust,1,New,New
-SSW.JO,Sibanye Stillwater Ltd Ordinary Shares,1,New,New
-SLM.JO,Sanlam Ltd,1,New,New
-WHD,Cactus Inc Class A,1,New,New
-FFIV,F5 Networks Inc,1,New,New
-LBTYK.L,Liberty Global PLC C,1,New,New
-COWN,Cowen Inc Class A,1,New,New
-QGEN,Qiagen NV,1,New,New
-SUM,Summit Materials Inc A,1,New,New
-COOP,Mr. Cooper Group Inc,1,New,New
-HZO,MarineMax Inc,1,New,New
-CEIX,CONSOL Energy Inc Ordinary Shares,1,New,New
-ZEUS,Olympic Steel Inc,1,New,New
-CXW,CoreCivic Inc,1,New,New
-LQDT,Liquidity Services Inc,1,New,New
-PLXS,Plexus Corp,1,New,New
-VG,Vonage Holdings Corp,1,New,New
-SANM,Sanmina Corp,1,New,New
-NWN,Northwest Natural Holding Co,1,New,New
-SLCA,US Silica Holdings Inc,1,New,New
-CENX,Century Aluminum Co,1,New,New
-SITM,SiTime Corp Ordinary Shares,1,New,New
+Symbol,Name,NumAppearances,Holders,DiffEntries,DiffValue
+FND,Floor & Decor Holdings Inc,2,"[('XHB', 0.0382), ('PKB', 0.0315)]",New,New
+SLA.L,Standard Life Aberdeen PLC,1,"[('DIM', 0.0083)]",New,New
+HLAG.DE,Hapag-Lloyd AG,1,"[('DIM', 0.008)]",New,New
+TEL2 B,Tele2 AB B,1,"[('DIM', 0.0073)]",New,New
+ASSA B,Assa Abloy AB B,1,"[('EWD', 0.0465)]",New,New
+HEXA B,Hexagon AB Class B,1,"[('EWD', 0.044899996)]",New,New
+SAND,Sandvik AB,1,"[('EWD', 0.0444)]",New,New
+SEB A,Skandinaviska Enskilda Banken AB A,1,"[('EWD', 0.0324)]",New,New
+ANDR,Andritz AG,1,"[('EWO', 0.045700002)]",New,New
+RBI,Raiffeisen Bank International AG,1,"[('EWO', 0.0435)]",New,New
+CAI,CA Immobilien Anlagen AG,1,"[('EWO', 0.0432)]",New,New
+IIA,Immofinanz AG,1,"[('EWO', 0.035)]",New,New
+A17U.SI,Ascendas Real Estate Investment Trust Units Real Estate Investment Trust,1,"[('EWS', 0.044099998)]",New,New
+BN4.SI,Keppel Corp Ltd,1,"[('EWS', 0.044)]",New,New
+C6L.SI,Singapore Airlines Ltd,1,"[('EWS', 0.0378)]",New,New
+M44U.SI,Mapletree Logistics Trust,1,"[('EWS', 0.0367)]",New,New
+SSW.JO,Sibanye Stillwater Ltd Ordinary Shares,1,"[('EZA', 0.0402)]",New,New
+SLM.JO,Sanlam Ltd,1,"[('EZA', 0.027999999)]",New,New
+WHD,Cactus Inc Class A,1,"[('IEZ', 0.033800002)]",New,New
+FFIV,F5 Networks Inc,1,"[('IYZ', 0.0336)]",New,New
+LBTYK.L,Liberty Global PLC C,1,"[('IYZ', 0.028199999)]",New,New
+COWN,Cowen Inc Class A,1,"[('KCE', 0.018)]",New,New
+QGEN,Qiagen NV,1,"[('PBE', 0.0463)]",New,New
+SUM,Summit Materials Inc A,1,"[('PKB', 0.0315)]",New,New
+COOP,Mr. Cooper Group Inc,1,"[('RZG', 0.019299999)]",New,New
+HZO,MarineMax Inc,1,"[('RZG', 0.019)]",New,New
+CEIX,CONSOL Energy Inc Ordinary Shares,1,"[('RZV', 0.0229)]",New,New
+ZEUS,Olympic Steel Inc,1,"[('RZV', 0.0143)]",New,New
+CXW,CoreCivic Inc,1,"[('RZV', 0.0116)]",New,New
+LQDT,Liquidity Services Inc,1,"[('SSLY', 0.0067000003)]",New,New
+PLXS,Plexus Corp,1,"[('SSLY', 0.006)]",New,New
+VG,Vonage Holdings Corp,1,"[('SSLY', 0.0058999998)]",New,New
+SANM,Sanmina Corp,1,"[('SSLY', 0.0056)]",New,New
+NWN,Northwest Natural Holding Co,1,"[('SSLY', 0.0049)]",New,New
+SLCA,US Silica Holdings Inc,1,"[('XES', 0.0494)]",New,New
+CENX,Century Aluminum Co,1,"[('XME', 0.0471)]",New,New
+SITM,SiTime Corp Ordinary Shares,1,"[('XSD', 0.0275)]",New,New
