@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.32 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.33 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -214,7 +214,7 @@ def scan_etfs():
         writer.writerows(rows)
 
 
-def update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights):
+def update_appearances(row, symbols_appearances, symbols_appearances_with_weights, symbols_holders, bigrams_appearances, bigrams_appearances_with_weights, bigrams_holders):
     weight_symbols_to_skip = ['FGXXX', 'C Z1', 'C K1', 'C N1', 'S X1', 'S K1', 'W Z1', 'W K1', 'S N1', 'W N1', 'FGTXX', 'FTIXX', 'DAPXX']
     unified_stocks_pairs   = ['GOOGL', 'GOOG']
 
@@ -224,36 +224,49 @@ def update_appearances(row, symbol_appearances, symbol_appearances_with_weights,
             if row[symbol_index] in unified_stocks_pairs:
                 row[symbol_index] = unified_stocks_pairs[0]
 
-            if row[symbol_index] in symbol_appearances:
-                symbol_appearances[row[symbol_index]] += 1
+            if row[symbol_index] in symbols_appearances:
+                symbols_appearances[row[symbol_index]] += 1
             else:
-                symbol_appearances[row[symbol_index]]  = 1
+                symbols_appearances[row[symbol_index]]  = 1
 
             if row[symbol_index] in weight_symbols_to_skip: continue
-            if row[symbol_index] in symbol_appearances_with_weights:
-                symbol_appearances_with_weights[row[symbol_index]] += float(row[symbol_index+g_holding_weight_subindex])
+
+            symbol_weight = float(row[symbol_index+g_holding_weight_subindex])
+            if row[symbol_index] in symbols_appearances_with_weights:
+                symbols_appearances_with_weights[row[symbol_index]] += symbol_weight
+                symbols_holders[row[symbol_index]].append(             (row[g_etf_symbol_index], symbol_weight))
             else:
-                symbol_appearances_with_weights[row[symbol_index]]  = float(row[symbol_index+g_holding_weight_subindex])
+                symbols_appearances_with_weights[row[symbol_index]] = symbol_weight
+                symbols_holders[row[symbol_index]]                  = [(row[g_etf_symbol_index], symbol_weight)]
+
     if VERBOSE_LOGS: print('[update_appearances] after processing:  row = {}'.format(row))
 
     symbols_for_combinations = row[g_holding_get_start_index(0):min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)):g_num_elements_in_holding]
     symbols_for_combinations = list(set(symbols_for_combinations))  # Compress the row
     for subset in itertools.combinations(symbols_for_combinations, 2):
         if '' in subset: continue
+
         sorted_subset = tuple(sorted(subset))  # Must sort since otherwise 2 same tupples will appear "differently" like ('AAPL', 'GOOGL') and ('GOOGL', 'APPL')
-        if sorted_subset in bigrams_appearances: bigrams_appearances[sorted_subset] += 1
-        else:                                    bigrams_appearances[sorted_subset]  = 1
+        if sorted_subset in bigrams_appearances:
+            bigrams_appearances[sorted_subset] += 1
+        else:
+            bigrams_appearances[sorted_subset]  = 1
 
         if (sorted_subset[0] in weight_symbols_to_skip) or (sorted_subset[1] in weight_symbols_to_skip): continue
         if VERBOSE_LOGS: print('[update_appearances] row = {}'.format(row))
-        gram0_index = row[g_holding_get_start_index(0)::].index(sorted_subset[0])+g_holding_get_start_index(0)  # Start the search from the 1st symbol, since for instance VNM is an ETF name and also a holding name (weird bu thats the case here - VNM is also a stock name in Vietnam or something)
-        gram1_index = row[g_holding_get_start_index(0)::].index(sorted_subset[1])+g_holding_get_start_index(0)
+        gram0_index   = row[g_holding_get_start_index(0)::].index(sorted_subset[0])+g_holding_get_start_index(0)  # Start the search from the 1st symbol, since for instance VNM is an ETF name and also a holding name (weird bu thats the case here - VNM is also a stock name in Vietnam or something)
+        gram1_index   = row[g_holding_get_start_index(0)::].index(sorted_subset[1])+g_holding_get_start_index(0)
+        bigram_weight = (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
         if VERBOSE_LOGS: print('[update_appearances] sorted_subset = {}, gram0_index = {}, gram1_index = {}'.format(sorted_subset, gram0_index, gram1_index))
-        if sorted_subset in bigrams_appearances_with_weights: bigrams_appearances_with_weights[sorted_subset] += (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
-        else:                                                 bigrams_appearances_with_weights[sorted_subset]  = (float(row[gram0_index+g_holding_weight_subindex])+float(row[gram1_index+g_holding_weight_subindex]))
+        if sorted_subset in bigrams_appearances_with_weights:
+            bigrams_appearances_with_weights[sorted_subset] += bigram_weight
+            bigrams_holders[sorted_subset].append(              (row[g_etf_symbol_index], bigram_weight))
+        else:
+            bigrams_appearances_with_weights[sorted_subset]  = bigram_weight
+            bigrams_holders[sorted_subset]                   = [(row[g_etf_symbol_index], bigram_weight)]
 
 
-def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights):
+def calc_weights_and_update_appearances(row, symbols_appearances, symbols_appearances_with_weights, symbols_holders, bigrams_appearances, bigrams_appearances_with_weights, bigrams_holders):
     sum_weights_known   = 0
     sum_weights_unknown = 0
     for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
@@ -262,7 +275,7 @@ def calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearan
         else:
             sum_weights_known   += float(row[symbol_index+g_holding_weight_subindex])
 
-    update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights)
+    update_appearances(row, symbols_appearances, symbols_appearances_with_weights, symbols_holders, bigrams_appearances, bigrams_appearances_with_weights, bigrams_holders)
     return [sum_weights_known, sum_weights_unknown]
 
 
@@ -360,13 +373,20 @@ def sort_and_save_stats_no_lookup(stats_filename, stats, sort_by_col, reverse):
     return [sorted_rows, new_rows]
 
 
+def sort_holders_dict(holders_dict):
+    for item in holders_dict:
+        holders_dict[item].sort(key=lambda holder: holder[1], reverse=True)
+
+
 def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     db_rows_filtered_weighted                     = []  # non-empty rows with weight summary
     db_rows_filtered_weighted_non_levereged       = []  # non-empty rows with weight summary without leverage
-    symbol_appearances                            = {}
-    symbol_appearances_with_weights               = {}
+    symbols_appearances                           = {}
+    symbols_appearances_with_weights              = {}
+    symbols_holders                               = {}
     bigrams_appearances                           = {}
     bigrams_appearances_with_weights              = {}
+    bigrams_holders                               = {}
     symbol_names_lookup                           = extract_symbol_lookup_dict(csv_db_path, date_time_path, csv_db_filename)
     title_row                                     = None
 
@@ -390,7 +410,7 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
                 else:
                     pad_row_if_required(row)
 
-                [sum_weights_known, sum_weights_unknown] = calc_weights_and_update_appearances(row, symbol_appearances, symbol_appearances_with_weights, bigrams_appearances, bigrams_appearances_with_weights)
+                [sum_weights_known, sum_weights_unknown] = calc_weights_and_update_appearances(row, symbols_appearances, symbols_appearances_with_weights, symbols_holders, bigrams_appearances, bigrams_appearances_with_weights, bigrams_holders)
 
                 row.append(sum_weights_known)
                 row.append(sum_weights_unknown)
@@ -403,6 +423,9 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
 
     db_rows_filtered_weighted_sorted               = sorted(db_rows_filtered_weighted,               key=lambda k: k[len(title_row)], reverse=True)  # Sort by Known Weights
     db_rows_filtered_weighted_non_levereged_sorted = sorted(db_rows_filtered_weighted_non_levereged, key=lambda k: k[len(title_row)], reverse=True)  # Sort by Known Weights
+
+    sort_holders_dict(symbols_holders)
+    sort_holders_dict(bigrams_holders)
 
     title_row.append('SumWeightsKnown')
     title_row.append('SumWeightsUnknown')
@@ -424,8 +447,8 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     results_path_date_time_base_filename = csv_db_path+date_time_path+csv_db_filename
 
     # Appearances_db, appearances_db with weights:
-    num_appearances_table         = save_stats_db(stats_filename=results_path_date_time_base_filename.replace('.csv', '_num_appearances.csv'),               title_row=['Symbol', 'Name', 'NumAppearances'], stats=symbol_appearances,              sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=False)
-    sum_weights_table             = save_stats_db(stats_filename=results_path_date_time_base_filename.replace('.csv', '_sum_weights.csv'),                   title_row=['Symbol', 'Name', 'SumWeights'],     stats=symbol_appearances_with_weights, sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=False)
+    num_appearances_table         = save_stats_db(stats_filename=results_path_date_time_base_filename.replace('.csv', '_num_appearances.csv'),               title_row=['Symbol', 'Name', 'NumAppearances'], stats=symbols_appearances,              sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=False)
+    sum_weights_table             = save_stats_db(stats_filename=results_path_date_time_base_filename.replace('.csv', '_sum_weights.csv'),                   title_row=['Symbol', 'Name', 'SumWeights'],     stats=symbols_appearances_with_weights, sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=False)
 
     # bigrams_db, bigrams_db with weights:
     num_bigrams_appearances_table = save_stats_db(stats_filename=results_path_date_time_base_filename.replace('.csv', '_num_bigrams_appearances.csv'), title_row=['Bigram', 'Name', 'NumAppearances'], stats=bigrams_appearances,                   sort_by_col=2, symbol_names_lookup_dict=symbol_names_lookup, bigrams=True)
