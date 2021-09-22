@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.37 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.38 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -81,18 +81,18 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
             pdf.set_text_color(0, 0, 200 if row_index == 0 else 0)  # blue for title and black otherwise
 
             if (col_index == ReportTableColumns.VALUE.value or col_index == ReportTableColumns.DIFF_VALUE.value) and row_index > 0 and 'New' not in str(col):
-                if VERBOSE_LOGS: print('  col={}'.format(col, end=''))
-                if reported_column_name == '#': col = int(float(str(col).replace('+','').replace('-','') if col_index == ReportTableColumns.DIFF_VALUE.value else int(col)))
+                if reported_column_name == '#': col = int(float(str(col) if col_index == ReportTableColumns.DIFF_VALUE.value else int(col)))
                 else:                           col = round(float(col), 3)
 
+            row_col_index = row[col_index]
             if col_index >= ReportTableColumns.DIFF_ENTRIES.value and row_index > 0:
-                if 'New' not in str(row[col_index]) and '+' not in str(row[col_index]) and float(row[col_index]) > 0:
-                    row[col_index] = '+{}'.format(row[col_index])
-                    col            = '+{}'.format(str(col).replace('+','').replace('-',''))  # TODO: ASAFR: -> was col only
-                if 'New' in str(row[col_index]): pdf.set_text_color(  0,   0, 200)  # blue
-                elif '-' in str(row[col_index]): pdf.set_text_color(200,   0,   0)  # red
-                elif '+' in str(row[col_index]): pdf.set_text_color(  0, 200,   0)  # green
-                else:                            pdf.set_text_color(  0,   0,   0)  # black
+                if 'New' not in str(row_col_index) and '+' not in str(row_col_index) and float(row_col_index) > 0:
+                    row_col_index = '+{}'.format(row_col_index)
+                    col           = '+{}'.format(str(col))  # TODO: ASAFR: -> was col only
+                if 'New' in str(row_col_index): pdf.set_text_color(  0,   0, 200)  # blue
+                elif '-' in str(row_col_index): pdf.set_text_color(200,   0,   0)  # red
+                elif '+' in str(row_col_index): pdf.set_text_color(  0, 200,   0)  # green
+                else:                           pdf.set_text_color(  0,   0,   0)  # black
 
             if   col_index == ReportTableColumns.SYMBOL.value  and row_index and bigrams: col = str(col).replace("('","").replace("', '"," | ").replace("')", "")[:56]
             elif col_index == ReportTableColumns.NAME.value    and row_index and bigrams: col = str(col).replace("('","").replace("', '"," | ").replace("')", "")[:56]

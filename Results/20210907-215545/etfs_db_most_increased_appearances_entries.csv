@@ -24,8 +24,8 @@ UNH,UnitedHealth Group Inc,56,"[('IEHS', 0.118), ('DIA', 0.076), ('DIVO', 0.064)
 PG,Procter & Gamble Co,54,"[('FSTA', 0.136), ('KXI', 0.084), ('IECS', 0.076), ('UGE', 0.07), ('JHMS', 0.058)]",0,0.0
 HD,The Home Depot Inc,54,"[('IEDI', 0.075), ('FDIS', 0.063), ('DIA', 0.061), ('AMOM', 0.055), ('WANT', 0.054)]",0,0.0
 PYPL,PayPal Holdings Inc,54,"[('PNQI', 0.083), ('FINX', 0.065), ('IPAY', 0.064), ('SHE', 0.064), ('FDN', 0.055)]",0,0.0
+TM,Toyota Motor Corp ADR,52,"[('EWJV', 0.091), ('CARZ', 0.081), ('BBJP', 0.05), ('HEWJ', 0.047), ('FLJP', 0.045)]",0,0.0
 MC.PA,LVMH Moet Hennessy Louis Vuitton SE,51,"[('FLFR', 0.103), ('FEZ', 0.059), ('IHDG', 0.052), ('IQDG', 0.052), ('IMTM', 0.041)]",0,0.0
-7203,Toyota Motor Corp,51,"[('EWJV', 0.091), ('CARZ', 0.081), ('BBJP', 0.05), ('HEWJ', 0.047), ('FLJP', 0.045)]",0,0.0
 CSCO,Cisco Systems Inc,50,"[('LTL', 0.167), ('CIBR', 0.057), ('DJD', 0.049), ('ZIG', 0.048), ('FDN', 0.042)]",0,0.0
 DAPXX,Dreyfus Government Secs Cash Mgmt Admin,50,"[('YANG', 0.968), ('TZA', 0.825), ('CHAD', 0.766), ('MEXX', 0.611), ('INDL', 0.597)]",0,0.0
 XOM,Exxon Mobil Corp,50,"[('XLE', 0.237), ('IYE', 0.236), ('FENY', 0.219), ('ERX', 0.203), ('DIG', 0.18)]",0,0.0
@@ -3238,7 +3238,6 @@ SIEGY.DE,Siemens AG ADR,1,"[('PTEU', 0.023)]",0,0.0
 MVIS,Microvision Inc,1,"[('PTF', 0.045)]",0,0.0
 BCRX,BioCryst Pharmaceuticals Inc,1,"[('PTH', 0.032)]",0,0.0
 NSRGY,Nestle SA ADR,1,"[('PTIN', 0.021)]",0,0.0
-TM,Toyota Motor Corp ADR,1,"[('PTIN', 0.013)]",0,0.0
 RDS.B.L,Royal Dutch Shell PLC ADR Class B,1,"[('PTIN', 0.009)]",0,0.0
 NBR,Nabors Industries Ltd,1,"[('PXI', 0.028)]",0,0.0
 FTI,TechnipFMC PLC,1,"[('PXJ', 0.075)]",0,0.0
