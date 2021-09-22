@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.38 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.39 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -52,8 +52,9 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     pdf.set_text_color(0, 0, 200)  # blue
     pdf.cell(200, 8, txt=title_for_figures, ln=1, align="C")  # http://fpdf.org/en/doc/cell.htm
 
-    names = []
-    bars  = []
+    names          = []
+    bars           = []
+    bars_secondary = []
     for row_index, row in enumerate(csv_rows):
         if row_index > limit_num_rows: break
         if row_index > 0:  # row 0 is title
@@ -62,7 +63,9 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 for name_index, name in enumerate(names_list): names_list[name_index] = names_list[name_index][0:10]
             names.append(' | '.join(names_list) if bigrams else row[ReportTableColumns.NAME.value][0:28])
 
-            if   reported_column_index == ReportTableColumns.VALUE.value:        bars.append(int(          row[ReportTableColumns.VALUE.value]       ) if reported_column_name == '#' else float(row[ReportTableColumns.VALUE.value]))
+            if   reported_column_index == ReportTableColumns.VALUE.value:
+                bars.append(int(                    row[ReportTableColumns.VALUE.value]       ) if reported_column_name == '#' else float(row[ReportTableColumns.VALUE.value]))
+                bars_secondary.append(int(float(str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-',''))) if reported_column_name == '#' else float(str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
             elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(str(      row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
             elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-',''))) if reported_column_name == '#' else float(str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
         if row_index == 0:
@@ -104,7 +107,13 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     fig, ax = plt.subplots(figsize=(15, 10))
     y_pos = np.arange(len(names))
 
-    ax.barh(y_pos, bars, align='center')
+    if len(bars_secondary):
+        width = 0.5
+        ax.barh(y_pos,       bars,           width, color='blue',   align='center', label=        reported_column_name)
+        ax.barh(y_pos+width, bars_secondary, width, color='orange', align='center', label='Diff '+reported_column_name)
+        ax.legend()
+    else:
+        ax.barh(y_pos, bars, align='center')
     ax.set_yticks(y_pos)
     ax.tick_params(axis='y', labelsize=8)
     ax.set_yticklabels(names)
