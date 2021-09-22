@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.36 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.37 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -92,7 +92,7 @@ g_nasdaq_filenames_symbol_column_list    = [0,                          0,      
 g_nasdaq_filenames_name_column_list      = [1,                          1,                         2]  # nasdaqtraded.csv - 1st column is Y/N (traded or not) - so take row[1] instead!!!
 
 g_weight_symbols_to_skip = ['FGXXX', 'C Z1', 'C K1', 'C N1', 'S X1', 'S K1', 'W Z1', 'W K1', 'S N1', 'W N1', 'FGTXX', 'FTIXX', 'DAPXX']
-g_unified_stocks_pairs = ['GOOGL', 'GOOG']
+g_unified_stocks_pairs = ['GOOGL', 'GOOG', 'TM', '7203']
 
 
 def pad_row_if_required(row):
@@ -233,7 +233,7 @@ def update_appearances(row, symbols_appearances, symbols_appearances_with_weight
     for symbol_index in range(g_holding_get_start_index(0), min(g_holding_get_start_index(g_max_holding_index) + g_num_elements_in_holding, len(row)), g_num_elements_in_holding):
         if row[symbol_index] != '':
             if row[symbol_index] in g_unified_stocks_pairs:
-                row[symbol_index] = g_unified_stocks_pairs[0]
+                row[symbol_index] = g_unified_stocks_pairs[int(int(g_unified_stocks_pairs.index(row[symbol_index])/2)*2)]
 
             if row[symbol_index] in symbols_appearances:
                 symbols_appearances[row[symbol_index]] += 1
@@ -261,7 +261,9 @@ def update_appearances(row, symbols_appearances, symbols_appearances_with_weight
     for subset in itertools.combinations(symbols_for_combinations, 2):
         if '' in subset: continue
 
+        if VERBOSE_LOGS: print('[update_appearances] subset: {}'.format(subset))
         sorted_subset = tuple(sorted(subset))  # Must sort since otherwise 2 same tupples will appear "differently" like ('AAPL', 'GOOGL') and ('GOOGL', 'APPL')
+
         if sorted_subset in bigrams_appearances:
             bigrams_appearances[sorted_subset] += 1
         else:

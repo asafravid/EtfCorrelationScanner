@@ -86,7 +86,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 else:                           col = round(float(col), 3)
 
             if col_index >= ReportTableColumns.DIFF_ENTRIES.value and row_index > 0:
-                if 'New' not in str(row[col_index]) and float(row[col_index]) > 0:
+                if 'New' not in str(row[col_index]) and '+' not in str(row[col_index]) and float(row[col_index]) > 0:
                     row[col_index] = '+{}'.format(row[col_index])
                     col            = '+{}'.format(str(col).replace('+','').replace('-',''))  # TODO: ASAFR: -> was col only
                 if 'New' in str(row[col_index]): pdf.set_text_color(  0,   0, 200)  # blue
