@@ -1,0 +1,751 @@
+Bigram,Name,NumAppearances,Holders,DiffEntries,DiffValue
+"('ALV.DE', 'FMG.AX')","('Allianz SE', 'Fortescue Metals Group Ltd')",2,"[('DTH', 0.045), ('DOL', 0.033)]",New,New
+"('CBA.AX', 'SAN.PA')","('Commonwealth Bank of Australia', 'Sanofi SA')",2,"[('DTH', 0.04), ('EFV', 0.03)]",New,New
+"('ALV.DE', 'CBA.AX')","('Allianz SE', 'Commonwealth Bank of Australia')",2,"[('DTH', 0.036), ('EFV', 0.028)]",New,New
+"('CRWD', 'MRVL')","('CrowdStrike Holdings Inc Class A', 'Marvell Technology Inc')",2,"[('PXQ', 0.112), ('VXF', 0.012)]",New,New
+"('ETSY', 'NVDA')","('Etsy Inc', 'NVIDIA Corp')",2,"[('RPG', 0.05), ('RSP', 0.005)]",New,New
+"('LRCX', 'MA')","('Lam Research Corp', 'Mastercard Inc A')",1,"[('ADME', 0.036)]",New,New
+"('000660.KS', '01299.HK')","('SK Hynix Inc', 'AIA Group Ltd')",1,"[('AIA', 0.061)]",New,New
+"('000660.KS', '09618')","('SK Hynix Inc', 'JD.com Inc Ordinary Shares - Class A')",1,"[('AIA', 0.038)]",New,New
+"('000660.KS', '00388.HK')","('SK Hynix Inc', 'Hong Kong Exchanges and Clearing Ltd')",1,"[('AIA', 0.038)]",New,New
+"('6516', 'SPOT')","('Sanyo Denki Co Ltd', 'Spotify Technology SA')",1,"[('AIIQ', 0.051)]",New,New
+"('8604', 'SPOT')","('Nomura Holdings Inc', 'Spotify Technology SA')",1,"[('AIIQ', 0.056)]",New,New
+"('NVO', 'SPOT')","('Novo Nordisk A/S ADR', 'Spotify Technology SA')",1,"[('AIIQ', 0.053)]",New,New
+"('6951', 'SPOT')","('Jeol Ltd', 'Spotify Technology SA')",1,"[('AIIQ', 0.051)]",New,New
+"('SPOT', 'TEAM')","('Spotify Technology SA', 'Atlassian Corporation PLC A')",1,"[('AIIQ', 0.067)]",New,New
+"('3926', 'SPOT')","('Open Door Inc', 'Spotify Technology SA')",1,"[('AIIQ', 0.053)]",New,New
+"('6516', '8604')","('Sanyo Denki Co Ltd', 'Nomura Holdings Inc')",1,"[('AIIQ', 0.04)]",New,New
+"('6516', 'SHOP.TO')","('Sanyo Denki Co Ltd', 'Shopify Inc A')",1,"[('AIIQ', 0.047)]",New,New
+"('6516', 'NVO')","('Sanyo Denki Co Ltd', 'Novo Nordisk A/S ADR')",1,"[('AIIQ', 0.037)]",New,New
+"('6516', '6951')","('Sanyo Denki Co Ltd', 'Jeol Ltd')",1,"[('AIIQ', 0.035)]",New,New
+"('6516', 'TEAM')","('Sanyo Denki Co Ltd', 'Atlassian Corporation PLC A')",1,"[('AIIQ', 0.051)]",New,New
+"('6516', 'WIX')","('Sanyo Denki Co Ltd', 'Wix.com Ltd')",1,"[('AIIQ', 0.045)]",New,New
+"('6516', 'CRSP')","('Sanyo Denki Co Ltd', 'CRISPR Therapeutics AG')",1,"[('AIIQ', 0.046)]",New,New
+"('3926', '6516')","('Open Door Inc', 'Sanyo Denki Co Ltd')",1,"[('AIIQ', 0.037)]",New,New
+"('8604', 'SHOP.TO')","('Nomura Holdings Inc', 'Shopify Inc A')",1,"[('AIIQ', 0.052)]",New,New
+"('8604', 'NVO')","('Nomura Holdings Inc', 'Novo Nordisk A/S ADR')",1,"[('AIIQ', 0.041)]",New,New
+"('6951', '8604')","('Jeol Ltd', 'Nomura Holdings Inc')",1,"[('AIIQ', 0.04)]",New,New
+"('8604', 'TEAM')","('Nomura Holdings Inc', 'Atlassian Corporation PLC A')",1,"[('AIIQ', 0.056)]",New,New
+"('8604', 'WIX')","('Nomura Holdings Inc', 'Wix.com Ltd')",1,"[('AIIQ', 0.049)]",New,New
+"('8604', 'CRSP')","('Nomura Holdings Inc', 'CRISPR Therapeutics AG')",1,"[('AIIQ', 0.051)]",New,New
+"('3926', '8604')","('Open Door Inc', 'Nomura Holdings Inc')",1,"[('AIIQ', 0.041)]",New,New
+"('NVO', 'SHOP.TO')","('Novo Nordisk A/S ADR', 'Shopify Inc A')",1,"[('AIIQ', 0.049)]",New,New
+"('6951', 'SHOP.TO')","('Jeol Ltd', 'Shopify Inc A')",1,"[('AIIQ', 0.047)]",New,New
+"('SHOP.TO', 'TEAM')","('Shopify Inc A', 'Atlassian Corporation PLC A')",1,"[('AIIQ', 0.063)]",New,New
+"('SHOP.TO', 'WIX')","('Shopify Inc A', 'Wix.com Ltd')",1,"[('AIIQ', 0.057)]",New,New
+"('CRSP', 'SHOP.TO')","('CRISPR Therapeutics AG', 'Shopify Inc A')",1,"[('AIIQ', 0.059)]",New,New
+"('3926', 'SHOP.TO')","('Open Door Inc', 'Shopify Inc A')",1,"[('AIIQ', 0.049)]",New,New
+"('6951', 'NVO')","('Jeol Ltd', 'Novo Nordisk A/S ADR')",1,"[('AIIQ', 0.037)]",New,New
+"('NVO', 'TEAM')","('Novo Nordisk A/S ADR', 'Atlassian Corporation PLC A')",1,"[('AIIQ', 0.053)]",New,New
+"('NVO', 'WIX')","('Novo Nordisk A/S ADR', 'Wix.com Ltd')",1,"[('AIIQ', 0.046)]",New,New
+"('CRSP', 'NVO')","('CRISPR Therapeutics AG', 'Novo Nordisk A/S ADR')",1,"[('AIIQ', 0.048)]",New,New
+"('3926', 'NVO')","('Open Door Inc', 'Novo Nordisk A/S ADR')",1,"[('AIIQ', 0.039)]",New,New
+"('6951', 'TEAM')","('Jeol Ltd', 'Atlassian Corporation PLC A')",1,"[('AIIQ', 0.052)]",New,New
+"('6951', 'WIX')","('Jeol Ltd', 'Wix.com Ltd')",1,"[('AIIQ', 0.045)]",New,New
+"('6951', 'CRSP')","('Jeol Ltd', 'CRISPR Therapeutics AG')",1,"[('AIIQ', 0.047)]",New,New
+"('3926', '6951')","('Open Door Inc', 'Jeol Ltd')",1,"[('AIIQ', 0.037)]",New,New
+"('TEAM', 'WIX')","('Atlassian Corporation PLC A', 'Wix.com Ltd')",1,"[('AIIQ', 0.061)]",New,New
+"('CRSP', 'TEAM')","('CRISPR Therapeutics AG', 'Atlassian Corporation PLC A')",1,"[('AIIQ', 0.063)]",New,New
+"('3926', 'TEAM')","('Open Door Inc', 'Atlassian Corporation PLC A')",1,"[('AIIQ', 0.053)]",New,New
+"('3926', 'WIX')","('Open Door Inc', 'Wix.com Ltd')",1,"[('AIIQ', 0.046)]",New,New
+"('3926', 'CRSP')","('Open Door Inc', 'CRISPR Therapeutics AG')",1,"[('AIIQ', 0.048)]",New,New
+"('CRWD', 'PGNY')","('CrowdStrike Holdings Inc Class A', 'Progyny Inc')",1,"[('ALFA', 0.073)]",New,New
+"('COST', 'CRWD')","('Costco Wholesale Corp', 'CrowdStrike Holdings Inc Class A')",1,"[('ALFA', 0.064)]",New,New
+"('AMZN', 'CRWD')","('Amazon.com Inc', 'CrowdStrike Holdings Inc Class A')",1,"[('ALFA', 0.06)]",New,New
+"('CRWD', 'IPAR')","('CrowdStrike Holdings Inc Class A', 'Inter Parfums Inc')",1,"[('ALFA', 0.06)]",New,New
+"('CRWD', 'EVR')","('CrowdStrike Holdings Inc Class A', 'Evercore Inc A')",1,"[('ALFA', 0.065)]",New,New
+"('CRWD', 'LRCX')","('CrowdStrike Holdings Inc Class A', 'Lam Research Corp')",1,"[('ALFA', 0.062)]",New,New
+"('CRWD', 'NTNX')","('CrowdStrike Holdings Inc Class A', 'Nutanix Inc A')",1,"[('ALFA', 0.06)]",New,New
+"('COST', 'PGNY')","('Costco Wholesale Corp', 'Progyny Inc')",1,"[('ALFA', 0.078)]",New,New
+"('AMZN', 'PGNY')","('Amazon.com Inc', 'Progyny Inc')",1,"[('ALFA', 0.074)]",New,New
+"('IPAR', 'PGNY')","('Inter Parfums Inc', 'Progyny Inc')",1,"[('ALFA', 0.074)]",New,New
+"('EVR', 'PGNY')","('Evercore Inc A', 'Progyny Inc')",1,"[('ALFA', 0.079)]",New,New
+"('PANW', 'PGNY')","('Palo Alto Networks Inc', 'Progyny Inc')",1,"[('ALFA', 0.073)]",New,New
+"('LRCX', 'PGNY')","('Lam Research Corp', 'Progyny Inc')",1,"[('ALFA', 0.076)]",New,New
+"('FB', 'PGNY')","('Facebook Inc A', 'Progyny Inc')",1,"[('ALFA', 0.081)]",New,New
+"('NTNX', 'PGNY')","('Nutanix Inc A', 'Progyny Inc')",1,"[('ALFA', 0.074)]",New,New
+"('COST', 'IPAR')","('Costco Wholesale Corp', 'Inter Parfums Inc')",1,"[('ALFA', 0.064)]",New,New
+"('COST', 'EVR')","('Costco Wholesale Corp', 'Evercore Inc A')",1,"[('ALFA', 0.069)]",New,New
+"('COST', 'PANW')","('Costco Wholesale Corp', 'Palo Alto Networks Inc')",1,"[('ALFA', 0.064)]",New,New
+"('COST', 'LRCX')","('Costco Wholesale Corp', 'Lam Research Corp')",1,"[('ALFA', 0.066)]",New,New
+"('COST', 'NTNX')","('Costco Wholesale Corp', 'Nutanix Inc A')",1,"[('ALFA', 0.065)]",New,New
+"('AMZN', 'IPAR')","('Amazon.com Inc', 'Inter Parfums Inc')",1,"[('ALFA', 0.061)]",New,New
+"('AMZN', 'EVR')","('Amazon.com Inc', 'Evercore Inc A')",1,"[('ALFA', 0.065)]",New,New
+"('AMZN', 'NTNX')","('Amazon.com Inc', 'Nutanix Inc A')",1,"[('ALFA', 0.061)]",New,New
+"('EVR', 'IPAR')","('Evercore Inc A', 'Inter Parfums Inc')",1,"[('ALFA', 0.065)]",New,New
+"('IPAR', 'PANW')","('Inter Parfums Inc', 'Palo Alto Networks Inc')",1,"[('ALFA', 0.06)]",New,New
+"('IPAR', 'LRCX')","('Inter Parfums Inc', 'Lam Research Corp')",1,"[('ALFA', 0.063)]",New,New
+"('FB', 'IPAR')","('Facebook Inc A', 'Inter Parfums Inc')",1,"[('ALFA', 0.067)]",New,New
+"('IPAR', 'NTNX')","('Inter Parfums Inc', 'Nutanix Inc A')",1,"[('ALFA', 0.061)]",New,New
+"('EVR', 'PANW')","('Evercore Inc A', 'Palo Alto Networks Inc')",1,"[('ALFA', 0.064)]",New,New
+"('EVR', 'LRCX')","('Evercore Inc A', 'Lam Research Corp')",1,"[('ALFA', 0.067)]",New,New
+"('EVR', 'FB')","('Evercore Inc A', 'Facebook Inc A')",1,"[('ALFA', 0.072)]",New,New
+"('EVR', 'NTNX')","('Evercore Inc A', 'Nutanix Inc A')",1,"[('ALFA', 0.066)]",New,New
+"('LRCX', 'PANW')","('Lam Research Corp', 'Palo Alto Networks Inc')",1,"[('ALFA', 0.062)]",New,New
+"('NTNX', 'PANW')","('Nutanix Inc A', 'Palo Alto Networks Inc')",1,"[('ALFA', 0.06)]",New,New
+"('LRCX', 'NTNX')","('Lam Research Corp', 'Nutanix Inc A')",1,"[('ALFA', 0.063)]",New,New
+"('NUE', 'TSN')","('Nucor Corp', 'Tyson Foods Inc Class A')",1,"[('AMER', 0.091)]",New,New
+"('MO', 'TSN')","('Altria Group Inc', 'Tyson Foods Inc Class A')",1,"[('AMER', 0.097)]",New,New
+"('CLX', 'TSN')","('Clorox Co', 'Tyson Foods Inc Class A')",1,"[('AMER', 0.088)]",New,New
+"('KDP', 'TSN')","('Keurig Dr Pepper Inc', 'Tyson Foods Inc Class A')",1,"[('AMER', 0.1)]",New,New
+"('HRL', 'TSN')","('Hormel Foods Corp', 'Tyson Foods Inc Class A')",1,"[('AMER', 0.095)]",New,New
+"('GD', 'TSN')","('General Dynamics Corp', 'Tyson Foods Inc Class A')",1,"[('AMER', 0.102)]",New,New
+"('TSN', 'VMC')","('Tyson Foods Inc Class A', 'Vulcan Materials Co')",1,"[('AMER', 0.089)]",New,New
+"('CAG', 'TSN')","('Conagra Brands Inc', 'Tyson Foods Inc Class A')",1,"[('AMER', 0.089)]",New,New
+"('NOC', 'TSN')","('Northrop Grumman Corp', 'Tyson Foods Inc Class A')",1,"[('AMER', 0.105)]",New,New
+"('MO', 'NUE')","('Altria Group Inc', 'Nucor Corp')",1,"[('AMER', 0.089)]",New,New
+"('CLX', 'NUE')","('Clorox Co', 'Nucor Corp')",1,"[('AMER', 0.08)]",New,New
+"('KDP', 'NUE')","('Keurig Dr Pepper Inc', 'Nucor Corp')",1,"[('AMER', 0.092)]",New,New
+"('HRL', 'NUE')","('Hormel Foods Corp', 'Nucor Corp')",1,"[('AMER', 0.087)]",New,New
+"('CAG', 'NUE')","('Conagra Brands Inc', 'Nucor Corp')",1,"[('AMER', 0.081)]",New,New
+"('NOC', 'NUE')","('Northrop Grumman Corp', 'Nucor Corp')",1,"[('AMER', 0.098)]",New,New
+"('KDP', 'MO')","('Keurig Dr Pepper Inc', 'Altria Group Inc')",1,"[('AMER', 0.098)]",New,New
+"('HRL', 'MO')","('Hormel Foods Corp', 'Altria Group Inc')",1,"[('AMER', 0.093)]",New,New
+"('GD', 'MO')","('General Dynamics Corp', 'Altria Group Inc')",1,"[('AMER', 0.1)]",New,New
+"('MO', 'VMC')","('Altria Group Inc', 'Vulcan Materials Co')",1,"[('AMER', 0.087)]",New,New
+"('CAG', 'MO')","('Conagra Brands Inc', 'Altria Group Inc')",1,"[('AMER', 0.087)]",New,New
+"('MO', 'NOC')","('Altria Group Inc', 'Northrop Grumman Corp')",1,"[('AMER', 0.103)]",New,New
+"('CLX', 'KDP')","('Clorox Co', 'Keurig Dr Pepper Inc')",1,"[('AMER', 0.09)]",New,New
+"('CLX', 'GD')","('Clorox Co', 'General Dynamics Corp')",1,"[('AMER', 0.091)]",New,New
+"('CLX', 'VMC')","('Clorox Co', 'Vulcan Materials Co')",1,"[('AMER', 0.079)]",New,New
+"('CAG', 'CLX')","('Conagra Brands Inc', 'Clorox Co')",1,"[('AMER', 0.078)]",New,New
+"('CLX', 'NOC')","('Clorox Co', 'Northrop Grumman Corp')",1,"[('AMER', 0.095)]",New,New
+"('HRL', 'KDP')","('Hormel Foods Corp', 'Keurig Dr Pepper Inc')",1,"[('AMER', 0.097)]",New,New
+"('GD', 'KDP')","('General Dynamics Corp', 'Keurig Dr Pepper Inc')",1,"[('AMER', 0.103)]",New,New
+"('KDP', 'VMC')","('Keurig Dr Pepper Inc', 'Vulcan Materials Co')",1,"[('AMER', 0.091)]",New,New
+"('CAG', 'KDP')","('Conagra Brands Inc', 'Keurig Dr Pepper Inc')",1,"[('AMER', 0.09)]",New,New
+"('KDP', 'NOC')","('Keurig Dr Pepper Inc', 'Northrop Grumman Corp')",1,"[('AMER', 0.107)]",New,New
+"('GD', 'HRL')","('General Dynamics Corp', 'Hormel Foods Corp')",1,"[('AMER', 0.098)]",New,New
+"('HRL', 'VMC')","('Hormel Foods Corp', 'Vulcan Materials Co')",1,"[('AMER', 0.086)]",New,New
+"('CAG', 'HRL')","('Conagra Brands Inc', 'Hormel Foods Corp')",1,"[('AMER', 0.085)]",New,New
+"('HRL', 'NOC')","('Hormel Foods Corp', 'Northrop Grumman Corp')",1,"[('AMER', 0.102)]",New,New
+"('GD', 'VMC')","('General Dynamics Corp', 'Vulcan Materials Co')",1,"[('AMER', 0.092)]",New,New
+"('CAG', 'GD')","('Conagra Brands Inc', 'General Dynamics Corp')",1,"[('AMER', 0.091)]",New,New
+"('CAG', 'VMC')","('Conagra Brands Inc', 'Vulcan Materials Co')",1,"[('AMER', 0.079)]",New,New
+"('NOC', 'VMC')","('Northrop Grumman Corp', 'Vulcan Materials Co')",1,"[('AMER', 0.096)]",New,New
+"('CAG', 'NOC')","('Conagra Brands Inc', 'Northrop Grumman Corp')",1,"[('AMER', 0.095)]",New,New
+"('GOOGL', 'ISRG')","('Alphabet Inc A', 'Intuitive Surgical Inc')",1,"[('ANEW', 0.041)]",New,New
+"('AMZN', 'MDT')","('Amazon.com Inc', 'Medtronic PLC')",1,"[('ANEW', 0.041)]",New,New
+"('CTVA', 'MDT')","('Corteva Inc', 'Medtronic PLC')",1,"[('ANEW', 0.044)]",New,New
+"('ATVI', 'MDT')","('Activision Blizzard Inc', 'Medtronic PLC')",1,"[('ANEW', 0.041)]",New,New
+"('DE', 'MDT')","('Deere & Co', 'Medtronic PLC')",1,"[('ANEW', 0.046)]",New,New
+"('ADBE', 'ISRG')","('Adobe Inc', 'Intuitive Surgical Inc')",1,"[('ANEW', 0.039)]",New,New
+"('CTVA', 'ISRG')","('Corteva Inc', 'Intuitive Surgical Inc')",1,"[('ANEW', 0.043)]",New,New
+"('FB', 'ISRG')","('Facebook Inc A', 'Intuitive Surgical Inc')",1,"[('ANEW', 0.04)]",New,New
+"('ATVI', 'ISRG')","('Activision Blizzard Inc', 'Intuitive Surgical Inc')",1,"[('ANEW', 0.04)]",New,New
+"('DE', 'ISRG')","('Deere & Co', 'Intuitive Surgical Inc')",1,"[('ANEW', 0.045)]",New,New
+"('AMZN', 'CTVA')","('Amazon.com Inc', 'Corteva Inc')",1,"[('ANEW', 0.043)]",New,New
+"('AMZN', 'ATVI')","('Amazon.com Inc', 'Activision Blizzard Inc')",1,"[('ANEW', 0.04)]",New,New
+"('ADBE', 'CTVA')","('Adobe Inc', 'Corteva Inc')",1,"[('ANEW', 0.043)]",New,New
+"('ADBE', 'ATVI')","('Adobe Inc', 'Activision Blizzard Inc')",1,"[('ANEW', 0.04)]",New,New
+"('ADBE', 'DE')","('Adobe Inc', 'Deere & Co')",1,"[('ANEW', 0.045)]",New,New
+"('CTVA', 'FB')","('Corteva Inc', 'Facebook Inc A')",1,"[('ANEW', 0.044)]",New,New
+"('ATVI', 'CTVA')","('Activision Blizzard Inc', 'Corteva Inc')",1,"[('ANEW', 0.043)]",New,New
+"('ATVI', 'DE')","('Activision Blizzard Inc', 'Deere & Co')",1,"[('ANEW', 0.045)]",New,New
+"('GOOGL', 'XTSLA')","('Alphabet Inc A', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('AOA', 0.015)]",New,New
+"('FB', 'XTSLA')","('Facebook Inc A', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('AOA', 0.016)]",New,New
+"('BRK.B', 'XTSLA')","('Berkshire Hathaway Inc Class B', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('AOA', 0.013)]",New,New
+"('2330.TW', 'RIO.AX')","('Taiwan Semiconductor Manufacturing Co Ltd', 'Rio Tinto Ltd')",1,"[('DNL', 0.092)]",New,New
+"('NOVO B', 'RIO.AX')","('Novo Nordisk A/S B', 'Rio Tinto Ltd')",1,"[('DNL', 0.084)]",New,New
+"('ASML', 'RIO.AX')","('ASML Holding NV ADR', 'Rio Tinto Ltd')",1,"[('DNL', 0.088)]",New,New
+"('CNR.TO', 'RIO.AX')","('Canadian National Railway Co', 'Rio Tinto Ltd')",1,"[('DNL', 0.072)]",New,New
+"('8035', 'RIO.AX')","('Tokyo Electron Ltd', 'Rio Tinto Ltd')",1,"[('DNL', 0.078)]",New,New
+"('RIO.AX', 'ULVR.L')","('Rio Tinto Ltd', 'Unilever PLC')",1,"[('DNL', 0.09)]",New,New
+"('PGHN', 'RIO.AX')","('Partners Group Holding AG', 'Rio Tinto Ltd')",1,"[('DNL', 0.072)]",New,New
+"('REL.L', 'RIO.AX')","('RELX PLC', 'Rio Tinto Ltd')",1,"[('DNL', 0.078)]",New,New
+"('2330.TW', 'CNR.TO')","('Taiwan Semiconductor Manufacturing Co Ltd', 'Canadian National Railway Co')",1,"[('DNL', 0.072)]",New,New
+"('2330.TW', 'ULVR.L')","('Taiwan Semiconductor Manufacturing Co Ltd', 'Unilever PLC')",1,"[('DNL', 0.09)]",New,New
+"('2330.TW', 'PGHN')","('Taiwan Semiconductor Manufacturing Co Ltd', 'Partners Group Holding AG')",1,"[('DNL', 0.072)]",New,New
+"('2330.TW', 'REL.L')","('Taiwan Semiconductor Manufacturing Co Ltd', 'RELX PLC')",1,"[('DNL', 0.078)]",New,New
+"('CNR.TO', 'NOVO B')","('Canadian National Railway Co', 'Novo Nordisk A/S B')",1,"[('DNL', 0.064)]",New,New
+"('NOVO B', 'REL.L')","('Novo Nordisk A/S B', 'RELX PLC')",1,"[('DNL', 0.07)]",New,New
+"('ASML', 'CNR.TO')","('ASML Holding NV ADR', 'Canadian National Railway Co')",1,"[('DNL', 0.068)]",New,New
+"('8035', 'CNR.TO')","('Tokyo Electron Ltd', 'Canadian National Railway Co')",1,"[('DNL', 0.057)]",New,New
+"('CNR.TO', 'ULVR.L')","('Canadian National Railway Co', 'Unilever PLC')",1,"[('DNL', 0.07)]",New,New
+"('CNR.TO', 'ROG')","('Canadian National Railway Co', 'Roche Holding AG')",1,"[('DNL', 0.061)]",New,New
+"('CNR.TO', 'PGHN')","('Canadian National Railway Co', 'Partners Group Holding AG')",1,"[('DNL', 0.052)]",New,New
+"('CNR.TO', 'REL.L')","('Canadian National Railway Co', 'RELX PLC')",1,"[('DNL', 0.058)]",New,New
+"('8035', 'ULVR.L')","('Tokyo Electron Ltd', 'Unilever PLC')",1,"[('DNL', 0.075)]",New,New
+"('8035', 'REL.L')","('Tokyo Electron Ltd', 'RELX PLC')",1,"[('DNL', 0.063)]",New,New
+"('PGHN', 'ULVR.L')","('Partners Group Holding AG', 'Unilever PLC')",1,"[('DNL', 0.07)]",New,New
+"('REL.L', 'ULVR.L')","('RELX PLC', 'Unilever PLC')",1,"[('DNL', 0.076)]",New,New
+"('CNA', 'FANG')","('CNA Financial Corp', 'Diamondback Energy Inc')",1,"[('DON', 0.02)]",New,New
+"('FANG', 'IPG')","('Diamondback Energy Inc', 'The Interpublic Group of Companies Inc')",1,"[('DON', 0.023)]",New,New
+"('FANG', 'NLOK')","('Diamondback Energy Inc', 'NortonLifeLock Inc')",1,"[('DON', 0.021)]",New,New
+"('FANG', 'FNF')","('Diamondback Energy Inc', 'Fidelity National Financial Inc')",1,"[('DON', 0.02)]",New,New
+"('AM', 'FANG')","('Antero Midstream Corp', 'Diamondback Energy Inc')",1,"[('DON', 0.028)]",New,New
+"('FANG', 'WSO')","('Diamondback Energy Inc', 'Watsco Inc')",1,"[('DON', 0.021)]",New,New
+"('FANG', 'PNW')","('Diamondback Energy Inc', 'Pinnacle West Capital Corp')",1,"[('DON', 0.02)]",New,New
+"('BEN', 'FANG')","('Franklin Resources Inc', 'Diamondback Energy Inc')",1,"[('DON', 0.025)]",New,New
+"('FANG', 'NWL')","('Diamondback Energy Inc', 'Newell Brands Inc')",1,"[('DON', 0.023)]",New,New
+"('CNA', 'IPG')","('CNA Financial Corp', 'The Interpublic Group of Companies Inc')",1,"[('DON', 0.023)]",New,New
+"('CNA', 'NLOK')","('CNA Financial Corp', 'NortonLifeLock Inc')",1,"[('DON', 0.02)]",New,New
+"('CNA', 'FNF')","('CNA Financial Corp', 'Fidelity National Financial Inc')",1,"[('DON', 0.019)]",New,New
+"('AM', 'CNA')","('Antero Midstream Corp', 'CNA Financial Corp')",1,"[('DON', 0.027)]",New,New
+"('CNA', 'WSO')","('CNA Financial Corp', 'Watsco Inc')",1,"[('DON', 0.021)]",New,New
+"('CNA', 'PNW')","('CNA Financial Corp', 'Pinnacle West Capital Corp')",1,"[('DON', 0.019)]",New,New
+"('BEN', 'CNA')","('Franklin Resources Inc', 'CNA Financial Corp')",1,"[('DON', 0.024)]",New,New
+"('CNA', 'NWL')","('CNA Financial Corp', 'Newell Brands Inc')",1,"[('DON', 0.022)]",New,New
+"('IPG', 'NLOK')","('The Interpublic Group of Companies Inc', 'NortonLifeLock Inc')",1,"[('DON', 0.023)]",New,New
+"('AM', 'IPG')","('Antero Midstream Corp', 'The Interpublic Group of Companies Inc')",1,"[('DON', 0.03)]",New,New
+"('IPG', 'WSO')","('The Interpublic Group of Companies Inc', 'Watsco Inc')",1,"[('DON', 0.024)]",New,New
+"('IPG', 'PNW')","('The Interpublic Group of Companies Inc', 'Pinnacle West Capital Corp')",1,"[('DON', 0.022)]",New,New
+"('BEN', 'IPG')","('Franklin Resources Inc', 'The Interpublic Group of Companies Inc')",1,"[('DON', 0.027)]",New,New
+"('FNF', 'NLOK')","('Fidelity National Financial Inc', 'NortonLifeLock Inc')",1,"[('DON', 0.02)]",New,New
+"('AM', 'NLOK')","('Antero Midstream Corp', 'NortonLifeLock Inc')",1,"[('DON', 0.027)]",New,New
+"('NLOK', 'WSO')","('NortonLifeLock Inc', 'Watsco Inc')",1,"[('DON', 0.021)]",New,New
+"('NLOK', 'PNW')","('NortonLifeLock Inc', 'Pinnacle West Capital Corp')",1,"[('DON', 0.019)]",New,New
+"('BEN', 'NLOK')","('Franklin Resources Inc', 'NortonLifeLock Inc')",1,"[('DON', 0.024)]",New,New
+"('NLOK', 'NWL')","('NortonLifeLock Inc', 'Newell Brands Inc')",1,"[('DON', 0.022)]",New,New
+"('AM', 'FNF')","('Antero Midstream Corp', 'Fidelity National Financial Inc')",1,"[('DON', 0.027)]",New,New
+"('FNF', 'WSO')","('Fidelity National Financial Inc', 'Watsco Inc')",1,"[('DON', 0.021)]",New,New
+"('FNF', 'PNW')","('Fidelity National Financial Inc', 'Pinnacle West Capital Corp')",1,"[('DON', 0.019)]",New,New
+"('BEN', 'FNF')","('Franklin Resources Inc', 'Fidelity National Financial Inc')",1,"[('DON', 0.024)]",New,New
+"('FNF', 'NWL')","('Fidelity National Financial Inc', 'Newell Brands Inc')",1,"[('DON', 0.022)]",New,New
+"('AM', 'WSO')","('Antero Midstream Corp', 'Watsco Inc')",1,"[('DON', 0.028)]",New,New
+"('AM', 'PNW')","('Antero Midstream Corp', 'Pinnacle West Capital Corp')",1,"[('DON', 0.026)]",New,New
+"('AM', 'BEN')","('Antero Midstream Corp', 'Franklin Resources Inc')",1,"[('DON', 0.031)]",New,New
+"('AM', 'NWL')","('Antero Midstream Corp', 'Newell Brands Inc')",1,"[('DON', 0.03)]",New,New
+"('PNW', 'WSO')","('Pinnacle West Capital Corp', 'Watsco Inc')",1,"[('DON', 0.02)]",New,New
+"('BEN', 'WSO')","('Franklin Resources Inc', 'Watsco Inc')",1,"[('DON', 0.025)]",New,New
+"('NWL', 'WSO')","('Newell Brands Inc', 'Watsco Inc')",1,"[('DON', 0.023)]",New,New
+"('BEN', 'PNW')","('Franklin Resources Inc', 'Pinnacle West Capital Corp')",1,"[('DON', 0.024)]",New,New
+"('NWL', 'PNW')","('Newell Brands Inc', 'Pinnacle West Capital Corp')",1,"[('DON', 0.022)]",New,New
+"('BEN', 'NWL')","('Franklin Resources Inc', 'Newell Brands Inc')",1,"[('DON', 0.027)]",New,New
+"('FORTUM', 'RIO.L')","('Fortum Oyj', 'Rio Tinto PLC')",1,"[('DOO', 0.036)]",New,New
+"('EQNR', 'RIO.L')","('Equinor ASA', 'Rio Tinto PLC')",1,"[('DOO', 0.039)]",New,New
+"('7751', 'RIO.L')","('Canon Inc', 'Rio Tinto PLC')",1,"[('DOO', 0.036)]",New,New
+"('RIO.L', 'VOD.L')","('Rio Tinto PLC', 'Vodafone Group PLC')",1,"[('DOO', 0.038)]",New,New
+"('EQNR', 'FORTUM')","('Equinor ASA', 'Fortum Oyj')",1,"[('DOO', 0.038)]",New,New
+"('BAS.DE', 'FORTUM')","('Basf SE', 'Fortum Oyj')",1,"[('DOO', 0.035)]",New,New
+"('FORTUM', 'RIO.AX')","('Fortum Oyj', 'Rio Tinto Ltd')",1,"[('DOO', 0.035)]",New,New
+"('7751', 'FORTUM')","('Canon Inc', 'Fortum Oyj')",1,"[('DOO', 0.035)]",New,New
+"('FORTUM', 'NTGY.BC')","('Fortum Oyj', 'Naturgy Energy Group SA')",1,"[('DOO', 0.039)]",New,New
+"('BATS.L', 'FORTUM')","('British American Tobacco PLC', 'Fortum Oyj')",1,"[('DOO', 0.036)]",New,New
+"('FMG.AX', 'FORTUM')","('Fortescue Metals Group Ltd', 'Fortum Oyj')",1,"[('DOO', 0.05)]",New,New
+"('FORTUM', 'VOD.L')","('Fortum Oyj', 'Vodafone Group PLC')",1,"[('DOO', 0.037)]",New,New
+"('BAS.DE', 'EQNR')","('Basf SE', 'Equinor ASA')",1,"[('DOO', 0.038)]",New,New
+"('EQNR', 'RIO.AX')","('Equinor ASA', 'Rio Tinto Ltd')",1,"[('DOO', 0.037)]",New,New
+"('7751', 'EQNR')","('Canon Inc', 'Equinor ASA')",1,"[('DOO', 0.037)]",New,New
+"('EQNR', 'NTGY.BC')","('Equinor ASA', 'Naturgy Energy Group SA')",1,"[('DOO', 0.041)]",New,New
+"('BATS.L', 'EQNR')","('British American Tobacco PLC', 'Equinor ASA')",1,"[('DOO', 0.038)]",New,New
+"('EQNR', 'FMG.AX')","('Equinor ASA', 'Fortescue Metals Group Ltd')",1,"[('DOO', 0.052)]",New,New
+"('EQNR', 'VOD.L')","('Equinor ASA', 'Vodafone Group PLC')",1,"[('DOO', 0.039)]",New,New
+"('BAS.DE', 'RIO.AX')","('Basf SE', 'Rio Tinto Ltd')",1,"[('DOO', 0.035)]",New,New
+"('7751', 'BAS.DE')","('Canon Inc', 'Basf SE')",1,"[('DOO', 0.035)]",New,New
+"('BAS.DE', 'NTGY.BC')","('Basf SE', 'Naturgy Energy Group SA')",1,"[('DOO', 0.039)]",New,New
+"('BAS.DE', 'BATS.L')","('Basf SE', 'British American Tobacco PLC')",1,"[('DOO', 0.035)]",New,New
+"('BAS.DE', 'FMG.AX')","('Basf SE', 'Fortescue Metals Group Ltd')",1,"[('DOO', 0.049)]",New,New
+"('BAS.DE', 'VOD.L')","('Basf SE', 'Vodafone Group PLC')",1,"[('DOO', 0.037)]",New,New
+"('7751', 'RIO.AX')","('Canon Inc', 'Rio Tinto Ltd')",1,"[('DOO', 0.034)]",New,New
+"('NTGY.BC', 'RIO.AX')","('Naturgy Energy Group SA', 'Rio Tinto Ltd')",1,"[('DOO', 0.038)]",New,New
+"('BATS.L', 'RIO.AX')","('British American Tobacco PLC', 'Rio Tinto Ltd')",1,"[('DOO', 0.035)]",New,New
+"('RIO.AX', 'VOD.L')","('Rio Tinto Ltd', 'Vodafone Group PLC')",1,"[('DOO', 0.036)]",New,New
+"('7751', 'NTGY.BC')","('Canon Inc', 'Naturgy Energy Group SA')",1,"[('DOO', 0.038)]",New,New
+"('7751', 'BATS.L')","('Canon Inc', 'British American Tobacco PLC')",1,"[('DOO', 0.035)]",New,New
+"('7751', 'FMG.AX')","('Canon Inc', 'Fortescue Metals Group Ltd')",1,"[('DOO', 0.049)]",New,New
+"('7751', 'VOD.L')","('Canon Inc', 'Vodafone Group PLC')",1,"[('DOO', 0.036)]",New,New
+"('NTGY.BC', 'VOD.L')","('Naturgy Energy Group SA', 'Vodafone Group PLC')",1,"[('DOO', 0.04)]",New,New
+"('BATS.L', 'VOD.L')","('British American Tobacco PLC', 'Vodafone Group PLC')",1,"[('DOO', 0.037)]",New,New
+"('BATS.L', 'CBA.AX')","('British American Tobacco PLC', 'Commonwealth Bank of Australia')",1,"[('DTH', 0.041)]",New,New
+"('9434', 'CBA.AX')","('SoftBank Corp', 'Commonwealth Bank of Australia')",1,"[('DTH', 0.036)]",New,New
+"('CBA.AX', 'FMG.AX')","('Commonwealth Bank of Australia', 'Fortescue Metals Group Ltd')",1,"[('DTH', 0.043)]",New,New
+"('9434', 'SIE.DE')","('SoftBank Corp', 'Siemens AG')",1,"[('DTH', 0.035)]",New,New
+"('FMG.AX', 'SIE.DE')","('Fortescue Metals Group Ltd', 'Siemens AG')",1,"[('DTH', 0.041)]",New,New
+"('9434', 'ALV.DE')","('SoftBank Corp', 'Allianz SE')",1,"[('DTH', 0.038)]",New,New
+"('FE', 'IPG')","('FirstEnergy Corp', 'The Interpublic Group of Companies Inc')",1,"[('DTN', 0.034)]",New,New
+"('IBM', 'IPG')","('International Business Machines Corp', 'The Interpublic Group of Companies Inc')",1,"[('DTN', 0.031)]",New,New
+"('IPG', 'LUMN')","('The Interpublic Group of Companies Inc', 'Lumen Technologies Inc Ordinary Shares')",1,"[('DTN', 0.048)]",New,New
+"('IPG', 'T')","('The Interpublic Group of Companies Inc', 'AT&T Inc')",1,"[('DTN', 0.032)]",New,New
+"('GLPI', 'IPG')","('Gaming and Leisure Properties Inc', 'The Interpublic Group of Companies Inc')",1,"[('DTN', 0.031)]",New,New
+"('IPG', 'PM')","('The Interpublic Group of Companies Inc', 'Philip Morris International Inc')",1,"[('DTN', 0.043)]",New,New
+"('FE', 'LUMN')","('FirstEnergy Corp', 'Lumen Technologies Inc Ordinary Shares')",1,"[('DTN', 0.05)]",New,New
+"('FE', 'IRM')","('FirstEnergy Corp', 'Iron Mountain Inc')",1,"[('DTN', 0.038)]",New,New
+"('DOW', 'FE')","('Dow Inc', 'FirstEnergy Corp')",1,"[('DTN', 0.034)]",New,New
+"('FE', 'GLPI')","('FirstEnergy Corp', 'Gaming and Leisure Properties Inc')",1,"[('DTN', 0.033)]",New,New
+"('GLPI', 'MO')","('Gaming and Leisure Properties Inc', 'Altria Group Inc')",1,"[('DTN', 0.051)]",New,New
+"('GLPI', 'IBM')","('Gaming and Leisure Properties Inc', 'International Business Machines Corp')",1,"[('DTN', 0.031)]",New,New
+"('DOW', 'LUMN')","('Dow Inc', 'Lumen Technologies Inc Ordinary Shares')",1,"[('DTN', 0.048)]",New,New
+"('GLPI', 'LUMN')","('Gaming and Leisure Properties Inc', 'Lumen Technologies Inc Ordinary Shares')",1,"[('DTN', 0.047)]",New,New
+"('DOW', 'IRM')","('Dow Inc', 'Iron Mountain Inc')",1,"[('DTN', 0.036)]",New,New
+"('GLPI', 'IRM')","('Gaming and Leisure Properties Inc', 'Iron Mountain Inc')",1,"[('DTN', 0.035)]",New,New
+"('DOW', 'T')","('Dow Inc', 'AT&T Inc')",1,"[('DTN', 0.032)]",New,New
+"('GLPI', 'T')","('Gaming and Leisure Properties Inc', 'AT&T Inc')",1,"[('DTN', 0.032)]",New,New
+"('DOW', 'GLPI')","('Dow Inc', 'Gaming and Leisure Properties Inc')",1,"[('DTN', 0.03)]",New,New
+"('GLPI', 'PM')","('Gaming and Leisure Properties Inc', 'Philip Morris International Inc')",1,"[('DTN', 0.043)]",New,New
+"('NOVN', 'TTE.PA')","('Novartis AG', 'TotalEnergies SE')",1,"[('EFV', 0.038)]",New,New
+"('CBA.AX', 'HSBA.L')","('Commonwealth Bank of Australia', 'HSBC Holdings PLC')",1,"[('EFV', 0.03)]",New,New
+"('HSBA.L', 'SIE.DE')","('HSBC Holdings PLC', 'Siemens AG')",1,"[('EFV', 0.029)]",New,New
+"('HSBA.L', 'SAN.PA')","('HSBC Holdings PLC', 'Sanofi SA')",1,"[('EFV', 0.028)]",New,New
+"('ALV.DE', 'TM')","('Allianz SE', 'Toyota Motor Corp ADR')",1,"[('EFV', 0.034)]",New,New
+"('FBU.NZ', 'MEL.NZ')","('Fletcher Building Ltd', 'Meridian Energy Ltd')",1,"[('ENZL', 0.112)]",New,New
+"('FBU.NZ', 'SPK.NZ')","('Fletcher Building Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.138)]",New,New
+"('FBU.NZ', 'RYM.NZ')","('Fletcher Building Ltd', 'Ryman Healthcare Ltd')",1,"[('ENZL', 0.086)]",New,New
+"('FBU.NZ', 'FPH.NZ')","('Fletcher Building Ltd', 'Fisher & Paykel Healthcare Corp Ltd')",1,"[('ENZL', 0.228)]",New,New
+"('CEN.NZ', 'FBU.NZ')","('Contact Energy Ltd', 'Fletcher Building Ltd')",1,"[('ENZL', 0.094)]",New,New
+"('A2M.NZ', 'FBU.NZ')","('The a2 Milk Co Ltd', 'Fletcher Building Ltd')",1,"[('ENZL', 0.095)]",New,New
+"('AIA.NZ', 'FBU.NZ')","('Auckland International Airport Ltd', 'Fletcher Building Ltd')",1,"[('ENZL', 0.14)]",New,New
+"('FBU.NZ', 'MCY.NZ')","('Fletcher Building Ltd', 'Mercury NZ Ltd')",1,"[('ENZL', 0.091)]",New,New
+"('FBU.NZ', 'IFT.NZ')","('Fletcher Building Ltd', 'Infratil Ltd')",1,"[('ENZL', 0.093)]",New,New
+"('MEL.NZ', 'SPK.NZ')","('Meridian Energy Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.157)]",New,New
+"('MEL.NZ', 'RYM.NZ')","('Meridian Energy Ltd', 'Ryman Healthcare Ltd')",1,"[('ENZL', 0.106)]",New,New
+"('FPH.NZ', 'MEL.NZ')","('Fisher & Paykel Healthcare Corp Ltd', 'Meridian Energy Ltd')",1,"[('ENZL', 0.248)]",New,New
+"('CEN.NZ', 'MEL.NZ')","('Contact Energy Ltd', 'Meridian Energy Ltd')",1,"[('ENZL', 0.114)]",New,New
+"('A2M.NZ', 'MEL.NZ')","('The a2 Milk Co Ltd', 'Meridian Energy Ltd')",1,"[('ENZL', 0.115)]",New,New
+"('AIA.NZ', 'MEL.NZ')","('Auckland International Airport Ltd', 'Meridian Energy Ltd')",1,"[('ENZL', 0.16)]",New,New
+"('IFT.NZ', 'MEL.NZ')","('Infratil Ltd', 'Meridian Energy Ltd')",1,"[('ENZL', 0.113)]",New,New
+"('RYM.NZ', 'SPK.NZ')","('Ryman Healthcare Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.132)]",New,New
+"('FPH.NZ', 'SPK.NZ')","('Fisher & Paykel Healthcare Corp Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.274)]",New,New
+"('CEN.NZ', 'SPK.NZ')","('Contact Energy Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.14)]",New,New
+"('A2M.NZ', 'SPK.NZ')","('The a2 Milk Co Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.141)]",New,New
+"('AIA.NZ', 'SPK.NZ')","('Auckland International Airport Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.185)]",New,New
+"('MCY.NZ', 'SPK.NZ')","('Mercury NZ Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.137)]",New,New
+"('IFT.NZ', 'SPK.NZ')","('Infratil Ltd', 'Spark New Zealand Ltd')",1,"[('ENZL', 0.139)]",New,New
+"('FPH.NZ', 'RYM.NZ')","('Fisher & Paykel Healthcare Corp Ltd', 'Ryman Healthcare Ltd')",1,"[('ENZL', 0.223)]",New,New
+"('CEN.NZ', 'RYM.NZ')","('Contact Energy Ltd', 'Ryman Healthcare Ltd')",1,"[('ENZL', 0.089)]",New,New
+"('A2M.NZ', 'RYM.NZ')","('The a2 Milk Co Ltd', 'Ryman Healthcare Ltd')",1,"[('ENZL', 0.09)]",New,New
+"('AIA.NZ', 'RYM.NZ')","('Auckland International Airport Ltd', 'Ryman Healthcare Ltd')",1,"[('ENZL', 0.134)]",New,New
+"('MCY.NZ', 'RYM.NZ')","('Mercury NZ Ltd', 'Ryman Healthcare Ltd')",1,"[('ENZL', 0.086)]",New,New
+"('IFT.NZ', 'RYM.NZ')","('Infratil Ltd', 'Ryman Healthcare Ltd')",1,"[('ENZL', 0.087)]",New,New
+"('CEN.NZ', 'FPH.NZ')","('Contact Energy Ltd', 'Fisher & Paykel Healthcare Corp Ltd')",1,"[('ENZL', 0.231)]",New,New
+"('A2M.NZ', 'FPH.NZ')","('The a2 Milk Co Ltd', 'Fisher & Paykel Healthcare Corp Ltd')",1,"[('ENZL', 0.232)]",New,New
+"('AIA.NZ', 'FPH.NZ')","('Auckland International Airport Ltd', 'Fisher & Paykel Healthcare Corp Ltd')",1,"[('ENZL', 0.276)]",New,New
+"('FPH.NZ', 'MCY.NZ')","('Fisher & Paykel Healthcare Corp Ltd', 'Mercury NZ Ltd')",1,"[('ENZL', 0.228)]",New,New
+"('FPH.NZ', 'IFT.NZ')","('Fisher & Paykel Healthcare Corp Ltd', 'Infratil Ltd')",1,"[('ENZL', 0.23)]",New,New
+"('A2M.NZ', 'CEN.NZ')","('The a2 Milk Co Ltd', 'Contact Energy Ltd')",1,"[('ENZL', 0.098)]",New,New
+"('AIA.NZ', 'CEN.NZ')","('Auckland International Airport Ltd', 'Contact Energy Ltd')",1,"[('ENZL', 0.142)]",New,New
+"('CEN.NZ', 'MCY.NZ')","('Contact Energy Ltd', 'Mercury NZ Ltd')",1,"[('ENZL', 0.094)]",New,New
+"('CEN.NZ', 'IFT.NZ')","('Contact Energy Ltd', 'Infratil Ltd')",1,"[('ENZL', 0.096)]",New,New
+"('A2M.NZ', 'AIA.NZ')","('The a2 Milk Co Ltd', 'Auckland International Airport Ltd')",1,"[('ENZL', 0.143)]",New,New
+"('A2M.NZ', 'MCY.NZ')","('The a2 Milk Co Ltd', 'Mercury NZ Ltd')",1,"[('ENZL', 0.095)]",New,New
+"('A2M.NZ', 'IFT.NZ')","('The a2 Milk Co Ltd', 'Infratil Ltd')",1,"[('ENZL', 0.097)]",New,New
+"('AIA.NZ', 'MCY.NZ')","('Auckland International Airport Ltd', 'Mercury NZ Ltd')",1,"[('ENZL', 0.139)]",New,New
+"('AIA.NZ', 'IFT.NZ')","('Auckland International Airport Ltd', 'Infratil Ltd')",1,"[('ENZL', 0.141)]",New,New
+"('IFT.NZ', 'MCY.NZ')","('Infratil Ltd', 'Mercury NZ Ltd')",1,"[('ENZL', 0.093)]",New,New
+"('PEO', 'PGN')","('Bank Polska Kasa Opieki SA', 'Polish Oil and Gas Company (PGNiG) SA')",1,"[('EPOL', 0.093)]",New,New
+"('LPP', 'PGN')","('LPP SA', 'Polish Oil and Gas Company (PGNiG) SA')",1,"[('EPOL', 0.098)]",New,New
+"('PGN', 'PZU')","('Polish Oil and Gas Company (PGNiG) SA', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.111)]",New,New
+"('KGH', 'PGN')","('KGHM Polska Miedz SA', 'Polish Oil and Gas Company (PGNiG) SA')",1,"[('EPOL', 0.127)]",New,New
+"('ALE', 'PGN')","('Allegro.EU SA Ordinary Shares', 'Polish Oil and Gas Company (PGNiG) SA')",1,"[('EPOL', 0.114)]",New,New
+"('PGN', 'PKO')","('Polish Oil and Gas Company (PGNiG) SA', 'PKO Bank Polski SA')",1,"[('EPOL', 0.149)]",New,New
+"('DNP', 'PGN')","('Dino Polska SA', 'Polish Oil and Gas Company (PGNiG) SA')",1,"[('EPOL', 0.088)]",New,New
+"('CDR', 'PGN')","('CD Projekt SA', 'Polish Oil and Gas Company (PGNiG) SA')",1,"[('EPOL', 0.087)]",New,New
+"('LPP', 'PEO')","('LPP SA', 'Bank Polska Kasa Opieki SA')",1,"[('EPOL', 0.103)]",New,New
+"('PEO', 'PZU')","('Bank Polska Kasa Opieki SA', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.116)]",New,New
+"('KGH', 'PEO')","('KGHM Polska Miedz SA', 'Bank Polska Kasa Opieki SA')",1,"[('EPOL', 0.132)]",New,New
+"('ALE', 'PEO')","('Allegro.EU SA Ordinary Shares', 'Bank Polska Kasa Opieki SA')",1,"[('EPOL', 0.12)]",New,New
+"('PEO', 'PKO')","('Bank Polska Kasa Opieki SA', 'PKO Bank Polski SA')",1,"[('EPOL', 0.154)]",New,New
+"('PEO', 'PKN')","('Bank Polska Kasa Opieki SA', 'Polski Koncern Naftowy ORLEN SA')",1,"[('EPOL', 0.113)]",New,New
+"('CDR', 'PEO')","('CD Projekt SA', 'Bank Polska Kasa Opieki SA')",1,"[('EPOL', 0.092)]",New,New
+"('LPP', 'PZU')","('LPP SA', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.121)]",New,New
+"('KGH', 'LPP')","('KGHM Polska Miedz SA', 'LPP SA')",1,"[('EPOL', 0.137)]",New,New
+"('ALE', 'LPP')","('Allegro.EU SA Ordinary Shares', 'LPP SA')",1,"[('EPOL', 0.124)]",New,New
+"('LPP', 'PKO')","('LPP SA', 'PKO Bank Polski SA')",1,"[('EPOL', 0.158)]",New,New
+"('LPP', 'PKN')","('LPP SA', 'Polski Koncern Naftowy ORLEN SA')",1,"[('EPOL', 0.118)]",New,New
+"('DNP', 'LPP')","('Dino Polska SA', 'LPP SA')",1,"[('EPOL', 0.098)]",New,New
+"('CDR', 'LPP')","('CD Projekt SA', 'LPP SA')",1,"[('EPOL', 0.097)]",New,New
+"('KGH', 'PZU')","('KGHM Polska Miedz SA', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.15)]",New,New
+"('ALE', 'PZU')","('Allegro.EU SA Ordinary Shares', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.137)]",New,New
+"('PKO', 'PZU')","('PKO Bank Polski SA', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.172)]",New,New
+"('PKN', 'PZU')","('Polski Koncern Naftowy ORLEN SA', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.131)]",New,New
+"('DNP', 'PZU')","('Dino Polska SA', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.111)]",New,New
+"('CDR', 'PZU')","('CD Projekt SA', 'Powszechny Zaklad Ubezpieczen SA')",1,"[('EPOL', 0.11)]",New,New
+"('ALE', 'KGH')","('Allegro.EU SA Ordinary Shares', 'KGHM Polska Miedz SA')",1,"[('EPOL', 0.153)]",New,New
+"('KGH', 'PKO')","('KGHM Polska Miedz SA', 'PKO Bank Polski SA')",1,"[('EPOL', 0.188)]",New,New
+"('KGH', 'PKN')","('KGHM Polska Miedz SA', 'Polski Koncern Naftowy ORLEN SA')",1,"[('EPOL', 0.147)]",New,New
+"('DNP', 'KGH')","('Dino Polska SA', 'KGHM Polska Miedz SA')",1,"[('EPOL', 0.127)]",New,New
+"('CDR', 'KGH')","('CD Projekt SA', 'KGHM Polska Miedz SA')",1,"[('EPOL', 0.126)]",New,New
+"('ALE', 'PKO')","('Allegro.EU SA Ordinary Shares', 'PKO Bank Polski SA')",1,"[('EPOL', 0.175)]",New,New
+"('ALE', 'PKN')","('Allegro.EU SA Ordinary Shares', 'Polski Koncern Naftowy ORLEN SA')",1,"[('EPOL', 0.134)]",New,New
+"('ALE', 'DNP')","('Allegro.EU SA Ordinary Shares', 'Dino Polska SA')",1,"[('EPOL', 0.114)]",New,New
+"('ALE', 'CDR')","('Allegro.EU SA Ordinary Shares', 'CD Projekt SA')",1,"[('EPOL', 0.113)]",New,New
+"('PKN', 'PKO')","('Polski Koncern Naftowy ORLEN SA', 'PKO Bank Polski SA')",1,"[('EPOL', 0.169)]",New,New
+"('DNP', 'PKO')","('Dino Polska SA', 'PKO Bank Polski SA')",1,"[('EPOL', 0.149)]",New,New
+"('CDR', 'PKO')","('CD Projekt SA', 'PKO Bank Polski SA')",1,"[('EPOL', 0.148)]",New,New
+"('DNP', 'PKN')","('Dino Polska SA', 'Polski Koncern Naftowy ORLEN SA')",1,"[('EPOL', 0.108)]",New,New
+"('CDR', 'PKN')","('CD Projekt SA', 'Polski Koncern Naftowy ORLEN SA')",1,"[('EPOL', 0.107)]",New,New
+"('CDR', 'DNP')","('CD Projekt SA', 'Dino Polska SA')",1,"[('EPOL', 0.087)]",New,New
+"('FALABELLA', 'SCCO')","('Falabella SA', 'Southern Copper Corp')",1,"[('EPU', 0.253)]",New,New
+"('BVN', 'SCCO')","('Buenaventura Mining Co Inc ADR', 'Southern Copper Corp')",1,"[('EPU', 0.262)]",New,New
+"('HOC.L', 'SCCO')","('Hochschild Mining PLC', 'Southern Copper Corp')",1,"[('EPU', 0.261)]",New,New
+"('ALICORC1', 'SCCO')","('Alicorp SA', 'Southern Copper Corp')",1,"[('EPU', 0.269)]",New,New
+"('BAP', 'SCCO')","('Credicorp Ltd', 'Southern Copper Corp')",1,"[('EPU', 0.448)]",New,New
+"('01208', 'SCCO')","('MMG Ltd', 'Southern Copper Corp')",1,"[('EPU', 0.249)]",New,New
+"('BVN', 'FALABELLA')","('Buenaventura Mining Co Inc ADR', 'Falabella SA')",1,"[('EPU', 0.072)]",New,New
+"('FALABELLA', 'HOC.L')","('Falabella SA', 'Hochschild Mining PLC')",1,"[('EPU', 0.071)]",New,New
+"('ALICORC1', 'FALABELLA')","('Alicorp SA', 'Falabella SA')",1,"[('EPU', 0.078)]",New,New
+"('BAP', 'FALABELLA')","('Credicorp Ltd', 'Falabella SA')",1,"[('EPU', 0.258)]",New,New
+"('01208', 'FALABELLA')","('MMG Ltd', 'Falabella SA')",1,"[('EPU', 0.059)]",New,New
+"('BVN', 'HOC.L')","('Buenaventura Mining Co Inc ADR', 'Hochschild Mining PLC')",1,"[('EPU', 0.08)]",New,New
+"('ALICORC1', 'BVN')","('Alicorp SA', 'Buenaventura Mining Co Inc ADR')",1,"[('EPU', 0.088)]",New,New
+"('BAP', 'BVN')","('Credicorp Ltd', 'Buenaventura Mining Co Inc ADR')",1,"[('EPU', 0.267)]",New,New
+"('01208', 'BVN')","('MMG Ltd', 'Buenaventura Mining Co Inc ADR')",1,"[('EPU', 0.069)]",New,New
+"('ALICORC1', 'HOC.L')","('Alicorp SA', 'Hochschild Mining PLC')",1,"[('EPU', 0.086)]",New,New
+"('BAP', 'HOC.L')","('Credicorp Ltd', 'Hochschild Mining PLC')",1,"[('EPU', 0.266)]",New,New
+"('01208', 'HOC.L')","('MMG Ltd', 'Hochschild Mining PLC')",1,"[('EPU', 0.067)]",New,New
+"('ALICORC1', 'BAP')","('Alicorp SA', 'Credicorp Ltd')",1,"[('EPU', 0.274)]",New,New
+"('01208', 'ALICORC1')","('MMG Ltd', 'Alicorp SA')",1,"[('EPU', 0.075)]",New,New
+"('01208', 'BAP')","('MMG Ltd', 'Credicorp Ltd')",1,"[('EPU', 0.254)]",New,New
+"('LIN.L', 'SU.PA')","('Linde PLC', 'Schneider Electric SE')",1,"[('FEZ', 0.068)]",New,New
+"('LIN.L', 'TTE.PA')","('Linde PLC', 'TotalEnergies SE')",1,"[('FEZ', 0.076)]",New,New
+"('ICE', 'LPLA')","('Intercontinental Exchange Inc', 'LPL Financial Holdings Inc')",1,"[('IAI', 0.091)]",New,New
+"('GS', 'LPLA')","('Goldman Sachs Group Inc', 'LPL Financial Holdings Inc')",1,"[('IAI', 0.243)]",New,New
+"('LPLA', 'NDAQ')","('LPL Financial Holdings Inc', 'Nasdaq Inc')",1,"[('IAI', 0.09)]",New,New
+"('CME', 'LPLA')","('CME Group Inc Class A', 'LPL Financial Holdings Inc')",1,"[('IAI', 0.087)]",New,New
+"('CBOE', 'LPLA')","('Cboe Global Markets Inc', 'LPL Financial Holdings Inc')",1,"[('IAI', 0.09)]",New,New
+"('LPLA', 'MKTX')","('LPL Financial Holdings Inc', 'MarketAxess Holdings Inc')",1,"[('IAI', 0.091)]",New,New
+"('LPLA', 'SCHW')","('LPL Financial Holdings Inc', 'Charles Schwab Corp')",1,"[('IAI', 0.088)]",New,New
+"('LPLA', 'RJF')","('LPL Financial Holdings Inc', 'Raymond James Financial Inc')",1,"[('IAI', 0.088)]",New,New
+"('ICE', 'MS')","('Intercontinental Exchange Inc', 'Morgan Stanley')",1,"[('IAI', 0.259)]",New,New
+"('MS', 'NDAQ')","('Morgan Stanley', 'Nasdaq Inc')",1,"[('IAI', 0.258)]",New,New
+"('CME', 'MS')","('CME Group Inc Class A', 'Morgan Stanley')",1,"[('IAI', 0.255)]",New,New
+"('CBOE', 'MS')","('Cboe Global Markets Inc', 'Morgan Stanley')",1,"[('IAI', 0.258)]",New,New
+"('MKTX', 'MS')","('MarketAxess Holdings Inc', 'Morgan Stanley')",1,"[('IAI', 0.259)]",New,New
+"('MS', 'RJF')","('Morgan Stanley', 'Raymond James Financial Inc')",1,"[('IAI', 0.256)]",New,New
+"('GS', 'ICE')","('Goldman Sachs Group Inc', 'Intercontinental Exchange Inc')",1,"[('IAI', 0.248)]",New,New
+"('CME', 'ICE')","('CME Group Inc Class A', 'Intercontinental Exchange Inc')",1,"[('IAI', 0.092)]",New,New
+"('ICE', 'SCHW')","('Intercontinental Exchange Inc', 'Charles Schwab Corp')",1,"[('IAI', 0.092)]",New,New
+"('ICE', 'RJF')","('Intercontinental Exchange Inc', 'Raymond James Financial Inc')",1,"[('IAI', 0.093)]",New,New
+"('GS', 'NDAQ')","('Goldman Sachs Group Inc', 'Nasdaq Inc')",1,"[('IAI', 0.246)]",New,New
+"('CME', 'GS')","('CME Group Inc Class A', 'Goldman Sachs Group Inc')",1,"[('IAI', 0.244)]",New,New
+"('CBOE', 'GS')","('Cboe Global Markets Inc', 'Goldman Sachs Group Inc')",1,"[('IAI', 0.246)]",New,New
+"('GS', 'MKTX')","('Goldman Sachs Group Inc', 'MarketAxess Holdings Inc')",1,"[('IAI', 0.247)]",New,New
+"('GS', 'RJF')","('Goldman Sachs Group Inc', 'Raymond James Financial Inc')",1,"[('IAI', 0.245)]",New,New
+"('CME', 'NDAQ')","('CME Group Inc Class A', 'Nasdaq Inc')",1,"[('IAI', 0.09)]",New,New
+"('NDAQ', 'SCHW')","('Nasdaq Inc', 'Charles Schwab Corp')",1,"[('IAI', 0.091)]",New,New
+"('NDAQ', 'RJF')","('Nasdaq Inc', 'Raymond James Financial Inc')",1,"[('IAI', 0.091)]",New,New
+"('CBOE', 'CME')","('Cboe Global Markets Inc', 'CME Group Inc Class A')",1,"[('IAI', 0.091)]",New,New
+"('CME', 'MKTX')","('CME Group Inc Class A', 'MarketAxess Holdings Inc')",1,"[('IAI', 0.092)]",New,New
+"('CME', 'SCHW')","('CME Group Inc Class A', 'Charles Schwab Corp')",1,"[('IAI', 0.089)]",New,New
+"('CME', 'RJF')","('CME Group Inc Class A', 'Raymond James Financial Inc')",1,"[('IAI', 0.089)]",New,New
+"('CBOE', 'SCHW')","('Cboe Global Markets Inc', 'Charles Schwab Corp')",1,"[('IAI', 0.091)]",New,New
+"('CBOE', 'RJF')","('Cboe Global Markets Inc', 'Raymond James Financial Inc')",1,"[('IAI', 0.091)]",New,New
+"('MKTX', 'SCHW')","('MarketAxess Holdings Inc', 'Charles Schwab Corp')",1,"[('IAI', 0.092)]",New,New
+"('MKTX', 'RJF')","('MarketAxess Holdings Inc', 'Raymond James Financial Inc')",1,"[('IAI', 0.093)]",New,New
+"('AIG', 'HIG')","('American International Group Inc', 'The Hartford Financial Services Group Inc')",1,"[('IAK', 0.093)]",New,New
+"('AIG', 'AJG')","('American International Group Inc', 'Arthur J. Gallagher & Co')",1,"[('IAK', 0.103)]",New,New
+"('AFL', 'AIG')","('Aflac Inc', 'American International Group Inc')",1,"[('IAK', 0.104)]",New,New
+"('HIG', 'PRU')","('The Hartford Financial Services Group Inc', 'Prudential Financial Inc')",1,"[('IAK', 0.092)]",New,New
+"('PGR', 'PRU')","('Progressive Corp', 'Prudential Financial Inc')",1,"[('IAK', 0.143)]",New,New
+"('PRU', 'TRV')","('Prudential Financial Inc', 'The Travelers Companies Inc')",1,"[('IAK', 0.104)]",New,New
+"('CB', 'PRU')","('Chubb Ltd', 'Prudential Financial Inc')",1,"[('IAK', 0.163)]",New,New
+"('AJG', 'PRU')","('Arthur J. Gallagher & Co', 'Prudential Financial Inc')",1,"[('IAK', 0.102)]",New,New
+"('ALL', 'PRU')","('Allstate Corp', 'Prudential Financial Inc')",1,"[('IAK', 0.116)]",New,New
+"('HIG', 'MET')","('The Hartford Financial Services Group Inc', 'MetLife Inc')",1,"[('IAK', 0.099)]",New,New
+"('HIG', 'PGR')","('The Hartford Financial Services Group Inc', 'Progressive Corp')",1,"[('IAK', 0.118)]",New,New
+"('HIG', 'TRV')","('The Hartford Financial Services Group Inc', 'The Travelers Companies Inc')",1,"[('IAK', 0.078)]",New,New
+"('CB', 'HIG')","('Chubb Ltd', 'The Hartford Financial Services Group Inc')",1,"[('IAK', 0.138)]",New,New
+"('AJG', 'HIG')","('Arthur J. Gallagher & Co', 'The Hartford Financial Services Group Inc')",1,"[('IAK', 0.077)]",New,New
+"('AFL', 'HIG')","('Aflac Inc', 'The Hartford Financial Services Group Inc')",1,"[('IAK', 0.077)]",New,New
+"('ALL', 'HIG')","('Allstate Corp', 'The Hartford Financial Services Group Inc')",1,"[('IAK', 0.091)]",New,New
+"('MET', 'PGR')","('MetLife Inc', 'Progressive Corp')",1,"[('IAK', 0.149)]",New,New
+"('MET', 'TRV')","('MetLife Inc', 'The Travelers Companies Inc')",1,"[('IAK', 0.11)]",New,New
+"('AJG', 'MET')","('Arthur J. Gallagher & Co', 'MetLife Inc')",1,"[('IAK', 0.109)]",New,New
+"('AFL', 'MET')","('Aflac Inc', 'MetLife Inc')",1,"[('IAK', 0.109)]",New,New
+"('ALL', 'MET')","('Allstate Corp', 'MetLife Inc')",1,"[('IAK', 0.122)]",New,New
+"('AJG', 'PGR')","('Arthur J. Gallagher & Co', 'Progressive Corp')",1,"[('IAK', 0.127)]",New,New
+"('AFL', 'PGR')","('Aflac Inc', 'Progressive Corp')",1,"[('IAK', 0.128)]",New,New
+"('AJG', 'TRV')","('Arthur J. Gallagher & Co', 'The Travelers Companies Inc')",1,"[('IAK', 0.088)]",New,New
+"('AFL', 'TRV')","('Aflac Inc', 'The Travelers Companies Inc')",1,"[('IAK', 0.089)]",New,New
+"('AJG', 'CB')","('Arthur J. Gallagher & Co', 'Chubb Ltd')",1,"[('IAK', 0.148)]",New,New
+"('AFL', 'CB')","('Aflac Inc', 'Chubb Ltd')",1,"[('IAK', 0.148)]",New,New
+"('AFL', 'AJG')","('Aflac Inc', 'Arthur J. Gallagher & Co')",1,"[('IAK', 0.087)]",New,New
+"('AJG', 'ALL')","('Arthur J. Gallagher & Co', 'Allstate Corp')",1,"[('IAK', 0.101)]",New,New
+"('AFL', 'ALL')","('Aflac Inc', 'Allstate Corp')",1,"[('IAK', 0.101)]",New,New
+"('KEY', 'SIVB')","('KeyCorp', 'SVB Financial Group')",1,"[('IAT', 0.078)]",New,New
+"('RF', 'SIVB')","('Regions Financial Corp', 'SVB Financial Group')",1,"[('IAT', 0.077)]",New,New
+"('SIVB', 'TFC')","('SVB Financial Group', 'Truist Financial Corp')",1,"[('IAT', 0.168)]",New,New
+"('HBAN', 'SIVB')","('Huntington Bancshares Inc', 'SVB Financial Group')",1,"[('IAT', 0.08)]",New,New
+"('CFG', 'SIVB')","('Citizens Financial Group Inc', 'SVB Financial Group')",1,"[('IAT', 0.077)]",New,New
+"('KEY', 'USB')","('KeyCorp', 'U.S. Bancorp')",1,"[('IAT', 0.162)]",New,New
+"('RF', 'USB')","('Regions Financial Corp', 'U.S. Bancorp')",1,"[('IAT', 0.161)]",New,New
+"('TFC', 'USB')","('Truist Financial Corp', 'U.S. Bancorp')",1,"[('IAT', 0.253)]",New,New
+"('HBAN', 'USB')","('Huntington Bancshares Inc', 'U.S. Bancorp')",1,"[('IAT', 0.164)]",New,New
+"('CFG', 'USB')","('Citizens Financial Group Inc', 'U.S. Bancorp')",1,"[('IAT', 0.162)]",New,New
+"('KEY', 'RF')","('KeyCorp', 'Regions Financial Corp')",1,"[('IAT', 0.067)]",New,New
+"('FRC', 'KEY')","('First Republic Bank', 'KeyCorp')",1,"[('IAT', 0.089)]",New,New
+"('KEY', 'TFC')","('KeyCorp', 'Truist Financial Corp')",1,"[('IAT', 0.158)]",New,New
+"('FITB', 'KEY')","('Fifth Third Bancorp', 'KeyCorp')",1,"[('IAT', 0.078)]",New,New
+"('HBAN', 'KEY')","('Huntington Bancshares Inc', 'KeyCorp')",1,"[('IAT', 0.07)]",New,New
+"('KEY', 'PNC')","('KeyCorp', 'PNC Financial Services Group Inc')",1,"[('IAT', 0.169)]",New,New
+"('CFG', 'KEY')","('Citizens Financial Group Inc', 'KeyCorp')",1,"[('IAT', 0.067)]",New,New
+"('FRC', 'RF')","('First Republic Bank', 'Regions Financial Corp')",1,"[('IAT', 0.088)]",New,New
+"('RF', 'TFC')","('Regions Financial Corp', 'Truist Financial Corp')",1,"[('IAT', 0.157)]",New,New
+"('FITB', 'RF')","('Fifth Third Bancorp', 'Regions Financial Corp')",1,"[('IAT', 0.077)]",New,New
+"('HBAN', 'RF')","('Huntington Bancshares Inc', 'Regions Financial Corp')",1,"[('IAT', 0.068)]",New,New
+"('PNC', 'RF')","('PNC Financial Services Group Inc', 'Regions Financial Corp')",1,"[('IAT', 0.168)]",New,New
+"('CFG', 'RF')","('Citizens Financial Group Inc', 'Regions Financial Corp')",1,"[('IAT', 0.066)]",New,New
+"('FRC', 'TFC')","('First Republic Bank', 'Truist Financial Corp')",1,"[('IAT', 0.179)]",New,New
+"('FITB', 'FRC')","('Fifth Third Bancorp', 'First Republic Bank')",1,"[('IAT', 0.099)]",New,New
+"('FRC', 'HBAN')","('First Republic Bank', 'Huntington Bancshares Inc')",1,"[('IAT', 0.09)]",New,New
+"('FITB', 'TFC')","('Fifth Third Bancorp', 'Truist Financial Corp')",1,"[('IAT', 0.168)]",New,New
+"('HBAN', 'TFC')","('Huntington Bancshares Inc', 'Truist Financial Corp')",1,"[('IAT', 0.16)]",New,New
+"('PNC', 'TFC')","('PNC Financial Services Group Inc', 'Truist Financial Corp')",1,"[('IAT', 0.259)]",New,New
+"('CFG', 'TFC')","('Citizens Financial Group Inc', 'Truist Financial Corp')",1,"[('IAT', 0.157)]",New,New
+"('HBAN', 'PNC')","('Huntington Bancshares Inc', 'PNC Financial Services Group Inc')",1,"[('IAT', 0.17)]",New,New
+"('CFG', 'HBAN')","('Citizens Financial Group Inc', 'Huntington Bancshares Inc')",1,"[('IAT', 0.069)]",New,New
+"('FHB', 'XTSLA')","('First Hawaiian Inc', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('IJS', 0.034)]",New,New
+"('AGO', 'XTSLA')","('Assured Guaranty Ltd', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('IJS', 0.034)]",New,New
+"('PDCE', 'XTSLA')","('PDC Energy Inc', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('IJS', 0.036)]",New,New
+"('PPBI', 'XTSLA')","('Pacific Premier Bancorp Inc', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('IJS', 0.034)]",New,New
+"('BKU', 'XTSLA')","('BankUnited Inc', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('IJS', 0.034)]",New,New
+"('REZI', 'XTSLA')","('Resideo Technologies Inc', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('IJS', 0.035)]",New,New
+"('SIG', 'XTSLA')","('Signet Jewelers Ltd', 'BlackRock Cash Funds Treasury SL Agency')",1,"[('IJS', 0.035)]",New,New
+"('005930.KS', 'JNJ')","('Samsung Electronics Co Ltd', 'Johnson & Johnson')",1,"[('IOO', 0.044)]",New,New
+"('005930.KS', 'AMZN')","('Samsung Electronics Co Ltd', 'Amazon.com Inc')",1,"[('IOO', 0.102)]",New,New
+"('005930.KS', 'PG')","('Samsung Electronics Co Ltd', 'Procter & Gamble Co')",1,"[('IOO', 0.039)]",New,New
+"('005930.KS', 'JPM')","('Samsung Electronics Co Ltd', 'JPMorgan Chase & Co')",1,"[('IOO', 0.047)]",New,New
+"('DOX', 'TEVA')","('Amdocs Ltd', 'Teva Pharmaceutical Industries Ltd ADR')",1,"[('ISRA', 0.08)]",New,New
+"('DOX', 'POLI')","('Amdocs Ltd', 'Bank Hapoalim BM')",1,"[('ISRA', 0.075)]",New,New
+"('DOX', 'LUMI')","('Amdocs Ltd', 'Bank Leumi Le-Israel BM')",1,"[('ISRA', 0.088)]",New,New
+"('SEDG', 'TEVA')","('SolarEdge Technologies Inc', 'Teva Pharmaceutical Industries Ltd ADR')",1,"[('ISRA', 0.097)]",New,New
+"('NVCR', 'TEVA')","('NovoCure Ltd', 'Teva Pharmaceutical Industries Ltd ADR')",1,"[('ISRA', 0.097)]",New,New
+"('POLI', 'SEDG')","('Bank Hapoalim BM', 'SolarEdge Technologies Inc')",1,"[('ISRA', 0.092)]",New,New
+"('NVCR', 'POLI')","('NovoCure Ltd', 'Bank Hapoalim BM')",1,"[('ISRA', 0.091)]",New,New
+"('LUMI', 'SEDG')","('Bank Leumi Le-Israel BM', 'SolarEdge Technologies Inc')",1,"[('ISRA', 0.105)]",New,New
+"('LUMI', 'NVCR')","('Bank Leumi Le-Israel BM', 'NovoCure Ltd')",1,"[('ISRA', 0.105)]",New,New
+"('HWM', 'TDG')","('Howmet Aerospace Inc', 'TransDigm Group Inc')",1,"[('ITA', 0.081)]",New,New
+"('BA', 'HWM')","('Boeing Co', 'Howmet Aerospace Inc')",1,"[('ITA', 0.231)]",New,New
+"('HWM', 'LMT')","('Howmet Aerospace Inc', 'Lockheed Martin Corp')",1,"[('ITA', 0.092)]",New,New
+"('HWM', 'RTX')","('Howmet Aerospace Inc', 'Raytheon Technologies Corp')",1,"[('ITA', 0.227)]",New,New
+"('HWM', 'TDY')","('Howmet Aerospace Inc', 'Teledyne Technologies Inc')",1,"[('ITA', 0.082)]",New,New
+"('GD', 'HWM')","('General Dynamics Corp', 'Howmet Aerospace Inc')",1,"[('ITA', 0.081)]",New,New
+"('HWM', 'NOC')","('Howmet Aerospace Inc', 'Northrop Grumman Corp')",1,"[('ITA', 0.081)]",New,New
+"('HWM', 'LHX')","('Howmet Aerospace Inc', 'L3Harris Technologies Inc')",1,"[('ITA', 0.082)]",New,New
+"('HWM', 'TXT')","('Howmet Aerospace Inc', 'Textron Inc')",1,"[('ITA', 0.078)]",New,New
+"('CVX', 'PEP')","('Chevron Corp', 'PepsiCo Inc')",1,"[('PWV', 0.068)]",New,New
+"('MS', 'PEP')","('Morgan Stanley', 'PepsiCo Inc')",1,"[('PWV', 0.069)]",New,New
+"('PEP', 'XOM')","('PepsiCo Inc', 'Exxon Mobil Corp')",1,"[('PWV', 0.07)]",New,New
+"('ABBV', 'MS')","('AbbVie Inc', 'Morgan Stanley')",1,"[('PWV', 0.068)]",New,New
+"('CMCSA', 'CVX')","('Comcast Corp Class A', 'Chevron Corp')",1,"[('PWV', 0.069)]",New,New
+"('CMCSA', 'MS')","('Comcast Corp Class A', 'Morgan Stanley')",1,"[('PWV', 0.07)]",New,New
+"('CMCSA', 'PFE')","('Comcast Corp Class A', 'Pfizer Inc')",1,"[('PWV', 0.068)]",New,New
+"('CVX', 'MS')","('Chevron Corp', 'Morgan Stanley')",1,"[('PWV', 0.069)]",New,New
+"('CVX', 'PFE')","('Chevron Corp', 'Pfizer Inc')",1,"[('PWV', 0.068)]",New,New
+"('MS', 'PFE')","('Morgan Stanley', 'Pfizer Inc')",1,"[('PWV', 0.069)]",New,New
+"('MS', 'WMT')","('Morgan Stanley', 'Walmart Inc')",1,"[('PWV', 0.068)]",New,New
+"('CLR', 'PXD')","('Continental Resources Inc', 'Pioneer Natural Resources Co')",1,"[('PXE', 0.102)]",New,New
+"('CDEV', 'PXD')","('Centennial Resource Development Inc A', 'Pioneer Natural Resources Co')",1,"[('PXE', 0.083)]",New,New
+"('PXD', 'SM')","('Pioneer Natural Resources Co', 'SM Energy Co')",1,"[('PXE', 0.082)]",New,New
+"('CLR', 'VLO')","('Continental Resources Inc', 'Valero Energy Corp')",1,"[('PXE', 0.098)]",New,New
+"('CDEV', 'VLO')","('Centennial Resource Development Inc A', 'Valero Energy Corp')",1,"[('PXE', 0.079)]",New,New
+"('SM', 'VLO')","('SM Energy Co', 'Valero Energy Corp')",1,"[('PXE', 0.078)]",New,New
+"('CLR', 'PSX')","('Continental Resources Inc', 'Phillips 66')",1,"[('PXE', 0.099)]",New,New
+"('CLR', 'MPC')","('Continental Resources Inc', 'Marathon Petroleum Corp')",1,"[('PXE', 0.098)]",New,New
+"('CLR', 'HES')","('Continental Resources Inc', 'Hess Corp')",1,"[('PXE', 0.1)]",New,New
+"('CDEV', 'PSX')","('Centennial Resource Development Inc A', 'Phillips 66')",1,"[('PXE', 0.08)]",New,New
+"('PSX', 'SM')","('Phillips 66', 'SM Energy Co')",1,"[('PXE', 0.079)]",New,New
+"('CDEV', 'EOG')","('Centennial Resource Development Inc A', 'EOG Resources Inc')",1,"[('PXE', 0.081)]",New,New
+"('CDEV', 'MPC')","('Centennial Resource Development Inc A', 'Marathon Petroleum Corp')",1,"[('PXE', 0.079)]",New,New
+"('CDEV', 'HES')","('Centennial Resource Development Inc A', 'Hess Corp')",1,"[('PXE', 0.081)]",New,New
+"('EOG', 'SM')","('EOG Resources Inc', 'SM Energy Co')",1,"[('PXE', 0.08)]",New,New
+"('MPC', 'SM')","('Marathon Petroleum Corp', 'SM Energy Co')",1,"[('PXE', 0.078)]",New,New
+"('HES', 'SM')","('Hess Corp', 'SM Energy Co')",1,"[('PXE', 0.08)]",New,New
+"('FTI', 'LBRT')","('TechnipFMC PLC', 'Liberty Oilfield Services Inc')",1,"[('PXJ', 0.141)]",New,New
+"('BKR', 'LBRT')","('Baker Hughes Co Class A', 'Liberty Oilfield Services Inc')",1,"[('PXJ', 0.129)]",New,New
+"('LBRT', 'NOV')","('Liberty Oilfield Services Inc', 'NOV Inc')",1,"[('PXJ', 0.13)]",New,New
+"('MRVL', 'ZS')","('Marvell Technology Inc', 'Zscaler Inc')",1,"[('PXQ', 0.088)]",New,New
+"('MRVL', 'VRNS')","('Marvell Technology Inc', 'Varonis Systems Inc')",1,"[('PXQ', 0.087)]",New,New
+"('APH', 'MRVL')","('Amphenol Corp Class A', 'Marvell Technology Inc')",1,"[('PXQ', 0.104)]",New,New
+"('MRVL', 'VMW')","('Marvell Technology Inc', 'VMware Inc')",1,"[('PXQ', 0.103)]",New,New
+"('CRWD', 'MSI')","('CrowdStrike Holdings Inc Class A', 'Motorola Solutions Inc')",1,"[('PXQ', 0.105)]",New,New
+"('APH', 'CRWD')","('Amphenol Corp Class A', 'CrowdStrike Holdings Inc Class A')",1,"[('PXQ', 0.103)]",New,New
+"('CRWD', 'QCOM')","('CrowdStrike Holdings Inc Class A', 'Qualcomm Inc')",1,"[('PXQ', 0.105)]",New,New
+"('AAPL', 'CRWD')","('Apple Inc', 'CrowdStrike Holdings Inc Class A')",1,"[('PXQ', 0.105)]",New,New
+"('MSI', 'ZS')","('Motorola Solutions Inc', 'Zscaler Inc')",1,"[('PXQ', 0.081)]",New,New
+"('APH', 'ZS')","('Amphenol Corp Class A', 'Zscaler Inc')",1,"[('PXQ', 0.08)]",New,New
+"('QCOM', 'ZS')","('Qualcomm Inc', 'Zscaler Inc')",1,"[('PXQ', 0.082)]",New,New
+"('AAPL', 'ZS')","('Apple Inc', 'Zscaler Inc')",1,"[('PXQ', 0.082)]",New,New
+"('MSI', 'VRNS')","('Motorola Solutions Inc', 'Varonis Systems Inc')",1,"[('PXQ', 0.08)]",New,New
+"('APH', 'VRNS')","('Amphenol Corp Class A', 'Varonis Systems Inc')",1,"[('PXQ', 0.078)]",New,New
+"('QCOM', 'VRNS')","('Qualcomm Inc', 'Varonis Systems Inc')",1,"[('PXQ', 0.081)]",New,New
+"('VMW', 'VRNS')","('VMware Inc', 'Varonis Systems Inc')",1,"[('PXQ', 0.077)]",New,New
+"('AAPL', 'VRNS')","('Apple Inc', 'Varonis Systems Inc')",1,"[('PXQ', 0.081)]",New,New
+"('APH', 'MSI')","('Amphenol Corp Class A', 'Motorola Solutions Inc')",1,"[('PXQ', 0.097)]",New,New
+"('MSI', 'VMW')","('Motorola Solutions Inc', 'VMware Inc')",1,"[('PXQ', 0.096)]",New,New
+"('AAPL', 'MSI')","('Apple Inc', 'Motorola Solutions Inc')",1,"[('PXQ', 0.1)]",New,New
+"('APH', 'QCOM')","('Amphenol Corp Class A', 'Qualcomm Inc')",1,"[('PXQ', 0.098)]",New,New
+"('APH', 'FTNT')","('Amphenol Corp Class A', 'Fortinet Inc')",1,"[('PXQ', 0.099)]",New,New
+"('APH', 'VMW')","('Amphenol Corp Class A', 'VMware Inc')",1,"[('PXQ', 0.094)]",New,New
+"('AAPL', 'APH')","('Apple Inc', 'Amphenol Corp Class A')",1,"[('PXQ', 0.098)]",New,New
+"('FTNT', 'QCOM')","('Fortinet Inc', 'Qualcomm Inc')",1,"[('PXQ', 0.102)]",New,New
+"('QCOM', 'VMW')","('Qualcomm Inc', 'VMware Inc')",1,"[('PXQ', 0.096)]",New,New
+"('AAPL', 'FTNT')","('Apple Inc', 'Fortinet Inc')",1,"[('PXQ', 0.102)]",New,New
+"('AAPL', 'VMW')","('Apple Inc', 'VMware Inc')",1,"[('PXQ', 0.097)]",New,New
+"('SAM', 'YETI')","('Boston Beer Co Inc Class A', 'YETI Holdings Inc')",1,"[('RFG', 0.043)]",New,New
+"('RH', 'YETI')","('RH', 'YETI Holdings Inc')",1,"[('RFG', 0.051)]",New,New
+"('STAA', 'YETI')","('Staar Surgical Co', 'YETI Holdings Inc')",1,"[('RFG', 0.054)]",New,New
+"('AXON', 'YETI')","('Axon Enterprise Inc', 'YETI Holdings Inc')",1,"[('RFG', 0.043)]",New,New
+"('MEDP', 'YETI')","('Medpace Holdings Inc', 'YETI Holdings Inc')",1,"[('RFG', 0.043)]",New,New
+"('BHF', 'YETI')","('Brighthouse Financial Inc', 'YETI Holdings Inc')",1,"[('RFG', 0.044)]",New,New
+"('RGEN', 'YETI')","('Repligen Corp', 'YETI Holdings Inc')",1,"[('RFG', 0.043)]",New,New
+"('RH', 'SAM')","('RH', 'Boston Beer Co Inc Class A')",1,"[('RFG', 0.051)]",New,New
+"('SAM', 'SLM')","('Boston Beer Co Inc Class A', 'SLM Corp')",1,"[('RFG', 0.045)]",New,New
+"('SAM', 'STAA')","('Boston Beer Co Inc Class A', 'Staar Surgical Co')",1,"[('RFG', 0.055)]",New,New
+"('BRKS', 'SAM')","('Brooks Automation Inc', 'Boston Beer Co Inc Class A')",1,"[('RFG', 0.044)]",New,New
+"('MEDP', 'SAM')","('Medpace Holdings Inc', 'Boston Beer Co Inc Class A')",1,"[('RFG', 0.044)]",New,New
+"('BHF', 'SAM')","('Brighthouse Financial Inc', 'Boston Beer Co Inc Class A')",1,"[('RFG', 0.044)]",New,New
+"('RH', 'SLM')","('RH', 'SLM Corp')",1,"[('RFG', 0.053)]",New,New
+"('RH', 'STAA')","('RH', 'Staar Surgical Co')",1,"[('RFG', 0.063)]",New,New
+"('BRKS', 'RH')","('Brooks Automation Inc', 'RH')",1,"[('RFG', 0.052)]",New,New
+"('MEDP', 'RH')","('Medpace Holdings Inc', 'RH')",1,"[('RFG', 0.052)]",New,New
+"('BHF', 'RH')","('Brighthouse Financial Inc', 'RH')",1,"[('RFG', 0.053)]",New,New
+"('RGEN', 'RH')","('Repligen Corp', 'RH')",1,"[('RFG', 0.052)]",New,New
+"('SLM', 'STAA')","('SLM Corp', 'Staar Surgical Co')",1,"[('RFG', 0.057)]",New,New
+"('AXON', 'SLM')","('Axon Enterprise Inc', 'SLM Corp')",1,"[('RFG', 0.045)]",New,New
+"('MEDP', 'SLM')","('Medpace Holdings Inc', 'SLM Corp')",1,"[('RFG', 0.045)]",New,New
+"('BHF', 'SLM')","('Brighthouse Financial Inc', 'SLM Corp')",1,"[('RFG', 0.046)]",New,New
+"('RGEN', 'SLM')","('Repligen Corp', 'SLM Corp')",1,"[('RFG', 0.045)]",New,New
+"('AXON', 'STAA')","('Axon Enterprise Inc', 'Staar Surgical Co')",1,"[('RFG', 0.056)]",New,New
+"('BRKS', 'STAA')","('Brooks Automation Inc', 'Staar Surgical Co')",1,"[('RFG', 0.056)]",New,New
+"('MEDP', 'STAA')","('Medpace Holdings Inc', 'Staar Surgical Co')",1,"[('RFG', 0.056)]",New,New
+"('BHF', 'STAA')","('Brighthouse Financial Inc', 'Staar Surgical Co')",1,"[('RFG', 0.056)]",New,New
+"('RGEN', 'STAA')","('Repligen Corp', 'Staar Surgical Co')",1,"[('RFG', 0.056)]",New,New
+"('AXON', 'BRKS')","('Axon Enterprise Inc', 'Brooks Automation Inc')",1,"[('RFG', 0.045)]",New,New
+"('AXON', 'MEDP')","('Axon Enterprise Inc', 'Medpace Holdings Inc')",1,"[('RFG', 0.045)]",New,New
+"('AXON', 'BHF')","('Axon Enterprise Inc', 'Brighthouse Financial Inc')",1,"[('RFG', 0.045)]",New,New
+"('BRKS', 'MEDP')","('Brooks Automation Inc', 'Medpace Holdings Inc')",1,"[('RFG', 0.045)]",New,New
+"('BHF', 'BRKS')","('Brighthouse Financial Inc', 'Brooks Automation Inc')",1,"[('RFG', 0.045)]",New,New
+"('BRKS', 'RGEN')","('Brooks Automation Inc', 'Repligen Corp')",1,"[('RFG', 0.044)]",New,New
+"('BHF', 'MEDP')","('Brighthouse Financial Inc', 'Medpace Holdings Inc')",1,"[('RFG', 0.045)]",New,New
+"('MEDP', 'RGEN')","('Medpace Holdings Inc', 'Repligen Corp')",1,"[('RFG', 0.044)]",New,New
+"('BHF', 'RGEN')","('Brighthouse Financial Inc', 'Repligen Corp')",1,"[('RFG', 0.045)]",New,New
+"('AN', 'NAVI')","('AutoNation Inc', 'Navient Corp')",1,"[('RFV', 0.04)]",New,New
+"('AN', 'CMC')","('AutoNation Inc', 'Commercial Metals Co')",1,"[('RFV', 0.039)]",New,New
+"('AN', 'TDS')","('AutoNation Inc', 'Telephone and Data Systems Inc')",1,"[('RFV', 0.04)]",New,New
+"('AN', 'HFC')","('AutoNation Inc', 'HollyFrontier Corp')",1,"[('RFV', 0.04)]",New,New
+"('CMC', 'NAVI')","('Commercial Metals Co', 'Navient Corp')",1,"[('RFV', 0.042)]",New,New
+"('AVT', 'NAVI')","('Avnet Inc', 'Navient Corp')",1,"[('RFV', 0.043)]",New,New
+"('KSS', 'NAVI')","(""Kohl's Corp"", 'Navient Corp')",1,"[('RFV', 0.04)]",New,New
+"('INT', 'NAVI')","('World Fuel Services Corp', 'Navient Corp')",1,"[('RFV', 0.04)]",New,New
+"('NAVI', 'TDS')","('Navient Corp', 'Telephone and Data Systems Inc')",1,"[('RFV', 0.044)]",New,New
+"('NAVI', 'SNX')","('Navient Corp', 'Synnex Corp')",1,"[('RFV', 0.039)]",New,New
+"('GHC', 'NAVI')","('Graham Holdings Co', 'Navient Corp')",1,"[('RFV', 0.04)]",New,New
+"('HFC', 'NAVI')","('HollyFrontier Corp', 'Navient Corp')",1,"[('RFV', 0.044)]",New,New
+"('AVT', 'CMC')","('Avnet Inc', 'Commercial Metals Co')",1,"[('RFV', 0.042)]",New,New
+"('CMC', 'KSS')","('Commercial Metals Co', ""Kohl's Corp"")",1,"[('RFV', 0.039)]",New,New
+"('CMC', 'INT')","('Commercial Metals Co', 'World Fuel Services Corp')",1,"[('RFV', 0.039)]",New,New
+"('CMC', 'TDS')","('Commercial Metals Co', 'Telephone and Data Systems Inc')",1,"[('RFV', 0.043)]",New,New
+"('CMC', 'SNX')","('Commercial Metals Co', 'Synnex Corp')",1,"[('RFV', 0.038)]",New,New
+"('CMC', 'GHC')","('Commercial Metals Co', 'Graham Holdings Co')",1,"[('RFV', 0.039)]",New,New
+"('CMC', 'HFC')","('Commercial Metals Co', 'HollyFrontier Corp')",1,"[('RFV', 0.043)]",New,New
+"('AVT', 'TDS')","('Avnet Inc', 'Telephone and Data Systems Inc')",1,"[('RFV', 0.044)]",New,New
+"('AVT', 'GHC')","('Avnet Inc', 'Graham Holdings Co')",1,"[('RFV', 0.039)]",New,New
+"('AVT', 'HFC')","('Avnet Inc', 'HollyFrontier Corp')",1,"[('RFV', 0.044)]",New,New
+"('KSS', 'TDS')","(""Kohl's Corp"", 'Telephone and Data Systems Inc')",1,"[('RFV', 0.041)]",New,New
+"('HFC', 'KSS')","('HollyFrontier Corp', ""Kohl's Corp"")",1,"[('RFV', 0.041)]",New,New
+"('INT', 'TDS')","('World Fuel Services Corp', 'Telephone and Data Systems Inc')",1,"[('RFV', 0.04)]",New,New
+"('GHC', 'INT')","('Graham Holdings Co', 'World Fuel Services Corp')",1,"[('RFV', 0.036)]",New,New
+"('HFC', 'INT')","('HollyFrontier Corp', 'World Fuel Services Corp')",1,"[('RFV', 0.04)]",New,New
+"('SNX', 'TDS')","('Synnex Corp', 'Telephone and Data Systems Inc')",1,"[('RFV', 0.04)]",New,New
+"('GHC', 'TDS')","('Graham Holdings Co', 'Telephone and Data Systems Inc')",1,"[('RFV', 0.04)]",New,New
+"('HFC', 'TDS')","('HollyFrontier Corp', 'Telephone and Data Systems Inc')",1,"[('RFV', 0.045)]",New,New
+"('HFC', 'SNX')","('HollyFrontier Corp', 'Synnex Corp')",1,"[('RFV', 0.04)]",New,New
+"('GHC', 'HFC')","('Graham Holdings Co', 'HollyFrontier Corp')",1,"[('RFV', 0.04)]",New,New
+"('GNRC', 'SIVB')","('Generac Holdings Inc', 'SVB Financial Group')",1,"[('RPG', 0.045)]",New,New
+"('NVDA', 'SIVB')","('NVIDIA Corp', 'SVB Financial Group')",1,"[('RPG', 0.049)]",New,New
+"('MPWR', 'SIVB')","('Monolithic Power Systems Inc', 'SVB Financial Group')",1,"[('RPG', 0.044)]",New,New
+"('SIVB', 'TER')","('SVB Financial Group', 'Teradyne Inc')",1,"[('RPG', 0.043)]",New,New
+"('SIVB', 'TSLA')","('SVB Financial Group', 'Tesla Inc')",1,"[('RPG', 0.044)]",New,New
+"('ETSY', 'SIVB')","('Etsy Inc', 'SVB Financial Group')",1,"[('RPG', 0.048)]",New,New
+"('FTNT', 'SIVB')","('Fortinet Inc', 'SVB Financial Group')",1,"[('RPG', 0.043)]",New,New
+"('PYPL', 'SIVB')","('PayPal Holdings Inc', 'SVB Financial Group')",1,"[('RPG', 0.049)]",New,New
+"('ALGN', 'SIVB')","('Align Technology Inc', 'SVB Financial Group')",1,"[('RPG', 0.044)]",New,New
+"('GNRC', 'TSLA')","('Generac Holdings Inc', 'Tesla Inc')",1,"[('RPG', 0.043)]",New,New
+"('GNRC', 'PYPL')","('Generac Holdings Inc', 'PayPal Holdings Inc')",1,"[('RPG', 0.047)]",New,New
+"('ALGN', 'GNRC')","('Align Technology Inc', 'Generac Holdings Inc')",1,"[('RPG', 0.043)]",New,New
+"('NVDA', 'TER')","('NVIDIA Corp', 'Teradyne Inc')",1,"[('RPG', 0.046)]",New,New
+"('ALGN', 'NVDA')","('Align Technology Inc', 'NVIDIA Corp')",1,"[('RPG', 0.047)]",New,New
+"('MPWR', 'TER')","('Monolithic Power Systems Inc', 'Teradyne Inc')",1,"[('RPG', 0.041)]",New,New
+"('MPWR', 'TSLA')","('Monolithic Power Systems Inc', 'Tesla Inc')",1,"[('RPG', 0.042)]",New,New
+"('ETSY', 'MPWR')","('Etsy Inc', 'Monolithic Power Systems Inc')",1,"[('RPG', 0.045)]",New,New
+"('ALGN', 'MPWR')","('Align Technology Inc', 'Monolithic Power Systems Inc')",1,"[('RPG', 0.042)]",New,New
+"('TER', 'TSLA')","('Teradyne Inc', 'Tesla Inc')",1,"[('RPG', 0.041)]",New,New
+"('PYPL', 'TER')","('PayPal Holdings Inc', 'Teradyne Inc')",1,"[('RPG', 0.046)]",New,New
+"('ALGN', 'TER')","('Align Technology Inc', 'Teradyne Inc')",1,"[('RPG', 0.041)]",New,New
+"('FTNT', 'TSLA')","('Fortinet Inc', 'Tesla Inc')",1,"[('RPG', 0.041)]",New,New
+"('ALGN', 'TSLA')","('Align Technology Inc', 'Tesla Inc')",1,"[('RPG', 0.042)]",New,New
+"('ETSY', 'PYPL')","('Etsy Inc', 'PayPal Holdings Inc')",1,"[('RPG', 0.05)]",New,New
+"('ALGN', 'ETSY')","('Align Technology Inc', 'Etsy Inc')",1,"[('RPG', 0.045)]",New,New
+"('FTNT', 'PYPL')","('Fortinet Inc', 'PayPal Holdings Inc')",1,"[('RPG', 0.045)]",New,New
+"('ALGN', 'PYPL')","('Align Technology Inc', 'PayPal Holdings Inc')",1,"[('RPG', 0.047)]",New,New
+"('CVS', 'VLO')","('CVS Health Corp', 'Valero Energy Corp')",1,"[('RPV', 0.034)]",New,New
+"('CVS', 'PRU')","('CVS Health Corp', 'Prudential Financial Inc')",1,"[('RPV', 0.035)]",New,New
+"('CVS', 'LUMN')","('CVS Health Corp', 'Lumen Technologies Inc Ordinary Shares')",1,"[('RPV', 0.036)]",New,New
+"('CVS', 'LNC')","('CVS Health Corp', 'Lincoln National Corp')",1,"[('RPV', 0.035)]",New,New
+"('CVS', 'IVZ')","('CVS Health Corp', 'Invesco Ltd')",1,"[('RPV', 0.032)]",New,New
+"('CVS', 'MET')","('CVS Health Corp', 'MetLife Inc')",1,"[('RPV', 0.034)]",New,New
+"('CVS', 'UNM')","('CVS Health Corp', 'Unum Group')",1,"[('RPV', 0.038)]",New,New
+"('PRU', 'VLO')","('Prudential Financial Inc', 'Valero Energy Corp')",1,"[('RPV', 0.036)]",New,New
+"('LUMN', 'VLO')","('Lumen Technologies Inc Ordinary Shares', 'Valero Energy Corp')",1,"[('RPV', 0.037)]",New,New
+"('LNC', 'VLO')","('Lincoln National Corp', 'Valero Energy Corp')",1,"[('RPV', 0.037)]",New,New
+"('IVZ', 'VLO')","('Invesco Ltd', 'Valero Energy Corp')",1,"[('RPV', 0.034)]",New,New
+"('MET', 'VLO')","('MetLife Inc', 'Valero Energy Corp')",1,"[('RPV', 0.036)]",New,New
+"('F', 'VLO')","('Ford Motor Co', 'Valero Energy Corp')",1,"[('RPV', 0.039)]",New,New
+"('UNM', 'VLO')","('Unum Group', 'Valero Energy Corp')",1,"[('RPV', 0.04)]",New,New
+"('BRK.B', 'VLO')","('Berkshire Hathaway Inc Class B', 'Valero Energy Corp')",1,"[('RPV', 0.04)]",New,New
+"('LUMN', 'PRU')","('Lumen Technologies Inc Ordinary Shares', 'Prudential Financial Inc')",1,"[('RPV', 0.038)]",New,New
+"('IVZ', 'PRU')","('Invesco Ltd', 'Prudential Financial Inc')",1,"[('RPV', 0.034)]",New,New
+"('BRK.B', 'PRU')","('Berkshire Hathaway Inc Class B', 'Prudential Financial Inc')",1,"[('RPV', 0.041)]",New,New
+"('LNC', 'LUMN')","('Lincoln National Corp', 'Lumen Technologies Inc Ordinary Shares')",1,"[('RPV', 0.038)]",New,New
+"('IVZ', 'LUMN')","('Invesco Ltd', 'Lumen Technologies Inc Ordinary Shares')",1,"[('RPV', 0.036)]",New,New
+"('LUMN', 'MET')","('Lumen Technologies Inc Ordinary Shares', 'MetLife Inc')",1,"[('RPV', 0.037)]",New,New
+"('F', 'LUMN')","('Ford Motor Co', 'Lumen Technologies Inc Ordinary Shares')",1,"[('RPV', 0.041)]",New,New
+"('LUMN', 'UNM')","('Lumen Technologies Inc Ordinary Shares', 'Unum Group')",1,"[('RPV', 0.042)]",New,New
+"('BRK.B', 'LUMN')","('Berkshire Hathaway Inc Class B', 'Lumen Technologies Inc Ordinary Shares')",1,"[('RPV', 0.042)]",New,New
+"('IVZ', 'LNC')","('Invesco Ltd', 'Lincoln National Corp')",1,"[('RPV', 0.035)]",New,New
+"('LNC', 'MET')","('Lincoln National Corp', 'MetLife Inc')",1,"[('RPV', 0.036)]",New,New
+"('F', 'LNC')","('Ford Motor Co', 'Lincoln National Corp')",1,"[('RPV', 0.04)]",New,New
+"('BRK.B', 'LNC')","('Berkshire Hathaway Inc Class B', 'Lincoln National Corp')",1,"[('RPV', 0.041)]",New,New
+"('IVZ', 'MET')","('Invesco Ltd', 'MetLife Inc')",1,"[('RPV', 0.034)]",New,New
+"('F', 'IVZ')","('Ford Motor Co', 'Invesco Ltd')",1,"[('RPV', 0.037)]",New,New
+"('IVZ', 'UNM')","('Invesco Ltd', 'Unum Group')",1,"[('RPV', 0.038)]",New,New
+"('BRK.B', 'IVZ')","('Berkshire Hathaway Inc Class B', 'Invesco Ltd')",1,"[('RPV', 0.038)]",New,New
+"('MET', 'UNM')","('MetLife Inc', 'Unum Group')",1,"[('RPV', 0.04)]",New,New
+"('BRK.B', 'MET')","('Berkshire Hathaway Inc Class B', 'MetLife Inc')",1,"[('RPV', 0.04)]",New,New
+"('F', 'UNM')","('Ford Motor Co', 'Unum Group')",1,"[('RPV', 0.044)]",New,New
+"('BRK.B', 'F')","('Berkshire Hathaway Inc Class B', 'Ford Motor Co')",1,"[('RPV', 0.044)]",New,New
+"('BRK.B', 'UNM')","('Berkshire Hathaway Inc Class B', 'Unum Group')",1,"[('RPV', 0.044)]",New,New
+"('AMD', 'GNRC')","('Advanced Micro Devices Inc', 'Generac Holdings Inc')",1,"[('RSP', 0.005)]",New,New
+"('GNRC', 'NKE')","('Generac Holdings Inc', 'Nike Inc B')",1,"[('RSP', 0.005)]",New,New
+"('GNRC', 'TWTR')","('Generac Holdings Inc', 'Twitter Inc')",1,"[('RSP', 0.005)]",New,New
+"('GNRC', 'XLNX')","('Generac Holdings Inc', 'Xilinx Inc')",1,"[('RSP', 0.005)]",New,New
+"('CMG', 'GNRC')","('Chipotle Mexican Grill Inc', 'Generac Holdings Inc')",1,"[('RSP', 0.005)]",New,New
+"('ENPH', 'NKE')","('Enphase Energy Inc', 'Nike Inc B')",1,"[('RSP', 0.005)]",New,New
+"('ENPH', 'ETSY')","('Enphase Energy Inc', 'Etsy Inc')",1,"[('RSP', 0.005)]",New,New
+"('ENPH', 'RMD')","('Enphase Energy Inc', 'ResMed Inc')",1,"[('RSP', 0.005)]",New,New
+"('AMD', 'NKE')","('Advanced Micro Devices Inc', 'Nike Inc B')",1,"[('RSP', 0.005)]",New,New
+"('AMD', 'ETSY')","('Advanced Micro Devices Inc', 'Etsy Inc')",1,"[('RSP', 0.005)]",New,New
+"('AMD', 'TWTR')","('Advanced Micro Devices Inc', 'Twitter Inc')",1,"[('RSP', 0.005)]",New,New
+"('AMD', 'RMD')","('Advanced Micro Devices Inc', 'ResMed Inc')",1,"[('RSP', 0.005)]",New,New
+"('AMD', 'CMG')","('Advanced Micro Devices Inc', 'Chipotle Mexican Grill Inc')",1,"[('RSP', 0.005)]",New,New
+"('NKE', 'TWTR')","('Nike Inc B', 'Twitter Inc')",1,"[('RSP', 0.005)]",New,New
+"('NKE', 'XLNX')","('Nike Inc B', 'Xilinx Inc')",1,"[('RSP', 0.005)]",New,New
+"('ETSY', 'XLNX')","('Etsy Inc', 'Xilinx Inc')",1,"[('RSP', 0.005)]",New,New
+"('RMD', 'TWTR')","('ResMed Inc', 'Twitter Inc')",1,"[('RSP', 0.005)]",New,New
+"('CMG', 'RMD')","('Chipotle Mexican Grill Inc', 'ResMed Inc')",1,"[('RSP', 0.005)]",New,New
+"('CMG', 'XLNX')","('Chipotle Mexican Grill Inc', 'Xilinx Inc')",1,"[('RSP', 0.005)]",New,New
+"('RELIANCE.B', 'TSM.TW')","('Reliance Industries Ltd Shs Dematerialised', 'Taiwan Semiconductor Manufacturing Co Ltd ADR')",1,"[('VWO', 0.028)]",New,New
+"('TSM.TW', 'VALE3.SA')","('Taiwan Semiconductor Manufacturing Co Ltd ADR', 'Vale SA')",1,"[('VWO', 0.026)]",New,New
+"('MRVL', 'ZM')","('Marvell Technology Inc', 'Zoom Video Communications Inc')",1,"[('VXF', 0.016)]",New,New
+"('MRNA', 'MRVL')","('Moderna Inc', 'Marvell Technology Inc')",1,"[('VXF', 0.015)]",New,New
+"('MRVL', 'UBER')","('Marvell Technology Inc', 'Uber Technologies Inc')",1,"[('VXF', 0.015)]",New,New
+"('BX', 'MRVL')","('Blackstone Group Inc', 'Marvell Technology Inc')",1,"[('VXF', 0.014)]",New,New
+"('MRNA', 'TWLO')","('Moderna Inc', 'Twilio Inc A')",1,"[('VXF', 0.016)]",New,New
+"('TWLO', 'UBER')","('Twilio Inc A', 'Uber Technologies Inc')",1,"[('VXF', 0.017)]",New,New
+"('BX', 'TWLO')","('Blackstone Group Inc', 'Twilio Inc A')",1,"[('VXF', 0.016)]",New,New
+"('MRNA', 'SQ')","('Moderna Inc', 'Square Inc A')",1,"[('VXF', 0.021)]",New,New
+"('SQ', 'UBER')","('Square Inc A', 'Uber Technologies Inc')",1,"[('VXF', 0.021)]",New,New
+"('BX', 'SQ')","('Blackstone Group Inc', 'Square Inc A')",1,"[('VXF', 0.02)]",New,New
+"('DOCU', 'UBER')","('DocuSign Inc', 'Uber Technologies Inc')",1,"[('VXF', 0.016)]",New,New
+"('BX', 'DOCU')","('Blackstone Group Inc', 'DocuSign Inc')",1,"[('VXF', 0.015)]",New,New
+"('CRWD', 'MRNA')","('CrowdStrike Holdings Inc Class A', 'Moderna Inc')",1,"[('VXF', 0.015)]",New,New
+"('CRWD', 'UBER')","('CrowdStrike Holdings Inc Class A', 'Uber Technologies Inc')",1,"[('VXF', 0.016)]",New,New
+"('BX', 'CRWD')","('Blackstone Group Inc', 'CrowdStrike Holdings Inc Class A')",1,"[('VXF', 0.015)]",New,New
+"('UBER', 'ZM')","('Uber Technologies Inc', 'Zoom Video Communications Inc')",1,"[('VXF', 0.02)]",New,New
+"('BX', 'ZM')","('Blackstone Group Inc', 'Zoom Video Communications Inc')",1,"[('VXF', 0.019)]",New,New
+"('MRNA', 'UBER')","('Moderna Inc', 'Uber Technologies Inc')",1,"[('VXF', 0.018)]",New,New
+"('BX', 'MRNA')","('Blackstone Group Inc', 'Moderna Inc')",1,"[('VXF', 0.017)]",New,New
+"('SNAP', 'UBER')","('Snap Inc Class A', 'Uber Technologies Inc')",1,"[('VXF', 0.017)]",New,New
+"('BX', 'UBER')","('Blackstone Group Inc', 'Uber Technologies Inc')",1,"[('VXF', 0.018)]",New,New
+"('BX', 'SNAP')","('Blackstone Group Inc', 'Snap Inc Class A')",1,"[('VXF', 0.016)]",New,New

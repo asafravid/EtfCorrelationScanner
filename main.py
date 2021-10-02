@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.38 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.39 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -43,8 +43,8 @@ from contextlib import closing
 # Start of Run Configuration ###########
 SCAN_ETFS                   = False
 POST_PROCESS_ETFS           = True
-POST_PROCESS_PATH_NEW       = '20210918-192622'
-POST_PROCESS_PATH_REF       = '20210907-215545'
+POST_PROCESS_PATH_NEW       = '20211002-044815'
+POST_PROCESS_PATH_REF       = '20210918-192622'
 CUSTOM_ETF_LIST             = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 NUM_REPORTED_ENTRIES        = 42
 NUM_REPORTED_BIGRAM_ENTRIES = 77
@@ -226,6 +226,8 @@ def scan_etfs():
     with open(result_db_filename_and_path, mode='w', newline='') as engine:
         writer = csv.writer(engine)
         writer.writerows(rows)
+
+    print('Scan Result saved in {}'.format(results_date_and_time_path))
 
 
 def update_appearances(row, symbols_appearances, symbols_appearances_with_weights, symbols_holders, bigrams_appearances, bigrams_appearances_with_weights, bigrams_holders):
