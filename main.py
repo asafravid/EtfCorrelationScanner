@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.39 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.40 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -43,8 +43,8 @@ from contextlib import closing
 # Start of Run Configuration ###########
 SCAN_ETFS                   = False
 POST_PROCESS_ETFS           = True
-POST_PROCESS_PATH_NEW       = '20211002-044815'
-POST_PROCESS_PATH_REF       = '20210918-192622'
+POST_PROCESS_PATH_NEW       = '20211016-064338'
+POST_PROCESS_PATH_REF       = '20211002-044815'
 CUSTOM_ETF_LIST             = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 NUM_REPORTED_ENTRIES        = 42
 NUM_REPORTED_BIGRAM_ENTRIES = 77
