@@ -1,0 +1,35 @@
+Bigram,Name,NumAppearances,Holders,DiffEntries,DiffValue
+"('MRW.L', 'WKL')","('Morrison (Wm) Supermarkets PLC', 'Wolters Kluwer NV')",1,"[('PQIN', 0.005)]",New,New
+"('BVI.PA', 'MRW.L')","('Bureau Veritas SA', 'Morrison (Wm) Supermarkets PLC')",1,"[('PQIN', 0.005)]",New,New
+"('6702', 'MRW.L')","('Fujitsu Ltd', 'Morrison (Wm) Supermarkets PLC')",1,"[('PQIN', 0.006)]",New,New
+"('6501', 'MRW.L')","('Hitachi Ltd', 'Morrison (Wm) Supermarkets PLC')",1,"[('PQIN', 0.006)]",New,New
+"('GMG.AX', 'MRW.L')","('Goodman Group', 'Morrison (Wm) Supermarkets PLC')",1,"[('PQIN', 0.005)]",New,New
+"('4188', 'MRW.L')","('Mitsubishi Chemical Holdings Corp', 'Morrison (Wm) Supermarkets PLC')",1,"[('PQIN', 0.006)]",New,New
+"('7261', 'MRW.L')","('Mazda Motor Corp', 'Morrison (Wm) Supermarkets PLC')",1,"[('PQIN', 0.005)]",New,New
+"('3382', 'MRW.L')","('Seven & i Holdings Co Ltd', 'Morrison (Wm) Supermarkets PLC')",1,"[('PQIN', 0.006)]",New,New
+"('BVI.PA', 'WKL')","('Bureau Veritas SA', 'Wolters Kluwer NV')",1,"[('PQIN', 0.005)]",New,New
+"('6702', 'WKL')","('Fujitsu Ltd', 'Wolters Kluwer NV')",1,"[('PQIN', 0.005)]",New,New
+"('6501', 'WKL')","('Hitachi Ltd', 'Wolters Kluwer NV')",1,"[('PQIN', 0.005)]",New,New
+"('GMG.AX', 'WKL')","('Goodman Group', 'Wolters Kluwer NV')",1,"[('PQIN', 0.005)]",New,New
+"('4188', 'WKL')","('Mitsubishi Chemical Holdings Corp', 'Wolters Kluwer NV')",1,"[('PQIN', 0.005)]",New,New
+"('7261', 'WKL')","('Mazda Motor Corp', 'Wolters Kluwer NV')",1,"[('PQIN', 0.005)]",New,New
+"('3382', 'WKL')","('Seven & i Holdings Co Ltd', 'Wolters Kluwer NV')",1,"[('PQIN', 0.005)]",New,New
+"('6702', 'BVI.PA')","('Fujitsu Ltd', 'Bureau Veritas SA')",1,"[('PQIN', 0.005)]",New,New
+"('6501', 'BVI.PA')","('Hitachi Ltd', 'Bureau Veritas SA')",1,"[('PQIN', 0.005)]",New,New
+"('BVI.PA', 'GMG.AX')","('Bureau Veritas SA', 'Goodman Group')",1,"[('PQIN', 0.005)]",New,New
+"('4188', 'BVI.PA')","('Mitsubishi Chemical Holdings Corp', 'Bureau Veritas SA')",1,"[('PQIN', 0.005)]",New,New
+"('7261', 'BVI.PA')","('Mazda Motor Corp', 'Bureau Veritas SA')",1,"[('PQIN', 0.005)]",New,New
+"('3382', 'BVI.PA')","('Seven & i Holdings Co Ltd', 'Bureau Veritas SA')",1,"[('PQIN', 0.005)]",New,New
+"('6702', 'GMG.AX')","('Fujitsu Ltd', 'Goodman Group')",1,"[('PQIN', 0.005)]",New,New
+"('4188', '6702')","('Mitsubishi Chemical Holdings Corp', 'Fujitsu Ltd')",1,"[('PQIN', 0.005)]",New,New
+"('6702', '7261')","('Fujitsu Ltd', 'Mazda Motor Corp')",1,"[('PQIN', 0.005)]",New,New
+"('3382', '6702')","('Seven & i Holdings Co Ltd', 'Fujitsu Ltd')",1,"[('PQIN', 0.005)]",New,New
+"('6501', 'GMG.AX')","('Hitachi Ltd', 'Goodman Group')",1,"[('PQIN', 0.005)]",New,New
+"('4188', '6501')","('Mitsubishi Chemical Holdings Corp', 'Hitachi Ltd')",1,"[('PQIN', 0.005)]",New,New
+"('6501', '7261')","('Hitachi Ltd', 'Mazda Motor Corp')",1,"[('PQIN', 0.005)]",New,New
+"('4188', 'GMG.AX')","('Mitsubishi Chemical Holdings Corp', 'Goodman Group')",1,"[('PQIN', 0.005)]",New,New
+"('7261', 'GMG.AX')","('Mazda Motor Corp', 'Goodman Group')",1,"[('PQIN', 0.005)]",New,New
+"('3382', 'GMG.AX')","('Seven & i Holdings Co Ltd', 'Goodman Group')",1,"[('PQIN', 0.005)]",New,New
+"('4188', '7261')","('Mitsubishi Chemical Holdings Corp', 'Mazda Motor Corp')",1,"[('PQIN', 0.005)]",New,New
+"('3382', '4188')","('Seven & i Holdings Co Ltd', 'Mitsubishi Chemical Holdings Corp')",1,"[('PQIN', 0.005)]",New,New
+"('3382', '7261')","('Seven & i Holdings Co Ltd', 'Mazda Motor Corp')",1,"[('PQIN', 0.005)]",New,New
