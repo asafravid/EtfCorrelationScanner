@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.40 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.41 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -65,7 +65,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
 
             if   reported_column_index == ReportTableColumns.VALUE.value:
                 bars.append(int(                    row[ReportTableColumns.VALUE.value]       ) if reported_column_name == '#' else float(row[ReportTableColumns.VALUE.value]))
-                bars_secondary.append(int(float(str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')))
+                bars_secondary.append(int(float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','') else str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','') else str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')))
             elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(str(      row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
             elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-',''))) if reported_column_name == '#' else float(str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
         if row_index == 0:

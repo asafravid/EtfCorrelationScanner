@@ -43,8 +43,8 @@ from contextlib import closing
 # Start of Run Configuration ###########
 SCAN_ETFS                   = False
 POST_PROCESS_ETFS           = True
-POST_PROCESS_PATH_NEW       = '20211030-161741'
-POST_PROCESS_PATH_REF       = '20211030-161741'
+POST_PROCESS_PATH_NEW       = '20211113-180330'
+POST_PROCESS_PATH_REF       = '20211113-180330'
 CUSTOM_ETF_LIST             = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 NUM_REPORTED_ENTRIES        = 42
 NUM_REPORTED_BIGRAM_ENTRIES = 77
