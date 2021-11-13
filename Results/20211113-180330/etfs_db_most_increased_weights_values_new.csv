@@ -1,0 +1,69 @@
+Symbol,Name,SumWeights,Holders,DiffEntries,DiffValue
+CLK0,Crude Oil Apr20,5.998,"[('OILD', 3.0), ('OILU', 2.998)]",New,New
+ABI,Anheuser-Busch InBev SA/NV,0.217,"[('EWK', 0.217)]",New,New
+FFIV,F5 Networks Inc,0.117,"[('IGN', 0.083), ('IYZ', 0.034)]",New,New
+VRTPX,Vanguard Real Estate II Index,0.116,"[('VNQ', 0.116)]",New,New
+KBC,KBC Group SA/NV,0.091,"[('EWK', 0.091)]",New,New
+CLF2.L,Crude Oil Dec21,0.077,"[('DBC', 0.077)]",New,New
+FND,Floor & Decor Holdings Inc,0.07,"[('XHB', 0.038), ('PKB', 0.032)]",New,New
+ARGX,argenx SE,0.067,"[('EWK', 0.067)]",New,New
+1023,CIMB Group Holdings Bhd,0.067,"[('EWM', 0.067)]",New,New
+UCB,UCB SA,0.064,"[('EWK', 0.064)]",New,New
+PRNT,3D Printing (The) ETF,0.061,"[('ARKX', 0.061)]",New,New
+CMC,Commercial Metals Co,0.056999999999999995,"[('XME', 0.046), ('DES', 0.011)]",New,New
+RIG,Transocean Ltd,0.053,"[('XES', 0.053)]",New,New
+5347,Tenaga Nasional Bhd,0.051,"[('EWM', 0.051)]",New,New
+7113,Top Glove Corp Bhd,0.05,"[('EWM', 0.05)]",New,New
+SLCA,US Silica Holdings Inc,0.049,"[('XES', 0.049)]",New,New
+CENX,Century Aluminum Co,0.047,"[('XME', 0.047)]",New,New
+GBLB,Groupe Bruxelles Lambert SA,0.046,"[('EWK', 0.046)]",New,New
+HAL,Halliburton Co,0.046,"[('XES', 0.046)]",New,New
+CHX,ChampionX Corp,0.045,"[('XES', 0.045)]",New,New
+5183,Petronas Chemicals Group Bhd,0.044,"[('EWM', 0.044)]",New,New
+LBRT,Liberty Oilfield Services Inc,0.044,"[('XES', 0.044)]",New,New
+6301,Komatsu Ltd,0.043,"[('ARKX', 0.043)]",New,New
+SOLB,Solvay SA,0.043,"[('EWK', 0.043)]",New,New
+HO.PA,Thales,0.04,"[('ARKX', 0.04)]",New,New
+8869,Press Metal Aluminium Holdings Bhd,0.035,"[('EWM', 0.035)]",New,New
+HIG,The Hartford Financial Services Group Inc,0.034,"[('IAK', 0.034)]",New,New
+RF,Regions Financial Corp,0.033,"[('IAT', 0.033)]",New,New
+SUM,Summit Materials Inc A,0.032,"[('PKB', 0.032)]",New,New
+GDOT,Green Dot Corp Class A,0.031,"[('ACTV', 0.031)]",New,New
+APG,APi Group Corp,0.031,"[('AIRR', 0.031)]",New,New
+WNC,Wabash National Corp,0.031,"[('AIRR', 0.031)]",New,New
+CNDT,Conduent Inc,0.03,"[('ACTV', 0.03)]",New,New
+MTSI,MACOM Technology Solutions Holdings Inc,0.03,"[('PSI', 0.03)]",New,New
+CVLT,CommVault Systems Inc,0.029,"[('ACTV', 0.029)]",New,New
+6947,Digi.com Bhd,0.029,"[('EWM', 0.029)]",New,New
+NST.AX,Northern Star Resources Ltd,0.029,"[('GDX', 0.029)]",New,New
+5168,Hartalega Holdings Bhd,0.028,"[('EWM', 0.028)]",New,New
+LBTYK.L,Liberty Global PLC C,0.028,"[('IYZ', 0.028)]",New,New
+SITM,SiTime Corp Ordinary Shares,0.028,"[('XSD', 0.028)]",New,New
+WDP,Warehouses De Pauw,0.026,"[('EWK', 0.026)]",New,New
+CEIX,CONSOL Energy Inc Ordinary Shares,0.023,"[('RZV', 0.023)]",New,New
+JUP.L,Jupiter Fund Management PLC,0.022,"[('DFE', 0.022)]",New,New
+8411,Mizuho Financial Group Inc,0.022,"[('DXJ', 0.022)]",New,New
+TGS,TGS ASA,0.02,"[('DFE', 0.02)]",New,New
+CHEMM,ChemoMetec A/S,0.02,"[('DFE', 0.02)]",New,New
+COOP,Mr. Cooper Group Inc,0.019,"[('RZG', 0.019)]",New,New
+HZO,MarineMax Inc,0.019,"[('RZG', 0.019)]",New,New
+ANIM.MI,Anima Holding SpA,0.018,"[('DFE', 0.018)]",New,New
+PIA.MI,Piaggio & C. SpA,0.018,"[('DFE', 0.018)]",New,New
+COWN,Cowen Inc Class A,0.018,"[('KCE', 0.018)]",New,New
+DRX.L,Drax Group PLC,0.017,"[('DFE', 0.017)]",New,New
+7751,Canon Inc,0.017,"[('DOO', 0.017)]",New,New
+AAN,The Aarons Co Inc Ordinary Shares,0.016,"[('RZV', 0.016)]",New,New
+MONY.L,Moneysupermarket.com Group PLC,0.015,"[('DFE', 0.015)]",New,New
+KTB,Kontoor Brands Inc,0.014,"[('DES', 0.014)]",New,New
+HWM,Howmet Aerospace Inc,0.014,"[('DGT', 0.01), ('VBR', 0.004)]",New,New
+ZEUS,Olympic Steel Inc,0.014,"[('RZV', 0.014)]",New,New
+PFSI,PennyMac Financial Services Inc Class A,0.013,"[('KBE', 0.013)]",New,New
+CXW,CoreCivic Inc,0.012,"[('RZV', 0.012)]",New,New
+CMP,Compass Minerals International Inc,0.011,"[('DES', 0.011)]",New,New
+BBVA.BC,Banco Bilbao Vizcaya Argentaria SA,0.011,"[('DGT', 0.011)]",New,New
+GSX,GSX Techedu Inc ADR,0.011,"[('GBUY', 0.011)]",New,New
+CNA,CNA Financial Corp,0.01,"[('DON', 0.01)]",New,New
+SLA.L,Standard Life Aberdeen PLC,0.008,"[('DIM', 0.008)]",New,New
+HLAG.DE,Hapag-Lloyd AG,0.008,"[('DIM', 0.008)]",New,New
+TEL2 B,Tele2 AB B,0.007,"[('DIM', 0.007)]",New,New
+8570,AEON Financial Service Co Ltd,0.005,"[('DFJ', 0.005)]",New,New
