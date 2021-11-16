@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.42 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.43 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -34,7 +34,7 @@ from   main import ReportTableColumns
 VERBOSE_LOGS = 0
 
 
-def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_index, reported_column_name, append_to_pdf, output, bigrams):
+def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_index, reported_column_name, append_to_pdf, output, bigrams, reverse):
     title_for_figures = post_process_path_new.replace('/','') + ' ' + ('Bigrams ' if bigrams else '') + report_title + ' ' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
 
     csv_rows = report_table
@@ -56,24 +56,30 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     bars           = []
     bars_secondary = []
     for row_index, row in enumerate(csv_rows):
-        if row_index > limit_num_rows: break
-        if row_index > 0:  # row 0 is title
+        if row_index == 0: # row 0 is title
+            eff_row =row = ['Bigram' if bigrams else 'Symbol', 'Name', reported_column_name, 'Highest % (Exposure) in (Holdings of) ETFs', 'Diff Entry', 'Diff '+reported_column_name]
+        elif row_index > limit_num_rows: break
+        elif row_index > 0:
+            if reverse:
+                eff_row_index = (len(csv_rows)-row_index)
+                eff_row       = csv_rows[eff_row_index]
+            else:
+                eff_row_index = row_index
+                eff_row       = row
             if bigrams:
-                names_list = list(row[ReportTableColumns.NAME.value])
+                names_list = list(eff_row[ReportTableColumns.NAME.value])
                 for name_index, name in enumerate(names_list): names_list[name_index] = names_list[name_index][0:10]
-            names.append(' | '.join(names_list) if bigrams else row[ReportTableColumns.NAME.value][0:28])
+            names.append(' | '.join(names_list) if bigrams else eff_row[ReportTableColumns.NAME.value][0:28])
 
             if   reported_column_index == ReportTableColumns.VALUE.value:
-                bars.append(int(                    row[ReportTableColumns.VALUE.value]       ) if reported_column_name == '#' else float(row[ReportTableColumns.VALUE.value]))
-                bars_secondary.append(int(float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','') else str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                 else str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                ))
-            elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(      0 if 'New' in str(row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','') else str(row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
-            elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','') else str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','')))             if reported_column_name == '#' else float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','') else str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
-        if row_index == 0:
-            row = ['Bigram' if bigrams else 'Symbol', 'Name', reported_column_name, 'Highest % (Exposure) in (Holdings of) ETFs', 'Diff Entry', 'Diff '+reported_column_name]
+                bars.append(int(                    eff_row[ReportTableColumns.VALUE.value]       ) if reported_column_name == '#' else float(eff_row[ReportTableColumns.VALUE.value]))
+                bars_secondary.append(int(float(0 if 'New' in str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','') else str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(0 if 'New' in str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                 else str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                ))
+            elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(      0 if 'New' in str(eff_row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','') else str(eff_row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
+            elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(0 if 'New' in str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','') else str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','')))             if reported_column_name == '#' else float(0 if 'New' in str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','') else str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
 
-        if VERBOSE_LOGS: print('[pdf_generator.csv_to_pdf] row({})={}'.format(row_index, row))
+        if VERBOSE_LOGS: print('[pdf_generator.csv_to_pdf] eff_row({})={}'.format(eff_row_index, eff_row))
 
-        for col_index, col in enumerate(row):
+        for col_index, col in enumerate(eff_row):
             if   col_index == ReportTableColumns.SYMBOL.value:       w=(28 if bigrams else 14) # Symbol/Bigram
             elif col_index == ReportTableColumns.NAME.value:         w=(70 if bigrams else 56) # Name(s)
             elif col_index == ReportTableColumns.VALUE.value:        w=7  if reported_column_name == '#' else 21  # reported_column_name
@@ -87,7 +93,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 if reported_column_name == '#': col = int(float(str(col) if col_index == ReportTableColumns.DIFF_VALUE.value else int(col)))
                 else:                           col = round(float(col), 3)
 
-            row_col_index = row[col_index]
+            row_col_index = eff_row[col_index]
             if col_index >= ReportTableColumns.DIFF_ENTRIES.value and row_index > 0:
                 if 'New' not in str(row_col_index) and '+' not in str(row_col_index) and float(row_col_index) > 0:
                     row_col_index = '+{}'.format(row_col_index)
@@ -122,7 +128,8 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     ax.set_title(title_for_figures, color='blue')
 
     # plt.show()
-    plt.savefig(post_process_path_new+report_title+"_fig{}.png".format('_bigrams' if bigrams else ''))
+    plt.savefig(post_process_path_new+report_title+"_fig{}{}.png".format('_bigrams' if bigrams else '', '_reverse' if reverse else ''))
+    plt.close(fig)
 
     if bigrams: pdf.add_page()
 
@@ -147,7 +154,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
         pdf.write_html(text=html_open_source_description)
 
         pdf.cell(200, 4, txt='', ln=1, align="R")
-        html_telegram_channel_description     = "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig.png")
+        html_telegram_channel_description     = "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig{}{}.png".format('_bigrams' if bigrams else '', '_reverse' if reverse else ''))
         
         pdf.write_html(text=html_telegram_channel_description)
     else:
@@ -155,7 +162,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
              "<p>Updates, Discussions and Technical Support on Telegram: <A HREF=""https://t.me/StockScannerIL"">https://t.me/StockScannerIL</A></p>" \
              "<p>This Scanner is Open Source. fork() here: <A HREF=""http://bit.ly/EtfCorrelationScanner"">http://bit.ly/EtfCorrelationScanner</A></p>" \
              "<p>Disclaimer: Scan Results are not recommendations! They only represent a basis for Research and Analysis.</p>" \
-             "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig{}.png".format('_bigrams' if bigrams else ''))
+             "<p><img src=""{}"" width=""600"" height=""250""></p>".format(post_process_path_new+report_title+"_fig{}{}.png".format('_bigrams' if bigrams else '', '_reverse' if reverse else ''))
         pdf.write_html(text=html)
 
     output_filename = post_process_path_new+post_process_path_new.replace('/','_')+'combined'+'.pdf'
