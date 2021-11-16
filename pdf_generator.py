@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.41 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.0.42 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -65,9 +65,9 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
 
             if   reported_column_index == ReportTableColumns.VALUE.value:
                 bars.append(int(                    row[ReportTableColumns.VALUE.value]       ) if reported_column_name == '#' else float(row[ReportTableColumns.VALUE.value]))
-                bars_secondary.append(int(float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','') else str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','') else str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')))
-            elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(str(      row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
-            elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-',''))) if reported_column_name == '#' else float(str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
+                bars_secondary.append(int(float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','') else str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                 else str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                ))
+            elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(      0 if 'New' in str(row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','') else str(row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
+            elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','') else str(row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','')))             if reported_column_name == '#' else float(0 if 'New' in str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','') else str(row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
         if row_index == 0:
             row = ['Bigram' if bigrams else 'Symbol', 'Name', reported_column_name, 'Highest % (Exposure) in (Holdings of) ETFs', 'Diff Entry', 'Diff '+reported_column_name]
 
