@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.0.43 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.1.44 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -67,17 +67,20 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 eff_row_index = row_index
                 eff_row       = row
             if bigrams:
-                names_list = list(eff_row[ReportTableColumns.NAME.value])
+                if VERBOSE_LOGS: print('type of eff_row[ReportTableColumns.NAME.value={}] is {}'.format(ReportTableColumns.NAME.value, type(eff_row[ReportTableColumns.NAME.value])))
+                    # isinstance(complexNo, complex)
+                names_list = str(eff_row[ReportTableColumns.NAME.value]).replace(' ','').replace('(','').replace(')','').replace("'",'').split(',')
                 for name_index, name in enumerate(names_list): names_list[name_index] = names_list[name_index][0:10]
             names.append(' | '.join(names_list) if bigrams else eff_row[ReportTableColumns.NAME.value][0:28])
 
             if   reported_column_index == ReportTableColumns.VALUE.value:
                 bars.append(int(                    eff_row[ReportTableColumns.VALUE.value]       ) if reported_column_name == '#' else float(eff_row[ReportTableColumns.VALUE.value]))
-                bars_secondary.append(int(float(0 if 'New' in str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','') else str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(0 if 'New' in str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                 else str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                ))
-            elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(      0 if 'New' in str(eff_row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','') else str(eff_row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
-            elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(0 if 'New' in str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','') else str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','')))             if reported_column_name == '#' else float(0 if 'New' in str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','') else str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
+                if VERBOSE_LOGS: print('eff_row = {}, reported_column_index = {}, eff_row[ReportTableColumns.DIFF_VALUE.value] = {}, reported_column_name = {}'.format(eff_row, reported_column_index, eff_row[ReportTableColumns.DIFF_VALUE.value], reported_column_name))
+                bars_secondary.append(int(float(0 if any(x in str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','') for x in ['New', 'Removed']) else str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(0 if any(x in str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','') for x in ['New', 'Removed'])                 else str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                ))
+            elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(      0 if any(x in str(eff_row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','') for x in ['New', 'Removed']) else str(eff_row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
+            elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(0 if any(x in str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','') for x in ['New', 'Removed']) else str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','')))             if reported_column_name == '#' else float(0 if any(x in str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','') for x in ['New', 'Removed']) else str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
 
-        if VERBOSE_LOGS: print('[pdf_generator.csv_to_pdf] eff_row({})={}'.format(eff_row_index, eff_row))
+        if VERBOSE_LOGS and row_index > 0: print('[pdf_generator.csv_to_pdf] eff_row({})={}'.format(eff_row_index, eff_row))
 
         for col_index, col in enumerate(eff_row):
             if   col_index == ReportTableColumns.SYMBOL.value:       w=(28 if bigrams else 14) # Symbol/Bigram
@@ -89,16 +92,17 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
 
             pdf.set_text_color(0, 0, 200 if row_index == 0 else 0)  # blue for title and black otherwise
 
-            if (col_index == ReportTableColumns.VALUE.value or col_index == ReportTableColumns.DIFF_VALUE.value) and row_index > 0 and 'New' not in str(col):
+            if (col_index == ReportTableColumns.VALUE.value or col_index == ReportTableColumns.DIFF_VALUE.value) and row_index > 0 and not any(x in str(col) for x in ['New','Removed']):
                 if reported_column_name == '#': col = int(float(str(col) if col_index == ReportTableColumns.DIFF_VALUE.value else int(col)))
                 else:                           col = round(float(col), 3)
 
             row_col_index = eff_row[col_index]
             if col_index >= ReportTableColumns.DIFF_ENTRIES.value and row_index > 0:
-                if 'New' not in str(row_col_index) and '+' not in str(row_col_index) and float(row_col_index) > 0:
+                if VERBOSE_LOGS: print('row_col_index = {}'.format(row_col_index))
+                if not any(x in str(row_col_index) for x in ['New', 'Removed']) and '+' not in str(row_col_index) and float(row_col_index) > 0:
                     row_col_index = '+{}'.format(row_col_index)
                     col           = '+{}'.format(str(col))  # TODO: ASAFR: -> was col only
-                if 'New' in str(row_col_index): pdf.set_text_color(  0,   0, 200)  # blue
+                if any(x in str(row_col_index) for x in['New', 'Removed']): pdf.set_text_color(  0,   0, 200)  # blue
                 elif '-' in str(row_col_index): pdf.set_text_color(200,   0,   0)  # red
                 elif '+' in str(row_col_index): pdf.set_text_color(  0, 200,   0)  # green
                 else:                           pdf.set_text_color(  0,   0,   0)  # black
