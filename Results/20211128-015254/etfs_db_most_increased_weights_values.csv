@@ -1,4 +1,27 @@
 Symbol,Name,SumWeights,Holders,DiffEntries,DiffValue
+FND,Floor & Decor Holdings Inc,0.07,"[('XHB', 0.038), ('PKB', 0.032)]",New,New+0.07
+QGEN,Qiagen NV,0.056,"[('PBE', 0.056)]",New,New+0.056
+SLCA,US Silica Holdings Inc,0.049,"[('XES', 0.049)]",New,New+0.049
+YUM,Yum Brands Inc,0.047,"[('PEJ', 0.047)]",New,New+0.047
+HIG,The Hartford Financial Services Group Inc,0.034,"[('IAK', 0.034)]",New,New+0.034
+WHD,Cactus Inc Class A,0.034,"[('IEZ', 0.034)]",New,New+0.034
+SUM,Summit Materials Inc A,0.032,"[('PKB', 0.032)]",New,New+0.032
+APG,APi Group Corp,0.031,"[('AIRR', 0.031)]",New,New+0.031
+WNC,Wabash National Corp,0.031,"[('AIRR', 0.031)]",New,New+0.031
+BKT,BlackRock Income Trust,0.031,"[('ALTY', 0.031)]",New,New+0.031
+JLS,Nuveen Mortgage and Income Fund,0.03,"[('ALTY', 0.03)]",New,New+0.03
+01347,Hua Hong Semiconductor Ltd Unitary 144A/Reg S,0.023,"[('CHIK', 0.023)]",New,New+0.023
+BHF,Brighthouse Financial Inc,0.023,"[('RFG', 0.023)]",New,New+0.023
+CARG,CarGurus Inc Class A,0.023,"[('XWEB', 0.023)]",New,New+0.023
+TDS,Telephone and Data Systems Inc,0.022,"[('RFV', 0.022)]",New,New+0.022
+SOL,ReneSola Ltd ADR,0.018,"[('PBW', 0.018)]",New,New+0.018
+FUV,Arcimoto Inc,0.017,"[('PBW', 0.017)]",New,New+0.017
+247540.KS,Ecopro BM Co Ltd Ordinary Shares,0.011,"[('PBD', 0.011)]",New,New+0.011
+361610.KS,SK Ie Technology Co Ltd,0.011,"[('PBD', 0.011)]",New,New+0.011
+1407,West Holdings Corp,0.011,"[('PBD', 0.011)]",New,New+0.011
+NDX1.DE,Nordex SE,0.01,"[('PBD', 0.01)]",New,New+0.01
+INDT,Indutrade AB,0.003,"[('HSCZ', 0.003)]",New,New+0.003
+MGGT.L,Meggitt PLC,0.003,"[('HSCZ', 0.003)]",New,New+0.003
 SLB,Schlumberger Ltd,0.5860000000000001,"[('IEZ', 0.216), ('PXJ', 0.068), ('JHME', 0.061), ('XES', 0.043), ('ERX', 0.038)]",200,0.28300000000000003
 HAL,Halliburton Co,0.325,"[('IEZ', 0.209), ('PXJ', 0.07), ('XES', 0.046)]",1204,0.255
 MS,Morgan Stanley,0.6390000000000002,"[('IAI', 0.211), ('DIVZ', 0.041), ('PWV', 0.035), ('IYG', 0.033), ('XLF', 0.033)]",129,0.24400000000000022

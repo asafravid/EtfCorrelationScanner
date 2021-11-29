@@ -369,7 +369,7 @@ def add_diff_columns(table_new, table_ref, value_index_in_row, bigrams):
                 diff_value   = float(row_data[value_index_in_row])                     - float(symbol_ref_entry_and_pos_lookup_dict[current_symbol][1])
             else:
                 diff_entries = 'New'
-                diff_value   = 'New'
+                diff_value   = 'New+{}'.format(float(row_data[value_index_in_row]))
             new_row.append(diff_entries)  # Entries up/down vs ref
             new_row.append(diff_value  )  # Value   up/down vs ref
         table_with_diff_columns.append(new_row)
@@ -389,7 +389,7 @@ def add_diff_columns(table_new, table_ref, value_index_in_row, bigrams):
                 diff_value   = float(row_data[value_index_in_row])                 - float(symbol_entry_and_pos_lookup_dict[current_symbol][1])
             else:
                 diff_entries = 'Removed'
-                diff_value   = 'Removed'
+                diff_value   = 'Removed-{}'.format(float(row_data[value_index_in_row]))
                 new_row.append(diff_entries)  # Entries up/down vs ref
                 new_row.append(diff_value  )  # Value   up/down vs ref
                 table_with_diff_removed_columns.append(new_row)  # Only interested in the removed items, as the regular and New differences are already seen in table_with_diff_columns
@@ -398,10 +398,9 @@ def add_diff_columns(table_new, table_ref, value_index_in_row, bigrams):
 
 
 # Some entries have 'New' In their sorted column of entry, so save those aside to a dedicated file
-def sort_and_save_stats_no_lookup(stats_filename, stats, sort_by_col, reverse):
+def sort_and_save_stats_no_lookup(stats_filename, stats, sort_by_col, reverse, place_strs_on_sorted_top=True):
     stats_to_process = stats.copy()
     new_rows     = []
-    removed_rows = []
     rows_to_sort = []
     title_row    = stats_to_process[0]
 
@@ -414,7 +413,13 @@ def sort_and_save_stats_no_lookup(stats_filename, stats, sort_by_col, reverse):
         else:
             rows_to_sort.append(row)
 
+    [rows_to_sort, str_rows_to_sort] = pdf_generator.remove_str_rows(rows_to_sort, sort_by_col)
     sorted_rows = sorted(rows_to_sort, key=lambda row: row[sort_by_col], reverse=reverse)
+    if place_strs_on_sorted_top:
+        sorted_rows = str_rows_to_sort + sorted_rows
+    else:
+        sorted_rows = sorted_rows + str_rows_to_sort
+
     sorted_rows.insert(0, title_row)
 
     with open(stats_filename, mode='w', newline='') as engine:
@@ -537,10 +542,10 @@ def post_process_etfs(csv_db_path, date_time_path, csv_db_filename):
     [most_increased_bigrams_weights_entries_table,     new_most_increased_bigrams_weights_entries_table     ] = sort_and_save_stats_no_lookup(stats_filename=results_path_date_time_base_filename.replace('.csv', '_most_increased_bigrams_weights_entries.csv'    ), stats=diff_bigrams_sum_weights_table,     sort_by_col=ReportTableColumns.DIFF_ENTRIES.value, reverse=True)
 
     print('\nGenerating diff_num_appearances_tables.\n')
-    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table,                           post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Leading_Appearances',          reported_column_index=ReportTableColumns.VALUE.value,        reported_column_name='#',      append_to_pdf=None,          output=False, bigrams=False, reverse=False)
-    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table,                           post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Leading_Appearances_Diff',     reported_column_index=ReportTableColumns.DIFF_VALUE.value,   reported_column_name='#',      append_to_pdf=pdf_to_append, output=False, bigrams=False, reverse=False, sort_csv_rows = True)
-    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table_ref,                       post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Leading_Dis-Appearances',      reported_column_index=ReportTableColumns.VALUE.value,        reported_column_name='#',      append_to_pdf=pdf_to_append, output=False, bigrams=False, reverse=False)
-    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table_ref,                       post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Leading_Dis-Appearances_Diff', reported_column_index=ReportTableColumns.DIFF_VALUE.value,   reported_column_name='#',      append_to_pdf=pdf_to_append, output=False, bigrams=False, reverse=True,  sort_csv_rows = True )
+    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table,                           post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Leading_Appearances',          reported_column_index=ReportTableColumns.VALUE.value,       reported_column_name='#',      append_to_pdf=None,          output=False, bigrams=False, reverse=False)
+    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table,                           post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Leading_Appearances_Diff',     reported_column_index=ReportTableColumns.DIFF_VALUE.value,  reported_column_name='#',      append_to_pdf=pdf_to_append, output=False, bigrams=False, reverse=False, sort_csv_rows = True)
+    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table_ref,                       post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Leading_Dis-Appearances',      reported_column_index=ReportTableColumns.VALUE.value,       reported_column_name='#',      append_to_pdf=pdf_to_append, output=False, bigrams=False, reverse=False)
+    pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_num_appearances_table_ref,                       post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Bottom_Dis-Appearances',       reported_column_index=ReportTableColumns.VALUE.value,       reported_column_name='#',      append_to_pdf=pdf_to_append, output=False, bigrams=False, reverse=True )
     print('Generating diff_sum_weights_tables.\n')
     pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_sum_weights_table,                               post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Weight'     ,                 reported_column_index=ReportTableColumns.VALUE.value,        reported_column_name='Weight', append_to_pdf=pdf_to_append, output=False, bigrams=False, reverse=False)
     pdf_to_append = pdf_generator.csv_to_pdf(report_table=diff_sum_weights_table,                               post_process_path_new=csv_db_path+date_time_path, limit_num_rows=NUM_REPORTED_ENTRIES,        report_title='Weight'     ,                 reported_column_index=ReportTableColumns.VALUE.value,        reported_column_name='Weight', append_to_pdf=pdf_to_append, output=False, bigrams=False, reverse=True )

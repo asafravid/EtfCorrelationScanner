@@ -103,8 +103,12 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 bars_secondary.append(int(float(0 if any(x in str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','') for x in ['New', 'Removed']) else str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+',''))) if reported_column_name == '#' else float(0 if any(x in str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','') for x in ['New', 'Removed'])                 else str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','')                ))
             elif reported_column_index == ReportTableColumns.DIFF_ENTRIES.value: bars.append(int(      0 if any(x in str(eff_row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','') for x in ['New', 'Removed']) else str(eff_row[ReportTableColumns.DIFF_ENTRIES.value]).replace('+','').replace('-','')))
             elif reported_column_index == ReportTableColumns.DIFF_VALUE.value:   bars.append(int(float(0 if any(x in str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','') for x in ['New', 'Removed']) else str(eff_row[ReportTableColumns.DIFF_VALUE.value]  ).replace('+','').replace('-','')))             if reported_column_name == '#' else float(0 if any(x in str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','') for x in ['New', 'Removed']) else str(eff_row[ReportTableColumns.DIFF_VALUE.value]).replace('+','').replace('-','')))
-
         if VERBOSE_LOGS and row_index > 0: print('[pdf_generator.csv_to_pdf] eff_row({})={}'.format(eff_row_index, eff_row))
+
+        # idx column:
+        pdf.set_text_color(  0,   0,   0)  # black
+        w=5
+        pdf.cell(w=w, h=3, txt=str(row_index if row_index else 'idx'), border=1, ln=0, align="C" if row_index == 0 else "L")
 
         for col_index, col in enumerate(eff_row):
             if   col_index == ReportTableColumns.SYMBOL.value:       w=(28 if bigrams else 14) # Symbol/Bigram
