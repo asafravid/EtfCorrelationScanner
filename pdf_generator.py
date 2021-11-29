@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.1.44 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.1.45 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -33,11 +33,35 @@ from   main import ReportTableColumns
 
 VERBOSE_LOGS = 0
 
+def remove_str_rows(sorted_csv_rows, reported_column_index):
+    removed_rows = []
+    kept_rows    = []
+    
+    for row in sorted_csv_rows:
+        if isinstance(row[reported_column_index], str):
+            removed_rows.append(row)
+        else:
+            kept_rows.append(row)
 
-def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_index, reported_column_name, append_to_pdf, output, bigrams, reverse):
+    return [kept_rows, removed_rows]
+
+def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title, reported_column_index, reported_column_name, append_to_pdf, output, bigrams, reverse, sort_csv_rows=False, place_strs_on_sorted_top=True, reverse_sort=True):
     title_for_figures = post_process_path_new.replace('/','') + ' ' + ('Bigrams ' if bigrams else '') + report_title + ' ' + ']כתב ויתור: תוצאות הסריקה אינן המלצה בשום צורה, אלא אך ורק בסיס למחקר.['[::-1]
 
     csv_rows = report_table
+    
+    if sort_csv_rows:
+        sorted_csv_rows_title       = csv_rows[0]
+        sorted_csv_rows             = csv_rows[1:]
+        [sorted_csv_rows, str_rows] = remove_str_rows(sorted_csv_rows, reported_column_index)
+        sorted_csv_rows = sorted(sorted_csv_rows, key=lambda row: row[reported_column_index], reverse=reverse_sort)
+        if place_strs_on_sorted_top:
+            sorted_csv_rows = str_rows + sorted_csv_rows
+        else:
+            sorted_csv_rows = sorted_csv_rows + str_rows
+        sorted_csv_rows.insert(0, sorted_csv_rows_title)
+    else:
+        sorted_csv_rows       = csv_rows
 
     class MyFPDF(FPDF, HTMLMixin): pass
 
@@ -55,14 +79,14 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
     names          = []
     bars           = []
     bars_secondary = []
-    for row_index, row in enumerate(csv_rows):
+    for row_index, row in enumerate(sorted_csv_rows):
         if row_index == 0: # row 0 is title
             eff_row =row = ['Bigram' if bigrams else 'Symbol', 'Name', reported_column_name, 'Highest % (Exposure) in (Holdings of) ETFs', 'Diff Entry', 'Diff '+reported_column_name]
         elif row_index > limit_num_rows: break
         elif row_index > 0:
             if reverse:
-                eff_row_index = (len(csv_rows)-row_index)
-                eff_row       = csv_rows[eff_row_index]
+                eff_row_index = (len(sorted_csv_rows)-row_index)
+                eff_row       = sorted_csv_rows[eff_row_index]
             else:
                 eff_row_index = row_index
                 eff_row       = row
