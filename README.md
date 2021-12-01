@@ -1,5 +1,14 @@
 # Overview
 - ETF Correlation Scanner - based on yfinance
+- Scan the top holdings of all traded ETFs and all Traded Stocks on the NASDAQ Stock exchange
+- Finds, Sorts, Compares (to a reference run) and Presents in a PDF document:
+  - Total appearances of each stock in All ETFs
+  - Total appearances of each stock-pair combinations (named `bigram`s) in All ETFs
+  - Total weigths of each stock in All ETFs
+  - Total weigths of each stock-pair in All ETFs
+  - New Appearances and their weights
+  - Removed Appearances and their weights
+  - Highest moves (entries, weights and appearances) up/down compared with reference run
 
 # Prerequesits
 - Please use either https://github.com/asafravid/yfinance or apply https://github.com/ranaroussi/yfinance/pull/830 over https://github.com/ranaroussi/yfinance for ETF support (`yfinance` has yet to merge my pull request which upgrades it to support ETF holdings information)
