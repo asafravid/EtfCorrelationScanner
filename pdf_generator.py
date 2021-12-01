@@ -112,8 +112,8 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
 
         for col_index, col in enumerate(eff_row):
             if   col_index == ReportTableColumns.SYMBOL.value:       w=(28 if bigrams else 14) # Symbol/Bigram
-            elif col_index == ReportTableColumns.NAME.value:         w=(70 if bigrams else 56) # Name(s)
-            elif col_index == ReportTableColumns.VALUE.value:        w=7  if reported_column_name == '#' else 21  # reported_column_name
+            elif col_index == ReportTableColumns.NAME.value:         w=(63 if bigrams else 56) # Name(s)
+            elif col_index == ReportTableColumns.VALUE.value:        w=7  if reported_column_name == '#' else 14  # reported_column_name
             elif col_index == ReportTableColumns.HOLDERS.value:      w=55
             elif col_index == ReportTableColumns.DIFF_ENTRIES.value: w=14                                         # Diff Entry
             elif col_index == ReportTableColumns.DIFF_VALUE.value:   w=14
