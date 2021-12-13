@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.1.48 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.1.49 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -371,7 +371,7 @@ def add_diff_columns(table_new, table_ref, value_index_in_row, bigrams, is_integ
                 diff_value   = (int(row_data[value_index_in_row]) if is_integer_value else float(row_data[value_index_in_row])) - (int(symbol_ref_entry_and_pos_lookup_dict[current_symbol][1]) if is_integer_value else float(symbol_ref_entry_and_pos_lookup_dict[current_symbol][1]))
             else:
                 diff_entries = 'New'
-                diff_value   = 'New+{}'.format(int(row_data[value_index_in_row]) if is_integer_value else float(row_data[value_index_in_row]))
+                diff_value   = 'New+{}'.format(int(row_data[value_index_in_row]) if is_integer_value else round(float(row_data[value_index_in_row]),3))
             new_row.append(diff_entries)  # Entries up/down vs ref
             new_row.append(diff_value  )  # Value   up/down vs ref
         table_with_diff_columns.append(new_row)
@@ -392,7 +392,7 @@ def add_diff_columns(table_new, table_ref, value_index_in_row, bigrams, is_integ
                 diff_value   = (int(row_data[value_index_in_row]) if is_integer_value else float(row_data[value_index_in_row])) - (int(symbol_entry_and_pos_lookup_dict[current_symbol][1]) if is_integer_value else float(symbol_entry_and_pos_lookup_dict[current_symbol][1]))
             else:
                 diff_entries = 'Removed'
-                diff_value   = 'Removed-{}'.format(int(row_data[value_index_in_row]) if is_integer_value else float(row_data[value_index_in_row]))
+                diff_value   = 'Removed-{}'.format(int(row_data[value_index_in_row]) if is_integer_value else round(float(row_data[value_index_in_row]),3))
                 new_row.append(diff_entries)  # Entries up/down vs ref
                 new_row.append(diff_value  )  # Value   up/down vs ref
                 table_with_diff_removed_columns.append(new_row)  # Only interested in the removed items, as the regular and New differences are already seen in table_with_diff_columns
