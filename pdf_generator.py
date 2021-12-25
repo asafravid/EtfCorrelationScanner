@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.1.45 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.1.46 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -29,6 +29,7 @@ import csv
 import matplotlib.pyplot as plt; plt.rcdefaults()
 import numpy as np
 from   main import ReportTableColumns
+import os
 
 
 VERBOSE_LOGS = 0
@@ -198,5 +199,8 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
         pdf.write_html(text=html)
 
     output_filename = post_process_path_new+post_process_path_new.replace('/','_')+'combined'+'.pdf'
+
+    os.remove(post_process_path_new + report_title + "_fig{}{}.png".format('_bigrams' if bigrams else '', '_reverse' if reverse else ''))
+
     if output: pdf.output(output_filename, 'F')
     return pdf
