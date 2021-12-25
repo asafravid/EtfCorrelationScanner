@@ -1,0 +1,19 @@
+Symbol,Name,NumAppearances,Holders,DiffEntries,DiffValue
+HWM,Howmet Aerospace Inc,2,"[('DGT', 0.01), ('VBR', 0.004)]",New,New+2
+BBVA.BC,Banco Bilbao Vizcaya Argentaria SA,1,"[('DGT', 0.011)]",New,New+1
+SLA.L,Standard Life Aberdeen PLC,1,"[('DIM', 0.008)]",New,New+1
+HLAG.DE,Hapag-Lloyd AG,1,"[('DIM', 0.008)]",New,New+1
+TEL2 B,Tele2 AB B,1,"[('DIM', 0.007)]",New,New+1
+8411,Mizuho Financial Group Inc,1,"[('DXJ', 0.022)]",New,New+1
+VOLV B,Volvo AB B,1,"[('EWD', 0.05)]",New,New+1
+ERIC B,Telefonaktiebolaget L M Ericsson Class B,1,"[('EWD', 0.05)]",New,New+1
+HEXA B,Hexagon AB Class B,1,"[('EWD', 0.048)]",New,New+1
+ASSA B,Assa Abloy AB B,1,"[('EWD', 0.048)]",New,New+1
+SAND,Sandvik AB,1,"[('EWD', 0.044)]",New,New+1
+ATCO B,Atlas Copco AB B,1,"[('EWD', 0.033)]",New,New+1
+RF,Regions Financial Corp,1,"[('IAT', 0.033)]",New,New+1
+SOL,ReneSola Ltd ADR,1,"[('PBW', 0.018)]",New,New+1
+FUV,Arcimoto Inc,1,"[('PBW', 0.017)]",New,New+1
+YUM,Yum Brands Inc,1,"[('PEJ', 0.047)]",New,New+1
+SX2,Soybean Nov22,1,"[('SOYB', 0.181)]",New,New+1
+VRTPX,Vanguard Real Estate II Index,1,"[('VNQ', 0.116)]",New,New+1

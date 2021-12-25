@@ -1,0 +1,19 @@
+Symbol,Name,SumWeights,Holders,DiffEntries,DiffValue
+SX2,Soybean Nov22,0.181,"[('SOYB', 0.181)]",New,New+0.181
+VRTPX,Vanguard Real Estate II Index,0.116,"[('VNQ', 0.116)]",New,New+0.116
+VOLV B,Volvo AB B,0.05,"[('EWD', 0.05)]",New,New+0.05
+ERIC B,Telefonaktiebolaget L M Ericsson Class B,0.05,"[('EWD', 0.05)]",New,New+0.05
+HEXA B,Hexagon AB Class B,0.048,"[('EWD', 0.048)]",New,New+0.048
+ASSA B,Assa Abloy AB B,0.048,"[('EWD', 0.048)]",New,New+0.048
+YUM,Yum Brands Inc,0.047,"[('PEJ', 0.047)]",New,New+0.047
+SAND,Sandvik AB,0.044,"[('EWD', 0.044)]",New,New+0.044
+ATCO B,Atlas Copco AB B,0.033,"[('EWD', 0.033)]",New,New+0.033
+RF,Regions Financial Corp,0.033,"[('IAT', 0.033)]",New,New+0.033
+8411,Mizuho Financial Group Inc,0.022,"[('DXJ', 0.022)]",New,New+0.022
+SOL,ReneSola Ltd ADR,0.018,"[('PBW', 0.018)]",New,New+0.018
+FUV,Arcimoto Inc,0.017,"[('PBW', 0.017)]",New,New+0.017
+HWM,Howmet Aerospace Inc,0.014,"[('DGT', 0.01), ('VBR', 0.004)]",New,New+0.014
+BBVA.BC,Banco Bilbao Vizcaya Argentaria SA,0.011,"[('DGT', 0.011)]",New,New+0.011
+SLA.L,Standard Life Aberdeen PLC,0.008,"[('DIM', 0.008)]",New,New+0.008
+HLAG.DE,Hapag-Lloyd AG,0.008,"[('DIM', 0.008)]",New,New+0.008
+TEL2 B,Tele2 AB B,0.007,"[('DIM', 0.007)]",New,New+0.007
