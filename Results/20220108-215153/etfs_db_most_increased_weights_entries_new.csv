@@ -1,0 +1,302 @@
+Symbol,Name,SumWeights,Holders,DiffEntries,DiffValue
+WBSN21.L,WTI Crude Future June 21,0.417,"[('UCO', 0.417)]",New,New+0.417
+XRT,SPDR S&P Retail ETF,0.391,"[('WIZ', 0.196), ('DUDE', 0.195)]",New,New+0.391
+CLZ1,Wti Crude Future 11/19/2021 (Clz1),0.339,"[('OILK', 0.339)]",New,New+0.339
+CLM2,Wti Crude 05/20/2022 (Clm2),0.334,"[('OILK', 0.334)]",New,New+0.334
+CLV1,Light Sweet Crude Oil Future Oct 21,0.327,"[('OILK', 0.327)]",New,New+0.327
+WCOG.IR,WisdomTree Enhanced Cmdty ETF USD,0.22,"[('GCC', 0.22)]",New,New+0.22
+ABI,Anheuser-Busch InBev SA/NV,0.217,"[('EWK', 0.217)]",New,New+0.217
+JPST,JPMorgan Ultra-Short Income ETF,0.215,"[('VSPY', 0.215)]",New,New+0.215
+PULS,PGIM Ultra Short Bond ETF,0.158,"[('VSPY', 0.158)]",New,New+0.158
+EWD,iShares Inc iShares MSCI Sweden,0.155,"[('DUDE', 0.155)]",New,New+0.155
+IJK,iShares S&P Mid-Cap 400 Growth ,0.151,"[('DUDE', 0.151)]",New,New+0.151
+FDIS,Fidelity MSCI Consumer Discreti,0.15,"[('DUDE', 0.15)]",New,New+0.15
+TAN,Invesco Solar ETF,0.143,"[('TMAT', 0.143)]",New,New+0.143
+JMST,JPMorgan Ultra-Short Municipal ,0.143,"[('VSPY', 0.143)]",New,New+0.143
+ICSH,BlackRock Ultra Short-Term Bond,0.143,"[('VSPY', 0.143)]",New,New+0.143
+FFIV,F5 Networks Inc,0.127,"[('IGN', 0.092), ('IYZ', 0.035)]",New,New+0.127
+VFH,Vanguard Financials ETF,0.114,"[('ARMR', 0.114)]",New,New+0.114
+KRZ.IR,Kerry Group PLC Class A,0.103,"[('EIRL', 0.103)]",New,New+0.103
+ZTZ21,2 Year Treasury Note Future Dec 21,0.102,"[('LDUR', 0.102)]",New,New+0.102
+WHD,Cactus Inc Class A,0.101,"[('PXJ', 0.059), ('OIH', 0.042)]",New,New+0.101
+KOMP,SPDR S&P Kensho New Economies C,0.101,"[('TMAT', 0.101)]",New,New+0.101
+ARKF,ARK Fintech Innovation ETF,0.1,"[('TMAT', 0.1)]",New,New+0.1
+DON,WisdomTree U.S. MidCap Dividend,0.1,"[('WIZ', 0.1)]",New,New+0.1
+XSVM,Invesco S&P SmallCap Value with,0.098,"[('WIZ', 0.098)]",New,New+0.098
+PEY,Invesco High Yield Equity Divid,0.098,"[('WIZ', 0.098)]",New,New+0.098
+QGEN,Qiagen NV,0.093,"[('PBE', 0.056), ('FBT', 0.037)]",New,New+0.093
+PAWZ,ProShares Pet Care ETF,0.093,"[('TMAT', 0.093)]",New,New+0.093
+KBC,KBC Group SA/NV,0.091,"[('EWK', 0.091)]",New,New+0.091
+ARKG,ARK Genomic Revolution ETF,0.091,"[('TMAT', 0.091)]",New,New+0.091
+GSY,Invesco Ultra Short Duration ET,0.091,"[('VSPY', 0.091)]",New,New+0.091
+ZFZ21,5 Year Treasury Note Future Dec 21,0.086,"[('LDUR', 0.086)]",New,New+0.086
+GSST,Goldman Sachs Access Ultra Shor,0.085,"[('VSPY', 0.085)]",New,New+0.085
+PJUL,Innovator U.S. Equity Power Buf,0.083,"[('BUFF', 0.083)]",New,New+0.083
+MMEU21.TW,MSCI Emerging Markets Index Future Sept 21,0.083,"[('GSEE', 0.083)]",New,New+0.083
+ONLN,ProShares Online Retail ETF,0.081,"[('TMAT', 0.081)]",New,New+0.081
+ESPO,VanEck Video Gaming and eSports,0.075,"[('TMAT', 0.075)]",New,New+0.075
+FND,Floor & Decor Holdings Inc Class A,0.074,"[('XHB', 0.038), ('PKB', 0.036)]",New,New+0.074
+GNOG,Golden Nugget Online Gaming Inc Ordinary Shares - Class A,0.073,"[('BETZ', 0.046), ('MRGR', 0.027)]",New,New+0.073
+ICLR.IR,Icon PLC,0.068,"[('EIRL', 0.042), ('BMED', 0.026)]",New,New+0.068
+ARGX,argenx SE,0.067,"[('EWK', 0.067)]",New,New+0.067
+1023,CIMB Group Holdings Bhd,0.067,"[('EWM', 0.067)]",New,New+0.067
+2330,Taiwan Semiconductor Manufacturing Co Ltd,0.066,"[('GSEE', 0.066)]",New,New+0.066
+HIG,The Hartford Financial Services Group Inc,0.065,"[('IAK', 0.035), ('RPV', 0.015), ('SPVM', 0.015)]",New,New+0.065
+SPSC,SPS Commerce Inc,0.065,"[('PSCT', 0.033), ('XSMO', 0.019), ('SIXS', 0.013)]",New,New+0.065
+UCB,UCB SA,0.064,"[('EWK', 0.064)]",New,New+0.064
+ZNZ21,10 Year Treasury Note Future Dec 21,0.064,"[('LDUR', 0.043), ('PST', 0.021)]",New,New+0.064
+ITUB.SA,Itau Unibanco Holding SA ADR,0.062,"[('ILF', 0.062)]",New,New+0.062
+RAVI,FlexShares Ready Access Variabl,0.061,"[('VSPY', 0.061)]",New,New+0.061
+CIO.TO,City Office REIT Inc,0.06,"[('KBWY', 0.047), ('DEEP', 0.013)]",New,New+0.06
+KSTR,KraneShares SSE STAR Market 50 ,0.058,"[('TMAT', 0.058)]",New,New+0.058
+01347,Hua Hong Semiconductor Ltd Unitary 144A/Reg S,0.055,"[('KEJI', 0.032), ('CHIK', 0.023)]",New,New+0.055
+UNIT,Uniti Group Inc,0.054,"[('KBWY', 0.044), ('TADS', 0.01)]",New,New+0.054
+BBWI,Bath & Body Works Inc,0.053000000000000005,"[('PEZ', 0.032), ('GVIP', 0.021)]",New,New+0.053
+SCR.TO,Score Media and Gaming Inc A,0.051,"[('BETZ', 0.051)]",New,New+0.051
+5347,Tenaga Nasional Bhd,0.051,"[('EWM', 0.051)]",New,New+0.051
+REM,iShares Trust iShares Mortgage ,0.051,"[('INKM', 0.051)]",New,New+0.051
+TS.MI,Tenaris SA ADR,0.051,"[('OIH', 0.051)]",New,New+0.051
+BBOX.L,Tritax Big Box Ord,0.05,"[('FKU', 0.025), ('FEP', 0.01), ('ISVL', 0.008), ('FDT', 0.007)]",New,New+0.05
+SPAB,SPDR Portfolio Aggregate Bond E,0.05,"[('GAL', 0.05)]",New,New+0.05
+BBD.SA,Bank Bradesco SA ADR,0.05,"[('ILF', 0.05)]",New,New+0.05
+LCV21,Live Cattle Future Oct 21,0.049,"[('DBA', 0.049)]",New,New+0.049
+7113,Top Glove Corp Bhd,0.049,"[('EWM', 0.049)]",New,New+0.049
+AFINP,American Finance Trust Inc Series A,0.049,"[('PFFA', 0.049)]",New,New+0.049
+SLCA,US Silica Holdings Inc,0.049,"[('XES', 0.049)]",New,New+0.049
+FER.BC,Ferrovial SA,0.048,"[('EWP', 0.048)]",New,New+0.048
+BANB,Bachem Holding AG,0.048,"[('FSZ', 0.048)]",New,New+0.048
+CENX,Century Aluminum Co,0.047,"[('XME', 0.047)]",New,New+0.047
+GBLB,Groupe Bruxelles Lambert SA,0.046,"[('EWK', 0.046)]",New,New+0.046
+ANDR,Andritz AG,0.046,"[('EWO', 0.046)]",New,New+0.046
+HEV21,Lean Hog Future Oct 21,0.045,"[('DBA', 0.045)]",New,New+0.045
+5183,Petronas Chemicals Group Bhd,0.045,"[('EWM', 0.045)]",New,New+0.045
+00700.KS,Tencent Holdings Ltd,0.045,"[('GSEE', 0.045)]",New,New+0.045
+HOLM B,Holmen AB B,0.045,"[('WOOD', 0.045)]",New,New+0.045
+AMS.BC,Amadeus IT Group SA A,0.044,"[('EWP', 0.044)]",New,New+0.044
+A17U.SI,Ascendas Real Estate Investment Trust,0.044,"[('EWS', 0.044)]",New,New+0.044
+600745,Wingtech Technology Co Ltd,0.044,"[('KFVG', 0.044)]",New,New+0.044
+SOLB,Solvay SA,0.043,"[('EWK', 0.043)]",New,New+0.043
+RBI,Raiffeisen Bank International AG,0.043,"[('EWO', 0.043)]",New,New+0.043
+CAI,CA Immobilien Anlagen AG,0.043,"[('EWO', 0.043)]",New,New+0.043
+LXS.DE,Lanxess AG,0.043,"[('FGM', 0.043)]",New,New+0.043
+BKW,BKW AG,0.043,"[('FSZ', 0.043)]",New,New+0.043
+SUN,Sulzer AG,0.043,"[('FSZ', 0.043)]",New,New+0.043
+SMAR,Smartsheet Inc Class A,0.043,"[('IWFH', 0.025), ('WCLD', 0.018)]",New,New+0.043
+GFTU.L,Grafton Group PLC Shs,0.042,"[('EIRL', 0.042)]",New,New+0.042
+DSM,Koninklijke DSM NV,0.042,"[('EWN', 0.042)]",New,New+0.042
+CABK.BC,CaixaBank SA,0.042,"[('EWP', 0.042)]",New,New+0.042
+SSW.JO,Sibanye Stillwater Ltd Ordinary Shares,0.042,"[('EZA', 0.042)]",New,New+0.042
+FLT,Fleetcor Technologies Inc,0.042,"[('TPAY', 0.042)]",New,New+0.042
+GDDY,GoDaddy Inc A,0.041,"[('EBIZ', 0.041)]",New,New+0.041
+CHNG,Change Healthcare Inc Ordinary Shares,0.041,"[('EDOC', 0.041)]",New,New+0.041
+BN4.SI,Keppel Corp Ltd,0.041,"[('EWS', 0.041)]",New,New+0.041
+CLN,Clariant AG,0.041,"[('FSZ', 0.041)]",New,New+0.041
+GL9,Glanbia PLC,0.04,"[('EIRL', 0.04)]",New,New+0.04
+532755.BO,Tech Mahindra Ltd,0.04,"[('NFTY', 0.025), ('NXTG', 0.015)]",New,New+0.04
+FUMB,First Trust Ultra Short Duratio,0.04,"[('VSPY', 0.04)]",New,New+0.04
+BIRG.IR,Bank of Ireland Group PLC,0.039,"[('EIRL', 0.039)]",New,New+0.039
+00489,Dongfeng Motor Group Co Ltd Class H,0.039,"[('FCA', 0.039)]",New,New+0.039
+00347,Angang Steel Co Ltd Class H,0.039,"[('FCA', 0.039)]",New,New+0.039
+DIOD,Diodes Inc,0.039,"[('PSCT', 0.028), ('ROSC', 0.011)]",New,New+0.039
+C6L.SI,Singapore Airlines Ltd,0.038,"[('EWS', 0.038)]",New,New+0.038
+HINDALCO.B,Hindalco Industries Ltd,0.038,"[('NFTY', 0.023), ('FEM', 0.015)]",New,New+0.038
+005930,Samsung Electronics Co Ltd,0.038,"[('GSEE', 0.038)]",New,New+0.038
+SRC,Spirit Realty Capital Inc,0.038,"[('KBWY', 0.038)]",New,New+0.038
+601633,Great Wall Motor Co Ltd A,0.038,"[('KFYP', 0.038)]",New,New+0.038
+VAR1.DE,Varta AG,0.037,"[('CTEC', 0.037)]",New,New+0.037
+MRFG3.SA,Marfrig Global Foods SA,0.037,"[('FBZ', 0.037)]",New,New+0.037
+AFX.DE,Carl Zeiss Meditec AG,0.037,"[('FGM', 0.037)]",New,New+0.037
+MGY,Magnolia Oil & Gas Corp,0.037,"[('PXE', 0.037)]",New,New+0.037
+EXLS,ExlService Holdings Inc,0.036000000000000004,"[('PSCT', 0.028), ('CSA', 0.004), ('TPSC', 0.004)]",New,New+0.036
+BJ,BJ's Wholesale Club Holdings Inc,0.036000000000000004,"[('XMVM', 0.019), ('RWK', 0.014), ('IWM', 0.003)]",New,New+0.036
+8869,Press Metal Aluminium Holdings Bhd,0.036,"[('EWM', 0.036)]",New,New+0.036
+EXEL,Exelixis Inc,0.036,"[('FBT', 0.036)]",New,New+0.036
+ARCT,Arcturus Therapeutics Holdings Inc,0.036,"[('MOON', 0.036)]",New,New+0.036
+INOV,Inovalon Holdings Inc,0.036,"[('PSJ', 0.036)]",New,New+0.036
+IIA,Immofinanz AG,0.035,"[('EWO', 0.035)]",New,New+0.035
+ACRE,Ares Commercial Real Estate Corp,0.035,"[('KBWD', 0.035)]",New,New+0.035
+688116,Jiangsu Cnano Technology Co Ltd Class A,0.035,"[('KSTR', 0.035)]",New,New+0.035
+WOW,WideOpenWest Inc,0.035,"[('PBS', 0.035)]",New,New+0.035
+DANA,Dana Gas PJSC,0.035,"[('UAE', 0.035)]",New,New+0.035
+HEIA,Heineken NV,0.034,"[('EWN', 0.034)]",New,New+0.034
+O2D.DE,Telefonica Deutschland Holding AG,0.034,"[('FGM', 0.034)]",New,New+0.034
+COOP,Mr. Cooper Group Inc,0.034,"[('RZG', 0.019), ('XSVM', 0.015)]",New,New+0.034
+KRX.IR,Kingspan Group PLC,0.033,"[('ERTH', 0.033)]",New,New+0.033
+TLV,Banca Transilvania SA,0.033,"[('FM', 0.033)]",New,New+0.033
+06618,JD Health International Inc,0.033,"[('KWEB', 0.033)]",New,New+0.033
+MCFE,McAfee Corp Ordinary Shares - Class A,0.033,"[('PSJ', 0.033)]",New,New+0.033
+AC.MX,Arca Continental SAB de CV,0.032,"[('FLN', 0.032)]",New,New+0.032
+CPFE3.SA,CPFL Energia SA,0.032,"[('FLN', 0.032)]",New,New+0.032
+AJX,Great Ajax Corp,0.032,"[('HYIN', 0.032)]",New,New+0.032
+PRTA.IR,Prothena Corp PLC,0.031,"[('PTH', 0.028), ('IWC', 0.003)]",New,New+0.031
+OPER,ETF Series Solutions ETF ClearS,0.031,"[('PIFI', 0.031)]",New,New+0.031
+6947,Digi.com Bhd,0.03,"[('EWM', 0.03)]",New,New+0.03
+CMIG4.SA,Energy Company of Minas Gerais Participating Preferred,0.03,"[('FBZ', 0.03)]",New,New+0.03
+GWX,SPDR S&P International SmallCap,0.03,"[('GAL', 0.03)]",New,New+0.03
+TNZ21,Ultra 10 Year US Treasury Note Future Dec 21,0.03,"[('LDUR', 0.03)]",New,New+0.03
+SOHU,Sohu.com Ltd ADR,0.03,"[('MOON', 0.03)]",New,New+0.03
+ATH.AX,Athene Holding Ltd Class A,0.03,"[('MRGR', 0.03)]",New,New+0.03
+GENI.L,Genius Sports Ltd,0.029,"[('BETZ', 0.029)]",New,New+0.029
+GAPB.MX,Grupo Aeroportuario del Pacifico SAB de CV Class B,0.029,"[('EWW', 0.029)]",New,New+0.029
+NST.AX,Northern Star Resources Ltd,0.029,"[('GDX', 0.029)]",New,New+0.029
+LBTYK.L,Liberty Global PLC C,0.029,"[('IYZ', 0.029)]",New,New+0.029
+BIP.UN,Brookfield Infrastructure Partners LP,0.029,"[('PID', 0.029)]",New,New+0.029
+NS2Z1,Nikkei 225 Index Future Dec21,0.029,"[('WTMF', 0.029)]",New,New+0.029
+3711.TW,ASE Technology Holding Co Ltd,0.028999999999999998,"[('EWT', 0.016), ('FEM', 0.013)]",New,New+0.029
+5168,Hartalega Holdings Bhd,0.028,"[('EWM', 0.028)]",New,New+0.028
+ERF.PA,Eurofins Scientific SE,0.028,"[('FICS', 0.025), ('PQIN', 0.003)]",New,New+0.028
+1060,Saudi British Bank,0.028,"[('KSA', 0.028)]",New,New+0.028
+DBRGPI,DigitalBridge Group Inc Cum Conv Red Perp Pfd Registered Shs Series -I-,0.028,"[('PFFA', 0.028)]",New,New+0.028
+SITM,SiTime Corp Ordinary Shares,0.028,"[('XSD', 0.028)]",New,New+0.028
+APT,Afterpay Ltd,0.027,"[('MRGR', 0.027)]",New,New+0.027
+VNE,Veoneer Inc Ordinary Shares,0.027,"[('MRGR', 0.027)]",New,New+0.027
+INFO.L,IHS Markit Ltd,0.027,"[('MRGR', 0.027)]",New,New+0.027
+PLUS,ePlus Inc,0.026000000000000002,"[('FGD', 0.014), ('DEEP', 0.012)]",New,New+0.026
+VAW,Vanguard Materials ETF,0.026,"[('ARMR', 0.026)]",New,New+0.026
+WDP,Warehouses De Pauw,0.026,"[('EWK', 0.026)]",New,New+0.026
+JHX,James Hardie Industries PLC ADR,0.026,"[('FEVR', 0.026)]",New,New+0.026
+LFUS,Littelfuse Inc,0.026,"[('GLRY', 0.026)]",New,New+0.026
+BTCM,BIT Mining Ltd ADR,0.026,"[('MOON', 0.026)]",New,New+0.026
+RDWR,Radware Ltd,0.026,"[('MOON', 0.026)]",New,New+0.026
+MGGT,Meggitt PLC,0.026,"[('MRGR', 0.026)]",New,New+0.026
+DCUE,Dominion Energy Inc Series A,0.026,"[('PFFA', 0.026)]",New,New+0.026
+VPU,Vanguard Utilities ETF,0.025,"[('ARMR', 0.025)]",New,New+0.025
+DAN,Dana Inc,0.025,"[('HDGE', 0.025)]",New,New+0.025
+AZZ,AZZ Inc,0.025,"[('MGMT', 0.025)]",New,New+0.025
+CRMT,America's Car-Mart Inc,0.025,"[('MGMT', 0.025)]",New,New+0.025
+ADAP.L,Adaptimmune Therapeutics PLC ADR,0.025,"[('MOON', 0.025)]",New,New+0.025
+WING,Wingstop Inc,0.024999999999999998,"[('RFG', 0.022), ('GSSC', 0.003)]",New,New+0.025
+ASURB.MX,Grupo Aeroportuario del Sureste SAB de CV Class B,0.024,"[('EWW', 0.024)]",New,New+0.024
+ROAD,Construction Partners Inc Class A,0.024,"[('HDGE', 0.024)]",New,New+0.024
+OGC.NZ,OceanaGold Corp,0.024,"[('JGLD', 0.024)]",New,New+0.024
+LAC.TO,Lithium Americas Corp,0.024,"[('PBW', 0.024)]",New,New+0.024
+OGE,OGE Energy Corp,0.024,"[('PEY', 0.024)]",New,New+0.024
+STC,Stewart Information Services Corp,0.024,"[('SIXS', 0.024)]",New,New+0.024
+DIE,D'Ieteren Group,0.023,"[('FEUZ', 0.013), ('FEP', 0.01)]",New,New+0.023
+LUG.TO,Lundin Gold Inc,0.023,"[('JGLD', 0.023)]",New,New+0.023
+WAF.AX,West African Resources Ltd,0.023,"[('JGLD', 0.023)]",New,New+0.023
+2345.TW,Accton Technology Corp,0.023,"[('PIE', 0.023)]",New,New+0.023
+CEIX,CONSOL Energy Inc Ordinary Shares,0.023,"[('RZV', 0.023)]",New,New+0.023
+CHEMM,ChemoMetec A/S,0.022,"[('DFE', 0.022)]",New,New+0.022
+4307,Nomura Research Institute Ltd,0.022,"[('FICS', 0.022)]",New,New+0.022
+ATD.B.TO,Alimentation Couche-Tard Inc Class B,0.022,"[('FICS', 0.022)]",New,New+0.022
+BDEV.L,Barratt Developments PLC,0.022,"[('FKU', 0.022)]",New,New+0.022
+HOLX,Hologic Inc,0.022,"[('FXH', 0.022)]",New,New+0.022
+STEP,StepStone Group Inc Ordinary Shares - Class A,0.022,"[('KCE', 0.022)]",New,New+0.022
+ARRY,Array Technologies Inc Ordinary Shares,0.022,"[('PBW', 0.022)]",New,New+0.022
+COM7-R,Com7 PCL,0.022,"[('PIE', 0.022)]",New,New+0.022
+BHF,Brighthouse Financial Inc,0.022,"[('RFG', 0.022)]",New,New+0.022
+TDS,Telephone and Data Systems Inc,0.022,"[('RFV', 0.022)]",New,New+0.022
+BBDC,Barings BDC Inc,0.022,"[('VPC', 0.022)]",New,New+0.022
+WDAY,Workday Inc Class A,0.020999999999999998,"[('WCLD', 0.019), ('GSEW', 0.002)]",New,New+0.021
+JUP.L,Jupiter Fund Management PLC,0.02,"[('DFE', 0.02)]",New,New+0.02
+API,Agora Inc ADR,0.02,"[('WCLD', 0.02)]",New,New+0.02
+TBIG,PT Tower Bersama Infrastructure Tbk,0.019,"[('EIDO', 0.019)]",New,New+0.019
+BRPT,Barito Pacific Tbk,0.019,"[('EIDO', 0.019)]",New,New+0.019
+SGO.PA,Compagnie de Saint-Gobain SA,0.019,"[('INTF', 0.019)]",New,New+0.019
+BSIG,BrightSphere Investment Group Inc,0.019,"[('KCE', 0.019)]",New,New+0.019
+ORA,Ormat Technologies Inc,0.019,"[('PBW', 0.019)]",New,New+0.019
+AIT,Applied Industrial Technologies Inc,0.019,"[('PSCI', 0.019)]",New,New+0.019
+HZO,MarineMax Inc,0.019,"[('RZG', 0.019)]",New,New+0.019
+NABL,N-able Inc,0.019,"[('STLV', 0.019)]",New,New+0.019
+DTM,DT Midstream Inc Ordinary Shares,0.019,"[('STLV', 0.019)]",New,New+0.019
+ANIM.MI,Anima Holding SpA,0.018,"[('DFE', 0.018)]",New,New+0.018
+7751,Canon Inc,0.018,"[('DOO', 0.018)]",New,New+0.018
+8750,Dai-ichi Life Holdings Inc,0.018,"[('FJP', 0.018)]",New,New+0.018
+7911,Toppan Inc,0.018,"[('FJP', 0.018)]",New,New+0.018
+PIA.MI,Piaggio & C. SpA,0.017,"[('DFE', 0.017)]",New,New+0.017
+TGS,TGS ASA,0.017,"[('DFE', 0.017)]",New,New+0.017
+TWEKA,TKH Group NV,0.017,"[('DFE', 0.017)]",New,New+0.017
+6268,Nabtesco Corp,0.017,"[('FJP', 0.017)]",New,New+0.017
+1802,Obayashi Corp,0.017,"[('FJP', 0.017)]",New,New+0.017
+1812,Kajima Corp,0.017,"[('FJP', 0.017)]",New,New+0.017
+00636.HK,Kerry Logistics Network Ltd,0.017,"[('FPA', 0.017)]",New,New+0.017
+TPB,Turning Point Brands Inc,0.017,"[('OSCV', 0.017)]",New,New+0.017
+ZBZ21,US Treasury Bond Future Dec 21,0.017,"[('TTT', 0.017)]",New,New+0.017
+8439,Tokyo Century Corp,0.016,"[('EFAD', 0.016)]",New,New+0.016
+ASIX,AdvanSix Inc,0.016,"[('FDM', 0.009), ('SVAL', 0.007)]",New,New+0.016
+01618,Metallurgical Corp of China Ltd Class H,0.016,"[('FEM', 0.016)]",New,New+0.016
+AAN,The Aarons Co Inc Ordinary Shares,0.016,"[('RZV', 0.016)]",New,New+0.016
+DRX.L,Drax Group PLC,0.015,"[('DFE', 0.015)]",New,New+0.015
+00189,Dongyue Group Ltd,0.015,"[('DGS', 0.015)]",New,New+0.015
+2127,Nihon M&A Center Inc,0.015,"[('EFAD', 0.015)]",New,New+0.015
+5947,Rinnai Corp,0.015,"[('EFAD', 0.015)]",New,New+0.015
+BC8.DE,Bechtle AG,0.015,"[('EFAD', 0.015)]",New,New+0.015
+9435,Hikari Tsushin Inc,0.015,"[('EFAD', 0.015)]",New,New+0.015
+ZEUS,Olympic Steel Inc,0.014,"[('RZV', 0.014)]",New,New+0.014
+HOLI,Hollysys Automation Technologies Ltd,0.013,"[('DEEP', 0.013)]",New,New+0.013
+PFSI,PennyMac Financial Services Inc Class A,0.013,"[('KBE', 0.013)]",New,New+0.013
+SFBS,Servisfirst Bancshares Inc,0.013,"[('PSCF', 0.013)]",New,New+0.013
+SCVL,Shoe Carnival Inc,0.013,"[('SIXS', 0.013)]",New,New+0.013
+GCO,Genesco Inc,0.013,"[('SIXS', 0.013)]",New,New+0.013
+CADE,Cadence Bancorp Class A,0.013,"[('SIXS', 0.013)]",New,New+0.013
+CDAY,Ceridian HCM Holding Inc,0.012,"[('DMRM', 0.006), ('MDY', 0.006)]",New,New+0.012
+NEM.DE,Nemetschek SE,0.012,"[('DTEC', 0.012)]",New,New+0.012
+GLSI,Greenwich LifeSciences Inc Ordinary Shares,0.012,"[('DWAS', 0.012)]",New,New+0.012
+ILD.PA,Iliad SA,0.012,"[('FEUZ', 0.012)]",New,New+0.012
+TTEK,Tetra Tech Inc,0.012,"[('IWO', 0.005), ('ISCG', 0.004), ('IWM', 0.003)]",New,New+0.012
+CXW,CoreCivic Inc,0.012,"[('RZV', 0.012)]",New,New+0.012
+MATX,Matson Inc,0.012,"[('SIXS', 0.012)]",New,New+0.012
+KOP,Koppers Holdings Inc,0.012,"[('SIXS', 0.012)]",New,New+0.012
+BTU,Peabody Energy Corp,0.012,"[('SQLV', 0.012)]",New,New+0.012
+JKHY,Jack Henry & Associates Inc,0.012,"[('USMF', 0.012)]",New,New+0.012
+TTMI,TTM Technologies Inc,0.012,"[('XSLV', 0.012)]",New,New+0.012
+HTA,Healthcare Trust of America Inc,0.011,"[('DIVA', 0.011)]",New,New+0.011
+MGP,MGM Growth Properties LLC A,0.011,"[('DIVA', 0.011)]",New,New+0.011
+3189.TW,Kinsus Interconnect Technology Corp,0.011,"[('FEMS', 0.011)]",New,New+0.011
+2915.TW,Ruentex Industries Ltd,0.011,"[('FEMS', 0.011)]",New,New+0.011
+247540.KS,Ecopro BM Co Ltd Ordinary Shares,0.011,"[('PBD', 0.011)]",New,New+0.011
+361610.KS,SK Ie Technology Co Ltd,0.011,"[('PBD', 0.011)]",New,New+0.011
+1407,West Holdings Corp,0.011,"[('PBD', 0.011)]",New,New+0.011
+STFC,State Auto Financial Corp,0.011,"[('SQLV', 0.011)]",New,New+0.011
+KOFUBL.MX,Coca-Cola Femsa SAB de CV CPO Terms:3 Shs-B- + 5 Shs-L-,0.01,"[('FEMS', 0.01)]",New,New+0.01
+EWM.BO,iShares MSCI Malaysia ETF,0.01,"[('GSEE', 0.01)]",New,New+0.01
+NDX1.DE,Nordex SE,0.01,"[('PBD', 0.01)]",New,New+0.01
+BAX,Baxter International Inc,0.01,"[('TADS', 0.01)]",New,New+0.01
+2887.TW,Taishin Financial Holdings Co Ltd,0.009,"[('EELV', 0.009)]",New,New+0.009
+BHE,Benchmark Electronics Inc,0.009,"[('FDM', 0.009)]",New,New+0.009
+IMKTA,Ingles Markets Inc Class A,0.009,"[('FDM', 0.009)]",New,New+0.009
+RFP.TO,Resolute Forest Products Inc,0.009,"[('FDM', 0.009)]",New,New+0.009
+PLAB,Photronics Inc,0.009,"[('FDM', 0.009)]",New,New+0.009
+INFY.SA,Infosys Ltd,0.009,"[('GSEE', 0.009)]",New,New+0.009
+VALE3,Vale SA,0.009,"[('GSEE', 0.009)]",New,New+0.009
+RSP,Invesco S&P 500 Equal Weight ET,0.009,"[('GSEW', 0.009)]",New,New+0.009
+EBO.NZ,Ebos Group Ltd,0.009,"[('RODE', 0.009)]",New,New+0.009
+FIBK,First Interstate BancSystem Inc,0.009,"[('ROSC', 0.009)]",New,New+0.009
+5871.TW,Chailease Holding Co Ltd,0.008,"[('DGRE', 0.008)]",New,New+0.008
+ABDN.L,Abrdn PLC,0.008,"[('DIM', 0.008)]",New,New+0.008
+GEO,The GEO Group Inc,0.008,"[('FDM', 0.008)]",New,New+0.008
+HFWA,Heritage Financial Corp,0.008,"[('FDM', 0.008)]",New,New+0.008
+WASH,Washington Trust Bancorp Inc,0.008,"[('FDM', 0.008)]",New,New+0.008
+CPR.MI,Davide Campari-Milano NV Az nom Post Frazionamento,0.008,"[('KLDW', 0.008)]",New,New+0.008
+MHO,M/I Homes Inc,0.007,"[('EES', 0.007)]",New,New+0.007
+5411,JFE Holdings Inc,0.007,"[('FDT', 0.007)]",New,New+0.007
+GAW.L,Games Workshop Group PLC,0.007,"[('ISCF', 0.007)]",New,New+0.007
+APR,Apria Inc Ordinary Shares,0.007,"[('SQLV', 0.007)]",New,New+0.007
+SCHN,Schnitzer Steel Industries Inc Class A,0.007,"[('SVAL', 0.007)]",New,New+0.007
+8570,AEON Financial Service Co Ltd,0.006,"[('DXJS', 0.006)]",New,New+0.006
+4061,Denka Co Ltd,0.006,"[('DXJS', 0.006)]",New,New+0.006
+3028,Alpen Co Ltd,0.006,"[('FDTS', 0.006)]",New,New+0.006
+8804,Tokyo Tatemono Co Ltd,0.005,"[('DFJ', 0.005)]",New,New+0.005
+VEC.L,Vectura Group PLC,0.005,"[('FDTS', 0.005)]",New,New+0.005
+CAP.PA,Capgemini SE,0.005,"[('JPIN', 0.005)]",New,New+0.005
+BCE,BCE Inc,0.004,"[('CIL', 0.004)]",New,New+0.004
+GEBN.TO,Geberit AG,0.004,"[('CIL', 0.004)]",New,New+0.004
+00006,Power Assets Holdings Ltd,0.004,"[('CIL', 0.004)]",New,New+0.004
+RY.HK,Royal Bank of Canada,0.004,"[('CIL', 0.004)]",New,New+0.004
+TMX,Terminix Global Holdings Inc,0.004,"[('ISCG', 0.004)]",New,New+0.004
+JHG,Janus Henderson Group PLC,0.004,"[('ISCV', 0.004)]",New,New+0.004
+PTGX,Protagonist Therapeutics Inc,0.004,"[('IWC', 0.004)]",New,New+0.004
+CLAR,Clarus Corp,0.004,"[('TPSC', 0.004)]",New,New+0.004
+RBC,Regal Beloit Corp,0.003,"[('DFAS', 0.003)]",New,New+0.003
+INDT,Indutrade AB,0.003,"[('HSCZ', 0.003)]",New,New+0.003
+MGGT.L,Meggitt PLC,0.003,"[('HSCZ', 0.003)]",New,New+0.003
+RDNT,RadNet Inc,0.003,"[('IWC', 0.003)]",New,New+0.003
+CSTL,Castle Biosciences Inc,0.003,"[('IWC', 0.003)]",New,New+0.003
+RXN,Rexnord Corp,0.003,"[('IWM', 0.003)]",New,New+0.003
+ESNT,Essent Group Ltd,0.003,"[('IWN', 0.003)]",New,New+0.003
+4091,Nippon Sanso Holdings Corp,0.003,"[('PQIN', 0.003)]",New,New+0.003
+4661,Oriental Land Co Ltd,0.002,"[('ISZE', 0.002)]",New,New+0.002
+NVEI.TO,Nuvei Corp Ordinary Shares (Sub Voting),0.002,"[('ISZE', 0.002)]",New,New+0.002
+WTC.AX,WiseTech Global Ltd,0.002,"[('ISZE', 0.002)]",New,New+0.002
+NIBE B,NIBE Industrier AB B,0.002,"[('ISZE', 0.002)]",New,New+0.002
