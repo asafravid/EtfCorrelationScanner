@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.1.49 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.1.50 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -42,10 +42,10 @@ from contextlib import closing
 #              4. Some tabels don't have +New and +Removed when crossing the report boundary - fix
 
 # Start of Run Configuration ###########
-SCAN_ETFS                   = True
-POST_PROCESS_ETFS           = False
-POST_PROCESS_PATH_NEW       = '20220108-215153'
-POST_PROCESS_PATH_REF       = '20220108-215153'
+SCAN_ETFS                   = False
+POST_PROCESS_ETFS           = True
+POST_PROCESS_PATH_NEW       = '20220123-052831'
+POST_PROCESS_PATH_REF       = '20220123-052831'
 CUSTOM_ETF_LIST             = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 NUM_REPORTED_ENTRIES        = 42
 NUM_REPORTED_BIGRAM_ENTRIES = 77

@@ -1,0 +1,68 @@
+Bigram,Name,NumAppearances,Holders,DiffEntries,DiffValue
+"('9101', 'STNG')","('Nippon Yusen Kabushiki Kaisha', 'Scorpio Tankers Inc')",1,"[('SEA', 0.107)]",New,New+1
+"('9101', '9107')","('Nippon Yusen Kabushiki Kaisha', 'Kawasaki Kisen Kaisha Ltd')",1,"[('SEA', 0.108)]",New,New+1
+"('9101', 'MATX')","('Nippon Yusen Kabushiki Kaisha', 'Matson Inc')",1,"[('SEA', 0.122)]",New,New+1
+"('9101', 'SFL')","('Nippon Yusen Kabushiki Kaisha', 'SFL Corp Ltd')",1,"[('SEA', 0.11)]",New,New+1
+"('9101', 'EURN')","('Nippon Yusen Kabushiki Kaisha', 'Euronav NV')",1,"[('SEA', 0.128)]",New,New+1
+"('01919', '9101')","('COSCO SHIPPING Holdings Co Ltd Class H', 'Nippon Yusen Kabushiki Kaisha')",1,"[('SEA', 0.108)]",New,New+1
+"('01308.HK', 'STNG')","('SITC International Holdings Co Ltd', 'Scorpio Tankers Inc')",1,"[('SEA', 0.082)]",New,New+1
+"('01308.HK', '9107')","('SITC International Holdings Co Ltd', 'Kawasaki Kisen Kaisha Ltd')",1,"[('SEA', 0.082)]",New,New+1
+"('01308.HK', 'MATX')","('SITC International Holdings Co Ltd', 'Matson Inc')",1,"[('SEA', 0.097)]",New,New+1
+"('01308.HK', 'SFL')","('SITC International Holdings Co Ltd', 'SFL Corp Ltd')",1,"[('SEA', 0.085)]",New,New+1
+"('01308.HK', 'EURN')","('SITC International Holdings Co Ltd', 'Euronav NV')",1,"[('SEA', 0.103)]",New,New+1
+"('01308.HK', '01919')","('SITC International Holdings Co Ltd', 'COSCO SHIPPING Holdings Co Ltd Class H')",1,"[('SEA', 0.082)]",New,New+1
+"('01308.HK', '9104')","('SITC International Holdings Co Ltd', 'Mitsui O.S.K. Lines Ltd')",1,"[('SEA', 0.127)]",New,New+1
+"('9107', 'STNG')","('Kawasaki Kisen Kaisha Ltd', 'Scorpio Tankers Inc')",1,"[('SEA', 0.067)]",New,New+1
+"('MAERSK B', 'STNG')","('A. P. Moller Maersk A/S B', 'Scorpio Tankers Inc')",1,"[('SEA', 0.223)]",New,New+1
+"('MATX', 'STNG')","('Matson Inc', 'Scorpio Tankers Inc')",1,"[('SEA', 0.081)]",New,New+1
+"('SFL', 'STNG')","('SFL Corp Ltd', 'Scorpio Tankers Inc')",1,"[('SEA', 0.07)]",New,New+1
+"('EURN', 'STNG')","('Euronav NV', 'Scorpio Tankers Inc')",1,"[('SEA', 0.088)]",New,New+1
+"('01919', 'STNG')","('COSCO SHIPPING Holdings Co Ltd Class H', 'Scorpio Tankers Inc')",1,"[('SEA', 0.067)]",New,New+1
+"('9104', 'STNG')","('Mitsui O.S.K. Lines Ltd', 'Scorpio Tankers Inc')",1,"[('SEA', 0.111)]",New,New+1
+"('9107', 'MAERSK B')","('Kawasaki Kisen Kaisha Ltd', 'A. P. Moller Maersk A/S B')",1,"[('SEA', 0.224)]",New,New+1
+"('9107', 'MATX')","('Kawasaki Kisen Kaisha Ltd', 'Matson Inc')",1,"[('SEA', 0.082)]",New,New+1
+"('9107', 'SFL')","('Kawasaki Kisen Kaisha Ltd', 'SFL Corp Ltd')",1,"[('SEA', 0.07)]",New,New+1
+"('9107', 'EURN')","('Kawasaki Kisen Kaisha Ltd', 'Euronav NV')",1,"[('SEA', 0.088)]",New,New+1
+"('01919', '9107')","('COSCO SHIPPING Holdings Co Ltd Class H', 'Kawasaki Kisen Kaisha Ltd')",1,"[('SEA', 0.068)]",New,New+1
+"('9104', '9107')","('Mitsui O.S.K. Lines Ltd', 'Kawasaki Kisen Kaisha Ltd')",1,"[('SEA', 0.112)]",New,New+1
+"('MAERSK B', 'MATX')","('A. P. Moller Maersk A/S B', 'Matson Inc')",1,"[('SEA', 0.239)]",New,New+1
+"('MAERSK B', 'SFL')","('A. P. Moller Maersk A/S B', 'SFL Corp Ltd')",1,"[('SEA', 0.227)]",New,New+1
+"('EURN', 'MAERSK B')","('Euronav NV', 'A. P. Moller Maersk A/S B')",1,"[('SEA', 0.245)]",New,New+1
+"('01919', 'MAERSK B')","('COSCO SHIPPING Holdings Co Ltd Class H', 'A. P. Moller Maersk A/S B')",1,"[('SEA', 0.224)]",New,New+1
+"('9104', 'MAERSK B')","('Mitsui O.S.K. Lines Ltd', 'A. P. Moller Maersk A/S B')",1,"[('SEA', 0.269)]",New,New+1
+"('MATX', 'SFL')","('Matson Inc', 'SFL Corp Ltd')",1,"[('SEA', 0.085)]",New,New+1
+"('EURN', 'MATX')","('Euronav NV', 'Matson Inc')",1,"[('SEA', 0.103)]",New,New+1
+"('01919', 'MATX')","('COSCO SHIPPING Holdings Co Ltd Class H', 'Matson Inc')",1,"[('SEA', 0.082)]",New,New+1
+"('9104', 'MATX')","('Mitsui O.S.K. Lines Ltd', 'Matson Inc')",1,"[('SEA', 0.127)]",New,New+1
+"('EURN', 'SFL')","('Euronav NV', 'SFL Corp Ltd')",1,"[('SEA', 0.091)]",New,New+1
+"('01919', 'SFL')","('COSCO SHIPPING Holdings Co Ltd Class H', 'SFL Corp Ltd')",1,"[('SEA', 0.07)]",New,New+1
+"('9104', 'SFL')","('Mitsui O.S.K. Lines Ltd', 'SFL Corp Ltd')",1,"[('SEA', 0.115)]",New,New+1
+"('01919', 'EURN')","('COSCO SHIPPING Holdings Co Ltd Class H', 'Euronav NV')",1,"[('SEA', 0.088)]",New,New+1
+"('9104', 'EURN')","('Mitsui O.S.K. Lines Ltd', 'Euronav NV')",1,"[('SEA', 0.133)]",New,New+1
+"('01919', '9104')","('COSCO SHIPPING Holdings Co Ltd Class H', 'Mitsui O.S.K. Lines Ltd')",1,"[('SEA', 0.112)]",New,New+1
+"('CPE', 'XEC')","('Callon Petroleum Co', 'Cimarex Energy Co')",1,"[('XOP', 0.056)]",New,New+1
+"('CLR', 'CPE')","('Continental Resources Inc', 'Callon Petroleum Co')",1,"[('XOP', 0.057)]",New,New+1
+"('AR', 'CPE')","('Antero Resources Corp', 'Callon Petroleum Co')",1,"[('XOP', 0.057)]",New,New+1
+"('CPE', 'FANG')","('Callon Petroleum Co', 'Diamondback Energy Inc')",1,"[('XOP', 0.058)]",New,New+1
+"('COP', 'CPE')","('ConocoPhillips', 'Callon Petroleum Co')",1,"[('XOP', 0.056)]",New,New+1
+"('CPE', 'MRO')","('Callon Petroleum Co', 'Marathon Oil Corp')",1,"[('XOP', 0.056)]",New,New+1
+"('CPE', 'OXY')","('Callon Petroleum Co', 'Occidental Petroleum Corp')",1,"[('XOP', 0.058)]",New,New+1
+"('CPE', 'XOM')","('Callon Petroleum Co', 'Exxon Mobil Corp')",1,"[('XOP', 0.056)]",New,New+1
+"('CLR', 'XEC')","('Continental Resources Inc', 'Cimarex Energy Co')",1,"[('XOP', 0.053)]",New,New+1
+"('AR', 'XEC')","('Antero Resources Corp', 'Cimarex Energy Co')",1,"[('XOP', 0.053)]",New,New+1
+"('FANG', 'XEC')","('Diamondback Energy Inc', 'Cimarex Energy Co')",1,"[('XOP', 0.053)]",New,New+1
+"('COP', 'XEC')","('ConocoPhillips', 'Cimarex Energy Co')",1,"[('XOP', 0.052)]",New,New+1
+"('MRO', 'XEC')","('Marathon Oil Corp', 'Cimarex Energy Co')",1,"[('XOP', 0.052)]",New,New+1
+"('OXY', 'XEC')","('Occidental Petroleum Corp', 'Cimarex Energy Co')",1,"[('XOP', 0.054)]",New,New+1
+"('SM', 'XEC')","('SM Energy Co', 'Cimarex Energy Co')",1,"[('XOP', 0.055)]",New,New+1
+"('XEC', 'XOM')","('Cimarex Energy Co', 'Exxon Mobil Corp')",1,"[('XOP', 0.052)]",New,New+1
+"('CLR', 'FANG')","('Continental Resources Inc', 'Diamondback Energy Inc')",1,"[('XOP', 0.055)]",New,New+1
+"('CLR', 'OXY')","('Continental Resources Inc', 'Occidental Petroleum Corp')",1,"[('XOP', 0.056)]",New,New+1
+"('CLR', 'SM')","('Continental Resources Inc', 'SM Energy Co')",1,"[('XOP', 0.056)]",New,New+1
+"('CLR', 'XOM')","('Continental Resources Inc', 'Exxon Mobil Corp')",1,"[('XOP', 0.053)]",New,New+1
+"('AR', 'MRO')","('Antero Resources Corp', 'Marathon Oil Corp')",1,"[('XOP', 0.053)]",New,New+1
+"('AR', 'OXY')","('Antero Resources Corp', 'Occidental Petroleum Corp')",1,"[('XOP', 0.055)]",New,New+1
+"('AR', 'XOM')","('Antero Resources Corp', 'Exxon Mobil Corp')",1,"[('XOP', 0.053)]",New,New+1
+"('FANG', 'XOM')","('Diamondback Energy Inc', 'Exxon Mobil Corp')",1,"[('XOP', 0.053)]",New,New+1
+"('OXY', 'SM')","('Occidental Petroleum Corp', 'SM Energy Co')",1,"[('XOP', 0.057)]",New,New+1
+"('OXY', 'XOM')","('Occidental Petroleum Corp', 'Exxon Mobil Corp')",1,"[('XOP', 0.054)]",New,New+1
