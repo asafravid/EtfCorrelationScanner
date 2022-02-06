@@ -42,10 +42,10 @@ from contextlib import closing
 #              4. Some tabels don't have +New and +Removed when crossing the report boundary - fix
 
 # Start of Run Configuration ###########
-SCAN_ETFS                   = False
-POST_PROCESS_ETFS           = True
-POST_PROCESS_PATH_NEW       = '20220123-052831'
-POST_PROCESS_PATH_REF       = '20220123-052831'
+SCAN_ETFS                   = True
+POST_PROCESS_ETFS           = False
+POST_PROCESS_PATH_NEW       = '20220206-181644'
+POST_PROCESS_PATH_REF       = '20220206-181644'
 CUSTOM_ETF_LIST             = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
 NUM_REPORTED_ENTRIES        = 42
 NUM_REPORTED_BIGRAM_ENTRIES = 77
