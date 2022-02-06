@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.1.46 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.1.47 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -137,7 +137,10 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
                 else:                           pdf.set_text_color(  0,   0,   0)  # black
 
             if   col_index == ReportTableColumns.SYMBOL.value  and row_index and bigrams: col = str(col).replace("('","").replace("', '"," | ").replace("')", "")[:56]
-            elif col_index == ReportTableColumns.NAME.value    and row_index and bigrams: col = str(col).replace("('","").replace("', '"," | ").replace("')", "").replace('("','').replace('", \''," | ").replace("', \""," | ").replace('")','')[:56]
+            elif col_index == ReportTableColumns.NAME.value:
+                if row_index:
+                    if bigrams: col = str(col).replace("('","").replace("', '"," | ").replace("')", "").replace('("','').replace('", \''," | ").replace("', \""," | ").replace('")','')[:56]
+                    else:       col = str(col)[:56]
             elif col_index == ReportTableColumns.HOLDERS.value and row_index:             col = str(col).replace("[",'').replace("('",'').replace("', ",':').replace('),',',').replace(")]",'')
 
             pdf.cell(w=w, h=3, txt=str(col), border=1, ln=0 if col_index < ReportTableColumns.LAST_COLUMN_INDEX.value else 1, align="C" if row_index == 0 else "L")
