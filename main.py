@@ -1,6 +1,6 @@
 #############################################################################
 #
-# Version 0.1.50 - Author: Asaf Ravid <asaf.rvd@gmail.com>
+# Version 0.1.51 - Author: Asaf Ravid <asaf.rvd@gmail.com>
 #
 #    ETF Correlation  Scanner - based on yfinance
 #    Copyright (C) 2021 Asaf Ravid
@@ -31,6 +31,7 @@ import csv
 import os
 import pdf_generator
 import itertools
+import json
 
 from enum       import Enum
 from contextlib import closing
@@ -42,15 +43,17 @@ from contextlib import closing
 #              4. Some tabels don't have +New and +Removed when crossing the report boundary - fix
 
 # Start of Run Configuration ###########
-SCAN_ETFS                   = True
-POST_PROCESS_ETFS           = False
-POST_PROCESS_PATH_NEW       = '20220206-181644'
-POST_PROCESS_PATH_REF       = '20220206-181644'
-CUSTOM_ETF_LIST             = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
-NUM_REPORTED_ENTRIES        = 42
-NUM_REPORTED_BIGRAM_ENTRIES = 77
-NUM_HOLDERS_TO_INCLUDE      = 5
-VERBOSE_LOGS                = 0
+SCAN_ETFS                       = True
+POST_PROCESS_ETFS               = False
+POST_PROCESS_PATH_NEW           = '20220206-181644'
+POST_PROCESS_PATH_REF           = '20220206-181644'
+CUSTOM_ETF_LIST                 = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
+NUM_REPORTED_ENTRIES            = 42
+NUM_REPORTED_BIGRAM_ENTRIES     = 77
+NUM_HOLDERS_TO_INCLUDE          = 5
+VERBOSE_LOGS                    = 0
+CRASH_AND_CONTINUE_PATH         = None
+CRASH_AND_CONTINUE_REFRESH_FREQ = 50
 # End   of Run Configuration ###########
 
 
@@ -189,6 +192,16 @@ def scan_etfs():
 
     elapsed_time_start_sec = time.time()
 
+    json_db = dict()
+    crash_and_continue_raw_data = None
+
+    # Temporary json for crash-and-continue efficient operation:
+    date_and_time_crash_and_continue = time.strftime("Results/%Y%m%d-%H%M%S_cc")
+
+    if CRASH_AND_CONTINUE_PATH != None:
+        crash_and_continue_json_db_filename = open(CRASH_AND_CONTINUE_PATH + '/db.json')
+        crash_and_continue_raw_data = json.load(crash_and_continue_json_db_filename)
+
     etf_data_list = []
     for index, etf_symbol in enumerate(sorted_etf_list):
         etf_data = EtfData()
@@ -197,13 +210,34 @@ def scan_etfs():
         elapsed_time_sec        = round(elapsed_time_sample_sec - elapsed_time_start_sec, 0)
         average_sec_per_symbol  = round(elapsed_time_sec / (index+1),                     2)
         print("#/left/% : {}/{}/{:3.3f}, elapsed/left/avg : {:5}/{:5}/{:4} [sec], Processing {}".format(index+1, len(sorted_etf_list)-index-1, (index+1)/len(sorted_etf_list)*100, elapsed_time_sec, int(round(average_sec_per_symbol*(len(sorted_etf_list)-index-1), 0)), average_sec_per_symbol, etf_symbol))
-        symbol = yf.Ticker(etf_symbol)
-        info   = symbol.get_info()
-        etf_data.symbol     = etf_symbol
+
+        if crash_and_continue_raw_data != None and etf_symbol in crash_and_continue_raw_data:
+            symbol = crash_and_continue_raw_data[etf_symbol]
+            info = symbol['info'] if 'info' in symbol else None
+        else:
+            symbol = yf.Ticker(etf_symbol)
+            info   = symbol.get_info()
+
+        etf_data.symbol = etf_symbol
+
         if 'sectorWeightings' in info: etf_data.sector_weightings = info["sectorWeightings"]
         if 'shortName'        in info: etf_data.short_name        = info["shortName"]
         if 'holdings'         in info: etf_data.holdings          = info['holdings']
         etf_data_list.append(etf_data)
+
+        # Save raw json db:
+        json_db[etf_symbol] = {}
+        json_db[etf_symbol]["info"] = info
+
+        # Save crash-and-continue raw database as json:
+        if date_and_time_crash_and_continue and (index+1) % CRASH_AND_CONTINUE_REFRESH_FREQ == 0 and (crash_and_continue_raw_data is None or etf_symbol not in crash_and_continue_raw_data):
+            json_db_filename = date_and_time_crash_and_continue + '/db.json'
+            os.makedirs(os.path.dirname(json_db_filename), exist_ok=True)
+            print("[DB] Iteration {}, flushing json db to {} ... ".format(index+1, json_db_filename), end="")
+            json_db_file = open(json_db_filename, "w")
+            json.dump(json_db, json_db_file, indent=1)
+            json_db_file.close()
+            print("done")
 
     rows = [g_title_row]
     for etf_item in etf_data_list:
