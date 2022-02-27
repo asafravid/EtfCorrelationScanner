@@ -1,0 +1,56 @@
+Bigram,Name,NumAppearances,Holders,DiffEntries,DiffValue
+"('BA', 'V')","('Boeing Co', 'Visa Inc Class A')",1,"[('DIA', 0.083)]",New,New+1
+"('AMGN', 'V')","('Amgen Inc', 'Visa Inc Class A')",1,"[('DIA', 0.085)]",New,New+1
+"('HON', 'V')","('Honeywell International Inc', 'Visa Inc Class A')",1,"[('DIA', 0.086)]",New,New+1
+"('MCD', 'V')","(""McDonald's Corp"", 'Visa Inc Class A')",1,"[('DIA', 0.087)]",New,New+1
+"('BA', 'CRM')","('Boeing Co', 'Salesforce.com Inc')",1,"[('DIA', 0.09)]",New,New+1
+"('CRM', 'HON')","('Salesforce.com Inc', 'Honeywell International Inc')",1,"[('DIA', 0.092)]",New,New+1
+"('CRM', 'MCD')","('Salesforce.com Inc', ""McDonald's Corp"")",1,"[('DIA', 0.093)]",New,New+1
+"('BA', 'UNH')","('Boeing Co', 'UnitedHealth Group Inc')",1,"[('DIA', 0.118)]",New,New+1
+"('HON', 'UNH')","('Honeywell International Inc', 'UnitedHealth Group Inc')",1,"[('DIA', 0.12)]",New,New+1
+"('MCD', 'UNH')","(""McDonald's Corp"", 'UnitedHealth Group Inc')",1,"[('DIA', 0.122)]",New,New+1
+"('BA', 'GS')","('Boeing Co', 'Goldman Sachs Group Inc')",1,"[('DIA', 0.118)]",New,New+1
+"('BA', 'MSFT')","('Boeing Co', 'Microsoft Corp')",1,"[('DIA', 0.097)]",New,New+1
+"('AMGN', 'BA')","('Amgen Inc', 'Boeing Co')",1,"[('DIA', 0.083)]",New,New+1
+"('BA', 'MCD')","('Boeing Co', ""McDonald's Corp"")",1,"[('DIA', 0.085)]",New,New+1
+"('BA', 'HD')","('Boeing Co', 'The Home Depot Inc')",1,"[('DIA', 0.102)]",New,New+1
+"('GS', 'MCD')","('Goldman Sachs Group Inc', ""McDonald's Corp"")",1,"[('DIA', 0.121)]",New,New+1
+"('HON', 'MSFT')","('Honeywell International Inc', 'Microsoft Corp')",1,"[('DIA', 0.099)]",New,New+1
+"('MCD', 'MSFT')","(""McDonald's Corp"", 'Microsoft Corp')",1,"[('DIA', 0.1)]",New,New+1
+"('AMGN', 'MCD')","('Amgen Inc', ""McDonald's Corp"")",1,"[('DIA', 0.086)]",New,New+1
+"('HON', 'MCD')","('Honeywell International Inc', ""McDonald's Corp"")",1,"[('DIA', 0.087)]",New,New+1
+"('HD', 'HON')","('The Home Depot Inc', 'Honeywell International Inc')",1,"[('DIA', 0.104)]",New,New+1
+"('MSPI', 'WFCPQ')","('Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-', 'Wells Fargo & Co Deposit Shs Repr 1/1000th 5.85 % Non-Cum Perp Pfd Shs -A-')",1,"[('PFFV', 0.064)]",New,New+1
+"('CPJ', 'MSPI')","('Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J', 'Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-')",1,"[('PFFV', 0.046)]",New,New+1
+"('CPK', 'MSPI')","('Chesapeake Utilities Corp', 'Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-')",1,"[('PFFV', 0.06)]",New,New+1
+"('MSPI', 'USBPH')","('Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-', 'U.S. Bancorp Shs Repr 1/1000th Non-Cum Perpetual Pfd Shs Series -B-')",1,"[('PFFV', 0.044)]",New,New+1
+"('ATHPA', 'MSPI')","('Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep', 'Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-')",1,"[('PFFV', 0.045)]",New,New+1
+"('MSPI', 'MSPK')","('Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-', 'Morgan Stanley 1/1000th Non-Cum Pfd -K-')",1,"[('PFFV', 0.045)]",New,New+1
+"('GSPJ', 'MSPI')","('Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser', 'Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-')",1,"[('PFFV', 0.046)]",New,New+1
+"('GSPD', 'MSPI')","('Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Perp Fltg Rate Non Cum Pf', 'Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-')",1,"[('PFFV', 0.052)]",New,New+1
+"('CPJ', 'WFCPQ')","('Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J', 'Wells Fargo & Co Deposit Shs Repr 1/1000th 5.85 % Non-Cum Perp Pfd Shs -A-')",1,"[('PFFV', 0.065)]",New,New+1
+"('USBPH', 'WFCPQ')","('U.S. Bancorp Shs Repr 1/1000th Non-Cum Perpetual Pfd Shs Series -B-', 'Wells Fargo & Co Deposit Shs Repr 1/1000th 5.85 % Non-Cum Perp Pfd Shs -A-')",1,"[('PFFV', 0.063)]",New,New+1
+"('ATHPA', 'WFCPQ')","('Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep', 'Wells Fargo & Co Deposit Shs Repr 1/1000th 5.85 % Non-Cum Perp Pfd Shs -A-')",1,"[('PFFV', 0.064)]",New,New+1
+"('MSPK', 'WFCPQ')","('Morgan Stanley 1/1000th Non-Cum Pfd -K-', 'Wells Fargo & Co Deposit Shs Repr 1/1000th 5.85 % Non-Cum Perp Pfd Shs -A-')",1,"[('PFFV', 0.064)]",New,New+1
+"('GSPJ', 'WFCPQ')","('Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser', 'Wells Fargo & Co Deposit Shs Repr 1/1000th 5.85 % Non-Cum Perp Pfd Shs -A-')",1,"[('PFFV', 0.065)]",New,New+1
+"('GSPD', 'WFCPQ')","('Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Perp Fltg Rate Non Cum Pf', 'Wells Fargo & Co Deposit Shs Repr 1/1000th 5.85 % Non-Cum Perp Pfd Shs -A-')",1,"[('PFFV', 0.071)]",New,New+1
+"('CPJ', 'CPK')","('Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J', 'Chesapeake Utilities Corp')",1,"[('PFFV', 0.061)]",New,New+1
+"('CPJ', 'USBPH')","('Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J', 'U.S. Bancorp Shs Repr 1/1000th Non-Cum Perpetual Pfd Shs Series -B-')",1,"[('PFFV', 0.045)]",New,New+1
+"('ATHPA', 'CPJ')","('Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep', 'Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J')",1,"[('PFFV', 0.046)]",New,New+1
+"('CPJ', 'MSPK')","('Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J', 'Morgan Stanley 1/1000th Non-Cum Pfd -K-')",1,"[('PFFV', 0.046)]",New,New+1
+"('CPJ', 'GSPJ')","('Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J', 'Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser')",1,"[('PFFV', 0.047)]",New,New+1
+"('CPJ', 'GSPD')","('Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J', 'Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Perp Fltg Rate Non Cum Pf')",1,"[('PFFV', 0.053)]",New,New+1
+"('CPK', 'USBPH')","('Chesapeake Utilities Corp', 'U.S. Bancorp Shs Repr 1/1000th Non-Cum Perpetual Pfd Shs Series -B-')",1,"[('PFFV', 0.059)]",New,New+1
+"('ATHPA', 'CPK')","('Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep', 'Chesapeake Utilities Corp')",1,"[('PFFV', 0.059)]",New,New+1
+"('CPK', 'MSPK')","('Chesapeake Utilities Corp', 'Morgan Stanley 1/1000th Non-Cum Pfd -K-')",1,"[('PFFV', 0.06)]",New,New+1
+"('CPK', 'GSPJ')","('Chesapeake Utilities Corp', 'Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser')",1,"[('PFFV', 0.061)]",New,New+1
+"('CPK', 'GSPD')","('Chesapeake Utilities Corp', 'Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Perp Fltg Rate Non Cum Pf')",1,"[('PFFV', 0.067)]",New,New+1
+"('ATHPA', 'USBPH')","('Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep', 'U.S. Bancorp Shs Repr 1/1000th Non-Cum Perpetual Pfd Shs Series -B-')",1,"[('PFFV', 0.044)]",New,New+1
+"('MSPK', 'USBPH')","('Morgan Stanley 1/1000th Non-Cum Pfd -K-', 'U.S. Bancorp Shs Repr 1/1000th Non-Cum Perpetual Pfd Shs Series -B-')",1,"[('PFFV', 0.044)]",New,New+1
+"('GSPJ', 'USBPH')","('Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser', 'U.S. Bancorp Shs Repr 1/1000th Non-Cum Perpetual Pfd Shs Series -B-')",1,"[('PFFV', 0.046)]",New,New+1
+"('ATHPA', 'MSPK')","('Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep', 'Morgan Stanley 1/1000th Non-Cum Pfd -K-')",1,"[('PFFV', 0.045)]",New,New+1
+"('ATHPA', 'GSPJ')","('Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep', 'Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser')",1,"[('PFFV', 0.046)]",New,New+1
+"('ATHPA', 'GSPD')","('Athene Holding Ltd FXDFR PRF PERPETUAL USD 25 - Ser A 1/1000 Int Dep', 'Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Perp Fltg Rate Non Cum Pf')",1,"[('PFFV', 0.052)]",New,New+1
+"('GSPJ', 'MSPK')","('Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser', 'Morgan Stanley 1/1000th Non-Cum Pfd -K-')",1,"[('PFFV', 0.046)]",New,New+1
+"('GSPD', 'MSPK')","('Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Perp Fltg Rate Non Cum Pf', 'Morgan Stanley 1/1000th Non-Cum Pfd -K-')",1,"[('PFFV', 0.052)]",New,New+1
+"('GSPD', 'GSPJ')","('Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Perp Fltg Rate Non Cum Pf', 'Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser')",1,"[('PFFV', 0.053)]",New,New+1

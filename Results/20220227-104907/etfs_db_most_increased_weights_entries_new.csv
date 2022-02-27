@@ -1,0 +1,5 @@
+Symbol,Name,SumWeights,Holders,DiffEntries,DiffValue
+GSPJ,Goldman Sachs Group Inc Deposit Shs Repr 1/1000th Non-Cum Perp Pfd Shs Ser,0.024,"[('PFFV', 0.024)]",New,New+0.024
+CPJ,Citigroup Inc Repr 1/100th 7 1/8 Non-Cum Perp Pfd Shs Series J,0.023,"[('PFFV', 0.023)]",New,New+0.023
+MSPK,Morgan Stanley 1/1000th Non-Cum Pfd -K-,0.023,"[('PFFV', 0.023)]",New,New+0.023
+MSPI,Morgan Stanley Deposit Shs Repr 1/1000th Non-Cum Pfd Shs Series -I-,0.022,"[('PFFV', 0.022)]",New,New+0.022
