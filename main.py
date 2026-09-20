@@ -121,76 +121,118 @@ def pad_row_if_required(row):
 # ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt
 # ftp.nasdaqtrader.com/SymbolDirectory/otherlisted.txt
 # ftp.nasdaqtrader.com/SymbolDirectory/nasdaqtraded.txt
-def fetch_etf_info(etf_symbol):
-    """Return the `info` dict shape that main.py was written against.
+def _hold_rows_from_yq(th):
+    """yahooquery fund_top_holdings -> list of {symbol, holdingName, holdingPercent}.
+
+    The frame is indexed by (symbol, row) AND carries its own 'symbol' column, so a
+    plain reset_index() raises "ValueError: cannot insert symbol, already exists".
+    Drop the index instead. Column names are not guaranteed across versions, so each
+    one is looked up defensively.
+    """
+    if th is None or not hasattr(th, "empty") or th.empty:
+        return []
+    df = th.reset_index(drop=True)
+    cols = {str(c).lower(): c for c in df.columns}
+    c_sym = cols.get("symbol") or cols.get("holdingsymbol")
+    c_nam = cols.get("holdingname") or cols.get("name")
+    c_pct = cols.get("holdingpercent") or cols.get("holdingpercentage") or cols.get("percent")
+    if c_sym is None or c_pct is None:
+        return []
+    out = []
+    for _, r in df.iterrows():
+        try:
+            sym = r[c_sym]
+            pct = float(r[c_pct])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if sym is None or sym != sym:          # NaN guard
+            continue
+        out.append({"symbol": str(sym).strip().upper(),
+                    "holdingName": str(r[c_nam]) if c_nam is not None else "",
+                    "holdingPercent": pct})
+    return out
+
+
+def _hold_rows_from_yf(th):
+    """yfinance funds_data.top_holdings -> the same shape (index=Symbol)."""
+    if th is None or not hasattr(th, "empty") or th.empty:
+        return []
+    out = []
+    for idx, row in th.iterrows():
+        try:
+            pct = float(row.get("Holding Percent", 0.0))
+        except (TypeError, ValueError):
+            continue
+        out.append({"symbol": str(idx).strip().upper(),
+                    "holdingName": str(row.get("Name", "")),
+                    "holdingPercent": pct})
+    return out
+
+
+def fetch_etf_info(etf_symbol, retries=2):
+    """Return the `info` dict shape main.py was written against.
 
     The original code relied on a yfinance fork (ranaroussi/yfinance PR #830, never
-    merged) which put ETF holdings into Ticker.get_info()['holdings']. No released
-    yfinance has that key. This rebuilds it from yahooquery's fund_top_holdings,
-    whose columns (symbol / holdingName / holdingPercent) happen to match the fork's
-    field names exactly, with a yfinance funds_data fallback.
+    merged) which exposed ETF holdings at Ticker.get_info()['holdings']. No released
+    yfinance has that key -- measured on 1.7.0: get_info() exists, 'holdings' does not.
+    Rebuilt here from yahooquery's fund_top_holdings (whose column names happen to
+    match the fork's field names exactly), with a yfinance funds_data fallback.
 
-    Note the ceiling: Yahoo exposes only the TOP 10 holdings, so any look-through
-    built on this is partial -- for a broad ETF the top 10 can be well under half the
-    fund. g_max_holding_index = 9 already encodes that assumption.
+    Ceiling worth remembering: Yahoo exposes only the TOP 10 holdings. Any look-through
+    or flow analysis built on this is partial -- for a broad fund the top 10 can be
+    well under half of it. g_max_holding_index = 9 already encodes that.
+
+    Returns {'shortName':..., 'holdings':[...], 'sectorWeightings':[...]}; 'holdings'
+    is always present (possibly empty) so callers never need to test for the key.
     """
-    info = {}
-    try:
-        q = yq.Ticker(etf_symbol)
-        th = q.fund_top_holdings
-        if hasattr(th, "empty") and not th.empty:
-            # fund_top_holdings is indexed by (symbol, row) AND carries its own
-            # 'symbol' column, so a plain reset_index() raises
-            #   ValueError: cannot insert symbol, already exists
-            # Drop the index instead -- the columns already hold everything needed.
-            holdings = []
-            for _, r in th.reset_index(drop=True).iterrows():
-                sym = r.get("symbol")
-                pct = r.get("holdingPercent")
-                if sym is None or pct is None:
-                    continue
-                holdings.append({"symbol": str(sym),
-                                 "holdingName": str(r.get("holdingName", "")),
-                                 "holdingPercent": float(pct)})
-            if holdings:
-                info["holdings"] = holdings
-        sw = q.fund_sector_weightings
-        if hasattr(sw, "empty") and not sw.empty:
-            col = sw.columns[0]
-            info["sectorWeightings"] = [{str(i): float(sw.loc[i, col])} for i in sw.index]
-        for src in (q.quote_type, q.price):
-            if isinstance(src, dict) and isinstance(src.get(etf_symbol), dict):
-                nm = (src[etf_symbol].get("longName") or src[etf_symbol].get("shortName"))
+    info = {"holdings": [], "shortName": etf_symbol}
+
+    for attempt in range(retries + 1):
+        try:
+            q = yq.Ticker(etf_symbol)
+            rows = _hold_rows_from_yq(q.fund_top_holdings)
+            if rows:
+                info["holdings"] = rows
+            try:
+                sw = q.fund_sector_weightings
+                if sw is not None and hasattr(sw, "empty") and not sw.empty:
+                    col = sw.columns[0]
+                    info["sectorWeightings"] = [{str(i): float(sw.loc[i, col])} for i in sw.index]
+            except Exception:
+                pass
+            for src in (q.quote_type, q.price):
+                if isinstance(src, dict) and isinstance(src.get(etf_symbol), dict):
+                    nm = src[etf_symbol].get("longName") or src[etf_symbol].get("shortName")
+                    if nm:
+                        info["shortName"] = nm
+                        break
+            if info["holdings"]:
+                return info
+            break                                   # resolved but genuinely empty
+        except Exception as exc:
+            if attempt == retries:
+                print("   [holdings] yahooquery gave up on {} after {} tries: {}: {}".format(
+                    etf_symbol, retries + 1, type(exc).__name__, str(exc)[:80]))
+            else:
+                time.sleep(1.5 * (attempt + 1))
+
+    try:                                            # fallback: yfinance's own funds_data
+        rows = _hold_rows_from_yf(yf.Ticker(etf_symbol).funds_data.top_holdings)
+        if rows:
+            info["holdings"] = rows
+            try:
+                fi = yf.Ticker(etf_symbol).get_info()
+                nm = fi.get("longName") or fi.get("shortName")
                 if nm:
                     info["shortName"] = nm
-                    break
+            except Exception:
+                pass
     except Exception as exc:
-        print("   [holdings] yahooquery failed for {}: {}: {}".format(
-            etf_symbol, type(exc).__name__, str(exc)[:90]))
+        print("   [holdings] yfinance fallback failed for {}: {}: {}".format(
+            etf_symbol, type(exc).__name__, str(exc)[:80]))
 
-    if "holdings" not in info:  # fallback: yfinance's own funds_data
-        try:
-            fd = yf.Ticker(etf_symbol).funds_data
-            th = fd.top_holdings
-            if th is not None and not th.empty:
-                info["holdings"] = [
-                    {"symbol": str(idx),
-                     "holdingName": str(row.get("Name", "")),
-                     "holdingPercent": float(row.get("Holding Percent", 0.0))}
-                    for idx, row in th.iterrows()]
-                try:
-                    fi = yf.Ticker(etf_symbol).get_info()
-                    nm = fi.get("longName") or fi.get("shortName")
-                    if nm:
-                        info.setdefault("shortName", nm)
-                except Exception:
-                    pass
-        except Exception as exc:
-            print("   [holdings] yfinance fallback failed for {}: {}: {}".format(
-                etf_symbol, type(exc).__name__, str(exc)[:90]))
-
-    info.setdefault("shortName", etf_symbol)
-    info.setdefault("holdings", [])
+    if not info["holdings"]:
+        print("   [holdings] {}: no holdings from either source".format(etf_symbol))
     return info
 
 
