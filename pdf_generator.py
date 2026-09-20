@@ -205,5 +205,7 @@ def csv_to_pdf(report_table, post_process_path_new, limit_num_rows, report_title
 
     os.remove(post_process_path_new + report_title + "_fig{}{}.png".format('_bigrams' if bigrams else '', '_reverse' if reverse else ''))
 
-    if output: pdf.output(output_filename, 'F')
+    # fpdf2 removed the positional dest arg that fpdf1 accepted; passing 'F'
+    # raises TypeError on every modern install.
+    if output: pdf.output(output_filename)
     return pdf

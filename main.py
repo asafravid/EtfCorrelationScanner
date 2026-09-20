@@ -27,6 +27,8 @@ import shutil
 import time
 import urllib.request as request
 import yfinance       as yf
+import yahooquery     as yq
+import requests
 import csv
 import os
 import pdf_generator
@@ -48,6 +50,13 @@ POST_PROCESS_ETFS               = False
 POST_PROCESS_PATH_NEW           = '20220227-104907'
 POST_PROCESS_PATH_REF           = '20220227-104907'
 CUSTOM_ETF_LIST                 = None  # ['QQQ', 'SPY', 'FDIS', 'SMH', 'SOXX']
+# Driving the scanner without editing this file: ETF_LIST=QQQ,SOXX python main.py
+# (main.py and pdf_generator.py import each other, so this module cannot safely be
+#  imported from a driver script -- it only survives being run as __main__.)
+if os.environ.get('ETF_LIST'):
+    CUSTOM_ETF_LIST = [x.strip().upper() for x in os.environ['ETF_LIST'].split(',') if x.strip()]
+if os.environ.get('ETF_SCAN_ONLY'):
+    SCAN_ETFS, POST_PROCESS_ETFS = True, False
 NUM_REPORTED_ENTRIES            = 42
 NUM_REPORTED_BIGRAM_ENTRIES     = 77
 NUM_HOLDERS_TO_INCLUDE          = 5
@@ -112,14 +121,99 @@ def pad_row_if_required(row):
 # ftp.nasdaqtrader.com/SymbolDirectory/nasdaqlisted.txt
 # ftp.nasdaqtrader.com/SymbolDirectory/otherlisted.txt
 # ftp.nasdaqtrader.com/SymbolDirectory/nasdaqtraded.txt
+def fetch_etf_info(etf_symbol):
+    """Return the `info` dict shape that main.py was written against.
+
+    The original code relied on a yfinance fork (ranaroussi/yfinance PR #830, never
+    merged) which put ETF holdings into Ticker.get_info()['holdings']. No released
+    yfinance has that key. This rebuilds it from yahooquery's fund_top_holdings,
+    whose columns (symbol / holdingName / holdingPercent) happen to match the fork's
+    field names exactly, with a yfinance funds_data fallback.
+
+    Note the ceiling: Yahoo exposes only the TOP 10 holdings, so any look-through
+    built on this is partial -- for a broad ETF the top 10 can be well under half the
+    fund. g_max_holding_index = 9 already encodes that assumption.
+    """
+    info = {}
+    try:
+        q = yq.Ticker(etf_symbol)
+        th = q.fund_top_holdings
+        if hasattr(th, "empty") and not th.empty:
+            # fund_top_holdings is indexed by (symbol, row) AND carries its own
+            # 'symbol' column, so a plain reset_index() raises
+            #   ValueError: cannot insert symbol, already exists
+            # Drop the index instead -- the columns already hold everything needed.
+            holdings = []
+            for _, r in th.reset_index(drop=True).iterrows():
+                sym = r.get("symbol")
+                pct = r.get("holdingPercent")
+                if sym is None or pct is None:
+                    continue
+                holdings.append({"symbol": str(sym),
+                                 "holdingName": str(r.get("holdingName", "")),
+                                 "holdingPercent": float(pct)})
+            if holdings:
+                info["holdings"] = holdings
+        sw = q.fund_sector_weightings
+        if hasattr(sw, "empty") and not sw.empty:
+            col = sw.columns[0]
+            info["sectorWeightings"] = [{str(i): float(sw.loc[i, col])} for i in sw.index]
+        for src in (q.quote_type, q.price):
+            if isinstance(src, dict) and isinstance(src.get(etf_symbol), dict):
+                nm = (src[etf_symbol].get("longName") or src[etf_symbol].get("shortName"))
+                if nm:
+                    info["shortName"] = nm
+                    break
+    except Exception as exc:
+        print("   [holdings] yahooquery failed for {}: {}: {}".format(
+            etf_symbol, type(exc).__name__, str(exc)[:90]))
+
+    if "holdings" not in info:  # fallback: yfinance's own funds_data
+        try:
+            fd = yf.Ticker(etf_symbol).funds_data
+            th = fd.top_holdings
+            if th is not None and not th.empty:
+                info["holdings"] = [
+                    {"symbol": str(idx),
+                     "holdingName": str(row.get("Name", "")),
+                     "holdingPercent": float(row.get("Holding Percent", 0.0))}
+                    for idx, row in th.iterrows()]
+                try:
+                    fi = yf.Ticker(etf_symbol).get_info()
+                    nm = fi.get("longName") or fi.get("shortName")
+                    if nm:
+                        info.setdefault("shortName", nm)
+                except Exception:
+                    pass
+        except Exception as exc:
+            print("   [holdings] yfinance fallback failed for {}: {}: {}".format(
+                etf_symbol, type(exc).__name__, str(exc)[:90]))
+
+    info.setdefault("shortName", etf_symbol)
+    info.setdefault("holdings", [])
+    return info
+
+
 def download_ftp_files():
     for filename in g_nasdaq_filenames_list:
         filename_to_download = filename
         if '/' in filename_to_download:
             filename_to_download = filename[filename.index('/')+1:]
-        with closing(request.urlopen(g_ftp_url+filename_to_download.replace('.csv', '.txt'))) as read_file:
+        txt = filename_to_download.replace('.csv', '.txt')
+        try:
+            with closing(request.urlopen(g_ftp_url + txt, timeout=30)) as read_file:
+                with open(filename, 'wb') as file_write:
+                    shutil.copyfileobj(read_file, file_write)
+        except Exception as ftp_exc:
+            # ftp://ftp.nasdaqtrader.com still answers as of 2026-09-20, but it is a
+            # single point of failure; the same files are served over HTTPS.
+            url = 'https://www.nasdaqtrader.com/dynamic/SymDir/' + txt
+            print('[symbols] FTP failed ({}: {}) -> falling back to {}'.format(
+                type(ftp_exc).__name__, str(ftp_exc)[:60], url))
+            resp = requests.get(url, timeout=30, headers={'User-Agent': 'Mozilla/5.0'})
+            resp.raise_for_status()
             with open(filename, 'wb') as file_write:
-                shutil.copyfileobj(read_file, file_write)
+                file_write.write(resp.content)
 
 
 def extract_sorted_etf_list():
@@ -215,8 +309,7 @@ def scan_etfs():
             symbol = crash_and_continue_raw_data[etf_symbol]
             info = symbol['info'] if 'info' in symbol else None
         else:
-            symbol = yf.Ticker(etf_symbol)
-            info   = symbol.get_info()
+            info   = fetch_etf_info(etf_symbol)
 
         etf_data.symbol = etf_symbol
 
